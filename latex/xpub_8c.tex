@@ -1,0 +1,63 @@
+\hypertarget{xpub_8c}{}\section{src/protocols/pubsub/xpub.c File Reference}
+\label{xpub_8c}\index{src/protocols/pubsub/xpub.\+c@{src/protocols/pubsub/xpub.\+c}}
+{\ttfamily \#include \char`\"{}xpub.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../pubsub.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/dist.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/attr.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for xpub.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{xpub_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__xpub__data}{nn\+\_\+xpub\+\_\+data}
+\item 
+struct \hyperlink{structnn__xpub}{nn\+\_\+xpub}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{xpub_8c_a6b580661f99d3ca2264058315fd24665}{nn\+\_\+xpub\+\_\+create} (void $\ast$hint, struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$$\ast$sockbase)
+\item 
+int \hyperlink{xpub_8c_a66c0021f6c4c30e431b4c82fa5f31cab}{nn\+\_\+xpub\+\_\+ispeer} (int socktype)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__socktype}{nn\+\_\+socktype} $\ast$ \hyperlink{xpub_8c_ae9557072dcf9dec1151889b076b9fb78}{nn\+\_\+xpub\+\_\+socktype} = \&nn\+\_\+xpub\+\_\+socktype\+\_\+struct
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{xpub.\+c@{xpub.\+c}!nn\+\_\+xpub\+\_\+create@{nn\+\_\+xpub\+\_\+create}}
+\index{nn\+\_\+xpub\+\_\+create@{nn\+\_\+xpub\+\_\+create}!xpub.\+c@{xpub.\+c}}
+\subsubsection[{nn\+\_\+xpub\+\_\+create(void $\ast$hint, struct nn\+\_\+sockbase $\ast$$\ast$sockbase)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xpub\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{hint, }
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$$\ast$}]{sockbase}
+\end{DoxyParamCaption}
+)}\hypertarget{xpub_8c_a6b580661f99d3ca2264058315fd24665}{}\label{xpub_8c_a6b580661f99d3ca2264058315fd24665}
+\index{xpub.\+c@{xpub.\+c}!nn\+\_\+xpub\+\_\+ispeer@{nn\+\_\+xpub\+\_\+ispeer}}
+\index{nn\+\_\+xpub\+\_\+ispeer@{nn\+\_\+xpub\+\_\+ispeer}!xpub.\+c@{xpub.\+c}}
+\subsubsection[{nn\+\_\+xpub\+\_\+ispeer(int socktype)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xpub\+\_\+ispeer (
+\begin{DoxyParamCaption}
+\item[{int}]{socktype}
+\end{DoxyParamCaption}
+)}\hypertarget{xpub_8c_a66c0021f6c4c30e431b4c82fa5f31cab}{}\label{xpub_8c_a66c0021f6c4c30e431b4c82fa5f31cab}
+
+
+\subsection{Variable Documentation}
+\index{xpub.\+c@{xpub.\+c}!nn\+\_\+xpub\+\_\+socktype@{nn\+\_\+xpub\+\_\+socktype}}
+\index{nn\+\_\+xpub\+\_\+socktype@{nn\+\_\+xpub\+\_\+socktype}!xpub.\+c@{xpub.\+c}}
+\subsubsection[{nn\+\_\+xpub\+\_\+socktype}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+socktype}$\ast$ nn\+\_\+xpub\+\_\+socktype = \&nn\+\_\+xpub\+\_\+socktype\+\_\+struct}\hypertarget{xpub_8c_ae9557072dcf9dec1151889b076b9fb78}{}\label{xpub_8c_ae9557072dcf9dec1151889b076b9fb78}

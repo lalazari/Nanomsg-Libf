@@ -1,0 +1,304 @@
+\hypertarget{err_8h}{}\section{src/utils/err.h File Reference}
+\label{err_8h}\index{src/utils/err.\+h@{src/utils/err.\+h}}
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}../nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fast.\+h\char`\"{}}\\*
+Include dependency graph for err.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{err_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{err_8h_ae3e0e9f306448d5728b38195c6e64d25}{N\+N\+\_\+\+N\+O\+R\+E\+T\+U\+RN}
+\item 
+\#define \hyperlink{err_8h_a7ad87ee44f4c06616bd2b3602b73a536}{nn\+\_\+assert}(x)
+\item 
+\#define \hyperlink{err_8h_ab81e236c473e747efb64bda598b9eba2}{nn\+\_\+assert\+\_\+state}(obj,  state\+\_\+name)
+\item 
+\#define \hyperlink{err_8h_ae1d6a271788759e0cdcbf3b62a1037a3}{alloc\+\_\+assert}(x)
+\item 
+\#define \hyperlink{err_8h_a0399435158def8e776efe83e52fd707a}{errno\+\_\+assert}(x)
+\item 
+\#define \hyperlink{err_8h_ad6240ac1a4886acf9e1396234734b8ae}{errnum\+\_\+assert}(cond,  err)
+\item 
+\#define \hyperlink{err_8h_a7f37f11b301a493073a949d92fe11a76}{win\+\_\+assert}(x)
+\item 
+\#define \hyperlink{err_8h_ac594b992fc5fe426d2215d8019ce36bb}{wsa\+\_\+assert}(x)
+\item 
+\#define \hyperlink{err_8h_ae4a810517a9a097c3370d748911bb91f}{nn\+\_\+fsm\+\_\+error}(message,  state,  src,  type)
+\item 
+\#define \hyperlink{err_8h_a1f237fcbf655763d6b52d712901e0fee}{nn\+\_\+fsm\+\_\+bad\+\_\+action}(state,  src,  type)
+\item 
+\#define \hyperlink{err_8h_a76094b92585d470780c3a7bb4bc25db6}{nn\+\_\+fsm\+\_\+bad\+\_\+state}(state,  src,  type)
+\item 
+\#define \hyperlink{err_8h_ae0e13e4dd2d87d77263f04c575d9c766}{nn\+\_\+fsm\+\_\+bad\+\_\+source}(state,  src,  type)
+\item 
+\#define \hyperlink{err_8h_ae3a978056e63294bb8e56908623d0515}{C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R2}(prefix,  line)~prefix\#\#line
+\item 
+\#define \hyperlink{err_8h_a0b67fe233593049a1f7dabab5a51b675}{C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R1}(prefix,  line)~\hyperlink{err_8h_ae3a978056e63294bb8e56908623d0515}{C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R2}(prefix, line)
+\item 
+\#define \hyperlink{err_8h_a8b49f8d80c2b1cd8bc8d83f89fa10122}{C\+T\+\_\+\+A\+S\+S\+E\+RT}(x)~typedef int \hyperlink{err_8h_a0b67fe233593049a1f7dabab5a51b675}{C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R1}(ct\+\_\+assert\+\_\+,\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+) \mbox{[}(x) ? 1 \+: -\/1\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{err_8h_ae3e0e9f306448d5728b38195c6e64d25}{N\+N\+\_\+\+N\+O\+R\+E\+T\+U\+RN} void \hyperlink{err_8h_a6be4f9ad2eb5a7b131ea494dddf00673}{nn\+\_\+err\+\_\+abort} (void)
+\item 
+int \hyperlink{err_8h_a0b8d56d89cca058aa7362b33e8c2e8d3}{nn\+\_\+err\+\_\+errno} (void)
+\item 
+const char $\ast$ \hyperlink{err_8h_a7cf8d9c2e4f29270847c3d576677aebf}{nn\+\_\+err\+\_\+strerror} (int errnum)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{err.\+h@{err.\+h}!alloc\+\_\+assert@{alloc\+\_\+assert}}
+\index{alloc\+\_\+assert@{alloc\+\_\+assert}!err.\+h@{err.\+h}}
+\subsubsection[{alloc\+\_\+assert}]{\setlength{\rightskip}{0pt plus 5cm}\#define alloc\+\_\+assert(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_ae1d6a271788759e0cdcbf3b62a1037a3}{}\label{err_8h_ae1d6a271788759e0cdcbf3b62a1037a3}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{\(\backslash\)
+        if (\hyperlink{fast_8h_a07d2cd089a9c03bba5585c15c43b2b8d}{nn\_slow} (!x)) \{\(\backslash\)
+            fprintf (stderr, \textcolor{stringliteral}{"Out of memory (%s:%d)\(\backslash\)n"},\(\backslash\)
+                \_\_FILE\_\_, \_\_LINE\_\_);\(\backslash\)
+            fflush (stderr);\(\backslash\)
+            nn\_err\_abort ();\(\backslash\)
+        \}\(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\index{err.\+h@{err.\+h}!C\+T\+\_\+\+A\+S\+S\+E\+RT@{C\+T\+\_\+\+A\+S\+S\+E\+RT}}
+\index{C\+T\+\_\+\+A\+S\+S\+E\+RT@{C\+T\+\_\+\+A\+S\+S\+E\+RT}!err.\+h@{err.\+h}}
+\subsubsection[{C\+T\+\_\+\+A\+S\+S\+E\+RT}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+T\+\_\+\+A\+S\+S\+E\+RT(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~typedef int {\bf C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R1}(ct\+\_\+assert\+\_\+,\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+) \mbox{[}(x) ? 1 \+: -\/1\mbox{]}}\hypertarget{err_8h_a8b49f8d80c2b1cd8bc8d83f89fa10122}{}\label{err_8h_a8b49f8d80c2b1cd8bc8d83f89fa10122}
+\index{err.\+h@{err.\+h}!C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R1@{C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R1}}
+\index{C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R1@{C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R1}!err.\+h@{err.\+h}}
+\subsubsection[{C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R1}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R1(
+\begin{DoxyParamCaption}
+\item[{}]{prefix, }
+\item[{}]{line}
+\end{DoxyParamCaption}
+)~{\bf C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R2}(prefix, line)}\hypertarget{err_8h_a0b67fe233593049a1f7dabab5a51b675}{}\label{err_8h_a0b67fe233593049a1f7dabab5a51b675}
+\index{err.\+h@{err.\+h}!C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R2@{C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R2}}
+\index{C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R2@{C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R2}!err.\+h@{err.\+h}}
+\subsubsection[{C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R2}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+T\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+H\+E\+L\+P\+E\+R2(
+\begin{DoxyParamCaption}
+\item[{}]{prefix, }
+\item[{}]{line}
+\end{DoxyParamCaption}
+)~prefix\#\#line}\hypertarget{err_8h_ae3a978056e63294bb8e56908623d0515}{}\label{err_8h_ae3a978056e63294bb8e56908623d0515}
+\index{err.\+h@{err.\+h}!errno\+\_\+assert@{errno\+\_\+assert}}
+\index{errno\+\_\+assert@{errno\+\_\+assert}!err.\+h@{err.\+h}}
+\subsubsection[{errno\+\_\+assert}]{\setlength{\rightskip}{0pt plus 5cm}\#define errno\+\_\+assert(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_a0399435158def8e776efe83e52fd707a}{}\label{err_8h_a0399435158def8e776efe83e52fd707a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{\(\backslash\)
+        if (\hyperlink{fast_8h_a07d2cd089a9c03bba5585c15c43b2b8d}{nn\_slow} (!(x))) \{\(\backslash\)
+            fprintf (stderr, \textcolor{stringliteral}{"%s [%d] (%s:%d)\(\backslash\)n"}, \hyperlink{err_8h_a7cf8d9c2e4f29270847c3d576677aebf}{nn\_err\_strerror} (errno),\(\backslash\)
+                (\textcolor{keywordtype}{int}) errno, \_\_FILE\_\_, \_\_LINE\_\_);\(\backslash\)
+            fflush (stderr);\(\backslash\)
+            nn\_err\_abort ();\(\backslash\)
+        \}\(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\index{err.\+h@{err.\+h}!errnum\+\_\+assert@{errnum\+\_\+assert}}
+\index{errnum\+\_\+assert@{errnum\+\_\+assert}!err.\+h@{err.\+h}}
+\subsubsection[{errnum\+\_\+assert}]{\setlength{\rightskip}{0pt plus 5cm}\#define errnum\+\_\+assert(
+\begin{DoxyParamCaption}
+\item[{}]{cond, }
+\item[{}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_ad6240ac1a4886acf9e1396234734b8ae}{}\label{err_8h_ad6240ac1a4886acf9e1396234734b8ae}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{\(\backslash\)
+        if (\hyperlink{fast_8h_a07d2cd089a9c03bba5585c15c43b2b8d}{nn\_slow} (!(cond))) \{\(\backslash\)
+            fprintf (stderr, \textcolor{stringliteral}{"%s [%d] (%s:%d)\(\backslash\)n"}, \hyperlink{err_8h_a7cf8d9c2e4f29270847c3d576677aebf}{nn\_err\_strerror} (err),\(\backslash\)
+                (\textcolor{keywordtype}{int}) (err), \_\_FILE\_\_, \_\_LINE\_\_);\(\backslash\)
+            fflush (stderr);\(\backslash\)
+            nn\_err\_abort ();\(\backslash\)
+        \}\(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\index{err.\+h@{err.\+h}!nn\+\_\+assert@{nn\+\_\+assert}}
+\index{nn\+\_\+assert@{nn\+\_\+assert}!err.\+h@{err.\+h}}
+\subsubsection[{nn\+\_\+assert}]{\setlength{\rightskip}{0pt plus 5cm}\#define nn\+\_\+assert(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_a7ad87ee44f4c06616bd2b3602b73a536}{}\label{err_8h_a7ad87ee44f4c06616bd2b3602b73a536}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{\(\backslash\)
+        if (\hyperlink{fast_8h_a07d2cd089a9c03bba5585c15c43b2b8d}{nn\_slow} (!(x))) \{\(\backslash\)
+            fprintf (stderr, \textcolor{stringliteral}{"Assertion failed: %s (%s:%d)\(\backslash\)n"}, #x, \(\backslash\)
+                \_\_FILE\_\_, \_\_LINE\_\_);\(\backslash\)
+            fflush (stderr);\(\backslash\)
+            nn\_err\_abort ();\(\backslash\)
+        \}\(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\index{err.\+h@{err.\+h}!nn\+\_\+assert\+\_\+state@{nn\+\_\+assert\+\_\+state}}
+\index{nn\+\_\+assert\+\_\+state@{nn\+\_\+assert\+\_\+state}!err.\+h@{err.\+h}}
+\subsubsection[{nn\+\_\+assert\+\_\+state}]{\setlength{\rightskip}{0pt plus 5cm}\#define nn\+\_\+assert\+\_\+state(
+\begin{DoxyParamCaption}
+\item[{}]{obj, }
+\item[{}]{state\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_ab81e236c473e747efb64bda598b9eba2}{}\label{err_8h_ab81e236c473e747efb64bda598b9eba2}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{\(\backslash\)
+        if (\hyperlink{fast_8h_a07d2cd089a9c03bba5585c15c43b2b8d}{nn\_slow} ((obj)->state != state\_name)) \{\(\backslash\)
+            fprintf (stderr, \(\backslash\)
+                \textcolor{stringliteral}{"Assertion failed: %d == %s (%s:%d)\(\backslash\)n"}, \(\backslash\)
+                (obj)->state, #state\_name, \(\backslash\)
+                \_\_FILE\_\_, \_\_LINE\_\_);\(\backslash\)
+            fflush (stderr);\(\backslash\)
+            nn\_err\_abort ();\(\backslash\)
+        \}\(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\index{err.\+h@{err.\+h}!nn\+\_\+fsm\+\_\+bad\+\_\+action@{nn\+\_\+fsm\+\_\+bad\+\_\+action}}
+\index{nn\+\_\+fsm\+\_\+bad\+\_\+action@{nn\+\_\+fsm\+\_\+bad\+\_\+action}!err.\+h@{err.\+h}}
+\subsubsection[{nn\+\_\+fsm\+\_\+bad\+\_\+action}]{\setlength{\rightskip}{0pt plus 5cm}\#define nn\+\_\+fsm\+\_\+bad\+\_\+action(
+\begin{DoxyParamCaption}
+\item[{}]{state, }
+\item[{}]{src, }
+\item[{}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_a1f237fcbf655763d6b52d712901e0fee}{}\label{err_8h_a1f237fcbf655763d6b52d712901e0fee}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{err_8h_ae4a810517a9a097c3370d748911bb91f}{nn\_fsm\_error}(\(\backslash\)
+    \textcolor{stringliteral}{"Unexpected action"}, state, src, type)
+\end{DoxyCode}
+\index{err.\+h@{err.\+h}!nn\+\_\+fsm\+\_\+bad\+\_\+source@{nn\+\_\+fsm\+\_\+bad\+\_\+source}}
+\index{nn\+\_\+fsm\+\_\+bad\+\_\+source@{nn\+\_\+fsm\+\_\+bad\+\_\+source}!err.\+h@{err.\+h}}
+\subsubsection[{nn\+\_\+fsm\+\_\+bad\+\_\+source}]{\setlength{\rightskip}{0pt plus 5cm}\#define nn\+\_\+fsm\+\_\+bad\+\_\+source(
+\begin{DoxyParamCaption}
+\item[{}]{state, }
+\item[{}]{src, }
+\item[{}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_ae0e13e4dd2d87d77263f04c575d9c766}{}\label{err_8h_ae0e13e4dd2d87d77263f04c575d9c766}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{err_8h_ae4a810517a9a097c3370d748911bb91f}{nn\_fsm\_error}(\(\backslash\)
+    \textcolor{stringliteral}{"Unexpected source"}, state, src, type)
+\end{DoxyCode}
+\index{err.\+h@{err.\+h}!nn\+\_\+fsm\+\_\+bad\+\_\+state@{nn\+\_\+fsm\+\_\+bad\+\_\+state}}
+\index{nn\+\_\+fsm\+\_\+bad\+\_\+state@{nn\+\_\+fsm\+\_\+bad\+\_\+state}!err.\+h@{err.\+h}}
+\subsubsection[{nn\+\_\+fsm\+\_\+bad\+\_\+state}]{\setlength{\rightskip}{0pt plus 5cm}\#define nn\+\_\+fsm\+\_\+bad\+\_\+state(
+\begin{DoxyParamCaption}
+\item[{}]{state, }
+\item[{}]{src, }
+\item[{}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_a76094b92585d470780c3a7bb4bc25db6}{}\label{err_8h_a76094b92585d470780c3a7bb4bc25db6}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{err_8h_ae4a810517a9a097c3370d748911bb91f}{nn\_fsm\_error}(\(\backslash\)
+    \textcolor{stringliteral}{"Unexpected state"}, state, src, type)
+\end{DoxyCode}
+\index{err.\+h@{err.\+h}!nn\+\_\+fsm\+\_\+error@{nn\+\_\+fsm\+\_\+error}}
+\index{nn\+\_\+fsm\+\_\+error@{nn\+\_\+fsm\+\_\+error}!err.\+h@{err.\+h}}
+\subsubsection[{nn\+\_\+fsm\+\_\+error}]{\setlength{\rightskip}{0pt plus 5cm}\#define nn\+\_\+fsm\+\_\+error(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{state, }
+\item[{}]{src, }
+\item[{}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_ae4a810517a9a097c3370d748911bb91f}{}\label{err_8h_ae4a810517a9a097c3370d748911bb91f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{\(\backslash\)
+        fprintf (stderr, \textcolor{stringliteral}{"%s: state=%d source=%d action=%d (%s:%d)\(\backslash\)n"}, \(\backslash\)
+            message, state, src, type, \_\_FILE\_\_, \_\_LINE\_\_);\(\backslash\)
+        fflush (stderr);\(\backslash\)
+        nn\_err\_abort ();\(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\index{err.\+h@{err.\+h}!N\+N\+\_\+\+N\+O\+R\+E\+T\+U\+RN@{N\+N\+\_\+\+N\+O\+R\+E\+T\+U\+RN}}
+\index{N\+N\+\_\+\+N\+O\+R\+E\+T\+U\+RN@{N\+N\+\_\+\+N\+O\+R\+E\+T\+U\+RN}!err.\+h@{err.\+h}}
+\subsubsection[{N\+N\+\_\+\+N\+O\+R\+E\+T\+U\+RN}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+N\+O\+R\+E\+T\+U\+RN}\hypertarget{err_8h_ae3e0e9f306448d5728b38195c6e64d25}{}\label{err_8h_ae3e0e9f306448d5728b38195c6e64d25}
+\index{err.\+h@{err.\+h}!win\+\_\+assert@{win\+\_\+assert}}
+\index{win\+\_\+assert@{win\+\_\+assert}!err.\+h@{err.\+h}}
+\subsubsection[{win\+\_\+assert}]{\setlength{\rightskip}{0pt plus 5cm}\#define win\+\_\+assert(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_a7f37f11b301a493073a949d92fe11a76}{}\label{err_8h_a7f37f11b301a493073a949d92fe11a76}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{\(\backslash\)
+        if (\hyperlink{fast_8h_a07d2cd089a9c03bba5585c15c43b2b8d}{nn\_slow} (!(x))) \{\(\backslash\)
+            char errstr [256];\(\backslash\)
+            nn\_win\_error ((\textcolor{keywordtype}{int}) GetLastError (), errstr, 256);\(\backslash\)
+            fprintf (stderr, \textcolor{stringliteral}{"%s [%d] (%s:%d)\(\backslash\)n"},\(\backslash\)
+                errstr, (\textcolor{keywordtype}{int}) GetLastError (), \_\_FILE\_\_, \_\_LINE\_\_);\(\backslash\)
+            fflush (stderr);\(\backslash\)
+            nn\_err\_abort ();\(\backslash\)
+        \}\(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\index{err.\+h@{err.\+h}!wsa\+\_\+assert@{wsa\+\_\+assert}}
+\index{wsa\+\_\+assert@{wsa\+\_\+assert}!err.\+h@{err.\+h}}
+\subsubsection[{wsa\+\_\+assert}]{\setlength{\rightskip}{0pt plus 5cm}\#define wsa\+\_\+assert(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_ac594b992fc5fe426d2215d8019ce36bb}{}\label{err_8h_ac594b992fc5fe426d2215d8019ce36bb}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{\(\backslash\)
+        if (\hyperlink{fast_8h_a07d2cd089a9c03bba5585c15c43b2b8d}{nn\_slow} (!(x))) \{\(\backslash\)
+            char errstr [256];\(\backslash\)
+            nn\_win\_error (WSAGetLastError (), errstr, 256);\(\backslash\)
+            fprintf (stderr, \textcolor{stringliteral}{"%s [%d] (%s:%d)\(\backslash\)n"},\(\backslash\)
+                errstr, (\textcolor{keywordtype}{int}) WSAGetLastError (), \_\_FILE\_\_, \_\_LINE\_\_);\(\backslash\)
+            fflush (stderr);\(\backslash\)
+            nn\_err\_abort ();\(\backslash\)
+        \}\(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\index{err.\+h@{err.\+h}!nn\+\_\+err\+\_\+abort@{nn\+\_\+err\+\_\+abort}}
+\index{nn\+\_\+err\+\_\+abort@{nn\+\_\+err\+\_\+abort}!err.\+h@{err.\+h}}
+\subsubsection[{nn\+\_\+err\+\_\+abort(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\+N\+\_\+\+N\+O\+R\+E\+T\+U\+RN} void nn\+\_\+err\+\_\+abort (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_a6be4f9ad2eb5a7b131ea494dddf00673}{}\label{err_8h_a6be4f9ad2eb5a7b131ea494dddf00673}
+\index{err.\+h@{err.\+h}!nn\+\_\+err\+\_\+errno@{nn\+\_\+err\+\_\+errno}}
+\index{nn\+\_\+err\+\_\+errno@{nn\+\_\+err\+\_\+errno}!err.\+h@{err.\+h}}
+\subsubsection[{nn\+\_\+err\+\_\+errno(void)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+err\+\_\+errno (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_a0b8d56d89cca058aa7362b33e8c2e8d3}{}\label{err_8h_a0b8d56d89cca058aa7362b33e8c2e8d3}
+\index{err.\+h@{err.\+h}!nn\+\_\+err\+\_\+strerror@{nn\+\_\+err\+\_\+strerror}}
+\index{nn\+\_\+err\+\_\+strerror@{nn\+\_\+err\+\_\+strerror}!err.\+h@{err.\+h}}
+\subsubsection[{nn\+\_\+err\+\_\+strerror(int errnum)}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+err\+\_\+strerror (
+\begin{DoxyParamCaption}
+\item[{int}]{errnum}
+\end{DoxyParamCaption}
+)}\hypertarget{err_8h_a7cf8d9c2e4f29270847c3d576677aebf}{}\label{err_8h_a7cf8d9c2e4f29270847c3d576677aebf}

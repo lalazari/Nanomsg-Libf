@@ -1,0 +1,147 @@
+\hypertarget{chunkref_8c}{}\section{src/utils/chunkref.c File Reference}
+\label{chunkref_8c}\index{src/utils/chunkref.\+c@{src/utils/chunkref.\+c}}
+{\ttfamily \#include \char`\"{}chunkref.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}err.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for chunkref.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{chunkref_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__chunkref__chunk}{nn\+\_\+chunkref\+\_\+chunk}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{chunkref_8c_aa4e0dd81165412077daa7ab96e8e0440}{C\+T\+\_\+\+A\+S\+S\+E\+RT} (\hyperlink{chunkref_8h_a3ae177c9424f232e1e80e5556a48b27f}{N\+N\+\_\+\+C\+H\+U\+N\+K\+R\+E\+F\+\_\+\+M\+AX}$<$ 255)
+\item 
+\hyperlink{chunkref_8c_a4c9b3a9c95ddc061cd58867a45e88479}{C\+T\+\_\+\+A\+S\+S\+E\+RT} (sizeof(struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref}) $>$=sizeof(struct \hyperlink{structnn__chunkref__chunk}{nn\+\_\+chunkref\+\_\+chunk}))
+\item 
+void \hyperlink{chunkref_8c_a09a81aca82fb7c2e6317cd41e3e4f1cc}{nn\+\_\+chunkref\+\_\+init} (struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$self, size\+\_\+t size)
+\item 
+void \hyperlink{chunkref_8c_a5aa87ce1e29546349b8a84f4565fc26e}{nn\+\_\+chunkref\+\_\+init\+\_\+chunk} (struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$self, void $\ast$chunk)
+\item 
+void \hyperlink{chunkref_8c_a6c0ad086980727cc94ef390d35b15994}{nn\+\_\+chunkref\+\_\+term} (struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$self)
+\item 
+void $\ast$ \hyperlink{chunkref_8c_aaa68bd459c424eff79f348b5aaef0214}{nn\+\_\+chunkref\+\_\+getchunk} (struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$self)
+\item 
+void \hyperlink{chunkref_8c_a2635c382641b6bc7aa577d5891d68476}{nn\+\_\+chunkref\+\_\+mv} (struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$dst, struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$src)
+\item 
+void \hyperlink{chunkref_8c_aed858aa72b2e12518a1221e7c5fce467}{nn\+\_\+chunkref\+\_\+cp} (struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$dst, struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$src)
+\item 
+void $\ast$ \hyperlink{chunkref_8c_acd3348f91de9012b9d3c990ce88aec1c}{nn\+\_\+chunkref\+\_\+data} (struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$self)
+\item 
+size\+\_\+t \hyperlink{chunkref_8c_a3f108f69b928bd9c01a126f26771fbd0}{nn\+\_\+chunkref\+\_\+size} (struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$self)
+\item 
+void \hyperlink{chunkref_8c_a214d731ecd98f7e92efb56301243acf7}{nn\+\_\+chunkref\+\_\+trim} (struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$self, size\+\_\+t n)
+\item 
+void \hyperlink{chunkref_8c_af58f4cf2e89095078fecb9cd2bf1ca27}{nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+start} (struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$self, uint32\+\_\+t copies)
+\item 
+void \hyperlink{chunkref_8c_a22cac419a4ccdb73f5b415173e301415}{nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+cp} (struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$dst, struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} $\ast$src)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{chunkref.\+c@{chunkref.\+c}!C\+T\+\_\+\+A\+S\+S\+E\+RT@{C\+T\+\_\+\+A\+S\+S\+E\+RT}}
+\index{C\+T\+\_\+\+A\+S\+S\+E\+RT@{C\+T\+\_\+\+A\+S\+S\+E\+RT}!chunkref.\+c@{chunkref.\+c}}
+\subsubsection[{C\+T\+\_\+\+A\+S\+S\+E\+R\+T(\+N\+N\+\_\+\+C\+H\+U\+N\+K\+R\+E\+F\+\_\+\+M\+A\+X$<$ 255)}]{\setlength{\rightskip}{0pt plus 5cm}C\+T\+\_\+\+A\+S\+S\+E\+RT (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{chunkref_8c_aa4e0dd81165412077daa7ab96e8e0440}{}\label{chunkref_8c_aa4e0dd81165412077daa7ab96e8e0440}
+\index{chunkref.\+c@{chunkref.\+c}!C\+T\+\_\+\+A\+S\+S\+E\+RT@{C\+T\+\_\+\+A\+S\+S\+E\+RT}}
+\index{C\+T\+\_\+\+A\+S\+S\+E\+RT@{C\+T\+\_\+\+A\+S\+S\+E\+RT}!chunkref.\+c@{chunkref.\+c}}
+\subsubsection[{C\+T\+\_\+\+A\+S\+S\+E\+R\+T(sizeof(struct nn\+\_\+chunkref) $>$=sizeof(struct nn\+\_\+chunkref\+\_\+chunk))}]{\setlength{\rightskip}{0pt plus 5cm}C\+T\+\_\+\+A\+S\+S\+E\+RT (
+\begin{DoxyParamCaption}
+\item[{sizeof(struct {\bf nn\+\_\+chunkref}) $>$=sizeof(struct {\bf nn\+\_\+chunkref\+\_\+chunk})}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{chunkref_8c_a4c9b3a9c95ddc061cd58867a45e88479}{}\label{chunkref_8c_a4c9b3a9c95ddc061cd58867a45e88479}
+\index{chunkref.\+c@{chunkref.\+c}!nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+cp@{nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+cp}}
+\index{nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+cp@{nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+cp}!chunkref.\+c@{chunkref.\+c}}
+\subsubsection[{nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+cp(struct nn\+\_\+chunkref $\ast$dst, struct nn\+\_\+chunkref $\ast$src)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+cp (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{dst, }
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\hypertarget{chunkref_8c_a22cac419a4ccdb73f5b415173e301415}{}\label{chunkref_8c_a22cac419a4ccdb73f5b415173e301415}
+\index{chunkref.\+c@{chunkref.\+c}!nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+start@{nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+start}}
+\index{nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+start@{nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+start}!chunkref.\+c@{chunkref.\+c}}
+\subsubsection[{nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+start(struct nn\+\_\+chunkref $\ast$self, uint32\+\_\+t copies)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+chunkref\+\_\+bulkcopy\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{self, }
+\item[{uint32\+\_\+t}]{copies}
+\end{DoxyParamCaption}
+)}\hypertarget{chunkref_8c_af58f4cf2e89095078fecb9cd2bf1ca27}{}\label{chunkref_8c_af58f4cf2e89095078fecb9cd2bf1ca27}
+\index{chunkref.\+c@{chunkref.\+c}!nn\+\_\+chunkref\+\_\+cp@{nn\+\_\+chunkref\+\_\+cp}}
+\index{nn\+\_\+chunkref\+\_\+cp@{nn\+\_\+chunkref\+\_\+cp}!chunkref.\+c@{chunkref.\+c}}
+\subsubsection[{nn\+\_\+chunkref\+\_\+cp(struct nn\+\_\+chunkref $\ast$dst, struct nn\+\_\+chunkref $\ast$src)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+chunkref\+\_\+cp (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{dst, }
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\hypertarget{chunkref_8c_aed858aa72b2e12518a1221e7c5fce467}{}\label{chunkref_8c_aed858aa72b2e12518a1221e7c5fce467}
+\index{chunkref.\+c@{chunkref.\+c}!nn\+\_\+chunkref\+\_\+data@{nn\+\_\+chunkref\+\_\+data}}
+\index{nn\+\_\+chunkref\+\_\+data@{nn\+\_\+chunkref\+\_\+data}!chunkref.\+c@{chunkref.\+c}}
+\subsubsection[{nn\+\_\+chunkref\+\_\+data(struct nn\+\_\+chunkref $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ nn\+\_\+chunkref\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{chunkref_8c_acd3348f91de9012b9d3c990ce88aec1c}{}\label{chunkref_8c_acd3348f91de9012b9d3c990ce88aec1c}
+\index{chunkref.\+c@{chunkref.\+c}!nn\+\_\+chunkref\+\_\+getchunk@{nn\+\_\+chunkref\+\_\+getchunk}}
+\index{nn\+\_\+chunkref\+\_\+getchunk@{nn\+\_\+chunkref\+\_\+getchunk}!chunkref.\+c@{chunkref.\+c}}
+\subsubsection[{nn\+\_\+chunkref\+\_\+getchunk(struct nn\+\_\+chunkref $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ nn\+\_\+chunkref\+\_\+getchunk (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{chunkref_8c_aaa68bd459c424eff79f348b5aaef0214}{}\label{chunkref_8c_aaa68bd459c424eff79f348b5aaef0214}
+\index{chunkref.\+c@{chunkref.\+c}!nn\+\_\+chunkref\+\_\+init@{nn\+\_\+chunkref\+\_\+init}}
+\index{nn\+\_\+chunkref\+\_\+init@{nn\+\_\+chunkref\+\_\+init}!chunkref.\+c@{chunkref.\+c}}
+\subsubsection[{nn\+\_\+chunkref\+\_\+init(struct nn\+\_\+chunkref $\ast$self, size\+\_\+t size)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+chunkref\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{self, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{chunkref_8c_a09a81aca82fb7c2e6317cd41e3e4f1cc}{}\label{chunkref_8c_a09a81aca82fb7c2e6317cd41e3e4f1cc}
+\index{chunkref.\+c@{chunkref.\+c}!nn\+\_\+chunkref\+\_\+init\+\_\+chunk@{nn\+\_\+chunkref\+\_\+init\+\_\+chunk}}
+\index{nn\+\_\+chunkref\+\_\+init\+\_\+chunk@{nn\+\_\+chunkref\+\_\+init\+\_\+chunk}!chunkref.\+c@{chunkref.\+c}}
+\subsubsection[{nn\+\_\+chunkref\+\_\+init\+\_\+chunk(struct nn\+\_\+chunkref $\ast$self, void $\ast$chunk)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+chunkref\+\_\+init\+\_\+chunk (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{self, }
+\item[{void $\ast$}]{chunk}
+\end{DoxyParamCaption}
+)}\hypertarget{chunkref_8c_a5aa87ce1e29546349b8a84f4565fc26e}{}\label{chunkref_8c_a5aa87ce1e29546349b8a84f4565fc26e}
+\index{chunkref.\+c@{chunkref.\+c}!nn\+\_\+chunkref\+\_\+mv@{nn\+\_\+chunkref\+\_\+mv}}
+\index{nn\+\_\+chunkref\+\_\+mv@{nn\+\_\+chunkref\+\_\+mv}!chunkref.\+c@{chunkref.\+c}}
+\subsubsection[{nn\+\_\+chunkref\+\_\+mv(struct nn\+\_\+chunkref $\ast$dst, struct nn\+\_\+chunkref $\ast$src)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+chunkref\+\_\+mv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{dst, }
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\hypertarget{chunkref_8c_a2635c382641b6bc7aa577d5891d68476}{}\label{chunkref_8c_a2635c382641b6bc7aa577d5891d68476}
+\index{chunkref.\+c@{chunkref.\+c}!nn\+\_\+chunkref\+\_\+size@{nn\+\_\+chunkref\+\_\+size}}
+\index{nn\+\_\+chunkref\+\_\+size@{nn\+\_\+chunkref\+\_\+size}!chunkref.\+c@{chunkref.\+c}}
+\subsubsection[{nn\+\_\+chunkref\+\_\+size(struct nn\+\_\+chunkref $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+chunkref\+\_\+size (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{chunkref_8c_a3f108f69b928bd9c01a126f26771fbd0}{}\label{chunkref_8c_a3f108f69b928bd9c01a126f26771fbd0}
+\index{chunkref.\+c@{chunkref.\+c}!nn\+\_\+chunkref\+\_\+term@{nn\+\_\+chunkref\+\_\+term}}
+\index{nn\+\_\+chunkref\+\_\+term@{nn\+\_\+chunkref\+\_\+term}!chunkref.\+c@{chunkref.\+c}}
+\subsubsection[{nn\+\_\+chunkref\+\_\+term(struct nn\+\_\+chunkref $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+chunkref\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{chunkref_8c_a6c0ad086980727cc94ef390d35b15994}{}\label{chunkref_8c_a6c0ad086980727cc94ef390d35b15994}
+\index{chunkref.\+c@{chunkref.\+c}!nn\+\_\+chunkref\+\_\+trim@{nn\+\_\+chunkref\+\_\+trim}}
+\index{nn\+\_\+chunkref\+\_\+trim@{nn\+\_\+chunkref\+\_\+trim}!chunkref.\+c@{chunkref.\+c}}
+\subsubsection[{nn\+\_\+chunkref\+\_\+trim(struct nn\+\_\+chunkref $\ast$self, size\+\_\+t n)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+chunkref\+\_\+trim (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+chunkref} $\ast$}]{self, }
+\item[{size\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{chunkref_8c_a214d731ecd98f7e92efb56301243acf7}{}\label{chunkref_8c_a214d731ecd98f7e92efb56301243acf7}

@@ -1,0 +1,121 @@
+\hypertarget{queue_8h}{}\section{src/utils/queue.h File Reference}
+\label{queue_8h}\index{src/utils/queue.\+h@{src/utils/queue.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{queue_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__queue__item}{nn\+\_\+queue\+\_\+item}
+\item 
+struct \hyperlink{structnn__queue}{nn\+\_\+queue}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{queue_8h_aee58a79fdd68e44727016a945308e2ce}{N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+N\+O\+T\+I\+N\+Q\+U\+E\+UE}~((struct \hyperlink{structnn__queue__item}{nn\+\_\+queue\+\_\+item}$\ast$) -\/1)
+\item 
+\#define \hyperlink{queue_8h_ab7d5c85c10b1a025704117d6fabf7d0d}{N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}~\{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+I\+N\+Q\+U\+E\+UE\}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{queue_8h_a4ec8eed5e029fae59a34d4d3ae651e50}{nn\+\_\+queue\+\_\+init} (struct \hyperlink{structnn__queue}{nn\+\_\+queue} $\ast$self)
+\item 
+void \hyperlink{queue_8h_a26e6647fa6aba566100cbae5be3e1bc3}{nn\+\_\+queue\+\_\+term} (struct \hyperlink{structnn__queue}{nn\+\_\+queue} $\ast$self)
+\item 
+int \hyperlink{queue_8h_a1b32d3d8b6406a62359139091222e96e}{nn\+\_\+queue\+\_\+empty} (struct \hyperlink{structnn__queue}{nn\+\_\+queue} $\ast$self)
+\item 
+void \hyperlink{queue_8h_aa775f11b4129851c851a1c6589a394d4}{nn\+\_\+queue\+\_\+push} (struct \hyperlink{structnn__queue}{nn\+\_\+queue} $\ast$self, struct \hyperlink{structnn__queue__item}{nn\+\_\+queue\+\_\+item} $\ast$\hyperlink{structitem}{item})
+\item 
+void \hyperlink{queue_8h_a613de839bf4201f3fd2327a854c063a0}{nn\+\_\+queue\+\_\+remove} (struct \hyperlink{structnn__queue}{nn\+\_\+queue} $\ast$self, struct \hyperlink{structnn__queue__item}{nn\+\_\+queue\+\_\+item} $\ast$\hyperlink{structitem}{item})
+\item 
+struct \hyperlink{structnn__queue__item}{nn\+\_\+queue\+\_\+item} $\ast$ \hyperlink{queue_8h_af980441207f3229a1b4d50edc1623c75}{nn\+\_\+queue\+\_\+pop} (struct \hyperlink{structnn__queue}{nn\+\_\+queue} $\ast$self)
+\item 
+void \hyperlink{queue_8h_ad129a01268553d105784e392a0ed4425}{nn\+\_\+queue\+\_\+item\+\_\+init} (struct \hyperlink{structnn__queue__item}{nn\+\_\+queue\+\_\+item} $\ast$self)
+\item 
+void \hyperlink{queue_8h_ac48429602bdc4cec3c5eaa6c14425dee}{nn\+\_\+queue\+\_\+item\+\_\+term} (struct \hyperlink{structnn__queue__item}{nn\+\_\+queue\+\_\+item} $\ast$self)
+\item 
+int \hyperlink{queue_8h_a9b4645427b609122a0cce5affc4f17ce}{nn\+\_\+queue\+\_\+item\+\_\+isinqueue} (struct \hyperlink{structnn__queue__item}{nn\+\_\+queue\+\_\+item} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{queue.\+h@{queue.\+h}!N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER@{N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}}
+\index{N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER@{N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}!queue.\+h@{queue.\+h}}
+\subsubsection[{N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER~\{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+I\+N\+Q\+U\+E\+UE\}}\hypertarget{queue_8h_ab7d5c85c10b1a025704117d6fabf7d0d}{}\label{queue_8h_ab7d5c85c10b1a025704117d6fabf7d0d}
+\index{queue.\+h@{queue.\+h}!N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+N\+O\+T\+I\+N\+Q\+U\+E\+UE@{N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+N\+O\+T\+I\+N\+Q\+U\+E\+UE}}
+\index{N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+N\+O\+T\+I\+N\+Q\+U\+E\+UE@{N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+N\+O\+T\+I\+N\+Q\+U\+E\+UE}!queue.\+h@{queue.\+h}}
+\subsubsection[{N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+N\+O\+T\+I\+N\+Q\+U\+E\+UE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+N\+O\+T\+I\+N\+Q\+U\+E\+UE~((struct {\bf nn\+\_\+queue\+\_\+item}$\ast$) -\/1)}\hypertarget{queue_8h_aee58a79fdd68e44727016a945308e2ce}{}\label{queue_8h_aee58a79fdd68e44727016a945308e2ce}
+
+
+\subsection{Function Documentation}
+\index{queue.\+h@{queue.\+h}!nn\+\_\+queue\+\_\+empty@{nn\+\_\+queue\+\_\+empty}}
+\index{nn\+\_\+queue\+\_\+empty@{nn\+\_\+queue\+\_\+empty}!queue.\+h@{queue.\+h}}
+\subsubsection[{nn\+\_\+queue\+\_\+empty(struct nn\+\_\+queue $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+queue\+\_\+empty (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+queue} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{queue_8h_a1b32d3d8b6406a62359139091222e96e}{}\label{queue_8h_a1b32d3d8b6406a62359139091222e96e}
+\index{queue.\+h@{queue.\+h}!nn\+\_\+queue\+\_\+init@{nn\+\_\+queue\+\_\+init}}
+\index{nn\+\_\+queue\+\_\+init@{nn\+\_\+queue\+\_\+init}!queue.\+h@{queue.\+h}}
+\subsubsection[{nn\+\_\+queue\+\_\+init(struct nn\+\_\+queue $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+queue\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+queue} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{queue_8h_a4ec8eed5e029fae59a34d4d3ae651e50}{}\label{queue_8h_a4ec8eed5e029fae59a34d4d3ae651e50}
+\index{queue.\+h@{queue.\+h}!nn\+\_\+queue\+\_\+item\+\_\+init@{nn\+\_\+queue\+\_\+item\+\_\+init}}
+\index{nn\+\_\+queue\+\_\+item\+\_\+init@{nn\+\_\+queue\+\_\+item\+\_\+init}!queue.\+h@{queue.\+h}}
+\subsubsection[{nn\+\_\+queue\+\_\+item\+\_\+init(struct nn\+\_\+queue\+\_\+item $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+queue\+\_\+item\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+queue\+\_\+item} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{queue_8h_ad129a01268553d105784e392a0ed4425}{}\label{queue_8h_ad129a01268553d105784e392a0ed4425}
+\index{queue.\+h@{queue.\+h}!nn\+\_\+queue\+\_\+item\+\_\+isinqueue@{nn\+\_\+queue\+\_\+item\+\_\+isinqueue}}
+\index{nn\+\_\+queue\+\_\+item\+\_\+isinqueue@{nn\+\_\+queue\+\_\+item\+\_\+isinqueue}!queue.\+h@{queue.\+h}}
+\subsubsection[{nn\+\_\+queue\+\_\+item\+\_\+isinqueue(struct nn\+\_\+queue\+\_\+item $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+queue\+\_\+item\+\_\+isinqueue (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+queue\+\_\+item} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{queue_8h_a9b4645427b609122a0cce5affc4f17ce}{}\label{queue_8h_a9b4645427b609122a0cce5affc4f17ce}
+\index{queue.\+h@{queue.\+h}!nn\+\_\+queue\+\_\+item\+\_\+term@{nn\+\_\+queue\+\_\+item\+\_\+term}}
+\index{nn\+\_\+queue\+\_\+item\+\_\+term@{nn\+\_\+queue\+\_\+item\+\_\+term}!queue.\+h@{queue.\+h}}
+\subsubsection[{nn\+\_\+queue\+\_\+item\+\_\+term(struct nn\+\_\+queue\+\_\+item $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+queue\+\_\+item\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+queue\+\_\+item} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{queue_8h_ac48429602bdc4cec3c5eaa6c14425dee}{}\label{queue_8h_ac48429602bdc4cec3c5eaa6c14425dee}
+\index{queue.\+h@{queue.\+h}!nn\+\_\+queue\+\_\+pop@{nn\+\_\+queue\+\_\+pop}}
+\index{nn\+\_\+queue\+\_\+pop@{nn\+\_\+queue\+\_\+pop}!queue.\+h@{queue.\+h}}
+\subsubsection[{nn\+\_\+queue\+\_\+pop(struct nn\+\_\+queue $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+queue\+\_\+item}$\ast$ nn\+\_\+queue\+\_\+pop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+queue} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{queue_8h_af980441207f3229a1b4d50edc1623c75}{}\label{queue_8h_af980441207f3229a1b4d50edc1623c75}
+\index{queue.\+h@{queue.\+h}!nn\+\_\+queue\+\_\+push@{nn\+\_\+queue\+\_\+push}}
+\index{nn\+\_\+queue\+\_\+push@{nn\+\_\+queue\+\_\+push}!queue.\+h@{queue.\+h}}
+\subsubsection[{nn\+\_\+queue\+\_\+push(struct nn\+\_\+queue $\ast$self, struct nn\+\_\+queue\+\_\+item $\ast$item)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+queue\+\_\+push (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+queue} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+queue\+\_\+item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\hypertarget{queue_8h_aa775f11b4129851c851a1c6589a394d4}{}\label{queue_8h_aa775f11b4129851c851a1c6589a394d4}
+\index{queue.\+h@{queue.\+h}!nn\+\_\+queue\+\_\+remove@{nn\+\_\+queue\+\_\+remove}}
+\index{nn\+\_\+queue\+\_\+remove@{nn\+\_\+queue\+\_\+remove}!queue.\+h@{queue.\+h}}
+\subsubsection[{nn\+\_\+queue\+\_\+remove(struct nn\+\_\+queue $\ast$self, struct nn\+\_\+queue\+\_\+item $\ast$item)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+queue\+\_\+remove (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+queue} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+queue\+\_\+item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\hypertarget{queue_8h_a613de839bf4201f3fd2327a854c063a0}{}\label{queue_8h_a613de839bf4201f3fd2327a854c063a0}
+\index{queue.\+h@{queue.\+h}!nn\+\_\+queue\+\_\+term@{nn\+\_\+queue\+\_\+term}}
+\index{nn\+\_\+queue\+\_\+term@{nn\+\_\+queue\+\_\+term}!queue.\+h@{queue.\+h}}
+\subsubsection[{nn\+\_\+queue\+\_\+term(struct nn\+\_\+queue $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+queue\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+queue} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{queue_8h_a26e6647fa6aba566100cbae5be3e1bc3}{}\label{queue_8h_a26e6647fa6aba566100cbae5be3e1bc3}

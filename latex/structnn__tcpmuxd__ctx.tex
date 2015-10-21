@@ -1,0 +1,57 @@
+\hypertarget{structnn__tcpmuxd__ctx}{}\section{nn\+\_\+tcpmuxd\+\_\+ctx Struct Reference}
+\label{structnn__tcpmuxd__ctx}\index{nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}}
+
+
+Collaboration diagram for nn\+\_\+tcpmuxd\+\_\+ctx\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{structnn__tcpmuxd__ctx__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structnn__tcpmuxd__ctx_a9a748562695c46e091f4179545f49a0c}{tcp\+\_\+listener}
+\item 
+int \hyperlink{structnn__tcpmuxd__ctx_a2215431c53f0d16c394112898f08c68c}{ipc\+\_\+listener}
+\item 
+struct \hyperlink{structnn__list}{nn\+\_\+list} \hyperlink{structnn__tcpmuxd__ctx_a59e9fb3663462acff2e91ff659656f1d}{conns}
+\item 
+struct pollfd $\ast$ \hyperlink{structnn__tcpmuxd__ctx_ae561c5e942bb5d994f932164a001cac0}{pfd}
+\item 
+size\+\_\+t \hyperlink{structnn__tcpmuxd__ctx_a030af965b1ecc68131d5b23df5ccd705}{pfd\+\_\+size}
+\item 
+size\+\_\+t \hyperlink{structnn__tcpmuxd__ctx_a5a5fb79c99e503b6b8acf8cff8ece82b}{pfd\+\_\+capacity}
+\item 
+struct \hyperlink{structnn__thread}{nn\+\_\+thread} \hyperlink{structnn__tcpmuxd__ctx_a0f353434edac1a6057af1b50905447be}{thread}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}!conns@{conns}}
+\index{conns@{conns}!nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}}
+\subsubsection[{conns}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+list} nn\+\_\+tcpmuxd\+\_\+ctx\+::conns}\hypertarget{structnn__tcpmuxd__ctx_a59e9fb3663462acff2e91ff659656f1d}{}\label{structnn__tcpmuxd__ctx_a59e9fb3663462acff2e91ff659656f1d}
+\index{nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}!ipc\+\_\+listener@{ipc\+\_\+listener}}
+\index{ipc\+\_\+listener@{ipc\+\_\+listener}!nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}}
+\subsubsection[{ipc\+\_\+listener}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+tcpmuxd\+\_\+ctx\+::ipc\+\_\+listener}\hypertarget{structnn__tcpmuxd__ctx_a2215431c53f0d16c394112898f08c68c}{}\label{structnn__tcpmuxd__ctx_a2215431c53f0d16c394112898f08c68c}
+\index{nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}!pfd@{pfd}}
+\index{pfd@{pfd}!nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}}
+\subsubsection[{pfd}]{\setlength{\rightskip}{0pt plus 5cm}struct pollfd$\ast$ nn\+\_\+tcpmuxd\+\_\+ctx\+::pfd}\hypertarget{structnn__tcpmuxd__ctx_ae561c5e942bb5d994f932164a001cac0}{}\label{structnn__tcpmuxd__ctx_ae561c5e942bb5d994f932164a001cac0}
+\index{nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}!pfd\+\_\+capacity@{pfd\+\_\+capacity}}
+\index{pfd\+\_\+capacity@{pfd\+\_\+capacity}!nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}}
+\subsubsection[{pfd\+\_\+capacity}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+tcpmuxd\+\_\+ctx\+::pfd\+\_\+capacity}\hypertarget{structnn__tcpmuxd__ctx_a5a5fb79c99e503b6b8acf8cff8ece82b}{}\label{structnn__tcpmuxd__ctx_a5a5fb79c99e503b6b8acf8cff8ece82b}
+\index{nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}!pfd\+\_\+size@{pfd\+\_\+size}}
+\index{pfd\+\_\+size@{pfd\+\_\+size}!nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}}
+\subsubsection[{pfd\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+tcpmuxd\+\_\+ctx\+::pfd\+\_\+size}\hypertarget{structnn__tcpmuxd__ctx_a030af965b1ecc68131d5b23df5ccd705}{}\label{structnn__tcpmuxd__ctx_a030af965b1ecc68131d5b23df5ccd705}
+\index{nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}!tcp\+\_\+listener@{tcp\+\_\+listener}}
+\index{tcp\+\_\+listener@{tcp\+\_\+listener}!nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}}
+\subsubsection[{tcp\+\_\+listener}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+tcpmuxd\+\_\+ctx\+::tcp\+\_\+listener}\hypertarget{structnn__tcpmuxd__ctx_a9a748562695c46e091f4179545f49a0c}{}\label{structnn__tcpmuxd__ctx_a9a748562695c46e091f4179545f49a0c}
+\index{nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}!thread@{thread}}
+\index{thread@{thread}!nn\+\_\+tcpmuxd\+\_\+ctx@{nn\+\_\+tcpmuxd\+\_\+ctx}}
+\subsubsection[{thread}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+thread} nn\+\_\+tcpmuxd\+\_\+ctx\+::thread}\hypertarget{structnn__tcpmuxd__ctx_a0f353434edac1a6057af1b50905447be}{}\label{structnn__tcpmuxd__ctx_a0f353434edac1a6057af1b50905447be}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/devices/\hyperlink{tcpmuxd_8c}{tcpmuxd.\+c}\end{DoxyCompactItemize}

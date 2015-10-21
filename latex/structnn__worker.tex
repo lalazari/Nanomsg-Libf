@@ -1,0 +1,72 @@
+\hypertarget{structnn__worker}{}\section{nn\+\_\+worker Struct Reference}
+\label{structnn__worker}\index{nn\+\_\+worker@{nn\+\_\+worker}}
+
+
+{\ttfamily \#include $<$worker\+\_\+posix.\+h$>$}
+
+
+
+Collaboration diagram for nn\+\_\+worker\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structnn__worker__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__mutex}{nn\+\_\+mutex} \hyperlink{structnn__worker_a3ba45d381df6a5c98db85c69d1387673}{sync}
+\item 
+struct \hyperlink{structnn__queue}{nn\+\_\+queue} \hyperlink{structnn__worker_af14d85b3fd5398186d17b61e4afcc9c3}{tasks}
+\item 
+struct \hyperlink{structnn__queue__item}{nn\+\_\+queue\+\_\+item} \hyperlink{structnn__worker_acecc291f2b728c891694c701eb3081f1}{stop}
+\item 
+struct \hyperlink{structnn__efd}{nn\+\_\+efd} \hyperlink{structnn__worker_a45741cf3ce9c128308d7c5cf63aa78bb}{efd}
+\item 
+struct \hyperlink{structnn__poller}{nn\+\_\+poller} \hyperlink{structnn__worker_abb9794063c6c291431f5c851a6d88fae}{poller}
+\item 
+struct \hyperlink{structnn__poller__hndl}{nn\+\_\+poller\+\_\+hndl} \hyperlink{structnn__worker_a8898fc782028ff218b06374d8852327f}{efd\+\_\+hndl}
+\item 
+struct \hyperlink{structnn__timerset}{nn\+\_\+timerset} \hyperlink{structnn__worker_ad1a767bfefc0f42c2e3344d0e7b4dcf2}{timerset}
+\item 
+struct \hyperlink{structnn__thread}{nn\+\_\+thread} \hyperlink{structnn__worker_a3c0975d10f04acfecca6058b515be8bd}{thread}
+\item 
+H\+A\+N\+D\+LE \hyperlink{structnn__worker_a41ee78181275f5bddce3dfb754937c0c}{cp}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+worker@{nn\+\_\+worker}!cp@{cp}}
+\index{cp@{cp}!nn\+\_\+worker@{nn\+\_\+worker}}
+\subsubsection[{cp}]{\setlength{\rightskip}{0pt plus 5cm}H\+A\+N\+D\+LE nn\+\_\+worker\+::cp}\hypertarget{structnn__worker_a41ee78181275f5bddce3dfb754937c0c}{}\label{structnn__worker_a41ee78181275f5bddce3dfb754937c0c}
+\index{nn\+\_\+worker@{nn\+\_\+worker}!efd@{efd}}
+\index{efd@{efd}!nn\+\_\+worker@{nn\+\_\+worker}}
+\subsubsection[{efd}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+efd} nn\+\_\+worker\+::efd}\hypertarget{structnn__worker_a45741cf3ce9c128308d7c5cf63aa78bb}{}\label{structnn__worker_a45741cf3ce9c128308d7c5cf63aa78bb}
+\index{nn\+\_\+worker@{nn\+\_\+worker}!efd\+\_\+hndl@{efd\+\_\+hndl}}
+\index{efd\+\_\+hndl@{efd\+\_\+hndl}!nn\+\_\+worker@{nn\+\_\+worker}}
+\subsubsection[{efd\+\_\+hndl}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+poller\+\_\+hndl} nn\+\_\+worker\+::efd\+\_\+hndl}\hypertarget{structnn__worker_a8898fc782028ff218b06374d8852327f}{}\label{structnn__worker_a8898fc782028ff218b06374d8852327f}
+\index{nn\+\_\+worker@{nn\+\_\+worker}!poller@{poller}}
+\index{poller@{poller}!nn\+\_\+worker@{nn\+\_\+worker}}
+\subsubsection[{poller}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+poller} nn\+\_\+worker\+::poller}\hypertarget{structnn__worker_abb9794063c6c291431f5c851a6d88fae}{}\label{structnn__worker_abb9794063c6c291431f5c851a6d88fae}
+\index{nn\+\_\+worker@{nn\+\_\+worker}!stop@{stop}}
+\index{stop@{stop}!nn\+\_\+worker@{nn\+\_\+worker}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+queue\+\_\+item} nn\+\_\+worker\+::stop}\hypertarget{structnn__worker_acecc291f2b728c891694c701eb3081f1}{}\label{structnn__worker_acecc291f2b728c891694c701eb3081f1}
+\index{nn\+\_\+worker@{nn\+\_\+worker}!sync@{sync}}
+\index{sync@{sync}!nn\+\_\+worker@{nn\+\_\+worker}}
+\subsubsection[{sync}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+mutex} nn\+\_\+worker\+::sync}\hypertarget{structnn__worker_a3ba45d381df6a5c98db85c69d1387673}{}\label{structnn__worker_a3ba45d381df6a5c98db85c69d1387673}
+\index{nn\+\_\+worker@{nn\+\_\+worker}!tasks@{tasks}}
+\index{tasks@{tasks}!nn\+\_\+worker@{nn\+\_\+worker}}
+\subsubsection[{tasks}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+queue} nn\+\_\+worker\+::tasks}\hypertarget{structnn__worker_af14d85b3fd5398186d17b61e4afcc9c3}{}\label{structnn__worker_af14d85b3fd5398186d17b61e4afcc9c3}
+\index{nn\+\_\+worker@{nn\+\_\+worker}!thread@{thread}}
+\index{thread@{thread}!nn\+\_\+worker@{nn\+\_\+worker}}
+\subsubsection[{thread}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+thread} nn\+\_\+worker\+::thread}\hypertarget{structnn__worker_a3c0975d10f04acfecca6058b515be8bd}{}\label{structnn__worker_a3c0975d10f04acfecca6058b515be8bd}
+\index{nn\+\_\+worker@{nn\+\_\+worker}!timerset@{timerset}}
+\index{timerset@{timerset}!nn\+\_\+worker@{nn\+\_\+worker}}
+\subsubsection[{timerset}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+timerset} nn\+\_\+worker\+::timerset}\hypertarget{structnn__worker_ad1a767bfefc0f42c2e3344d0e7b4dcf2}{}\label{structnn__worker_ad1a767bfefc0f42c2e3344d0e7b4dcf2}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/aio/\hyperlink{worker__posix_8h}{worker\+\_\+posix.\+h}\item 
+src/aio/\hyperlink{worker__win_8h}{worker\+\_\+win.\+h}\end{DoxyCompactItemize}

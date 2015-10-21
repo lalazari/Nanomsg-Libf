@@ -1,0 +1,84 @@
+\hypertarget{chunk_8h}{}\section{src/utils/chunk.h File Reference}
+\label{chunk_8h}\index{src/utils/chunk.\+h@{src/utils/chunk.\+h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}int.\+h\char`\"{}}\\*
+Include dependency graph for chunk.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{chunk_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{chunk_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{chunk_8h_a5880eec9e3ff367b028ddbf6bc9c489b}{nn\+\_\+chunk\+\_\+alloc} (size\+\_\+t size, int type, void $\ast$$\ast$result)
+\item 
+int \hyperlink{chunk_8h_ad08bb84f9736073d6b07aa965119fb80}{nn\+\_\+chunk\+\_\+realloc} (size\+\_\+t size, void $\ast$$\ast$chunk)
+\item 
+void \hyperlink{chunk_8h_a56c9113d6f6f59fdc7b401500428ef8c}{nn\+\_\+chunk\+\_\+free} (void $\ast$\hyperlink{jquery_8js_a2335e57f79b6acfb6de59c235dc8a83e}{p})
+\item 
+void \hyperlink{chunk_8h_a2d4f65ea6ec606640b2180c9c3395f86}{nn\+\_\+chunk\+\_\+addref} (void $\ast$\hyperlink{jquery_8js_a2335e57f79b6acfb6de59c235dc8a83e}{p}, uint32\+\_\+t n)
+\item 
+size\+\_\+t \hyperlink{chunk_8h_adc70f5d49891f6106301d697e41958c7}{nn\+\_\+chunk\+\_\+size} (void $\ast$\hyperlink{jquery_8js_a2335e57f79b6acfb6de59c235dc8a83e}{p})
+\item 
+void $\ast$ \hyperlink{chunk_8h_a350644fc39959f8da85676bfc1a2bda4}{nn\+\_\+chunk\+\_\+trim} (void $\ast$\hyperlink{jquery_8js_a2335e57f79b6acfb6de59c235dc8a83e}{p}, size\+\_\+t n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{chunk.\+h@{chunk.\+h}!nn\+\_\+chunk\+\_\+addref@{nn\+\_\+chunk\+\_\+addref}}
+\index{nn\+\_\+chunk\+\_\+addref@{nn\+\_\+chunk\+\_\+addref}!chunk.\+h@{chunk.\+h}}
+\subsubsection[{nn\+\_\+chunk\+\_\+addref(void $\ast$p, uint32\+\_\+t n)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+chunk\+\_\+addref (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{p, }
+\item[{uint32\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{chunk_8h_a2d4f65ea6ec606640b2180c9c3395f86}{}\label{chunk_8h_a2d4f65ea6ec606640b2180c9c3395f86}
+\index{chunk.\+h@{chunk.\+h}!nn\+\_\+chunk\+\_\+alloc@{nn\+\_\+chunk\+\_\+alloc}}
+\index{nn\+\_\+chunk\+\_\+alloc@{nn\+\_\+chunk\+\_\+alloc}!chunk.\+h@{chunk.\+h}}
+\subsubsection[{nn\+\_\+chunk\+\_\+alloc(size\+\_\+t size, int type, void $\ast$$\ast$result)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+chunk\+\_\+alloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size, }
+\item[{int}]{type, }
+\item[{void $\ast$$\ast$}]{result}
+\end{DoxyParamCaption}
+)}\hypertarget{chunk_8h_a5880eec9e3ff367b028ddbf6bc9c489b}{}\label{chunk_8h_a5880eec9e3ff367b028ddbf6bc9c489b}
+\index{chunk.\+h@{chunk.\+h}!nn\+\_\+chunk\+\_\+free@{nn\+\_\+chunk\+\_\+free}}
+\index{nn\+\_\+chunk\+\_\+free@{nn\+\_\+chunk\+\_\+free}!chunk.\+h@{chunk.\+h}}
+\subsubsection[{nn\+\_\+chunk\+\_\+free(void $\ast$p)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+chunk\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{chunk_8h_a56c9113d6f6f59fdc7b401500428ef8c}{}\label{chunk_8h_a56c9113d6f6f59fdc7b401500428ef8c}
+\index{chunk.\+h@{chunk.\+h}!nn\+\_\+chunk\+\_\+realloc@{nn\+\_\+chunk\+\_\+realloc}}
+\index{nn\+\_\+chunk\+\_\+realloc@{nn\+\_\+chunk\+\_\+realloc}!chunk.\+h@{chunk.\+h}}
+\subsubsection[{nn\+\_\+chunk\+\_\+realloc(size\+\_\+t size, void $\ast$$\ast$chunk)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+chunk\+\_\+realloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size, }
+\item[{void $\ast$$\ast$}]{chunk}
+\end{DoxyParamCaption}
+)}\hypertarget{chunk_8h_ad08bb84f9736073d6b07aa965119fb80}{}\label{chunk_8h_ad08bb84f9736073d6b07aa965119fb80}
+\index{chunk.\+h@{chunk.\+h}!nn\+\_\+chunk\+\_\+size@{nn\+\_\+chunk\+\_\+size}}
+\index{nn\+\_\+chunk\+\_\+size@{nn\+\_\+chunk\+\_\+size}!chunk.\+h@{chunk.\+h}}
+\subsubsection[{nn\+\_\+chunk\+\_\+size(void $\ast$p)}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+chunk\+\_\+size (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{chunk_8h_adc70f5d49891f6106301d697e41958c7}{}\label{chunk_8h_adc70f5d49891f6106301d697e41958c7}
+\index{chunk.\+h@{chunk.\+h}!nn\+\_\+chunk\+\_\+trim@{nn\+\_\+chunk\+\_\+trim}}
+\index{nn\+\_\+chunk\+\_\+trim@{nn\+\_\+chunk\+\_\+trim}!chunk.\+h@{chunk.\+h}}
+\subsubsection[{nn\+\_\+chunk\+\_\+trim(void $\ast$p, size\+\_\+t n)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ nn\+\_\+chunk\+\_\+trim (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{p, }
+\item[{size\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{chunk_8h_a350644fc39959f8da85676bfc1a2bda4}{}\label{chunk_8h_a350644fc39959f8da85676bfc1a2bda4}

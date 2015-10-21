@@ -1,0 +1,264 @@
+\hypertarget{sock_8c}{}\section{src/core/sock.c File Reference}
+\label{sock_8c}\index{src/core/sock.\+c@{src/core/sock.\+c}}
+{\ttfamily \#include \char`\"{}../protocol.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../transport.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}global.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ep.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/msg.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$limits.\+h$>$}\\*
+Include dependency graph for sock.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sock_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sock_8c_ac31f658c6059322b9784bdbb1fc11b7b}{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+IN}~1
+\item 
+\#define \hyperlink{sock_8c_a08805dd0bfb4d2653eb35e0a780da66d}{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+O\+UT}~2
+\item 
+\#define \hyperlink{sock_8c_af6221c341816df9a6a51c362312e75d8}{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+N\+IT}~1
+\item 
+\#define \hyperlink{sock_8c_a077c68d161b0a5ef5fc0f43b5d0d42b7}{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}~2
+\item 
+\#define \hyperlink{sock_8c_ae3997f477f65b3681777025dd0260fdb}{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Z\+O\+M\+B\+IE}~3
+\item 
+\#define \hyperlink{sock_8c_affb8a5e25eb6f6e5d7f2f23b7df3b27f}{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+E\+PS}~4
+\item 
+\#define \hyperlink{sock_8c_a8523ce6610a528d00c26b08623ec552b}{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}~5
+\item 
+\#define \hyperlink{sock_8c_a07164c021638b6cb2ee1f1bdad9bd1b5}{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+Z\+O\+M\+B\+I\+FY}~1
+\item 
+\#define \hyperlink{sock_8c_af72c9e0db844543bacc04dd06bc4b774}{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+S\+T\+O\+P\+P\+ED}~2
+\item 
+\#define \hyperlink{sock_8c_ad242ff2c4bfcb7c26444ba673cdc7c4a}{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+R\+C\+\_\+\+EP}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{sock_8c_a56ee9beb70921ef0ea3ace7c44cf0667}{nn\+\_\+sock\+\_\+init} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self, struct \hyperlink{structnn__socktype}{nn\+\_\+socktype} $\ast$socktype, int fd)
+\item 
+void \hyperlink{sock_8c_a639fd1e4bebd16a82d36ff2d28e2c8ee}{nn\+\_\+sock\+\_\+stopped} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self)
+\item 
+void \hyperlink{sock_8c_a2600bdcf784c6b4b126afaeb99b6d52e}{nn\+\_\+sock\+\_\+zombify} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self)
+\item 
+int \hyperlink{sock_8c_a1b485b27cb6ed09e5e28c281f6f6a9bb}{nn\+\_\+sock\+\_\+term} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self)
+\item 
+struct \hyperlink{structnn__ctx}{nn\+\_\+ctx} $\ast$ \hyperlink{sock_8c_aaaf0c2461ba892d79f5368dca13b05b5}{nn\+\_\+sock\+\_\+getctx} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self)
+\item 
+int \hyperlink{sock_8c_ad89cf5ab93a2a6831f22364fbc07e1fd}{nn\+\_\+sock\+\_\+ispeer} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self, int socktype)
+\item 
+int \hyperlink{sock_8c_acbc6b6183fc914e69a9a01a322db893e}{nn\+\_\+sock\+\_\+setopt} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self, int level, int option, const void $\ast$optval, size\+\_\+t optvallen)
+\item 
+int \hyperlink{sock_8c_a697803b32e5e67731a303b6cd723f5c3}{nn\+\_\+sock\+\_\+getopt} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self, int level, int option, void $\ast$optval, size\+\_\+t $\ast$optvallen)
+\item 
+int \hyperlink{sock_8c_aa924dd7886651dac8127f026354f6fad}{nn\+\_\+sock\+\_\+getopt\+\_\+inner} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self, int level, int option, void $\ast$optval, size\+\_\+t $\ast$optvallen)
+\item 
+int \hyperlink{sock_8c_a1881522010165f192cdaaba14f93902e}{nn\+\_\+sock\+\_\+add\+\_\+ep} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self, struct \hyperlink{structnn__transport}{nn\+\_\+transport} $\ast$transport, int bind, const char $\ast$addr)
+\item 
+int \hyperlink{sock_8c_af78a0876c45b274665d1bfc0e8e1a865}{nn\+\_\+sock\+\_\+rm\+\_\+ep} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self, int eid)
+\item 
+int \hyperlink{sock_8c_abc1b297a9f7159d8a7b18826b39b77bc}{nn\+\_\+sock\+\_\+send} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg, int flags)
+\item 
+int \hyperlink{sock_8c_a189defc2d937517cda2d582ba9994556}{nn\+\_\+sock\+\_\+recv} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg, int flags)
+\item 
+int \hyperlink{sock_8c_a34e3446ba11a3ff0079b45f8337f51cf}{nn\+\_\+sock\+\_\+add} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{sock_8c_a0dc939d4b59aeb058da33b9092c91e34}{nn\+\_\+sock\+\_\+rm} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{sock_8c_a0512a50c62d781921c7d8929f3a23608}{nn\+\_\+sock\+\_\+report\+\_\+error} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self, struct \hyperlink{structnn__ep}{nn\+\_\+ep} $\ast$ep, int errnum)
+\item 
+void \hyperlink{sock_8c_ac95e74a349c4b48a6163b67583deb664}{nn\+\_\+sock\+\_\+stat\+\_\+increment} (struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$self, int name, int64\+\_\+t increment)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{sock.\+c@{sock.\+c}!N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+S\+T\+O\+P\+P\+ED}!sock.\+c@{sock.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+S\+T\+O\+P\+P\+ED~2}\hypertarget{sock_8c_af72c9e0db844543bacc04dd06bc4b774}{}\label{sock_8c_af72c9e0db844543bacc04dd06bc4b774}
+\index{sock.\+c@{sock.\+c}!N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+Z\+O\+M\+B\+I\+FY@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+Z\+O\+M\+B\+I\+FY}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+Z\+O\+M\+B\+I\+FY@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+Z\+O\+M\+B\+I\+FY}!sock.\+c@{sock.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+Z\+O\+M\+B\+I\+FY}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+Z\+O\+M\+B\+I\+FY~1}\hypertarget{sock_8c_a07164c021638b6cb2ee1f1bdad9bd1b5}{}\label{sock_8c_a07164c021638b6cb2ee1f1bdad9bd1b5}
+\index{sock.\+c@{sock.\+c}!N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+IN@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+IN}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+IN@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+IN}!sock.\+c@{sock.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+IN}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+IN~1}\hypertarget{sock_8c_ac31f658c6059322b9784bdbb1fc11b7b}{}\label{sock_8c_ac31f658c6059322b9784bdbb1fc11b7b}
+\index{sock.\+c@{sock.\+c}!N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+O\+UT@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+O\+UT}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+O\+UT@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+O\+UT}!sock.\+c@{sock.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+O\+UT}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+O\+UT~2}\hypertarget{sock_8c_a08805dd0bfb4d2653eb35e0a780da66d}{}\label{sock_8c_a08805dd0bfb4d2653eb35e0a780da66d}
+\index{sock.\+c@{sock.\+c}!N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+R\+C\+\_\+\+EP@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+R\+C\+\_\+\+EP}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+R\+C\+\_\+\+EP@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+R\+C\+\_\+\+EP}!sock.\+c@{sock.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+R\+C\+\_\+\+EP}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+R\+C\+\_\+\+EP~1}\hypertarget{sock_8c_ad242ff2c4bfcb7c26444ba673cdc7c4a}{}\label{sock_8c_ad242ff2c4bfcb7c26444ba673cdc7c4a}
+\index{sock.\+c@{sock.\+c}!N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}!sock.\+c@{sock.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE~2}\hypertarget{sock_8c_a077c68d161b0a5ef5fc0f43b5d0d42b7}{}\label{sock_8c_a077c68d161b0a5ef5fc0f43b5d0d42b7}
+\index{sock.\+c@{sock.\+c}!N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+N\+IT@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+N\+IT}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+N\+IT@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+N\+IT}!sock.\+c@{sock.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+N\+IT}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+N\+IT~1}\hypertarget{sock_8c_af6221c341816df9a6a51c362312e75d8}{}\label{sock_8c_af6221c341816df9a6a51c362312e75d8}
+\index{sock.\+c@{sock.\+c}!N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}!sock.\+c@{sock.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG~5}\hypertarget{sock_8c_a8523ce6610a528d00c26b08623ec552b}{}\label{sock_8c_a8523ce6610a528d00c26b08623ec552b}
+\index{sock.\+c@{sock.\+c}!N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+E\+PS@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+E\+PS}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+E\+PS@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+E\+PS}!sock.\+c@{sock.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+E\+PS}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+E\+PS~4}\hypertarget{sock_8c_affb8a5e25eb6f6e5d7f2f23b7df3b27f}{}\label{sock_8c_affb8a5e25eb6f6e5d7f2f23b7df3b27f}
+\index{sock.\+c@{sock.\+c}!N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Z\+O\+M\+B\+IE@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Z\+O\+M\+B\+IE}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Z\+O\+M\+B\+IE@{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Z\+O\+M\+B\+IE}!sock.\+c@{sock.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Z\+O\+M\+B\+IE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Z\+O\+M\+B\+IE~3}\hypertarget{sock_8c_ae3997f477f65b3681777025dd0260fdb}{}\label{sock_8c_ae3997f477f65b3681777025dd0260fdb}
+
+
+\subsection{Function Documentation}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+add@{nn\+\_\+sock\+\_\+add}}
+\index{nn\+\_\+sock\+\_\+add@{nn\+\_\+sock\+\_\+add}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+add(struct nn\+\_\+sock $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sock\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_a34e3446ba11a3ff0079b45f8337f51cf}{}\label{sock_8c_a34e3446ba11a3ff0079b45f8337f51cf}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+add\+\_\+ep@{nn\+\_\+sock\+\_\+add\+\_\+ep}}
+\index{nn\+\_\+sock\+\_\+add\+\_\+ep@{nn\+\_\+sock\+\_\+add\+\_\+ep}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+add\+\_\+ep(struct nn\+\_\+sock $\ast$self, struct nn\+\_\+transport $\ast$transport, int bind, const char $\ast$addr)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sock\+\_\+add\+\_\+ep (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+transport} $\ast$}]{transport, }
+\item[{int}]{bind, }
+\item[{const char $\ast$}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_a1881522010165f192cdaaba14f93902e}{}\label{sock_8c_a1881522010165f192cdaaba14f93902e}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+getctx@{nn\+\_\+sock\+\_\+getctx}}
+\index{nn\+\_\+sock\+\_\+getctx@{nn\+\_\+sock\+\_\+getctx}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+getctx(struct nn\+\_\+sock $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+ctx}$\ast$ nn\+\_\+sock\+\_\+getctx (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_aaaf0c2461ba892d79f5368dca13b05b5}{}\label{sock_8c_aaaf0c2461ba892d79f5368dca13b05b5}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+getopt@{nn\+\_\+sock\+\_\+getopt}}
+\index{nn\+\_\+sock\+\_\+getopt@{nn\+\_\+sock\+\_\+getopt}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+getopt(struct nn\+\_\+sock $\ast$self, int level, int option, void $\ast$optval, size\+\_\+t $\ast$optvallen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sock\+\_\+getopt (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self, }
+\item[{int}]{level, }
+\item[{int}]{option, }
+\item[{void $\ast$}]{optval, }
+\item[{size\+\_\+t $\ast$}]{optvallen}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_a697803b32e5e67731a303b6cd723f5c3}{}\label{sock_8c_a697803b32e5e67731a303b6cd723f5c3}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+getopt\+\_\+inner@{nn\+\_\+sock\+\_\+getopt\+\_\+inner}}
+\index{nn\+\_\+sock\+\_\+getopt\+\_\+inner@{nn\+\_\+sock\+\_\+getopt\+\_\+inner}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+getopt\+\_\+inner(struct nn\+\_\+sock $\ast$self, int level, int option, void $\ast$optval, size\+\_\+t $\ast$optvallen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sock\+\_\+getopt\+\_\+inner (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self, }
+\item[{int}]{level, }
+\item[{int}]{option, }
+\item[{void $\ast$}]{optval, }
+\item[{size\+\_\+t $\ast$}]{optvallen}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_aa924dd7886651dac8127f026354f6fad}{}\label{sock_8c_aa924dd7886651dac8127f026354f6fad}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+init@{nn\+\_\+sock\+\_\+init}}
+\index{nn\+\_\+sock\+\_\+init@{nn\+\_\+sock\+\_\+init}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+init(struct nn\+\_\+sock $\ast$self, struct nn\+\_\+socktype $\ast$socktype, int fd)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sock\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+socktype} $\ast$}]{socktype, }
+\item[{int}]{fd}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_a56ee9beb70921ef0ea3ace7c44cf0667}{}\label{sock_8c_a56ee9beb70921ef0ea3ace7c44cf0667}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+ispeer@{nn\+\_\+sock\+\_\+ispeer}}
+\index{nn\+\_\+sock\+\_\+ispeer@{nn\+\_\+sock\+\_\+ispeer}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+ispeer(struct nn\+\_\+sock $\ast$self, int socktype)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sock\+\_\+ispeer (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self, }
+\item[{int}]{socktype}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_ad89cf5ab93a2a6831f22364fbc07e1fd}{}\label{sock_8c_ad89cf5ab93a2a6831f22364fbc07e1fd}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+recv@{nn\+\_\+sock\+\_\+recv}}
+\index{nn\+\_\+sock\+\_\+recv@{nn\+\_\+sock\+\_\+recv}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+recv(struct nn\+\_\+sock $\ast$self, struct nn\+\_\+msg $\ast$msg, int flags)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sock\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_a189defc2d937517cda2d582ba9994556}{}\label{sock_8c_a189defc2d937517cda2d582ba9994556}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+report\+\_\+error@{nn\+\_\+sock\+\_\+report\+\_\+error}}
+\index{nn\+\_\+sock\+\_\+report\+\_\+error@{nn\+\_\+sock\+\_\+report\+\_\+error}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+report\+\_\+error(struct nn\+\_\+sock $\ast$self, struct nn\+\_\+ep $\ast$ep, int errnum)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sock\+\_\+report\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+ep} $\ast$}]{ep, }
+\item[{int}]{errnum}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_a0512a50c62d781921c7d8929f3a23608}{}\label{sock_8c_a0512a50c62d781921c7d8929f3a23608}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+rm@{nn\+\_\+sock\+\_\+rm}}
+\index{nn\+\_\+sock\+\_\+rm@{nn\+\_\+sock\+\_\+rm}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+rm(struct nn\+\_\+sock $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sock\+\_\+rm (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_a0dc939d4b59aeb058da33b9092c91e34}{}\label{sock_8c_a0dc939d4b59aeb058da33b9092c91e34}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+rm\+\_\+ep@{nn\+\_\+sock\+\_\+rm\+\_\+ep}}
+\index{nn\+\_\+sock\+\_\+rm\+\_\+ep@{nn\+\_\+sock\+\_\+rm\+\_\+ep}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+rm\+\_\+ep(struct nn\+\_\+sock $\ast$self, int eid)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sock\+\_\+rm\+\_\+ep (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self, }
+\item[{int}]{eid}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_af78a0876c45b274665d1bfc0e8e1a865}{}\label{sock_8c_af78a0876c45b274665d1bfc0e8e1a865}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+send@{nn\+\_\+sock\+\_\+send}}
+\index{nn\+\_\+sock\+\_\+send@{nn\+\_\+sock\+\_\+send}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+send(struct nn\+\_\+sock $\ast$self, struct nn\+\_\+msg $\ast$msg, int flags)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sock\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_abc1b297a9f7159d8a7b18826b39b77bc}{}\label{sock_8c_abc1b297a9f7159d8a7b18826b39b77bc}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+setopt@{nn\+\_\+sock\+\_\+setopt}}
+\index{nn\+\_\+sock\+\_\+setopt@{nn\+\_\+sock\+\_\+setopt}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+setopt(struct nn\+\_\+sock $\ast$self, int level, int option, const void $\ast$optval, size\+\_\+t optvallen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sock\+\_\+setopt (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self, }
+\item[{int}]{level, }
+\item[{int}]{option, }
+\item[{const void $\ast$}]{optval, }
+\item[{size\+\_\+t}]{optvallen}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_acbc6b6183fc914e69a9a01a322db893e}{}\label{sock_8c_acbc6b6183fc914e69a9a01a322db893e}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+stat\+\_\+increment@{nn\+\_\+sock\+\_\+stat\+\_\+increment}}
+\index{nn\+\_\+sock\+\_\+stat\+\_\+increment@{nn\+\_\+sock\+\_\+stat\+\_\+increment}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+stat\+\_\+increment(struct nn\+\_\+sock $\ast$self, int name, int64\+\_\+t increment)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sock\+\_\+stat\+\_\+increment (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self, }
+\item[{int}]{name, }
+\item[{int64\+\_\+t}]{increment}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_ac95e74a349c4b48a6163b67583deb664}{}\label{sock_8c_ac95e74a349c4b48a6163b67583deb664}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+stopped@{nn\+\_\+sock\+\_\+stopped}}
+\index{nn\+\_\+sock\+\_\+stopped@{nn\+\_\+sock\+\_\+stopped}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+stopped(struct nn\+\_\+sock $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sock\+\_\+stopped (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_a639fd1e4bebd16a82d36ff2d28e2c8ee}{}\label{sock_8c_a639fd1e4bebd16a82d36ff2d28e2c8ee}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+term@{nn\+\_\+sock\+\_\+term}}
+\index{nn\+\_\+sock\+\_\+term@{nn\+\_\+sock\+\_\+term}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+term(struct nn\+\_\+sock $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sock\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_a1b485b27cb6ed09e5e28c281f6f6a9bb}{}\label{sock_8c_a1b485b27cb6ed09e5e28c281f6f6a9bb}
+\index{sock.\+c@{sock.\+c}!nn\+\_\+sock\+\_\+zombify@{nn\+\_\+sock\+\_\+zombify}}
+\index{nn\+\_\+sock\+\_\+zombify@{nn\+\_\+sock\+\_\+zombify}!sock.\+c@{sock.\+c}}
+\subsubsection[{nn\+\_\+sock\+\_\+zombify(struct nn\+\_\+sock $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sock\+\_\+zombify (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sock_8c_a2600bdcf784c6b4b126afaeb99b6d52e}{}\label{sock_8c_a2600bdcf784c6b4b126afaeb99b6d52e}

@@ -1,0 +1,72 @@
+\hypertarget{ws_8c}{}\section{src/transports/ws/ws.c File Reference}
+\label{ws_8c}\index{src/transports/ws/ws.\+c@{src/transports/ws/ws.\+c}}
+{\ttfamily \#include \char`\"{}ws.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}bws.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}cws.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sws.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../ws.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/port.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/iface.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+Include dependency graph for ws.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ws_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__ws__optset}{nn\+\_\+ws\+\_\+optset}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ws_8c_a48d268958db85939466f6276fb32ba8a}{nn\+\_\+ws\+\_\+send} (int s, const void $\ast$msg, size\+\_\+t len, uint8\+\_\+t msg\+\_\+type, int flags)
+\item 
+int \hyperlink{ws_8c_a7201f2f7a5bd7c71d0498fadd0d98f1e}{nn\+\_\+ws\+\_\+recv} (int s, void $\ast$msg, size\+\_\+t len, uint8\+\_\+t $\ast$msg\+\_\+type, int flags)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__transport}{nn\+\_\+transport} $\ast$ \hyperlink{ws_8c_ab09867786fc57f8b8ab24aec9289af14}{nn\+\_\+ws} = \&nn\+\_\+ws\+\_\+vfptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ws.\+c@{ws.\+c}!nn\+\_\+ws\+\_\+recv@{nn\+\_\+ws\+\_\+recv}}
+\index{nn\+\_\+ws\+\_\+recv@{nn\+\_\+ws\+\_\+recv}!ws.\+c@{ws.\+c}}
+\subsubsection[{nn\+\_\+ws\+\_\+recv(int s, void $\ast$msg, size\+\_\+t len, uint8\+\_\+t $\ast$msg\+\_\+type, int flags)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+ws\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{int}]{s, }
+\item[{void $\ast$}]{msg, }
+\item[{size\+\_\+t}]{len, }
+\item[{uint8\+\_\+t $\ast$}]{msg\+\_\+type, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{ws_8c_a7201f2f7a5bd7c71d0498fadd0d98f1e}{}\label{ws_8c_a7201f2f7a5bd7c71d0498fadd0d98f1e}
+\index{ws.\+c@{ws.\+c}!nn\+\_\+ws\+\_\+send@{nn\+\_\+ws\+\_\+send}}
+\index{nn\+\_\+ws\+\_\+send@{nn\+\_\+ws\+\_\+send}!ws.\+c@{ws.\+c}}
+\subsubsection[{nn\+\_\+ws\+\_\+send(int s, const void $\ast$msg, size\+\_\+t len, uint8\+\_\+t msg\+\_\+type, int flags)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+ws\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{int}]{s, }
+\item[{const void $\ast$}]{msg, }
+\item[{size\+\_\+t}]{len, }
+\item[{uint8\+\_\+t}]{msg\+\_\+type, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{ws_8c_a48d268958db85939466f6276fb32ba8a}{}\label{ws_8c_a48d268958db85939466f6276fb32ba8a}
+
+
+\subsection{Variable Documentation}
+\index{ws.\+c@{ws.\+c}!nn\+\_\+ws@{nn\+\_\+ws}}
+\index{nn\+\_\+ws@{nn\+\_\+ws}!ws.\+c@{ws.\+c}}
+\subsubsection[{nn\+\_\+ws}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+transport}$\ast$ nn\+\_\+ws = \&nn\+\_\+ws\+\_\+vfptr}\hypertarget{ws_8c_ab09867786fc57f8b8ab24aec9289af14}{}\label{ws_8c_ab09867786fc57f8b8ab24aec9289af14}

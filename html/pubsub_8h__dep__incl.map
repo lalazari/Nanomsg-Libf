@@ -1,0 +1,18 @@
+<map id="src/pubsub.h" name="src/pubsub.h">
+<area shape="rect" id="node2" href="$global_8c.html" title="src/core/global.c" alt="" coords="5,88,123,115"/>
+<area shape="rect" id="node3" href="$src_2core_2symbol_8c.html" title="src/core/symbol.c" alt="" coords="147,88,273,115"/>
+<area shape="rect" id="node4" href="$pub_8c.html" title="src/protocols/pubsub\l/pub.c" alt="" coords="298,81,440,122"/>
+<area shape="rect" id="node5" href="$sub_8c.html" title="src/protocols/pubsub\l/sub.c" alt="" coords="465,81,607,122"/>
+<area shape="rect" id="node6" href="$xpub_8c.html" title="src/protocols/pubsub\l/xpub.c" alt="" coords="631,81,773,122"/>
+<area shape="rect" id="node7" href="$xsub_8c.html" title="src/protocols/pubsub\l/xsub.c" alt="" coords="798,81,940,122"/>
+<area shape="rect" id="node8" href="$ws__handshake_8c.html" title="src/transports/ws/ws\l_handshake.c" alt="" coords="965,81,1109,122"/>
+<area shape="rect" id="node9" href="$tests_2inproc_8c.html" title="tests/inproc.c" alt="" coords="1133,88,1235,115"/>
+<area shape="rect" id="node10" href="$inproc__shutdown_8c.html" title="tests/inproc_shutdown.c" alt="" coords="1259,88,1423,115"/>
+<area shape="rect" id="node11" href="$tests_2ipc_8c.html" title="tests/ipc.c" alt="" coords="1448,88,1531,115"/>
+<area shape="rect" id="node12" href="$ipc__shutdown_8c.html" title="tests/ipc_shutdown.c" alt="" coords="1555,88,1701,115"/>
+<area shape="rect" id="node13" href="$ipc__stress_8c.html" title="tests/ipc_stress.c" alt="" coords="1726,88,1852,115"/>
+<area shape="rect" id="node14" href="$pubsub_8c.html" title="tests/pubsub.c" alt="" coords="1877,88,1984,115"/>
+<area shape="rect" id="node15" href="$tests_2tcp_8c.html" title="tests/tcp.c" alt="" coords="2009,88,2092,115"/>
+<area shape="rect" id="node16" href="$tcp__shutdown_8c.html" title="tests/tcp_shutdown.c" alt="" coords="2117,88,2264,115"/>
+<area shape="rect" id="node17" href="$zerocopy_8c.html" title="tests/zerocopy.c" alt="" coords="2289,88,2407,115"/>
+</map>

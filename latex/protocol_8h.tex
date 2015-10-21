@@ -1,0 +1,200 @@
+\hypertarget{protocol_8h}{}\section{src/protocol.h File Reference}
+\label{protocol_8h}\index{src/protocol.\+h@{src/protocol.\+h}}
+{\ttfamily \#include \char`\"{}utils/msg.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}utils/list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}utils/int.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for protocol.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{protocol_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{protocol_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__sockbase__vfptr}{nn\+\_\+sockbase\+\_\+vfptr}
+\item 
+struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase}
+\item 
+struct \hyperlink{structnn__socktype}{nn\+\_\+socktype}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{protocol_8h_a4ce6197f747d8abe24d030dab71e3f2b}{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+R\+E\+L\+E\+A\+SE}~1
+\item 
+\#define \hyperlink{protocol_8h_a7754af7bdc1e7ac39fd7fdc9c17b39be}{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+P\+A\+R\+S\+ED}~2
+\item 
+\#define \hyperlink{protocol_8h_a3bf9d396863bc64411cb354102000d8a}{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+IN}~33987
+\item 
+\#define \hyperlink{protocol_8h_a7dd9b3bdcc26728f527180711190e932}{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+O\+UT}~33988
+\item 
+\#define \hyperlink{protocol_8h_a947b694055d54017596ceeeecb0df814}{N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+IN}~1
+\item 
+\#define \hyperlink{protocol_8h_aae2d317518156ec1103d3d02875e60bc}{N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+O\+UT}~2
+\item 
+\#define \hyperlink{protocol_8h_a6a5a163e9f86a0d71854e361b7c80b38}{N\+N\+\_\+\+S\+T\+A\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+N\+D\+\_\+\+P\+R\+I\+O\+R\+I\+TY}~401
+\item 
+\#define \hyperlink{protocol_8h_a558b4664d5a477d1e423ffd4670c66fb}{N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+R\+E\+CV}~1
+\item 
+\#define \hyperlink{protocol_8h_a6b75a63f7e412c4a1d83b28be80a5586}{N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+S\+E\+ND}~2
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{protocol_8h_adfbe16f910a870e166e9c634183030eb}{nn\+\_\+pipe\+\_\+setdata} (struct nn\+\_\+pipe $\ast$self, void $\ast$data)
+\item 
+void $\ast$ \hyperlink{protocol_8h_a0cb1a4d287cb560c94291c50f015029e}{nn\+\_\+pipe\+\_\+getdata} (struct nn\+\_\+pipe $\ast$self)
+\item 
+int \hyperlink{protocol_8h_a1e831bbad0eccfeadb98aa93af495062}{nn\+\_\+pipe\+\_\+send} (struct nn\+\_\+pipe $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg)
+\item 
+int \hyperlink{protocol_8h_ae03c8f1911fdb7ab75bf26b49109715f}{nn\+\_\+pipe\+\_\+recv} (struct nn\+\_\+pipe $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg)
+\item 
+void \hyperlink{protocol_8h_aac3da26b20accb6675562722210ab958}{nn\+\_\+pipe\+\_\+getopt} (struct nn\+\_\+pipe $\ast$self, int level, int option, void $\ast$optval, size\+\_\+t $\ast$optvallen)
+\item 
+void \hyperlink{protocol_8h_a9abab095e85f1eccd9700b3ba3e7968c}{nn\+\_\+sockbase\+\_\+init} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, const struct \hyperlink{structnn__sockbase__vfptr}{nn\+\_\+sockbase\+\_\+vfptr} $\ast$vfptr, void $\ast$hint)
+\item 
+void \hyperlink{protocol_8h_a89f1eea67caace0701cbd0f9d82a0000}{nn\+\_\+sockbase\+\_\+term} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self)
+\item 
+void \hyperlink{protocol_8h_a96e0aaeb05843c6de131a0aa19fc63ea}{nn\+\_\+sockbase\+\_\+stopped} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self)
+\item 
+struct \hyperlink{structnn__ctx}{nn\+\_\+ctx} $\ast$ \hyperlink{protocol_8h_a2faa7078c00635241d9e5726c139956f}{nn\+\_\+sockbase\+\_\+getctx} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self)
+\item 
+int \hyperlink{protocol_8h_a5e908625cf31ce2b66027fb0f48706a9}{nn\+\_\+sockbase\+\_\+getopt} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, int option, void $\ast$optval, size\+\_\+t $\ast$optvallen)
+\item 
+void \hyperlink{protocol_8h_a1adccc173608830e702519df9355f36b}{nn\+\_\+sockbase\+\_\+stat\+\_\+increment} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, int name, int increment)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{protocol.\+h@{protocol.\+h}!N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+IN@{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+IN}}
+\index{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+IN@{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+IN}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+IN}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+IN~33987}\hypertarget{protocol_8h_a3bf9d396863bc64411cb354102000d8a}{}\label{protocol_8h_a3bf9d396863bc64411cb354102000d8a}
+\index{protocol.\+h@{protocol.\+h}!N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+O\+UT@{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+O\+UT}}
+\index{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+O\+UT@{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+O\+UT}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+O\+UT}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+O\+UT~33988}\hypertarget{protocol_8h_a7dd9b3bdcc26728f527180711190e932}{}\label{protocol_8h_a7dd9b3bdcc26728f527180711190e932}
+\index{protocol.\+h@{protocol.\+h}!N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+P\+A\+R\+S\+ED@{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+P\+A\+R\+S\+ED}}
+\index{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+P\+A\+R\+S\+ED@{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+P\+A\+R\+S\+ED}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+P\+A\+R\+S\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+P\+A\+R\+S\+ED~2}\hypertarget{protocol_8h_a7754af7bdc1e7ac39fd7fdc9c17b39be}{}\label{protocol_8h_a7754af7bdc1e7ac39fd7fdc9c17b39be}
+\index{protocol.\+h@{protocol.\+h}!N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+R\+E\+L\+E\+A\+SE@{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+R\+E\+L\+E\+A\+SE}}
+\index{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+R\+E\+L\+E\+A\+SE@{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+R\+E\+L\+E\+A\+SE}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+R\+E\+L\+E\+A\+SE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+P\+I\+P\+E\+\_\+\+R\+E\+L\+E\+A\+SE~1}\hypertarget{protocol_8h_a4ce6197f747d8abe24d030dab71e3f2b}{}\label{protocol_8h_a4ce6197f747d8abe24d030dab71e3f2b}
+\index{protocol.\+h@{protocol.\+h}!N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+IN@{N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+IN}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+IN@{N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+IN}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+IN}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+IN~1}\hypertarget{protocol_8h_a947b694055d54017596ceeeecb0df814}{}\label{protocol_8h_a947b694055d54017596ceeeecb0df814}
+\index{protocol.\+h@{protocol.\+h}!N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+O\+UT@{N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+O\+UT}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+O\+UT@{N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+O\+UT}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+O\+UT}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+B\+A\+S\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+O\+UT~2}\hypertarget{protocol_8h_aae2d317518156ec1103d3d02875e60bc}{}\label{protocol_8h_aae2d317518156ec1103d3d02875e60bc}
+\index{protocol.\+h@{protocol.\+h}!N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+R\+E\+CV@{N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+R\+E\+CV}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+R\+E\+CV@{N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+R\+E\+CV}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+R\+E\+CV}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+R\+E\+CV~1}\hypertarget{protocol_8h_a558b4664d5a477d1e423ffd4670c66fb}{}\label{protocol_8h_a558b4664d5a477d1e423ffd4670c66fb}
+\index{protocol.\+h@{protocol.\+h}!N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+S\+E\+ND@{N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+S\+E\+ND}}
+\index{N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+S\+E\+ND@{N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+S\+E\+ND}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+S\+E\+ND}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+O\+C\+K\+T\+Y\+P\+E\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+S\+E\+ND~2}\hypertarget{protocol_8h_a6b75a63f7e412c4a1d83b28be80a5586}{}\label{protocol_8h_a6b75a63f7e412c4a1d83b28be80a5586}
+\index{protocol.\+h@{protocol.\+h}!N\+N\+\_\+\+S\+T\+A\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+N\+D\+\_\+\+P\+R\+I\+O\+R\+I\+TY@{N\+N\+\_\+\+S\+T\+A\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+N\+D\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}
+\index{N\+N\+\_\+\+S\+T\+A\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+N\+D\+\_\+\+P\+R\+I\+O\+R\+I\+TY@{N\+N\+\_\+\+S\+T\+A\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+N\+D\+\_\+\+P\+R\+I\+O\+R\+I\+TY}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+T\+A\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+N\+D\+\_\+\+P\+R\+I\+O\+R\+I\+TY}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+T\+A\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+N\+D\+\_\+\+P\+R\+I\+O\+R\+I\+TY~401}\hypertarget{protocol_8h_a6a5a163e9f86a0d71854e361b7c80b38}{}\label{protocol_8h_a6a5a163e9f86a0d71854e361b7c80b38}
+
+
+\subsection{Function Documentation}
+\index{protocol.\+h@{protocol.\+h}!nn\+\_\+pipe\+\_\+getdata@{nn\+\_\+pipe\+\_\+getdata}}
+\index{nn\+\_\+pipe\+\_\+getdata@{nn\+\_\+pipe\+\_\+getdata}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{nn\+\_\+pipe\+\_\+getdata(struct nn\+\_\+pipe $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ nn\+\_\+pipe\+\_\+getdata (
+\begin{DoxyParamCaption}
+\item[{struct nn\+\_\+pipe $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{protocol_8h_a0cb1a4d287cb560c94291c50f015029e}{}\label{protocol_8h_a0cb1a4d287cb560c94291c50f015029e}
+\index{protocol.\+h@{protocol.\+h}!nn\+\_\+pipe\+\_\+getopt@{nn\+\_\+pipe\+\_\+getopt}}
+\index{nn\+\_\+pipe\+\_\+getopt@{nn\+\_\+pipe\+\_\+getopt}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{nn\+\_\+pipe\+\_\+getopt(struct nn\+\_\+pipe $\ast$self, int level, int option, void $\ast$optval, size\+\_\+t $\ast$optvallen)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+pipe\+\_\+getopt (
+\begin{DoxyParamCaption}
+\item[{struct nn\+\_\+pipe $\ast$}]{self, }
+\item[{int}]{level, }
+\item[{int}]{option, }
+\item[{void $\ast$}]{optval, }
+\item[{size\+\_\+t $\ast$}]{optvallen}
+\end{DoxyParamCaption}
+)}\hypertarget{protocol_8h_aac3da26b20accb6675562722210ab958}{}\label{protocol_8h_aac3da26b20accb6675562722210ab958}
+\index{protocol.\+h@{protocol.\+h}!nn\+\_\+pipe\+\_\+recv@{nn\+\_\+pipe\+\_\+recv}}
+\index{nn\+\_\+pipe\+\_\+recv@{nn\+\_\+pipe\+\_\+recv}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{nn\+\_\+pipe\+\_\+recv(struct nn\+\_\+pipe $\ast$self, struct nn\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+pipe\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{struct nn\+\_\+pipe $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{protocol_8h_ae03c8f1911fdb7ab75bf26b49109715f}{}\label{protocol_8h_ae03c8f1911fdb7ab75bf26b49109715f}
+\index{protocol.\+h@{protocol.\+h}!nn\+\_\+pipe\+\_\+send@{nn\+\_\+pipe\+\_\+send}}
+\index{nn\+\_\+pipe\+\_\+send@{nn\+\_\+pipe\+\_\+send}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{nn\+\_\+pipe\+\_\+send(struct nn\+\_\+pipe $\ast$self, struct nn\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+pipe\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{struct nn\+\_\+pipe $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{protocol_8h_a1e831bbad0eccfeadb98aa93af495062}{}\label{protocol_8h_a1e831bbad0eccfeadb98aa93af495062}
+\index{protocol.\+h@{protocol.\+h}!nn\+\_\+pipe\+\_\+setdata@{nn\+\_\+pipe\+\_\+setdata}}
+\index{nn\+\_\+pipe\+\_\+setdata@{nn\+\_\+pipe\+\_\+setdata}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{nn\+\_\+pipe\+\_\+setdata(struct nn\+\_\+pipe $\ast$self, void $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+pipe\+\_\+setdata (
+\begin{DoxyParamCaption}
+\item[{struct nn\+\_\+pipe $\ast$}]{self, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{protocol_8h_adfbe16f910a870e166e9c634183030eb}{}\label{protocol_8h_adfbe16f910a870e166e9c634183030eb}
+\index{protocol.\+h@{protocol.\+h}!nn\+\_\+sockbase\+\_\+getctx@{nn\+\_\+sockbase\+\_\+getctx}}
+\index{nn\+\_\+sockbase\+\_\+getctx@{nn\+\_\+sockbase\+\_\+getctx}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{nn\+\_\+sockbase\+\_\+getctx(struct nn\+\_\+sockbase $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+ctx}$\ast$ nn\+\_\+sockbase\+\_\+getctx (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{protocol_8h_a2faa7078c00635241d9e5726c139956f}{}\label{protocol_8h_a2faa7078c00635241d9e5726c139956f}
+\index{protocol.\+h@{protocol.\+h}!nn\+\_\+sockbase\+\_\+getopt@{nn\+\_\+sockbase\+\_\+getopt}}
+\index{nn\+\_\+sockbase\+\_\+getopt@{nn\+\_\+sockbase\+\_\+getopt}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{nn\+\_\+sockbase\+\_\+getopt(struct nn\+\_\+sockbase $\ast$self, int option, void $\ast$optval, size\+\_\+t $\ast$optvallen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sockbase\+\_\+getopt (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{int}]{option, }
+\item[{void $\ast$}]{optval, }
+\item[{size\+\_\+t $\ast$}]{optvallen}
+\end{DoxyParamCaption}
+)}\hypertarget{protocol_8h_a5e908625cf31ce2b66027fb0f48706a9}{}\label{protocol_8h_a5e908625cf31ce2b66027fb0f48706a9}
+\index{protocol.\+h@{protocol.\+h}!nn\+\_\+sockbase\+\_\+init@{nn\+\_\+sockbase\+\_\+init}}
+\index{nn\+\_\+sockbase\+\_\+init@{nn\+\_\+sockbase\+\_\+init}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{nn\+\_\+sockbase\+\_\+init(struct nn\+\_\+sockbase $\ast$self, const struct nn\+\_\+sockbase\+\_\+vfptr $\ast$vfptr, void $\ast$hint)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sockbase\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{const struct {\bf nn\+\_\+sockbase\+\_\+vfptr} $\ast$}]{vfptr, }
+\item[{void $\ast$}]{hint}
+\end{DoxyParamCaption}
+)}\hypertarget{protocol_8h_a9abab095e85f1eccd9700b3ba3e7968c}{}\label{protocol_8h_a9abab095e85f1eccd9700b3ba3e7968c}
+\index{protocol.\+h@{protocol.\+h}!nn\+\_\+sockbase\+\_\+stat\+\_\+increment@{nn\+\_\+sockbase\+\_\+stat\+\_\+increment}}
+\index{nn\+\_\+sockbase\+\_\+stat\+\_\+increment@{nn\+\_\+sockbase\+\_\+stat\+\_\+increment}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{nn\+\_\+sockbase\+\_\+stat\+\_\+increment(struct nn\+\_\+sockbase $\ast$self, int name, int increment)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sockbase\+\_\+stat\+\_\+increment (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{int}]{name, }
+\item[{int}]{increment}
+\end{DoxyParamCaption}
+)}\hypertarget{protocol_8h_a1adccc173608830e702519df9355f36b}{}\label{protocol_8h_a1adccc173608830e702519df9355f36b}
+\index{protocol.\+h@{protocol.\+h}!nn\+\_\+sockbase\+\_\+stopped@{nn\+\_\+sockbase\+\_\+stopped}}
+\index{nn\+\_\+sockbase\+\_\+stopped@{nn\+\_\+sockbase\+\_\+stopped}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{nn\+\_\+sockbase\+\_\+stopped(struct nn\+\_\+sockbase $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sockbase\+\_\+stopped (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{protocol_8h_a96e0aaeb05843c6de131a0aa19fc63ea}{}\label{protocol_8h_a96e0aaeb05843c6de131a0aa19fc63ea}
+\index{protocol.\+h@{protocol.\+h}!nn\+\_\+sockbase\+\_\+term@{nn\+\_\+sockbase\+\_\+term}}
+\index{nn\+\_\+sockbase\+\_\+term@{nn\+\_\+sockbase\+\_\+term}!protocol.\+h@{protocol.\+h}}
+\subsubsection[{nn\+\_\+sockbase\+\_\+term(struct nn\+\_\+sockbase $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sockbase\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{protocol_8h_a89f1eea67caace0701cbd0f9d82a0000}{}\label{protocol_8h_a89f1eea67caace0701cbd0f9d82a0000}

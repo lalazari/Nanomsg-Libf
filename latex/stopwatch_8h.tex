@@ -1,0 +1,64 @@
+\hypertarget{stopwatch_8h}{}\section{src/utils/stopwatch.h File Reference}
+\label{stopwatch_8h}\index{src/utils/stopwatch.\+h@{src/utils/stopwatch.\+h}}
+{\ttfamily \#include \char`\"{}err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}int.\+h\char`\"{}}\\*
+Include dependency graph for stopwatch.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stopwatch_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{stopwatch_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__stopwatch}{nn\+\_\+stopwatch}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{stopwatch_8h_a50dbe9016b04947d115ad2f8cafdc4c4}{time\+\_\+assert}(actual,  expected)~\hyperlink{err_8h_a7ad87ee44f4c06616bd2b3602b73a536}{nn\+\_\+assert} (actual $>$ ((expected) -\/ 5000) \&\& actual $<$ ((expected) + 50000));
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{stopwatch_8h_afcb10a096a3006fcf76b25d885343309}{nn\+\_\+stopwatch\+\_\+init} (struct \hyperlink{structnn__stopwatch}{nn\+\_\+stopwatch} $\ast$self)
+\item 
+uint64\+\_\+t \hyperlink{stopwatch_8h_acbb71087cdaac6744522327e3096025a}{nn\+\_\+stopwatch\+\_\+term} (struct \hyperlink{structnn__stopwatch}{nn\+\_\+stopwatch} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{stopwatch.\+h@{stopwatch.\+h}!time\+\_\+assert@{time\+\_\+assert}}
+\index{time\+\_\+assert@{time\+\_\+assert}!stopwatch.\+h@{stopwatch.\+h}}
+\subsubsection[{time\+\_\+assert}]{\setlength{\rightskip}{0pt plus 5cm}\#define time\+\_\+assert(
+\begin{DoxyParamCaption}
+\item[{}]{actual, }
+\item[{}]{expected}
+\end{DoxyParamCaption}
+)~{\bf nn\+\_\+assert} (actual $>$ ((expected) -\/ 5000) \&\& actual $<$ ((expected) + 50000));}\hypertarget{stopwatch_8h_a50dbe9016b04947d115ad2f8cafdc4c4}{}\label{stopwatch_8h_a50dbe9016b04947d115ad2f8cafdc4c4}
+
+
+\subsection{Function Documentation}
+\index{stopwatch.\+h@{stopwatch.\+h}!nn\+\_\+stopwatch\+\_\+init@{nn\+\_\+stopwatch\+\_\+init}}
+\index{nn\+\_\+stopwatch\+\_\+init@{nn\+\_\+stopwatch\+\_\+init}!stopwatch.\+h@{stopwatch.\+h}}
+\subsubsection[{nn\+\_\+stopwatch\+\_\+init(struct nn\+\_\+stopwatch $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+stopwatch\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+stopwatch} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{stopwatch_8h_afcb10a096a3006fcf76b25d885343309}{}\label{stopwatch_8h_afcb10a096a3006fcf76b25d885343309}
+\index{stopwatch.\+h@{stopwatch.\+h}!nn\+\_\+stopwatch\+\_\+term@{nn\+\_\+stopwatch\+\_\+term}}
+\index{nn\+\_\+stopwatch\+\_\+term@{nn\+\_\+stopwatch\+\_\+term}!stopwatch.\+h@{stopwatch.\+h}}
+\subsubsection[{nn\+\_\+stopwatch\+\_\+term(struct nn\+\_\+stopwatch $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t nn\+\_\+stopwatch\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+stopwatch} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{stopwatch_8h_acbb71087cdaac6744522327e3096025a}{}\label{stopwatch_8h_acbb71087cdaac6744522327e3096025a}

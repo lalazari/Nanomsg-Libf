@@ -1,0 +1,53 @@
+\hypertarget{tcpmuxd_8c}{}\section{src/devices/tcpmuxd.c File Reference}
+\label{tcpmuxd_8c}\index{src/devices/tcpmuxd.\+c@{src/devices/tcpmuxd.\+c}}
+{\ttfamily \#include \char`\"{}../nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/thread.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/attr.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/int.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/wire.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/mutex.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/closefd.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$sys/socket.\+h$>$}\\*
+{\ttfamily \#include $<$netinet/in.\+h$>$}\\*
+{\ttfamily \#include $<$netinet/tcp.\+h$>$}\\*
+{\ttfamily \#include $<$sys/time.\+h$>$}\\*
+{\ttfamily \#include $<$sys/un.\+h$>$}\\*
+{\ttfamily \#include $<$ctype.\+h$>$}\\*
+{\ttfamily \#include $<$poll.\+h$>$}\\*
+Include dependency graph for tcpmuxd.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tcpmuxd_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__tcpmuxd__ctx}{nn\+\_\+tcpmuxd\+\_\+ctx}
+\item 
+struct \hyperlink{structnn__tcpmuxd__conn}{nn\+\_\+tcpmuxd\+\_\+conn}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{tcpmuxd_8c_a1bc115329878e7d244cb1fd6a88161fe}{nn\+\_\+tcpmuxd} (int port)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{tcpmuxd.\+c@{tcpmuxd.\+c}!nn\+\_\+tcpmuxd@{nn\+\_\+tcpmuxd}}
+\index{nn\+\_\+tcpmuxd@{nn\+\_\+tcpmuxd}!tcpmuxd.\+c@{tcpmuxd.\+c}}
+\subsubsection[{nn\+\_\+tcpmuxd(int port)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+tcpmuxd (
+\begin{DoxyParamCaption}
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{tcpmuxd_8c_a1bc115329878e7d244cb1fd6a88161fe}{}\label{tcpmuxd_8c_a1bc115329878e7d244cb1fd6a88161fe}

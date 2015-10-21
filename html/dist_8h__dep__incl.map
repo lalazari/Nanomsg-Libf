@@ -1,0 +1,11 @@
+<map id="src/protocols/utils/dist.h" name="src/protocols/utils/dist.h">
+<area shape="rect" id="node2" href="$xsurveyor_8h.html" title="src/protocols/survey\l/xsurveyor.h" alt="" coords="203,97,343,138"/>
+<area shape="rect" id="node6" href="$xbus_8h.html" title="src/protocols/bus/xbus.h" alt="" coords="437,104,603,131"/>
+<area shape="rect" id="node9" href="$xpub_8c.html" title="src/protocols/pubsub\l/xpub.c" alt="" coords="627,97,769,138"/>
+<area shape="rect" id="node10" href="$dist_8c.html" title="src/protocols/utils\l/dist.c" alt="" coords="795,97,920,138"/>
+<area shape="rect" id="node3" href="$global_8c.html" title="src/core/global.c" alt="" coords="333,195,451,221"/>
+<area shape="rect" id="node4" href="$surveyor_8c.html" title="src/protocols/survey\l/surveyor.c" alt="" coords="5,187,144,229"/>
+<area shape="rect" id="node5" href="$xsurveyor_8c.html" title="src/protocols/survey\l/xsurveyor.c" alt="" coords="169,187,308,229"/>
+<area shape="rect" id="node7" href="$src_2protocols_2bus_2bus_8c.html" title="src/protocols/bus/bus.c" alt="" coords="475,195,633,221"/>
+<area shape="rect" id="node8" href="$xbus_8c.html" title="src/protocols/bus/xbus.c" alt="" coords="659,195,824,221"/>
+</map>

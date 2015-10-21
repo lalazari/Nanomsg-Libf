@@ -1,0 +1,247 @@
+\hypertarget{usock_8h}{}\section{src/aio/usock.h File Reference}
+\label{usock_8h}\index{src/aio/usock.\+h@{src/aio/usock.\+h}}
+{\ttfamily \#include \char`\"{}../nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}usock\+\_\+posix.\+h\char`\"{}}\\*
+Include dependency graph for usock.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{usock_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{usock_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{usock_8h_aa154a0a0f85a6e2dd33ecc8f7c070fd1}{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}~1
+\item 
+\#define \hyperlink{usock_8h_a6b5981033eee823488de51b3ca737d05}{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+ED}~2
+\item 
+\#define \hyperlink{usock_8h_a7a8e79c561c591aebc5d350042f66d04}{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+E\+NT}~3
+\item 
+\#define \hyperlink{usock_8h_a42283ba04e6824a91bcce5919493fe1c}{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+R\+E\+C\+E\+I\+V\+ED}~4
+\item 
+\#define \hyperlink{usock_8h_a767c8519c330c57ef9f958cb9f885a23}{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+E\+R\+R\+OR}~5
+\item 
+\#define \hyperlink{usock_8h_aced3244fd15b76821357408c851dced3}{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+E\+R\+R\+OR}~6
+\item 
+\#define \hyperlink{usock_8h_a255d5f552a2fdfff22d8af4738ce2b79}{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+T\+O\+P\+P\+ED}~7
+\item 
+\#define \hyperlink{usock_8h_ad17bb4398e45cc3c50a3c3be8ee6a444}{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+H\+U\+T\+D\+O\+WN}~8
+\item 
+\#define \hyperlink{usock_8h_afcddefc2e9c1f5e8aab8359c24bb58b0}{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+M\+A\+X\+\_\+\+I\+O\+V\+C\+NT}~3
+\item 
+\#define \hyperlink{usock_8h_ae8948f248866e876002ac2a10c1696c8}{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+B\+A\+T\+C\+H\+\_\+\+S\+I\+ZE}~2048
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{usock_8h_ac45dab0ae32f422eb6b5a84f0f7dbb6f}{nn\+\_\+usock\+\_\+init} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self, int src, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{usock_8h_a7c6ccf19c5b2a230ab39f625d8e48b6f}{nn\+\_\+usock\+\_\+term} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self)
+\item 
+int \hyperlink{usock_8h_a7ac8ded61269ba456e7a5a8ab20223a7}{nn\+\_\+usock\+\_\+isidle} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self)
+\item 
+int \hyperlink{usock_8h_abfdb8ef7ec4fca6f5794b9d1edd7b924}{nn\+\_\+usock\+\_\+start} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self, int domain, int type, int protocol)
+\item 
+void \hyperlink{usock_8h_aeb7747c4a6c3f360a9c3f8ce9e2944d2}{nn\+\_\+usock\+\_\+start\+\_\+fd} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self, int fd)
+\item 
+void \hyperlink{usock_8h_a324fb5c92e050c3fa92634abf8a51116}{nn\+\_\+usock\+\_\+stop} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self)
+\item 
+void \hyperlink{usock_8h_a5d888e238ae20dc9bb23c5801c09f39e}{nn\+\_\+usock\+\_\+swap\+\_\+owner} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self, struct \hyperlink{structnn__fsm__owner}{nn\+\_\+fsm\+\_\+owner} $\ast$owner)
+\item 
+int \hyperlink{usock_8h_ad04fbefb96b1353ad400098b07e2989d}{nn\+\_\+usock\+\_\+setsockopt} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self, int level, int optname, const void $\ast$optval, size\+\_\+t optlen)
+\item 
+int \hyperlink{usock_8h_a0569ef3aec4f4e45323fa4a33dcd7464}{nn\+\_\+usock\+\_\+bind} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self, const struct sockaddr $\ast$addr, size\+\_\+t addrlen)
+\item 
+int \hyperlink{usock_8h_abef9e3f51e411d9aa54905d52da39c42}{nn\+\_\+usock\+\_\+listen} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self, int backlog)
+\item 
+void \hyperlink{usock_8h_a500871ac1348377e071e472f79aa2a1a}{nn\+\_\+usock\+\_\+accept} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self, struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$listener)
+\item 
+void \hyperlink{usock_8h_ad2cf503afe2fd766a7fcf5d90289567d}{nn\+\_\+usock\+\_\+activate} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self)
+\item 
+void \hyperlink{usock_8h_a8a9a22db1299d1d071e36f61b7e011df}{nn\+\_\+usock\+\_\+connect} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self, const struct sockaddr $\ast$addr, size\+\_\+t addrlen)
+\item 
+void \hyperlink{usock_8h_ad39c2d6a4219f6e436309e6718b49940}{nn\+\_\+usock\+\_\+send} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self, const struct \hyperlink{structnn__iovec}{nn\+\_\+iovec} $\ast$iov, int iovcnt)
+\item 
+void \hyperlink{usock_8h_ab26ca6c05222a30b7af66a306ed1e302}{nn\+\_\+usock\+\_\+recv} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self, void $\ast$buf, size\+\_\+t len, int $\ast$fd)
+\item 
+int \hyperlink{usock_8h_a79a37632dc973f68f8f8a2bfdbfe9e47}{nn\+\_\+usock\+\_\+geterrno} (struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{usock.\+h@{usock.\+h}!N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+E\+R\+R\+OR}}
+\index{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+E\+R\+R\+OR}!usock.\+h@{usock.\+h}}
+\subsubsection[{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+E\+R\+R\+OR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+E\+R\+R\+OR~6}\hypertarget{usock_8h_aced3244fd15b76821357408c851dced3}{}\label{usock_8h_aced3244fd15b76821357408c851dced3}
+\index{usock.\+h@{usock.\+h}!N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+ED@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+ED}}
+\index{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+ED@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+ED}!usock.\+h@{usock.\+h}}
+\subsubsection[{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+A\+C\+C\+E\+P\+T\+ED~2}\hypertarget{usock_8h_a6b5981033eee823488de51b3ca737d05}{}\label{usock_8h_a6b5981033eee823488de51b3ca737d05}
+\index{usock.\+h@{usock.\+h}!N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+B\+A\+T\+C\+H\+\_\+\+S\+I\+ZE@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+B\+A\+T\+C\+H\+\_\+\+S\+I\+ZE}}
+\index{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+B\+A\+T\+C\+H\+\_\+\+S\+I\+ZE@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+B\+A\+T\+C\+H\+\_\+\+S\+I\+ZE}!usock.\+h@{usock.\+h}}
+\subsubsection[{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+B\+A\+T\+C\+H\+\_\+\+S\+I\+ZE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+B\+A\+T\+C\+H\+\_\+\+S\+I\+ZE~2048}\hypertarget{usock_8h_ae8948f248866e876002ac2a10c1696c8}{}\label{usock_8h_ae8948f248866e876002ac2a10c1696c8}
+\index{usock.\+h@{usock.\+h}!N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}}
+\index{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}!usock.\+h@{usock.\+h}}
+\subsubsection[{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED~1}\hypertarget{usock_8h_aa154a0a0f85a6e2dd33ecc8f7c070fd1}{}\label{usock_8h_aa154a0a0f85a6e2dd33ecc8f7c070fd1}
+\index{usock.\+h@{usock.\+h}!N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+E\+R\+R\+OR}}
+\index{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+E\+R\+R\+OR}!usock.\+h@{usock.\+h}}
+\subsubsection[{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+E\+R\+R\+OR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+E\+R\+R\+OR~5}\hypertarget{usock_8h_a767c8519c330c57ef9f958cb9f885a23}{}\label{usock_8h_a767c8519c330c57ef9f958cb9f885a23}
+\index{usock.\+h@{usock.\+h}!N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+M\+A\+X\+\_\+\+I\+O\+V\+C\+NT@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+M\+A\+X\+\_\+\+I\+O\+V\+C\+NT}}
+\index{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+M\+A\+X\+\_\+\+I\+O\+V\+C\+NT@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+M\+A\+X\+\_\+\+I\+O\+V\+C\+NT}!usock.\+h@{usock.\+h}}
+\subsubsection[{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+M\+A\+X\+\_\+\+I\+O\+V\+C\+NT}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+M\+A\+X\+\_\+\+I\+O\+V\+C\+NT~3}\hypertarget{usock_8h_afcddefc2e9c1f5e8aab8359c24bb58b0}{}\label{usock_8h_afcddefc2e9c1f5e8aab8359c24bb58b0}
+\index{usock.\+h@{usock.\+h}!N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+R\+E\+C\+E\+I\+V\+ED@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+R\+E\+C\+E\+I\+V\+ED}}
+\index{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+R\+E\+C\+E\+I\+V\+ED@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+R\+E\+C\+E\+I\+V\+ED}!usock.\+h@{usock.\+h}}
+\subsubsection[{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+R\+E\+C\+E\+I\+V\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+R\+E\+C\+E\+I\+V\+ED~4}\hypertarget{usock_8h_a42283ba04e6824a91bcce5919493fe1c}{}\label{usock_8h_a42283ba04e6824a91bcce5919493fe1c}
+\index{usock.\+h@{usock.\+h}!N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+E\+NT@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+E\+NT}}
+\index{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+E\+NT@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+E\+NT}!usock.\+h@{usock.\+h}}
+\subsubsection[{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+E\+NT}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+E\+NT~3}\hypertarget{usock_8h_a7a8e79c561c591aebc5d350042f66d04}{}\label{usock_8h_a7a8e79c561c591aebc5d350042f66d04}
+\index{usock.\+h@{usock.\+h}!N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+H\+U\+T\+D\+O\+WN@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+H\+U\+T\+D\+O\+WN}}
+\index{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+H\+U\+T\+D\+O\+WN@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+H\+U\+T\+D\+O\+WN}!usock.\+h@{usock.\+h}}
+\subsubsection[{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+H\+U\+T\+D\+O\+WN}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+H\+U\+T\+D\+O\+WN~8}\hypertarget{usock_8h_ad17bb4398e45cc3c50a3c3be8ee6a444}{}\label{usock_8h_ad17bb4398e45cc3c50a3c3be8ee6a444}
+\index{usock.\+h@{usock.\+h}!N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+T\+O\+P\+P\+ED}!usock.\+h@{usock.\+h}}
+\subsubsection[{N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+U\+S\+O\+C\+K\+\_\+\+S\+T\+O\+P\+P\+ED~7}\hypertarget{usock_8h_a255d5f552a2fdfff22d8af4738ce2b79}{}\label{usock_8h_a255d5f552a2fdfff22d8af4738ce2b79}
+
+
+\subsection{Function Documentation}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+accept@{nn\+\_\+usock\+\_\+accept}}
+\index{nn\+\_\+usock\+\_\+accept@{nn\+\_\+usock\+\_\+accept}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+accept(struct nn\+\_\+usock $\ast$self, struct nn\+\_\+usock $\ast$listener)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+usock\+\_\+accept (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_a500871ac1348377e071e472f79aa2a1a}{}\label{usock_8h_a500871ac1348377e071e472f79aa2a1a}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+activate@{nn\+\_\+usock\+\_\+activate}}
+\index{nn\+\_\+usock\+\_\+activate@{nn\+\_\+usock\+\_\+activate}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+activate(struct nn\+\_\+usock $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+usock\+\_\+activate (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_ad2cf503afe2fd766a7fcf5d90289567d}{}\label{usock_8h_ad2cf503afe2fd766a7fcf5d90289567d}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+bind@{nn\+\_\+usock\+\_\+bind}}
+\index{nn\+\_\+usock\+\_\+bind@{nn\+\_\+usock\+\_\+bind}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+bind(struct nn\+\_\+usock $\ast$self, const struct sockaddr $\ast$addr, size\+\_\+t addrlen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+usock\+\_\+bind (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self, }
+\item[{const struct sockaddr $\ast$}]{addr, }
+\item[{size\+\_\+t}]{addrlen}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_a0569ef3aec4f4e45323fa4a33dcd7464}{}\label{usock_8h_a0569ef3aec4f4e45323fa4a33dcd7464}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+connect@{nn\+\_\+usock\+\_\+connect}}
+\index{nn\+\_\+usock\+\_\+connect@{nn\+\_\+usock\+\_\+connect}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+connect(struct nn\+\_\+usock $\ast$self, const struct sockaddr $\ast$addr, size\+\_\+t addrlen)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+usock\+\_\+connect (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self, }
+\item[{const struct sockaddr $\ast$}]{addr, }
+\item[{size\+\_\+t}]{addrlen}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_a8a9a22db1299d1d071e36f61b7e011df}{}\label{usock_8h_a8a9a22db1299d1d071e36f61b7e011df}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+geterrno@{nn\+\_\+usock\+\_\+geterrno}}
+\index{nn\+\_\+usock\+\_\+geterrno@{nn\+\_\+usock\+\_\+geterrno}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+geterrno(struct nn\+\_\+usock $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+usock\+\_\+geterrno (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_a79a37632dc973f68f8f8a2bfdbfe9e47}{}\label{usock_8h_a79a37632dc973f68f8f8a2bfdbfe9e47}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+init@{nn\+\_\+usock\+\_\+init}}
+\index{nn\+\_\+usock\+\_\+init@{nn\+\_\+usock\+\_\+init}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+init(struct nn\+\_\+usock $\ast$self, int src, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+usock\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_ac45dab0ae32f422eb6b5a84f0f7dbb6f}{}\label{usock_8h_ac45dab0ae32f422eb6b5a84f0f7dbb6f}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+isidle@{nn\+\_\+usock\+\_\+isidle}}
+\index{nn\+\_\+usock\+\_\+isidle@{nn\+\_\+usock\+\_\+isidle}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+isidle(struct nn\+\_\+usock $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+usock\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_a7ac8ded61269ba456e7a5a8ab20223a7}{}\label{usock_8h_a7ac8ded61269ba456e7a5a8ab20223a7}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+listen@{nn\+\_\+usock\+\_\+listen}}
+\index{nn\+\_\+usock\+\_\+listen@{nn\+\_\+usock\+\_\+listen}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+listen(struct nn\+\_\+usock $\ast$self, int backlog)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+usock\+\_\+listen (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self, }
+\item[{int}]{backlog}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_abef9e3f51e411d9aa54905d52da39c42}{}\label{usock_8h_abef9e3f51e411d9aa54905d52da39c42}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+recv@{nn\+\_\+usock\+\_\+recv}}
+\index{nn\+\_\+usock\+\_\+recv@{nn\+\_\+usock\+\_\+recv}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+recv(struct nn\+\_\+usock $\ast$self, void $\ast$buf, size\+\_\+t len, int $\ast$fd)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+usock\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self, }
+\item[{void $\ast$}]{buf, }
+\item[{size\+\_\+t}]{len, }
+\item[{int $\ast$}]{fd}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_ab26ca6c05222a30b7af66a306ed1e302}{}\label{usock_8h_ab26ca6c05222a30b7af66a306ed1e302}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+send@{nn\+\_\+usock\+\_\+send}}
+\index{nn\+\_\+usock\+\_\+send@{nn\+\_\+usock\+\_\+send}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+send(struct nn\+\_\+usock $\ast$self, const struct nn\+\_\+iovec $\ast$iov, int iovcnt)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+usock\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self, }
+\item[{const struct {\bf nn\+\_\+iovec} $\ast$}]{iov, }
+\item[{int}]{iovcnt}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_ad39c2d6a4219f6e436309e6718b49940}{}\label{usock_8h_ad39c2d6a4219f6e436309e6718b49940}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+setsockopt@{nn\+\_\+usock\+\_\+setsockopt}}
+\index{nn\+\_\+usock\+\_\+setsockopt@{nn\+\_\+usock\+\_\+setsockopt}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+setsockopt(struct nn\+\_\+usock $\ast$self, int level, int optname, const void $\ast$optval, size\+\_\+t optlen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+usock\+\_\+setsockopt (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self, }
+\item[{int}]{level, }
+\item[{int}]{optname, }
+\item[{const void $\ast$}]{optval, }
+\item[{size\+\_\+t}]{optlen}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_ad04fbefb96b1353ad400098b07e2989d}{}\label{usock_8h_ad04fbefb96b1353ad400098b07e2989d}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+start@{nn\+\_\+usock\+\_\+start}}
+\index{nn\+\_\+usock\+\_\+start@{nn\+\_\+usock\+\_\+start}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+start(struct nn\+\_\+usock $\ast$self, int domain, int type, int protocol)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+usock\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self, }
+\item[{int}]{domain, }
+\item[{int}]{type, }
+\item[{int}]{protocol}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_abfdb8ef7ec4fca6f5794b9d1edd7b924}{}\label{usock_8h_abfdb8ef7ec4fca6f5794b9d1edd7b924}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+start\+\_\+fd@{nn\+\_\+usock\+\_\+start\+\_\+fd}}
+\index{nn\+\_\+usock\+\_\+start\+\_\+fd@{nn\+\_\+usock\+\_\+start\+\_\+fd}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+start\+\_\+fd(struct nn\+\_\+usock $\ast$self, int fd)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+usock\+\_\+start\+\_\+fd (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self, }
+\item[{int}]{fd}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_aeb7747c4a6c3f360a9c3f8ce9e2944d2}{}\label{usock_8h_aeb7747c4a6c3f360a9c3f8ce9e2944d2}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+stop@{nn\+\_\+usock\+\_\+stop}}
+\index{nn\+\_\+usock\+\_\+stop@{nn\+\_\+usock\+\_\+stop}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+stop(struct nn\+\_\+usock $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+usock\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_a324fb5c92e050c3fa92634abf8a51116}{}\label{usock_8h_a324fb5c92e050c3fa92634abf8a51116}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+swap\+\_\+owner@{nn\+\_\+usock\+\_\+swap\+\_\+owner}}
+\index{nn\+\_\+usock\+\_\+swap\+\_\+owner@{nn\+\_\+usock\+\_\+swap\+\_\+owner}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+swap\+\_\+owner(struct nn\+\_\+usock $\ast$self, struct nn\+\_\+fsm\+\_\+owner $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+usock\+\_\+swap\+\_\+owner (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+fsm\+\_\+owner} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_a5d888e238ae20dc9bb23c5801c09f39e}{}\label{usock_8h_a5d888e238ae20dc9bb23c5801c09f39e}
+\index{usock.\+h@{usock.\+h}!nn\+\_\+usock\+\_\+term@{nn\+\_\+usock\+\_\+term}}
+\index{nn\+\_\+usock\+\_\+term@{nn\+\_\+usock\+\_\+term}!usock.\+h@{usock.\+h}}
+\subsubsection[{nn\+\_\+usock\+\_\+term(struct nn\+\_\+usock $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+usock\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{usock_8h_a7c6ccf19c5b2a230ab39f625d8e48b6f}{}\label{usock_8h_a7c6ccf19c5b2a230ab39f625d8e48b6f}

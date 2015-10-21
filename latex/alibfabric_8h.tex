@@ -1,0 +1,102 @@
+\hypertarget{alibfabric_8h}{}\section{src/transports/libfabric/alibfabric.h File Reference}
+\label{alibfabric_8h}\index{src/transports/libfabric/alibfabric.\+h@{src/transports/libfabric/alibfabric.\+h}}
+{\ttfamily \#include \char`\"{}slibfabric.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../transport.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/fsm.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/usock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+Include dependency graph for alibfabric.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alibfabric_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alibfabric_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__alibfabric}{nn\+\_\+alibfabric}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{alibfabric_8h_ae493bb26d70a76d1f86aa1bcd8e5b329}{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED}~34231
+\item 
+\#define \hyperlink{alibfabric_8h_a843cc10118eeea4163fc2b1a13dc9885}{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+E\+R\+R\+OR}~34232
+\item 
+\#define \hyperlink{alibfabric_8h_abf21c65ae36e7a382fe1f7d4436cdcd7}{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+O\+P\+P\+ED}~34233
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{alibfabric_8h_a007d1fe407292fbd12f6b1241ba18962}{nn\+\_\+alibfabric\+\_\+init} (struct \hyperlink{structnn__alibfabric}{nn\+\_\+alibfabric} $\ast$self, int src, struct \hyperlink{structnn__epbase}{nn\+\_\+epbase} $\ast$epbase, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{alibfabric_8h_a22d17810b20db3e5caa0e5cd6440b414}{nn\+\_\+alibfabric\+\_\+term} (struct \hyperlink{structnn__alibfabric}{nn\+\_\+alibfabric} $\ast$self)
+\item 
+int \hyperlink{alibfabric_8h_a1b4c1c27eb1fb830a365ed617402e976}{nn\+\_\+alibfabric\+\_\+isidle} (struct \hyperlink{structnn__alibfabric}{nn\+\_\+alibfabric} $\ast$self)
+\item 
+void \hyperlink{alibfabric_8h_aead69e3658e5957dbd6379fa67dbd3e1}{nn\+\_\+alibfabric\+\_\+start} (struct \hyperlink{structnn__alibfabric}{nn\+\_\+alibfabric} $\ast$self, struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$listener)
+\item 
+void \hyperlink{alibfabric_8h_aed4ab25464b3aca6e70ccd367343e63f}{nn\+\_\+alibfabric\+\_\+stop} (struct \hyperlink{structnn__alibfabric}{nn\+\_\+alibfabric} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{alibfabric.\+h@{alibfabric.\+h}!N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED@{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED}}
+\index{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED@{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED}!alibfabric.\+h@{alibfabric.\+h}}
+\subsubsection[{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED~34231}\hypertarget{alibfabric_8h_ae493bb26d70a76d1f86aa1bcd8e5b329}{}\label{alibfabric_8h_ae493bb26d70a76d1f86aa1bcd8e5b329}
+\index{alibfabric.\+h@{alibfabric.\+h}!N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+E\+R\+R\+OR}}
+\index{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+E\+R\+R\+OR}!alibfabric.\+h@{alibfabric.\+h}}
+\subsubsection[{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+E\+R\+R\+OR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+E\+R\+R\+OR~34232}\hypertarget{alibfabric_8h_a843cc10118eeea4163fc2b1a13dc9885}{}\label{alibfabric_8h_a843cc10118eeea4163fc2b1a13dc9885}
+\index{alibfabric.\+h@{alibfabric.\+h}!N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+O\+P\+P\+ED}!alibfabric.\+h@{alibfabric.\+h}}
+\subsubsection[{N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+A\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+O\+P\+P\+ED~34233}\hypertarget{alibfabric_8h_abf21c65ae36e7a382fe1f7d4436cdcd7}{}\label{alibfabric_8h_abf21c65ae36e7a382fe1f7d4436cdcd7}
+
+
+\subsection{Function Documentation}
+\index{alibfabric.\+h@{alibfabric.\+h}!nn\+\_\+alibfabric\+\_\+init@{nn\+\_\+alibfabric\+\_\+init}}
+\index{nn\+\_\+alibfabric\+\_\+init@{nn\+\_\+alibfabric\+\_\+init}!alibfabric.\+h@{alibfabric.\+h}}
+\subsubsection[{nn\+\_\+alibfabric\+\_\+init(struct nn\+\_\+alibfabric $\ast$self, int src, struct nn\+\_\+epbase $\ast$epbase, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+alibfabric\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+alibfabric} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+epbase} $\ast$}]{epbase, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{alibfabric_8h_a007d1fe407292fbd12f6b1241ba18962}{}\label{alibfabric_8h_a007d1fe407292fbd12f6b1241ba18962}
+\index{alibfabric.\+h@{alibfabric.\+h}!nn\+\_\+alibfabric\+\_\+isidle@{nn\+\_\+alibfabric\+\_\+isidle}}
+\index{nn\+\_\+alibfabric\+\_\+isidle@{nn\+\_\+alibfabric\+\_\+isidle}!alibfabric.\+h@{alibfabric.\+h}}
+\subsubsection[{nn\+\_\+alibfabric\+\_\+isidle(struct nn\+\_\+alibfabric $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+alibfabric\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+alibfabric} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{alibfabric_8h_a1b4c1c27eb1fb830a365ed617402e976}{}\label{alibfabric_8h_a1b4c1c27eb1fb830a365ed617402e976}
+\index{alibfabric.\+h@{alibfabric.\+h}!nn\+\_\+alibfabric\+\_\+start@{nn\+\_\+alibfabric\+\_\+start}}
+\index{nn\+\_\+alibfabric\+\_\+start@{nn\+\_\+alibfabric\+\_\+start}!alibfabric.\+h@{alibfabric.\+h}}
+\subsubsection[{nn\+\_\+alibfabric\+\_\+start(struct nn\+\_\+alibfabric $\ast$self, struct nn\+\_\+usock $\ast$listener)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+alibfabric\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+alibfabric} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)}\hypertarget{alibfabric_8h_aead69e3658e5957dbd6379fa67dbd3e1}{}\label{alibfabric_8h_aead69e3658e5957dbd6379fa67dbd3e1}
+\index{alibfabric.\+h@{alibfabric.\+h}!nn\+\_\+alibfabric\+\_\+stop@{nn\+\_\+alibfabric\+\_\+stop}}
+\index{nn\+\_\+alibfabric\+\_\+stop@{nn\+\_\+alibfabric\+\_\+stop}!alibfabric.\+h@{alibfabric.\+h}}
+\subsubsection[{nn\+\_\+alibfabric\+\_\+stop(struct nn\+\_\+alibfabric $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+alibfabric\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+alibfabric} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{alibfabric_8h_aed4ab25464b3aca6e70ccd367343e63f}{}\label{alibfabric_8h_aed4ab25464b3aca6e70ccd367343e63f}
+\index{alibfabric.\+h@{alibfabric.\+h}!nn\+\_\+alibfabric\+\_\+term@{nn\+\_\+alibfabric\+\_\+term}}
+\index{nn\+\_\+alibfabric\+\_\+term@{nn\+\_\+alibfabric\+\_\+term}!alibfabric.\+h@{alibfabric.\+h}}
+\subsubsection[{nn\+\_\+alibfabric\+\_\+term(struct nn\+\_\+alibfabric $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+alibfabric\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+alibfabric} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{alibfabric_8h_a22d17810b20db3e5caa0e5cd6440b414}{}\label{alibfabric_8h_a22d17810b20db3e5caa0e5cd6440b414}

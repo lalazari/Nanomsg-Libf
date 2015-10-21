@@ -1,0 +1,102 @@
+\hypertarget{aws_8h}{}\section{src/transports/ws/aws.h File Reference}
+\label{aws_8h}\index{src/transports/ws/aws.\+h@{src/transports/ws/aws.\+h}}
+{\ttfamily \#include \char`\"{}sws.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../transport.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/fsm.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/usock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+Include dependency graph for aws.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aws_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{aws_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__aws}{nn\+\_\+aws}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{aws_8h_a2edcd3011bccfeebff305675dca2c91b}{N\+N\+\_\+\+A\+W\+S\+\_\+\+A\+C\+C\+E\+P\+T\+ED}~34231
+\item 
+\#define \hyperlink{aws_8h_a50cb02f63dad1a07c3d515462fd5a50d}{N\+N\+\_\+\+A\+W\+S\+\_\+\+E\+R\+R\+OR}~34232
+\item 
+\#define \hyperlink{aws_8h_a605fd206937d69193fa7e3a619273b14}{N\+N\+\_\+\+A\+W\+S\+\_\+\+S\+T\+O\+P\+P\+ED}~34233
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{aws_8h_ad07b8dfe29796f27962cbc8f6c61fec1}{nn\+\_\+aws\+\_\+init} (struct \hyperlink{structnn__aws}{nn\+\_\+aws} $\ast$self, int src, struct \hyperlink{structnn__epbase}{nn\+\_\+epbase} $\ast$epbase, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{aws_8h_ad2519562f4d526cb1292bd38adadb9b3}{nn\+\_\+aws\+\_\+term} (struct \hyperlink{structnn__aws}{nn\+\_\+aws} $\ast$self)
+\item 
+int \hyperlink{aws_8h_acb6087866814cee5e914ee5e9c7ffcb9}{nn\+\_\+aws\+\_\+isidle} (struct \hyperlink{structnn__aws}{nn\+\_\+aws} $\ast$self)
+\item 
+void \hyperlink{aws_8h_a5ea151a2fca3dd37f369fd2804a93975}{nn\+\_\+aws\+\_\+start} (struct \hyperlink{structnn__aws}{nn\+\_\+aws} $\ast$self, struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$listener)
+\item 
+void \hyperlink{aws_8h_a87bd1d3b4a94f2493157b0854c4298ba}{nn\+\_\+aws\+\_\+stop} (struct \hyperlink{structnn__aws}{nn\+\_\+aws} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{aws.\+h@{aws.\+h}!N\+N\+\_\+\+A\+W\+S\+\_\+\+A\+C\+C\+E\+P\+T\+ED@{N\+N\+\_\+\+A\+W\+S\+\_\+\+A\+C\+C\+E\+P\+T\+ED}}
+\index{N\+N\+\_\+\+A\+W\+S\+\_\+\+A\+C\+C\+E\+P\+T\+ED@{N\+N\+\_\+\+A\+W\+S\+\_\+\+A\+C\+C\+E\+P\+T\+ED}!aws.\+h@{aws.\+h}}
+\subsubsection[{N\+N\+\_\+\+A\+W\+S\+\_\+\+A\+C\+C\+E\+P\+T\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+A\+W\+S\+\_\+\+A\+C\+C\+E\+P\+T\+ED~34231}\hypertarget{aws_8h_a2edcd3011bccfeebff305675dca2c91b}{}\label{aws_8h_a2edcd3011bccfeebff305675dca2c91b}
+\index{aws.\+h@{aws.\+h}!N\+N\+\_\+\+A\+W\+S\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+A\+W\+S\+\_\+\+E\+R\+R\+OR}}
+\index{N\+N\+\_\+\+A\+W\+S\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+A\+W\+S\+\_\+\+E\+R\+R\+OR}!aws.\+h@{aws.\+h}}
+\subsubsection[{N\+N\+\_\+\+A\+W\+S\+\_\+\+E\+R\+R\+OR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+A\+W\+S\+\_\+\+E\+R\+R\+OR~34232}\hypertarget{aws_8h_a50cb02f63dad1a07c3d515462fd5a50d}{}\label{aws_8h_a50cb02f63dad1a07c3d515462fd5a50d}
+\index{aws.\+h@{aws.\+h}!N\+N\+\_\+\+A\+W\+S\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+A\+W\+S\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+A\+W\+S\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+A\+W\+S\+\_\+\+S\+T\+O\+P\+P\+ED}!aws.\+h@{aws.\+h}}
+\subsubsection[{N\+N\+\_\+\+A\+W\+S\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+A\+W\+S\+\_\+\+S\+T\+O\+P\+P\+ED~34233}\hypertarget{aws_8h_a605fd206937d69193fa7e3a619273b14}{}\label{aws_8h_a605fd206937d69193fa7e3a619273b14}
+
+
+\subsection{Function Documentation}
+\index{aws.\+h@{aws.\+h}!nn\+\_\+aws\+\_\+init@{nn\+\_\+aws\+\_\+init}}
+\index{nn\+\_\+aws\+\_\+init@{nn\+\_\+aws\+\_\+init}!aws.\+h@{aws.\+h}}
+\subsubsection[{nn\+\_\+aws\+\_\+init(struct nn\+\_\+aws $\ast$self, int src, struct nn\+\_\+epbase $\ast$epbase, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+aws\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+aws} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+epbase} $\ast$}]{epbase, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{aws_8h_ad07b8dfe29796f27962cbc8f6c61fec1}{}\label{aws_8h_ad07b8dfe29796f27962cbc8f6c61fec1}
+\index{aws.\+h@{aws.\+h}!nn\+\_\+aws\+\_\+isidle@{nn\+\_\+aws\+\_\+isidle}}
+\index{nn\+\_\+aws\+\_\+isidle@{nn\+\_\+aws\+\_\+isidle}!aws.\+h@{aws.\+h}}
+\subsubsection[{nn\+\_\+aws\+\_\+isidle(struct nn\+\_\+aws $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+aws\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+aws} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{aws_8h_acb6087866814cee5e914ee5e9c7ffcb9}{}\label{aws_8h_acb6087866814cee5e914ee5e9c7ffcb9}
+\index{aws.\+h@{aws.\+h}!nn\+\_\+aws\+\_\+start@{nn\+\_\+aws\+\_\+start}}
+\index{nn\+\_\+aws\+\_\+start@{nn\+\_\+aws\+\_\+start}!aws.\+h@{aws.\+h}}
+\subsubsection[{nn\+\_\+aws\+\_\+start(struct nn\+\_\+aws $\ast$self, struct nn\+\_\+usock $\ast$listener)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+aws\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+aws} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)}\hypertarget{aws_8h_a5ea151a2fca3dd37f369fd2804a93975}{}\label{aws_8h_a5ea151a2fca3dd37f369fd2804a93975}
+\index{aws.\+h@{aws.\+h}!nn\+\_\+aws\+\_\+stop@{nn\+\_\+aws\+\_\+stop}}
+\index{nn\+\_\+aws\+\_\+stop@{nn\+\_\+aws\+\_\+stop}!aws.\+h@{aws.\+h}}
+\subsubsection[{nn\+\_\+aws\+\_\+stop(struct nn\+\_\+aws $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+aws\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+aws} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{aws_8h_a87bd1d3b4a94f2493157b0854c4298ba}{}\label{aws_8h_a87bd1d3b4a94f2493157b0854c4298ba}
+\index{aws.\+h@{aws.\+h}!nn\+\_\+aws\+\_\+term@{nn\+\_\+aws\+\_\+term}}
+\index{nn\+\_\+aws\+\_\+term@{nn\+\_\+aws\+\_\+term}!aws.\+h@{aws.\+h}}
+\subsubsection[{nn\+\_\+aws\+\_\+term(struct nn\+\_\+aws $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+aws\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+aws} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{aws_8h_ad2519562f4d526cb1292bd38adadb9b3}{}\label{aws_8h_ad2519562f4d526cb1292bd38adadb9b3}

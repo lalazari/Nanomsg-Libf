@@ -1,0 +1,144 @@
+\hypertarget{list_8h}{}\section{src/utils/list.h File Reference}
+\label{list_8h}\index{src/utils/list.\+h@{src/utils/list.\+h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item}
+\item 
+struct \hyperlink{structnn__list}{nn\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{list_8h_ae0d4310afe8733c9eca98ca05683a56d}{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+I\+N\+L\+I\+ST}~((struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item}$\ast$) -\/1)
+\item 
+\#define \hyperlink{list_8h_acdbe366bbb89bfdbbc142a10b5c57b17}{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}~\{\hyperlink{list_8h_ae0d4310afe8733c9eca98ca05683a56d}{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+I\+N\+L\+I\+ST}, \hyperlink{list_8h_ae0d4310afe8733c9eca98ca05683a56d}{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+I\+N\+L\+I\+ST}\}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{list_8h_a61e07ea848ea319dfd1c88fe90749263}{nn\+\_\+list\+\_\+init} (struct \hyperlink{structnn__list}{nn\+\_\+list} $\ast$self)
+\item 
+void \hyperlink{list_8h_a85126f8449d600cbedba9f2a53e2810d}{nn\+\_\+list\+\_\+term} (struct \hyperlink{structnn__list}{nn\+\_\+list} $\ast$self)
+\item 
+int \hyperlink{list_8h_ab1a0d7c82a34545cef8b3f3e4d980bce}{nn\+\_\+list\+\_\+empty} (struct \hyperlink{structnn__list}{nn\+\_\+list} $\ast$self)
+\item 
+struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} $\ast$ \hyperlink{list_8h_a66c3d8065f621803d69ba0e451e4a347}{nn\+\_\+list\+\_\+begin} (struct \hyperlink{structnn__list}{nn\+\_\+list} $\ast$self)
+\item 
+struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} $\ast$ \hyperlink{list_8h_aab8a2501f44cec304fc7ae6e01e52bdd}{nn\+\_\+list\+\_\+end} (struct \hyperlink{structnn__list}{nn\+\_\+list} $\ast$self)
+\item 
+struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} $\ast$ \hyperlink{list_8h_a15898b2b5e726568d0e4898cac32c1b3}{nn\+\_\+list\+\_\+prev} (struct \hyperlink{structnn__list}{nn\+\_\+list} $\ast$self, struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} $\ast$it)
+\item 
+struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} $\ast$ \hyperlink{list_8h_a43216e182e6e93941968feaf354fe9da}{nn\+\_\+list\+\_\+next} (struct \hyperlink{structnn__list}{nn\+\_\+list} $\ast$self, struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} $\ast$it)
+\item 
+void \hyperlink{list_8h_a59161f6aecf92804a35121b5d6205d96}{nn\+\_\+list\+\_\+insert} (struct \hyperlink{structnn__list}{nn\+\_\+list} $\ast$self, struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} $\ast$\hyperlink{structitem}{item}, struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} $\ast$it)
+\item 
+struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} $\ast$ \hyperlink{list_8h_a7a16ae47b745c56d6bfcb8d70f157b37}{nn\+\_\+list\+\_\+erase} (struct \hyperlink{structnn__list}{nn\+\_\+list} $\ast$self, struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} $\ast$\hyperlink{structitem}{item})
+\item 
+void \hyperlink{list_8h_a9cb1a3a7d2bb1923de76be90ee8ee285}{nn\+\_\+list\+\_\+item\+\_\+init} (struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} $\ast$self)
+\item 
+void \hyperlink{list_8h_a69706bf135218f461ce42ca9b26679d6}{nn\+\_\+list\+\_\+item\+\_\+term} (struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} $\ast$self)
+\item 
+int \hyperlink{list_8h_a5f4e70e742dcb3520ca71f9079577677}{nn\+\_\+list\+\_\+item\+\_\+isinlist} (struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{list.\+h@{list.\+h}!N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER@{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}}
+\index{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER@{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}!list.\+h@{list.\+h}}
+\subsubsection[{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER~\{{\bf N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+I\+N\+L\+I\+ST}, {\bf N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+I\+N\+L\+I\+ST}\}}\hypertarget{list_8h_acdbe366bbb89bfdbbc142a10b5c57b17}{}\label{list_8h_acdbe366bbb89bfdbbc142a10b5c57b17}
+\index{list.\+h@{list.\+h}!N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+I\+N\+L\+I\+ST@{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+I\+N\+L\+I\+ST}}
+\index{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+I\+N\+L\+I\+ST@{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+I\+N\+L\+I\+ST}!list.\+h@{list.\+h}}
+\subsubsection[{N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+I\+N\+L\+I\+ST}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+I\+N\+L\+I\+ST~((struct {\bf nn\+\_\+list\+\_\+item}$\ast$) -\/1)}\hypertarget{list_8h_ae0d4310afe8733c9eca98ca05683a56d}{}\label{list_8h_ae0d4310afe8733c9eca98ca05683a56d}
+
+
+\subsection{Function Documentation}
+\index{list.\+h@{list.\+h}!nn\+\_\+list\+\_\+begin@{nn\+\_\+list\+\_\+begin}}
+\index{nn\+\_\+list\+\_\+begin@{nn\+\_\+list\+\_\+begin}!list.\+h@{list.\+h}}
+\subsubsection[{nn\+\_\+list\+\_\+begin(struct nn\+\_\+list $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+list\+\_\+item}$\ast$ nn\+\_\+list\+\_\+begin (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+list} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a66c3d8065f621803d69ba0e451e4a347}{}\label{list_8h_a66c3d8065f621803d69ba0e451e4a347}
+\index{list.\+h@{list.\+h}!nn\+\_\+list\+\_\+empty@{nn\+\_\+list\+\_\+empty}}
+\index{nn\+\_\+list\+\_\+empty@{nn\+\_\+list\+\_\+empty}!list.\+h@{list.\+h}}
+\subsubsection[{nn\+\_\+list\+\_\+empty(struct nn\+\_\+list $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+list\+\_\+empty (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+list} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_ab1a0d7c82a34545cef8b3f3e4d980bce}{}\label{list_8h_ab1a0d7c82a34545cef8b3f3e4d980bce}
+\index{list.\+h@{list.\+h}!nn\+\_\+list\+\_\+end@{nn\+\_\+list\+\_\+end}}
+\index{nn\+\_\+list\+\_\+end@{nn\+\_\+list\+\_\+end}!list.\+h@{list.\+h}}
+\subsubsection[{nn\+\_\+list\+\_\+end(struct nn\+\_\+list $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+list\+\_\+item}$\ast$ nn\+\_\+list\+\_\+end (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+list} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_aab8a2501f44cec304fc7ae6e01e52bdd}{}\label{list_8h_aab8a2501f44cec304fc7ae6e01e52bdd}
+\index{list.\+h@{list.\+h}!nn\+\_\+list\+\_\+erase@{nn\+\_\+list\+\_\+erase}}
+\index{nn\+\_\+list\+\_\+erase@{nn\+\_\+list\+\_\+erase}!list.\+h@{list.\+h}}
+\subsubsection[{nn\+\_\+list\+\_\+erase(struct nn\+\_\+list $\ast$self, struct nn\+\_\+list\+\_\+item $\ast$item)}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+list\+\_\+item}$\ast$ nn\+\_\+list\+\_\+erase (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+list} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+list\+\_\+item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a7a16ae47b745c56d6bfcb8d70f157b37}{}\label{list_8h_a7a16ae47b745c56d6bfcb8d70f157b37}
+\index{list.\+h@{list.\+h}!nn\+\_\+list\+\_\+init@{nn\+\_\+list\+\_\+init}}
+\index{nn\+\_\+list\+\_\+init@{nn\+\_\+list\+\_\+init}!list.\+h@{list.\+h}}
+\subsubsection[{nn\+\_\+list\+\_\+init(struct nn\+\_\+list $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+list\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+list} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a61e07ea848ea319dfd1c88fe90749263}{}\label{list_8h_a61e07ea848ea319dfd1c88fe90749263}
+\index{list.\+h@{list.\+h}!nn\+\_\+list\+\_\+insert@{nn\+\_\+list\+\_\+insert}}
+\index{nn\+\_\+list\+\_\+insert@{nn\+\_\+list\+\_\+insert}!list.\+h@{list.\+h}}
+\subsubsection[{nn\+\_\+list\+\_\+insert(struct nn\+\_\+list $\ast$self, struct nn\+\_\+list\+\_\+item $\ast$item, struct nn\+\_\+list\+\_\+item $\ast$it)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+list\+\_\+insert (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+list} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+list\+\_\+item} $\ast$}]{item, }
+\item[{struct {\bf nn\+\_\+list\+\_\+item} $\ast$}]{it}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a59161f6aecf92804a35121b5d6205d96}{}\label{list_8h_a59161f6aecf92804a35121b5d6205d96}
+\index{list.\+h@{list.\+h}!nn\+\_\+list\+\_\+item\+\_\+init@{nn\+\_\+list\+\_\+item\+\_\+init}}
+\index{nn\+\_\+list\+\_\+item\+\_\+init@{nn\+\_\+list\+\_\+item\+\_\+init}!list.\+h@{list.\+h}}
+\subsubsection[{nn\+\_\+list\+\_\+item\+\_\+init(struct nn\+\_\+list\+\_\+item $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+list\+\_\+item\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+list\+\_\+item} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a9cb1a3a7d2bb1923de76be90ee8ee285}{}\label{list_8h_a9cb1a3a7d2bb1923de76be90ee8ee285}
+\index{list.\+h@{list.\+h}!nn\+\_\+list\+\_\+item\+\_\+isinlist@{nn\+\_\+list\+\_\+item\+\_\+isinlist}}
+\index{nn\+\_\+list\+\_\+item\+\_\+isinlist@{nn\+\_\+list\+\_\+item\+\_\+isinlist}!list.\+h@{list.\+h}}
+\subsubsection[{nn\+\_\+list\+\_\+item\+\_\+isinlist(struct nn\+\_\+list\+\_\+item $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+list\+\_\+item\+\_\+isinlist (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+list\+\_\+item} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a5f4e70e742dcb3520ca71f9079577677}{}\label{list_8h_a5f4e70e742dcb3520ca71f9079577677}
+\index{list.\+h@{list.\+h}!nn\+\_\+list\+\_\+item\+\_\+term@{nn\+\_\+list\+\_\+item\+\_\+term}}
+\index{nn\+\_\+list\+\_\+item\+\_\+term@{nn\+\_\+list\+\_\+item\+\_\+term}!list.\+h@{list.\+h}}
+\subsubsection[{nn\+\_\+list\+\_\+item\+\_\+term(struct nn\+\_\+list\+\_\+item $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+list\+\_\+item\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+list\+\_\+item} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a69706bf135218f461ce42ca9b26679d6}{}\label{list_8h_a69706bf135218f461ce42ca9b26679d6}
+\index{list.\+h@{list.\+h}!nn\+\_\+list\+\_\+next@{nn\+\_\+list\+\_\+next}}
+\index{nn\+\_\+list\+\_\+next@{nn\+\_\+list\+\_\+next}!list.\+h@{list.\+h}}
+\subsubsection[{nn\+\_\+list\+\_\+next(struct nn\+\_\+list $\ast$self, struct nn\+\_\+list\+\_\+item $\ast$it)}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+list\+\_\+item}$\ast$ nn\+\_\+list\+\_\+next (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+list} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+list\+\_\+item} $\ast$}]{it}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a43216e182e6e93941968feaf354fe9da}{}\label{list_8h_a43216e182e6e93941968feaf354fe9da}
+\index{list.\+h@{list.\+h}!nn\+\_\+list\+\_\+prev@{nn\+\_\+list\+\_\+prev}}
+\index{nn\+\_\+list\+\_\+prev@{nn\+\_\+list\+\_\+prev}!list.\+h@{list.\+h}}
+\subsubsection[{nn\+\_\+list\+\_\+prev(struct nn\+\_\+list $\ast$self, struct nn\+\_\+list\+\_\+item $\ast$it)}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+list\+\_\+item}$\ast$ nn\+\_\+list\+\_\+prev (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+list} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+list\+\_\+item} $\ast$}]{it}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a15898b2b5e726568d0e4898cac32c1b3}{}\label{list_8h_a15898b2b5e726568d0e4898cac32c1b3}
+\index{list.\+h@{list.\+h}!nn\+\_\+list\+\_\+term@{nn\+\_\+list\+\_\+term}}
+\index{nn\+\_\+list\+\_\+term@{nn\+\_\+list\+\_\+term}!list.\+h@{list.\+h}}
+\subsubsection[{nn\+\_\+list\+\_\+term(struct nn\+\_\+list $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+list\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+list} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a85126f8449d600cbedba9f2a53e2810d}{}\label{list_8h_a85126f8449d600cbedba9f2a53e2810d}

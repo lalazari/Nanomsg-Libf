@@ -1,0 +1,111 @@
+\hypertarget{hash_8h}{}\section{src/utils/hash.h File Reference}
+\label{hash_8h}\index{src/utils/hash.\+h@{src/utils/hash.\+h}}
+{\ttfamily \#include \char`\"{}list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}int.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for hash.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{hash_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hash_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__hash__item}{nn\+\_\+hash\+\_\+item}
+\item 
+struct \hyperlink{structnn__hash}{nn\+\_\+hash}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{hash_8h_a9902af3fe6016de0325666b3716eb513}{N\+N\+\_\+\+H\+A\+S\+H\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}~\{0xffff, N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+L\+I\+Z\+E\+R\}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{hash_8h_ae7e121e7e21f8989bbf3da0c6a625bb0}{nn\+\_\+hash\+\_\+init} (struct \hyperlink{structnn__hash}{nn\+\_\+hash} $\ast$self)
+\item 
+void \hyperlink{hash_8h_a860f3921e852464b5618b51877036f2a}{nn\+\_\+hash\+\_\+term} (struct \hyperlink{structnn__hash}{nn\+\_\+hash} $\ast$self)
+\item 
+void \hyperlink{hash_8h_acfd9f20f61c3c179c49cd9c217369424}{nn\+\_\+hash\+\_\+insert} (struct \hyperlink{structnn__hash}{nn\+\_\+hash} $\ast$self, uint32\+\_\+t key, struct \hyperlink{structnn__hash__item}{nn\+\_\+hash\+\_\+item} $\ast$\hyperlink{structitem}{item})
+\item 
+void \hyperlink{hash_8h_abe05e6ef4fd1b8c5542f0e7d96e84d63}{nn\+\_\+hash\+\_\+erase} (struct \hyperlink{structnn__hash}{nn\+\_\+hash} $\ast$self, struct \hyperlink{structnn__hash__item}{nn\+\_\+hash\+\_\+item} $\ast$\hyperlink{structitem}{item})
+\item 
+struct \hyperlink{structnn__hash__item}{nn\+\_\+hash\+\_\+item} $\ast$ \hyperlink{hash_8h_ac90bb2c5798054980174c5c3114c015e}{nn\+\_\+hash\+\_\+get} (struct \hyperlink{structnn__hash}{nn\+\_\+hash} $\ast$self, uint32\+\_\+t key)
+\item 
+void \hyperlink{hash_8h_aea47e082f9acf3922f29293394a88885}{nn\+\_\+hash\+\_\+item\+\_\+init} (struct \hyperlink{structnn__hash__item}{nn\+\_\+hash\+\_\+item} $\ast$self)
+\item 
+void \hyperlink{hash_8h_a6e5c64761b9fff43c50961cbc4deda1d}{nn\+\_\+hash\+\_\+item\+\_\+term} (struct \hyperlink{structnn__hash__item}{nn\+\_\+hash\+\_\+item} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{hash.\+h@{hash.\+h}!N\+N\+\_\+\+H\+A\+S\+H\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER@{N\+N\+\_\+\+H\+A\+S\+H\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}}
+\index{N\+N\+\_\+\+H\+A\+S\+H\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER@{N\+N\+\_\+\+H\+A\+S\+H\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}!hash.\+h@{hash.\+h}}
+\subsubsection[{N\+N\+\_\+\+H\+A\+S\+H\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+H\+A\+S\+H\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER~\{0xffff, N\+N\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+I\+T\+I\+L\+I\+Z\+E\+R\}}\hypertarget{hash_8h_a9902af3fe6016de0325666b3716eb513}{}\label{hash_8h_a9902af3fe6016de0325666b3716eb513}
+
+
+\subsection{Function Documentation}
+\index{hash.\+h@{hash.\+h}!nn\+\_\+hash\+\_\+erase@{nn\+\_\+hash\+\_\+erase}}
+\index{nn\+\_\+hash\+\_\+erase@{nn\+\_\+hash\+\_\+erase}!hash.\+h@{hash.\+h}}
+\subsubsection[{nn\+\_\+hash\+\_\+erase(struct nn\+\_\+hash $\ast$self, struct nn\+\_\+hash\+\_\+item $\ast$item)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+hash\+\_\+erase (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+hash} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+hash\+\_\+item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\hypertarget{hash_8h_abe05e6ef4fd1b8c5542f0e7d96e84d63}{}\label{hash_8h_abe05e6ef4fd1b8c5542f0e7d96e84d63}
+\index{hash.\+h@{hash.\+h}!nn\+\_\+hash\+\_\+get@{nn\+\_\+hash\+\_\+get}}
+\index{nn\+\_\+hash\+\_\+get@{nn\+\_\+hash\+\_\+get}!hash.\+h@{hash.\+h}}
+\subsubsection[{nn\+\_\+hash\+\_\+get(struct nn\+\_\+hash $\ast$self, uint32\+\_\+t key)}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+hash\+\_\+item}$\ast$ nn\+\_\+hash\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+hash} $\ast$}]{self, }
+\item[{uint32\+\_\+t}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{hash_8h_ac90bb2c5798054980174c5c3114c015e}{}\label{hash_8h_ac90bb2c5798054980174c5c3114c015e}
+\index{hash.\+h@{hash.\+h}!nn\+\_\+hash\+\_\+init@{nn\+\_\+hash\+\_\+init}}
+\index{nn\+\_\+hash\+\_\+init@{nn\+\_\+hash\+\_\+init}!hash.\+h@{hash.\+h}}
+\subsubsection[{nn\+\_\+hash\+\_\+init(struct nn\+\_\+hash $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+hash\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+hash} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{hash_8h_ae7e121e7e21f8989bbf3da0c6a625bb0}{}\label{hash_8h_ae7e121e7e21f8989bbf3da0c6a625bb0}
+\index{hash.\+h@{hash.\+h}!nn\+\_\+hash\+\_\+insert@{nn\+\_\+hash\+\_\+insert}}
+\index{nn\+\_\+hash\+\_\+insert@{nn\+\_\+hash\+\_\+insert}!hash.\+h@{hash.\+h}}
+\subsubsection[{nn\+\_\+hash\+\_\+insert(struct nn\+\_\+hash $\ast$self, uint32\+\_\+t key, struct nn\+\_\+hash\+\_\+item $\ast$item)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+hash\+\_\+insert (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+hash} $\ast$}]{self, }
+\item[{uint32\+\_\+t}]{key, }
+\item[{struct {\bf nn\+\_\+hash\+\_\+item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\hypertarget{hash_8h_acfd9f20f61c3c179c49cd9c217369424}{}\label{hash_8h_acfd9f20f61c3c179c49cd9c217369424}
+\index{hash.\+h@{hash.\+h}!nn\+\_\+hash\+\_\+item\+\_\+init@{nn\+\_\+hash\+\_\+item\+\_\+init}}
+\index{nn\+\_\+hash\+\_\+item\+\_\+init@{nn\+\_\+hash\+\_\+item\+\_\+init}!hash.\+h@{hash.\+h}}
+\subsubsection[{nn\+\_\+hash\+\_\+item\+\_\+init(struct nn\+\_\+hash\+\_\+item $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+hash\+\_\+item\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+hash\+\_\+item} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{hash_8h_aea47e082f9acf3922f29293394a88885}{}\label{hash_8h_aea47e082f9acf3922f29293394a88885}
+\index{hash.\+h@{hash.\+h}!nn\+\_\+hash\+\_\+item\+\_\+term@{nn\+\_\+hash\+\_\+item\+\_\+term}}
+\index{nn\+\_\+hash\+\_\+item\+\_\+term@{nn\+\_\+hash\+\_\+item\+\_\+term}!hash.\+h@{hash.\+h}}
+\subsubsection[{nn\+\_\+hash\+\_\+item\+\_\+term(struct nn\+\_\+hash\+\_\+item $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+hash\+\_\+item\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+hash\+\_\+item} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{hash_8h_a6e5c64761b9fff43c50961cbc4deda1d}{}\label{hash_8h_a6e5c64761b9fff43c50961cbc4deda1d}
+\index{hash.\+h@{hash.\+h}!nn\+\_\+hash\+\_\+term@{nn\+\_\+hash\+\_\+term}}
+\index{nn\+\_\+hash\+\_\+term@{nn\+\_\+hash\+\_\+term}!hash.\+h@{hash.\+h}}
+\subsubsection[{nn\+\_\+hash\+\_\+term(struct nn\+\_\+hash $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+hash\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+hash} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{hash_8h_a860f3921e852464b5618b51877036f2a}{}\label{hash_8h_a860f3921e852464b5618b51877036f2a}

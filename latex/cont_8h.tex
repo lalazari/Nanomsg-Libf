@@ -1,0 +1,27 @@
+\hypertarget{cont_8h}{}\section{src/utils/cont.h File Reference}
+\label{cont_8h}\index{src/utils/cont.\+h@{src/utils/cont.\+h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for cont.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{cont_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cont_8h_a7bb4917aeb11baf77d94775664c58e17}{nn\+\_\+cont}(ptr,  type,  member)~(ptr ? ((type$\ast$) (((char$\ast$) ptr) -\/ offsetof(type, member))) \+: N\+U\+LL)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{cont.\+h@{cont.\+h}!nn\+\_\+cont@{nn\+\_\+cont}}
+\index{nn\+\_\+cont@{nn\+\_\+cont}!cont.\+h@{cont.\+h}}
+\subsubsection[{nn\+\_\+cont}]{\setlength{\rightskip}{0pt plus 5cm}\#define nn\+\_\+cont(
+\begin{DoxyParamCaption}
+\item[{}]{ptr, }
+\item[{}]{type, }
+\item[{}]{member}
+\end{DoxyParamCaption}
+)~(ptr ? ((type$\ast$) (((char$\ast$) ptr) -\/ offsetof(type, member))) \+: N\+U\+LL)}\hypertarget{cont_8h_a7bb4917aeb11baf77d94775664c58e17}{}\label{cont_8h_a7bb4917aeb11baf77d94775664c58e17}

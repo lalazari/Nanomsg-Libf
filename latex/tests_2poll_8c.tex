@@ -1,0 +1,93 @@
+\hypertarget{tests_2poll_8c}{}\section{tests/poll.c File Reference}
+\label{tests_2poll_8c}\index{tests/poll.\+c@{tests/poll.\+c}}
+{\ttfamily \#include \char`\"{}../src/nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/pair.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/inproc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}testutil.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/utils/attr.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/utils/thread.\+c\char`\"{}}\\*
+{\ttfamily \#include $<$sys/select.\+h$>$}\\*
+Include dependency graph for poll.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_2poll_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{tests_2poll_8c_a8cccdb3b239ce7cf58e9781af267072b}{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}~\char`\"{}inproc\+://a\char`\"{}
+\item 
+\#define \hyperlink{tests_2poll_8c_a08b6b3c80047e8dc08b5c6aab393fc70}{N\+N\+\_\+\+IN}~1
+\item 
+\#define \hyperlink{tests_2poll_8c_a7b5612b0959fd77cc7c0f5ff1530f2bf}{N\+N\+\_\+\+O\+UT}~2
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{tests_2poll_8c_a3984314275305968bf339a3dff963553}{routine1} (\hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$arg)
+\item 
+void \hyperlink{tests_2poll_8c_aef3e59c81e6e7739c2da373b2bab1826}{routine2} (\hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$arg)
+\item 
+int \hyperlink{tests_2poll_8c_a506ea3c9d594f2f356a761265e22f4e7}{getevents} (int s, int events, int timeout)
+\item 
+int \hyperlink{tests_2poll_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{tests_2poll_8c_aa462bab367c8aac56ebc986ad8f4e30c}{sc}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{tests/poll.\+c@{tests/poll.\+c}!N\+N\+\_\+\+IN@{N\+N\+\_\+\+IN}}
+\index{N\+N\+\_\+\+IN@{N\+N\+\_\+\+IN}!tests/poll.\+c@{tests/poll.\+c}}
+\subsubsection[{N\+N\+\_\+\+IN}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+IN~1}\hypertarget{tests_2poll_8c_a08b6b3c80047e8dc08b5c6aab393fc70}{}\label{tests_2poll_8c_a08b6b3c80047e8dc08b5c6aab393fc70}
+\index{tests/poll.\+c@{tests/poll.\+c}!N\+N\+\_\+\+O\+UT@{N\+N\+\_\+\+O\+UT}}
+\index{N\+N\+\_\+\+O\+UT@{N\+N\+\_\+\+O\+UT}!tests/poll.\+c@{tests/poll.\+c}}
+\subsubsection[{N\+N\+\_\+\+O\+UT}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+O\+UT~2}\hypertarget{tests_2poll_8c_a7b5612b0959fd77cc7c0f5ff1530f2bf}{}\label{tests_2poll_8c_a7b5612b0959fd77cc7c0f5ff1530f2bf}
+\index{tests/poll.\+c@{tests/poll.\+c}!S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}!tests/poll.\+c@{tests/poll.\+c}}
+\subsubsection[{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS~\char`\"{}inproc\+://a\char`\"{}}\hypertarget{tests_2poll_8c_a8cccdb3b239ce7cf58e9781af267072b}{}\label{tests_2poll_8c_a8cccdb3b239ce7cf58e9781af267072b}
+
+
+\subsection{Function Documentation}
+\index{tests/poll.\+c@{tests/poll.\+c}!getevents@{getevents}}
+\index{getevents@{getevents}!tests/poll.\+c@{tests/poll.\+c}}
+\subsubsection[{getevents(int s, int events, int timeout)}]{\setlength{\rightskip}{0pt plus 5cm}int getevents (
+\begin{DoxyParamCaption}
+\item[{int}]{s, }
+\item[{int}]{events, }
+\item[{int}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_2poll_8c_a506ea3c9d594f2f356a761265e22f4e7}{}\label{tests_2poll_8c_a506ea3c9d594f2f356a761265e22f4e7}
+\index{tests/poll.\+c@{tests/poll.\+c}!main@{main}}
+\index{main@{main}!tests/poll.\+c@{tests/poll.\+c}}
+\subsubsection[{main()}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_2poll_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{tests_2poll_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+\index{tests/poll.\+c@{tests/poll.\+c}!routine1@{routine1}}
+\index{routine1@{routine1}!tests/poll.\+c@{tests/poll.\+c}}
+\subsubsection[{routine1(\+N\+N\+\_\+\+U\+N\+U\+S\+E\+D void $\ast$arg)}]{\setlength{\rightskip}{0pt plus 5cm}void routine1 (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_2poll_8c_a3984314275305968bf339a3dff963553}{}\label{tests_2poll_8c_a3984314275305968bf339a3dff963553}
+\index{tests/poll.\+c@{tests/poll.\+c}!routine2@{routine2}}
+\index{routine2@{routine2}!tests/poll.\+c@{tests/poll.\+c}}
+\subsubsection[{routine2(\+N\+N\+\_\+\+U\+N\+U\+S\+E\+D void $\ast$arg)}]{\setlength{\rightskip}{0pt plus 5cm}void routine2 (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_2poll_8c_aef3e59c81e6e7739c2da373b2bab1826}{}\label{tests_2poll_8c_aef3e59c81e6e7739c2da373b2bab1826}
+
+
+\subsection{Variable Documentation}
+\index{tests/poll.\+c@{tests/poll.\+c}!sc@{sc}}
+\index{sc@{sc}!tests/poll.\+c@{tests/poll.\+c}}
+\subsubsection[{sc}]{\setlength{\rightskip}{0pt plus 5cm}int sc}\hypertarget{tests_2poll_8c_aa462bab367c8aac56ebc986ad8f4e30c}{}\label{tests_2poll_8c_aa462bab367c8aac56ebc986ad8f4e30c}

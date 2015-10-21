@@ -1,0 +1,16 @@
+<map id="src/aio/usock_posix.h" name="src/aio/usock_posix.h">
+<area shape="rect" id="node2" href="$fsm_8h.html" title="fsm.h" alt="" coords="182,155,236,181"/>
+<area shape="rect" id="node4" href="$worker_8h.html" title="worker.h" alt="" coords="271,80,343,107"/>
+<area shape="rect" id="node3" href="$queue_8h.html" title="../utils/queue.h" alt="" coords="5,229,112,256"/>
+<area shape="rect" id="node5" href="$timerset_8h.html" title="timerset.h" alt="" coords="529,155,609,181"/>
+<area shape="rect" id="node10" href="$worker__posix_8h.html" title="worker_posix.h" alt="" coords="261,155,371,181"/>
+<area shape="rect" id="node6" href="$clock_8h.html" title="../utils/clock.h" alt="" coords="639,229,743,256"/>
+<area shape="rect" id="node9" href="$list_8h.html" title="../utils/list.h" alt="" coords="524,229,615,256"/>
+<area shape="rect" id="node7" href="$int_8h.html" title="int.h" alt="" coords="667,304,713,331"/>
+<area shape="rect" id="node11" href="$mutex_8h.html" title="../utils/mutex.h" alt="" coords="397,304,507,331"/>
+<area shape="rect" id="node13" href="$thread_8h.html" title="../utils/thread.h" alt="" coords="137,229,247,256"/>
+<area shape="rect" id="node15" href="$efd_8h.html" title="../utils/efd.h" alt="" coords="271,229,361,256"/>
+<area shape="rect" id="node17" href="$poller_8h.html" title="poller.h" alt="" coords="385,229,449,256"/>
+<area shape="rect" id="node14" href="$thread__posix_8h.html" title="thread_posix.h" alt="" coords="151,304,257,331"/>
+<area shape="rect" id="node16" href="$fd_8h.html" title="fd.h" alt="" coords="294,304,337,331"/>
+</map>

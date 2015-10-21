@@ -1,0 +1,86 @@
+\hypertarget{ctx_8c}{}\section{src/aio/ctx.c File Reference}
+\label{ctx_8c}\index{src/aio/ctx.\+c@{src/aio/ctx.\+c}}
+{\ttfamily \#include \char`\"{}ctx.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/fast.\+h\char`\"{}}\\*
+Include dependency graph for ctx.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ctx_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ctx_8c_ac3614165c4ea9d813fbd7ebcc2ba3c91}{nn\+\_\+ctx\+\_\+init} (struct \hyperlink{structnn__ctx}{nn\+\_\+ctx} $\ast$self, struct \hyperlink{structnn__pool}{nn\+\_\+pool} $\ast$pool, \hyperlink{ctx_8h_ab63830bf02229318481d9ce1f27bf1ea}{nn\+\_\+ctx\+\_\+onleave} onleave)
+\item 
+void \hyperlink{ctx_8c_a27abefa9dffb962b1c5583f0da0c7c81}{nn\+\_\+ctx\+\_\+term} (struct \hyperlink{structnn__ctx}{nn\+\_\+ctx} $\ast$self)
+\item 
+void \hyperlink{ctx_8c_a7e886167c8fff582b09b75e760eb3c9f}{nn\+\_\+ctx\+\_\+enter} (struct \hyperlink{structnn__ctx}{nn\+\_\+ctx} $\ast$self)
+\item 
+void \hyperlink{ctx_8c_affb8ed0c05df6a00adb31be42b1bf2f8}{nn\+\_\+ctx\+\_\+leave} (struct \hyperlink{structnn__ctx}{nn\+\_\+ctx} $\ast$self)
+\item 
+struct \hyperlink{structnn__worker}{nn\+\_\+worker} $\ast$ \hyperlink{ctx_8c_a991fe31a700a3c76ea8920d55d506357}{nn\+\_\+ctx\+\_\+choose\+\_\+worker} (struct \hyperlink{structnn__ctx}{nn\+\_\+ctx} $\ast$self)
+\item 
+void \hyperlink{ctx_8c_ae015f5ae3991d7639f77a9325eadeea3}{nn\+\_\+ctx\+\_\+raise} (struct \hyperlink{structnn__ctx}{nn\+\_\+ctx} $\ast$self, struct \hyperlink{structnn__fsm__event}{nn\+\_\+fsm\+\_\+event} $\ast$event)
+\item 
+void \hyperlink{ctx_8c_afff509217cb0ada6942c947fd8dd89ba}{nn\+\_\+ctx\+\_\+raiseto} (struct \hyperlink{structnn__ctx}{nn\+\_\+ctx} $\ast$self, struct \hyperlink{structnn__fsm__event}{nn\+\_\+fsm\+\_\+event} $\ast$event)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ctx.\+c@{ctx.\+c}!nn\+\_\+ctx\+\_\+choose\+\_\+worker@{nn\+\_\+ctx\+\_\+choose\+\_\+worker}}
+\index{nn\+\_\+ctx\+\_\+choose\+\_\+worker@{nn\+\_\+ctx\+\_\+choose\+\_\+worker}!ctx.\+c@{ctx.\+c}}
+\subsubsection[{nn\+\_\+ctx\+\_\+choose\+\_\+worker(struct nn\+\_\+ctx $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+worker}$\ast$ nn\+\_\+ctx\+\_\+choose\+\_\+worker (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ctx} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ctx_8c_a991fe31a700a3c76ea8920d55d506357}{}\label{ctx_8c_a991fe31a700a3c76ea8920d55d506357}
+\index{ctx.\+c@{ctx.\+c}!nn\+\_\+ctx\+\_\+enter@{nn\+\_\+ctx\+\_\+enter}}
+\index{nn\+\_\+ctx\+\_\+enter@{nn\+\_\+ctx\+\_\+enter}!ctx.\+c@{ctx.\+c}}
+\subsubsection[{nn\+\_\+ctx\+\_\+enter(struct nn\+\_\+ctx $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ctx\+\_\+enter (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ctx} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ctx_8c_a7e886167c8fff582b09b75e760eb3c9f}{}\label{ctx_8c_a7e886167c8fff582b09b75e760eb3c9f}
+\index{ctx.\+c@{ctx.\+c}!nn\+\_\+ctx\+\_\+init@{nn\+\_\+ctx\+\_\+init}}
+\index{nn\+\_\+ctx\+\_\+init@{nn\+\_\+ctx\+\_\+init}!ctx.\+c@{ctx.\+c}}
+\subsubsection[{nn\+\_\+ctx\+\_\+init(struct nn\+\_\+ctx $\ast$self, struct nn\+\_\+pool $\ast$pool, nn\+\_\+ctx\+\_\+onleave onleave)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ctx\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ctx} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+pool} $\ast$}]{pool, }
+\item[{{\bf nn\+\_\+ctx\+\_\+onleave}}]{onleave}
+\end{DoxyParamCaption}
+)}\hypertarget{ctx_8c_ac3614165c4ea9d813fbd7ebcc2ba3c91}{}\label{ctx_8c_ac3614165c4ea9d813fbd7ebcc2ba3c91}
+\index{ctx.\+c@{ctx.\+c}!nn\+\_\+ctx\+\_\+leave@{nn\+\_\+ctx\+\_\+leave}}
+\index{nn\+\_\+ctx\+\_\+leave@{nn\+\_\+ctx\+\_\+leave}!ctx.\+c@{ctx.\+c}}
+\subsubsection[{nn\+\_\+ctx\+\_\+leave(struct nn\+\_\+ctx $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ctx\+\_\+leave (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ctx} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ctx_8c_affb8ed0c05df6a00adb31be42b1bf2f8}{}\label{ctx_8c_affb8ed0c05df6a00adb31be42b1bf2f8}
+\index{ctx.\+c@{ctx.\+c}!nn\+\_\+ctx\+\_\+raise@{nn\+\_\+ctx\+\_\+raise}}
+\index{nn\+\_\+ctx\+\_\+raise@{nn\+\_\+ctx\+\_\+raise}!ctx.\+c@{ctx.\+c}}
+\subsubsection[{nn\+\_\+ctx\+\_\+raise(struct nn\+\_\+ctx $\ast$self, struct nn\+\_\+fsm\+\_\+event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ctx\+\_\+raise (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ctx} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+fsm\+\_\+event} $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{ctx_8c_ae015f5ae3991d7639f77a9325eadeea3}{}\label{ctx_8c_ae015f5ae3991d7639f77a9325eadeea3}
+\index{ctx.\+c@{ctx.\+c}!nn\+\_\+ctx\+\_\+raiseto@{nn\+\_\+ctx\+\_\+raiseto}}
+\index{nn\+\_\+ctx\+\_\+raiseto@{nn\+\_\+ctx\+\_\+raiseto}!ctx.\+c@{ctx.\+c}}
+\subsubsection[{nn\+\_\+ctx\+\_\+raiseto(struct nn\+\_\+ctx $\ast$self, struct nn\+\_\+fsm\+\_\+event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ctx\+\_\+raiseto (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ctx} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+fsm\+\_\+event} $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{ctx_8c_afff509217cb0ada6942c947fd8dd89ba}{}\label{ctx_8c_afff509217cb0ada6942c947fd8dd89ba}
+\index{ctx.\+c@{ctx.\+c}!nn\+\_\+ctx\+\_\+term@{nn\+\_\+ctx\+\_\+term}}
+\index{nn\+\_\+ctx\+\_\+term@{nn\+\_\+ctx\+\_\+term}!ctx.\+c@{ctx.\+c}}
+\subsubsection[{nn\+\_\+ctx\+\_\+term(struct nn\+\_\+ctx $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ctx\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ctx} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ctx_8c_a27abefa9dffb962b1c5583f0da0c7c81}{}\label{ctx_8c_a27abefa9dffb962b1c5583f0da0c7c81}

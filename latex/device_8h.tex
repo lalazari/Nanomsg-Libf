@@ -1,0 +1,150 @@
+\hypertarget{device_8h}{}\section{src/devices/device.h File Reference}
+\label{device_8h}\index{src/devices/device.\+h@{src/devices/device.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{device_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{device_8h_a376a29694a45d9c132c705a56dabd56d}{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+T\+\_\+\+L\+E\+A\+S\+T\+\_\+\+O\+N\+E\+\_\+\+S\+O\+C\+K\+ET}~(1 $<$$<$ 0)
+\item 
+\#define \hyperlink{device_8h_aa841e164663b648bafe16ae63289d9e2}{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+L\+O\+O\+P\+B\+A\+CK}~(1 $<$$<$ 1)
+\item 
+\#define \hyperlink{device_8h_ad5c41fdf7607038e2db79923e65cd6ee}{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+B\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL}~(1 $<$$<$ 2)
+\item 
+\#define \hyperlink{device_8h_aeee6996ac541acbc87ee7774ebf0befc}{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+U\+N\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL}~(1$<$$<$3)
+\item 
+\#define \hyperlink{device_8h_ac01b02eaaf0b10da1ead9f67463616d9}{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+R\+A\+W\+\_\+\+S\+O\+C\+K\+E\+TS}~(1 $<$$<$ 4)
+\item 
+\#define \hyperlink{device_8h_adf723a9e7b22626cad685758eb411110}{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+A\+M\+E\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+F\+A\+M\+I\+LY}~(1 $<$$<$ 5)
+\item 
+\#define \hyperlink{device_8h_a47138fa894ceec375d785a28a02a75f9}{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+A\+L\+I\+TY}~(1 $<$$<$ 6)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{device_8h_a9691b8b5c57d29b8e68d1f2c8cc045b0}{nn\+\_\+device\+\_\+loopback} (struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int s)
+\item 
+int \hyperlink{device_8h_a6d216e738f00909bfbd5b2ba89b83728}{nn\+\_\+device\+\_\+twoway} (struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int s1, \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s1rcv, \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s1snd, int s2, \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s2rcv, \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s2snd)
+\item 
+int \hyperlink{device_8h_ac0d46e82e826db675a92faf8ac89d9b8}{nn\+\_\+device\+\_\+oneway} (struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int s1, \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s1rcv, int s2, \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s2snd)
+\item 
+int \hyperlink{device_8h_a48652c933cfb8cf0e5f73c17fee8dd88}{nn\+\_\+device\+\_\+mvmsg} (struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int from, int to, int flags)
+\item 
+int \hyperlink{device_8h_a553e0231bfc7562c4368a41b9ad091d4}{nn\+\_\+device\+\_\+entry} (struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int s1, int s2, int flags)
+\item 
+int \hyperlink{device_8h_af7d09b3ae908fa9f5e74708262b27989}{nn\+\_\+device\+\_\+rewritemsg} (struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int from, int to, int flags, struct \hyperlink{structnn__msghdr}{nn\+\_\+msghdr} $\ast$msghdr, int bytes)
+\item 
+int \hyperlink{device_8h_aa2dde9bc615b6690f2b47fb9ef9131f2}{nn\+\_\+custom\+\_\+device} (struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int s1, int s2, int flags)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{device.\+h@{device.\+h}!N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+B\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+B\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL}}
+\index{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+B\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+B\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL}!device.\+h@{device.\+h}}
+\subsubsection[{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+B\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+B\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL~(1 $<$$<$ 2)}\hypertarget{device_8h_ad5c41fdf7607038e2db79923e65cd6ee}{}\label{device_8h_ad5c41fdf7607038e2db79923e65cd6ee}
+\index{device.\+h@{device.\+h}!N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+L\+O\+O\+P\+B\+A\+CK@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+L\+O\+O\+P\+B\+A\+CK}}
+\index{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+L\+O\+O\+P\+B\+A\+CK@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+L\+O\+O\+P\+B\+A\+CK}!device.\+h@{device.\+h}}
+\subsubsection[{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+L\+O\+O\+P\+B\+A\+CK}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+L\+O\+O\+P\+B\+A\+CK~(1 $<$$<$ 1)}\hypertarget{device_8h_aa841e164663b648bafe16ae63289d9e2}{}\label{device_8h_aa841e164663b648bafe16ae63289d9e2}
+\index{device.\+h@{device.\+h}!N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+U\+N\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+U\+N\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL}}
+\index{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+U\+N\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+U\+N\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL}!device.\+h@{device.\+h}}
+\subsubsection[{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+U\+N\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+L\+L\+O\+W\+\_\+\+U\+N\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL~(1$<$$<$3)}\hypertarget{device_8h_aeee6996ac541acbc87ee7774ebf0befc}{}\label{device_8h_aeee6996ac541acbc87ee7774ebf0befc}
+\index{device.\+h@{device.\+h}!N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+T\+\_\+\+L\+E\+A\+S\+T\+\_\+\+O\+N\+E\+\_\+\+S\+O\+C\+K\+ET@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+T\+\_\+\+L\+E\+A\+S\+T\+\_\+\+O\+N\+E\+\_\+\+S\+O\+C\+K\+ET}}
+\index{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+T\+\_\+\+L\+E\+A\+S\+T\+\_\+\+O\+N\+E\+\_\+\+S\+O\+C\+K\+ET@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+T\+\_\+\+L\+E\+A\+S\+T\+\_\+\+O\+N\+E\+\_\+\+S\+O\+C\+K\+ET}!device.\+h@{device.\+h}}
+\subsubsection[{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+T\+\_\+\+L\+E\+A\+S\+T\+\_\+\+O\+N\+E\+\_\+\+S\+O\+C\+K\+ET}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+A\+T\+\_\+\+L\+E\+A\+S\+T\+\_\+\+O\+N\+E\+\_\+\+S\+O\+C\+K\+ET~(1 $<$$<$ 0)}\hypertarget{device_8h_a376a29694a45d9c132c705a56dabd56d}{}\label{device_8h_a376a29694a45d9c132c705a56dabd56d}
+\index{device.\+h@{device.\+h}!N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+R\+A\+W\+\_\+\+S\+O\+C\+K\+E\+TS@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+R\+A\+W\+\_\+\+S\+O\+C\+K\+E\+TS}}
+\index{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+R\+A\+W\+\_\+\+S\+O\+C\+K\+E\+TS@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+R\+A\+W\+\_\+\+S\+O\+C\+K\+E\+TS}!device.\+h@{device.\+h}}
+\subsubsection[{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+R\+A\+W\+\_\+\+S\+O\+C\+K\+E\+TS}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+R\+A\+W\+\_\+\+S\+O\+C\+K\+E\+TS~(1 $<$$<$ 4)}\hypertarget{device_8h_ac01b02eaaf0b10da1ead9f67463616d9}{}\label{device_8h_ac01b02eaaf0b10da1ead9f67463616d9}
+\index{device.\+h@{device.\+h}!N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+A\+M\+E\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+F\+A\+M\+I\+LY@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+A\+M\+E\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+F\+A\+M\+I\+LY}}
+\index{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+A\+M\+E\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+F\+A\+M\+I\+LY@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+A\+M\+E\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+F\+A\+M\+I\+LY}!device.\+h@{device.\+h}}
+\subsubsection[{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+A\+M\+E\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+F\+A\+M\+I\+LY}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+A\+M\+E\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+F\+A\+M\+I\+LY~(1 $<$$<$ 5)}\hypertarget{device_8h_adf723a9e7b22626cad685758eb411110}{}\label{device_8h_adf723a9e7b22626cad685758eb411110}
+\index{device.\+h@{device.\+h}!N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+A\+L\+I\+TY@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+A\+L\+I\+TY}}
+\index{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+A\+L\+I\+TY@{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+A\+L\+I\+TY}!device.\+h@{device.\+h}}
+\subsubsection[{N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+A\+L\+I\+TY}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+A\+L\+I\+TY~(1 $<$$<$ 6)}\hypertarget{device_8h_a47138fa894ceec375d785a28a02a75f9}{}\label{device_8h_a47138fa894ceec375d785a28a02a75f9}
+
+
+\subsection{Function Documentation}
+\index{device.\+h@{device.\+h}!nn\+\_\+custom\+\_\+device@{nn\+\_\+custom\+\_\+device}}
+\index{nn\+\_\+custom\+\_\+device@{nn\+\_\+custom\+\_\+device}!device.\+h@{device.\+h}}
+\subsubsection[{nn\+\_\+custom\+\_\+device(struct nn\+\_\+device\+\_\+recipe $\ast$device, int s1, int s2, int flags)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+custom\+\_\+device (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$}]{device, }
+\item[{int}]{s1, }
+\item[{int}]{s2, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8h_aa2dde9bc615b6690f2b47fb9ef9131f2}{}\label{device_8h_aa2dde9bc615b6690f2b47fb9ef9131f2}
+\index{device.\+h@{device.\+h}!nn\+\_\+device\+\_\+entry@{nn\+\_\+device\+\_\+entry}}
+\index{nn\+\_\+device\+\_\+entry@{nn\+\_\+device\+\_\+entry}!device.\+h@{device.\+h}}
+\subsubsection[{nn\+\_\+device\+\_\+entry(struct nn\+\_\+device\+\_\+recipe $\ast$device, int s1, int s2, int flags)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+device\+\_\+entry (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$}]{device, }
+\item[{int}]{s1, }
+\item[{int}]{s2, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8h_a553e0231bfc7562c4368a41b9ad091d4}{}\label{device_8h_a553e0231bfc7562c4368a41b9ad091d4}
+\index{device.\+h@{device.\+h}!nn\+\_\+device\+\_\+loopback@{nn\+\_\+device\+\_\+loopback}}
+\index{nn\+\_\+device\+\_\+loopback@{nn\+\_\+device\+\_\+loopback}!device.\+h@{device.\+h}}
+\subsubsection[{nn\+\_\+device\+\_\+loopback(struct nn\+\_\+device\+\_\+recipe $\ast$device, int s)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+device\+\_\+loopback (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$}]{device, }
+\item[{int}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8h_a9691b8b5c57d29b8e68d1f2c8cc045b0}{}\label{device_8h_a9691b8b5c57d29b8e68d1f2c8cc045b0}
+\index{device.\+h@{device.\+h}!nn\+\_\+device\+\_\+mvmsg@{nn\+\_\+device\+\_\+mvmsg}}
+\index{nn\+\_\+device\+\_\+mvmsg@{nn\+\_\+device\+\_\+mvmsg}!device.\+h@{device.\+h}}
+\subsubsection[{nn\+\_\+device\+\_\+mvmsg(struct nn\+\_\+device\+\_\+recipe $\ast$device, int from, int to, int flags)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+device\+\_\+mvmsg (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$}]{device, }
+\item[{int}]{from, }
+\item[{int}]{to, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8h_a48652c933cfb8cf0e5f73c17fee8dd88}{}\label{device_8h_a48652c933cfb8cf0e5f73c17fee8dd88}
+\index{device.\+h@{device.\+h}!nn\+\_\+device\+\_\+oneway@{nn\+\_\+device\+\_\+oneway}}
+\index{nn\+\_\+device\+\_\+oneway@{nn\+\_\+device\+\_\+oneway}!device.\+h@{device.\+h}}
+\subsubsection[{nn\+\_\+device\+\_\+oneway(struct nn\+\_\+device\+\_\+recipe $\ast$device, int s1, nn\+\_\+fd s1rcv, int s2, nn\+\_\+fd s2snd)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+device\+\_\+oneway (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$}]{device, }
+\item[{int}]{s1, }
+\item[{{\bf nn\+\_\+fd}}]{s1rcv, }
+\item[{int}]{s2, }
+\item[{{\bf nn\+\_\+fd}}]{s2snd}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8h_ac0d46e82e826db675a92faf8ac89d9b8}{}\label{device_8h_ac0d46e82e826db675a92faf8ac89d9b8}
+\index{device.\+h@{device.\+h}!nn\+\_\+device\+\_\+rewritemsg@{nn\+\_\+device\+\_\+rewritemsg}}
+\index{nn\+\_\+device\+\_\+rewritemsg@{nn\+\_\+device\+\_\+rewritemsg}!device.\+h@{device.\+h}}
+\subsubsection[{nn\+\_\+device\+\_\+rewritemsg(struct nn\+\_\+device\+\_\+recipe $\ast$device, int from, int to, int flags, struct nn\+\_\+msghdr $\ast$msghdr, int bytes)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+device\+\_\+rewritemsg (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$}]{device, }
+\item[{int}]{from, }
+\item[{int}]{to, }
+\item[{int}]{flags, }
+\item[{struct {\bf nn\+\_\+msghdr} $\ast$}]{msghdr, }
+\item[{int}]{bytes}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8h_af7d09b3ae908fa9f5e74708262b27989}{}\label{device_8h_af7d09b3ae908fa9f5e74708262b27989}
+\index{device.\+h@{device.\+h}!nn\+\_\+device\+\_\+twoway@{nn\+\_\+device\+\_\+twoway}}
+\index{nn\+\_\+device\+\_\+twoway@{nn\+\_\+device\+\_\+twoway}!device.\+h@{device.\+h}}
+\subsubsection[{nn\+\_\+device\+\_\+twoway(struct nn\+\_\+device\+\_\+recipe $\ast$device, int s1, nn\+\_\+fd s1rcv, nn\+\_\+fd s1snd, int s2, nn\+\_\+fd s2rcv, nn\+\_\+fd s2snd)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+device\+\_\+twoway (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$}]{device, }
+\item[{int}]{s1, }
+\item[{{\bf nn\+\_\+fd}}]{s1rcv, }
+\item[{{\bf nn\+\_\+fd}}]{s1snd, }
+\item[{int}]{s2, }
+\item[{{\bf nn\+\_\+fd}}]{s2rcv, }
+\item[{{\bf nn\+\_\+fd}}]{s2snd}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8h_a6d216e738f00909bfbd5b2ba89b83728}{}\label{device_8h_a6d216e738f00909bfbd5b2ba89b83728}

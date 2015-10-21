@@ -1,0 +1,18 @@
+<map id="src/transports/inproc/inproc.c" name="src/transports/inproc/inproc.c">
+<area shape="rect" id="node2" href="$transports_2inproc_2inproc_8h.html" title="inproc.h" alt="" coords="82,171,149,197"/>
+<area shape="rect" id="node15" href="$ins_8h.html" title="ins.h" alt="" coords="175,171,225,197"/>
+<area shape="rect" id="node16" href="$binproc_8h.html" title="binproc.h" alt="" coords="220,96,295,123"/>
+<area shape="rect" id="node17" href="$cinproc_8h.html" title="cinproc.h" alt="" coords="319,96,393,123"/>
+<area shape="rect" id="node20" href="$inproc_8h.html" title="../../inproc.h" alt="" coords="418,96,509,123"/>
+<area shape="rect" id="node3" href="$transport_8h.html" title="../../transport.h" alt="" coords="197,245,304,272"/>
+<area shape="rect" id="node4" href="$nn_8h.html" title="nn.h" alt="" coords="227,320,273,347"/>
+<area shape="rect" id="node7" href="$fsm_8h.html" title="aio/fsm.h" alt="" coords="523,320,599,347"/>
+<area shape="rect" id="node9" href="$list_8h.html" title="utils/list.h" alt="" coords="5,320,83,347"/>
+<area shape="rect" id="node10" href="$msg_8h.html" title="utils/msg.h" alt="" coords="355,320,441,347"/>
+<area shape="rect" id="node13" href="$int_8h.html" title="int.h" alt="" coords="110,544,156,571"/>
+<area shape="rect" id="node8" href="$queue_8h.html" title="../utils/queue.h" alt="" coords="518,395,625,421"/>
+<area shape="rect" id="node11" href="$chunkref_8h.html" title="chunkref.h" alt="" coords="208,395,291,421"/>
+<area shape="rect" id="node12" href="$chunk_8h.html" title="chunk.h" alt="" coords="171,469,239,496"/>
+<area shape="rect" id="node18" href="$sinproc_8h.html" title="sinproc.h" alt="" coords="351,171,425,197"/>
+<area shape="rect" id="node19" href="$msgqueue_8h.html" title="msgqueue.h" alt="" coords="380,245,473,272"/>
+</map>

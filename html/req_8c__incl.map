@@ -1,0 +1,36 @@
+<map id="src/protocols/reqrep/req.c" name="src/protocols/reqrep/req.c">
+<area shape="rect" id="node2" href="$req_8h.html" title="req.h" alt="" coords="641,96,692,123"/>
+<area shape="rect" id="node3" href="$xreq_8h.html" title="xreq.h" alt="" coords="424,171,483,197"/>
+<area shape="rect" id="node17" href="$nn_8h.html" title="nn.h" alt="" coords="1115,320,1161,347"/>
+<area shape="rect" id="node16" href="$reqrep_8h.html" title="../../reqrep.h" alt="" coords="1008,245,1101,272"/>
+<area shape="rect" id="node19" href="$fsm_8h.html" title="../../aio/fsm.h" alt="" coords="855,395,955,421"/>
+<area shape="rect" id="node21" href="$timer_8h.html" title="../../aio/timer.h" alt="" coords="725,245,832,272"/>
+<area shape="rect" id="node33" href="$err_8h.html" title="../../utils/err.h" alt="" coords="1010,96,1109,123"/>
+<area shape="rect" id="node37" href="$cont_8h.html" title="../../utils/cont.h" alt="" coords="1289,619,1399,645"/>
+<area shape="rect" id="node38" href="$alloc_8h.html" title="../../utils/alloc.h" alt="" coords="1381,245,1493,272"/>
+<area shape="rect" id="node39" href="$random_8h.html" title="../../utils/random.h" alt="" coords="1560,96,1688,123"/>
+<area shape="rect" id="node40" href="$wire_8h.html" title="../../utils/wire.h" alt="" coords="5,320,115,347"/>
+<area shape="rect" id="node11" href="$list_8h.html" title="utils/list.h" alt="" coords="243,469,321,496"/>
+<area shape="rect" id="node9" href="$int_8h.html" title="int.h" alt="" coords="387,693,433,720"/>
+<area shape="rect" id="node41" href="$attr_8h.html" title="../../utils/attr.h" alt="" coords="1432,96,1536,123"/>
+<area shape="rect" id="node15" href="$task_8h.html" title="task.h" alt="" coords="637,171,696,197"/>
+<area shape="rect" id="node4" href="$protocol_8h.html" title="../../protocol.h" alt="" coords="323,395,425,421"/>
+<area shape="rect" id="node12" href="$lb_8h.html" title="../utils/lb.h" alt="" coords="349,245,432,272"/>
+<area shape="rect" id="node14" href="$fq_8h.html" title="../utils/fq.h" alt="" coords="241,245,324,272"/>
+<area shape="rect" id="node5" href="$msg_8h.html" title="utils/msg.h" alt="" coords="606,469,692,496"/>
+<area shape="rect" id="node6" href="$chunkref_8h.html" title="chunkref.h" alt="" coords="615,544,697,571"/>
+<area shape="rect" id="node7" href="$chunk_8h.html" title="chunk.h" alt="" coords="627,619,695,645"/>
+<area shape="rect" id="node13" href="$priolist_8h.html" title="priolist.h" alt="" coords="247,320,317,347"/>
+<area shape="rect" id="node20" href="$queue_8h.html" title="../utils/queue.h" alt="" coords="1105,469,1212,496"/>
+<area shape="rect" id="node22" href="$worker_8h.html" title="worker.h" alt="" coords="659,320,731,347"/>
+<area shape="rect" id="node23" href="$timerset_8h.html" title="timerset.h" alt="" coords="501,395,581,421"/>
+<area shape="rect" id="node25" href="$worker__posix_8h.html" title="worker_posix.h" alt="" coords="721,395,831,421"/>
+<area shape="rect" id="node24" href="$clock_8h.html" title="../utils/clock.h" alt="" coords="448,619,552,645"/>
+<area shape="rect" id="node26" href="$mutex_8h.html" title="../utils/mutex.h" alt="" coords="931,544,1040,571"/>
+<area shape="rect" id="node28" href="$thread_8h.html" title="../utils/thread.h" alt="" coords="971,469,1080,496"/>
+<area shape="rect" id="node30" href="$efd_8h.html" title="../utils/efd.h" alt="" coords="717,469,808,496"/>
+<area shape="rect" id="node32" href="$poller_8h.html" title="poller.h" alt="" coords="832,469,896,496"/>
+<area shape="rect" id="node29" href="$thread__posix_8h.html" title="thread_posix.h" alt="" coords="1064,544,1171,571"/>
+<area shape="rect" id="node31" href="$fd_8h.html" title="fd.h" alt="" coords="862,544,905,571"/>
+<area shape="rect" id="node36" href="$fast_8h.html" title="fast.h" alt="" coords="1009,171,1063,197"/>
+</map>

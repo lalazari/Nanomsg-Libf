@@ -1,0 +1,63 @@
+\hypertarget{xsub_8c}{}\section{src/protocols/pubsub/xsub.c File Reference}
+\label{xsub_8c}\index{src/protocols/pubsub/xsub.\+c@{src/protocols/pubsub/xsub.\+c}}
+{\ttfamily \#include \char`\"{}xsub.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}trie.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../pubsub.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/fq.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/attr.\+h\char`\"{}}\\*
+Include dependency graph for xsub.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{xsub_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__xsub__data}{nn\+\_\+xsub\+\_\+data}
+\item 
+struct \hyperlink{structnn__xsub}{nn\+\_\+xsub}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{xsub_8c_a6b1c939cc2fbf1b5f4e2bea556ca0759}{nn\+\_\+xsub\+\_\+create} (void $\ast$hint, struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$$\ast$sockbase)
+\item 
+int \hyperlink{xsub_8c_ae0f05deb3a94723b38d222bc3deddc55}{nn\+\_\+xsub\+\_\+ispeer} (int socktype)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__socktype}{nn\+\_\+socktype} $\ast$ \hyperlink{xsub_8c_a492d8fdad3f8d68ad92215495a16d46f}{nn\+\_\+xsub\+\_\+socktype} = \&nn\+\_\+xsub\+\_\+socktype\+\_\+struct
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{xsub.\+c@{xsub.\+c}!nn\+\_\+xsub\+\_\+create@{nn\+\_\+xsub\+\_\+create}}
+\index{nn\+\_\+xsub\+\_\+create@{nn\+\_\+xsub\+\_\+create}!xsub.\+c@{xsub.\+c}}
+\subsubsection[{nn\+\_\+xsub\+\_\+create(void $\ast$hint, struct nn\+\_\+sockbase $\ast$$\ast$sockbase)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xsub\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{hint, }
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$$\ast$}]{sockbase}
+\end{DoxyParamCaption}
+)}\hypertarget{xsub_8c_a6b1c939cc2fbf1b5f4e2bea556ca0759}{}\label{xsub_8c_a6b1c939cc2fbf1b5f4e2bea556ca0759}
+\index{xsub.\+c@{xsub.\+c}!nn\+\_\+xsub\+\_\+ispeer@{nn\+\_\+xsub\+\_\+ispeer}}
+\index{nn\+\_\+xsub\+\_\+ispeer@{nn\+\_\+xsub\+\_\+ispeer}!xsub.\+c@{xsub.\+c}}
+\subsubsection[{nn\+\_\+xsub\+\_\+ispeer(int socktype)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xsub\+\_\+ispeer (
+\begin{DoxyParamCaption}
+\item[{int}]{socktype}
+\end{DoxyParamCaption}
+)}\hypertarget{xsub_8c_ae0f05deb3a94723b38d222bc3deddc55}{}\label{xsub_8c_ae0f05deb3a94723b38d222bc3deddc55}
+
+
+\subsection{Variable Documentation}
+\index{xsub.\+c@{xsub.\+c}!nn\+\_\+xsub\+\_\+socktype@{nn\+\_\+xsub\+\_\+socktype}}
+\index{nn\+\_\+xsub\+\_\+socktype@{nn\+\_\+xsub\+\_\+socktype}!xsub.\+c@{xsub.\+c}}
+\subsubsection[{nn\+\_\+xsub\+\_\+socktype}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+socktype}$\ast$ nn\+\_\+xsub\+\_\+socktype = \&nn\+\_\+xsub\+\_\+socktype\+\_\+struct}\hypertarget{xsub_8c_a492d8fdad3f8d68ad92215495a16d46f}{}\label{xsub_8c_a492d8fdad3f8d68ad92215495a16d46f}

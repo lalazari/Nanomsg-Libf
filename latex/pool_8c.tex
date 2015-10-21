@@ -1,0 +1,43 @@
+\hypertarget{pool_8c}{}\section{src/aio/pool.c File Reference}
+\label{pool_8c}\index{src/aio/pool.\+c@{src/aio/pool.\+c}}
+{\ttfamily \#include \char`\"{}pool.\+h\char`\"{}}\\*
+Include dependency graph for pool.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pool_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{pool_8c_ae6e6a47f47b527b22f75301871d1205f}{nn\+\_\+pool\+\_\+init} (struct \hyperlink{structnn__pool}{nn\+\_\+pool} $\ast$self)
+\item 
+void \hyperlink{pool_8c_a9f70c729bc8771270b843777487116b2}{nn\+\_\+pool\+\_\+term} (struct \hyperlink{structnn__pool}{nn\+\_\+pool} $\ast$self)
+\item 
+struct \hyperlink{structnn__worker}{nn\+\_\+worker} $\ast$ \hyperlink{pool_8c_a2b563fdbdbe7f81d43397a976a08720e}{nn\+\_\+pool\+\_\+choose\+\_\+worker} (struct \hyperlink{structnn__pool}{nn\+\_\+pool} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{pool.\+c@{pool.\+c}!nn\+\_\+pool\+\_\+choose\+\_\+worker@{nn\+\_\+pool\+\_\+choose\+\_\+worker}}
+\index{nn\+\_\+pool\+\_\+choose\+\_\+worker@{nn\+\_\+pool\+\_\+choose\+\_\+worker}!pool.\+c@{pool.\+c}}
+\subsubsection[{nn\+\_\+pool\+\_\+choose\+\_\+worker(struct nn\+\_\+pool $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+worker}$\ast$ nn\+\_\+pool\+\_\+choose\+\_\+worker (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+pool} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{pool_8c_a2b563fdbdbe7f81d43397a976a08720e}{}\label{pool_8c_a2b563fdbdbe7f81d43397a976a08720e}
+\index{pool.\+c@{pool.\+c}!nn\+\_\+pool\+\_\+init@{nn\+\_\+pool\+\_\+init}}
+\index{nn\+\_\+pool\+\_\+init@{nn\+\_\+pool\+\_\+init}!pool.\+c@{pool.\+c}}
+\subsubsection[{nn\+\_\+pool\+\_\+init(struct nn\+\_\+pool $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+pool\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+pool} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{pool_8c_ae6e6a47f47b527b22f75301871d1205f}{}\label{pool_8c_ae6e6a47f47b527b22f75301871d1205f}
+\index{pool.\+c@{pool.\+c}!nn\+\_\+pool\+\_\+term@{nn\+\_\+pool\+\_\+term}}
+\index{nn\+\_\+pool\+\_\+term@{nn\+\_\+pool\+\_\+term}!pool.\+c@{pool.\+c}}
+\subsubsection[{nn\+\_\+pool\+\_\+term(struct nn\+\_\+pool $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+pool\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+pool} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{pool_8c_a9f70c729bc8771270b843777487116b2}{}\label{pool_8c_a9f70c729bc8771270b843777487116b2}

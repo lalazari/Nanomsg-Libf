@@ -1,0 +1,91 @@
+\hypertarget{structnn__stcpmux}{}\section{nn\+\_\+stcpmux Struct Reference}
+\label{structnn__stcpmux}\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+
+
+{\ttfamily \#include $<$stcpmux.\+h$>$}
+
+
+
+Collaboration diagram for nn\+\_\+stcpmux\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structnn__stcpmux__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} \hyperlink{structnn__stcpmux_a13e11d3e9ff4638309d71ed95befdf26}{fsm}
+\item 
+int \hyperlink{structnn__stcpmux_a7d61af0bb8deb581093f7f038be8d3c1}{state}
+\item 
+struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$ \hyperlink{structnn__stcpmux_a9d1942933afe0c3ce956c4045286680f}{usock}
+\item 
+struct \hyperlink{structnn__streamhdr}{nn\+\_\+streamhdr} \hyperlink{structnn__stcpmux_a6e0e4eb9a4390a90c2e681506c97ab26}{streamhdr}
+\item 
+struct \hyperlink{structnn__fsm__owner}{nn\+\_\+fsm\+\_\+owner} \hyperlink{structnn__stcpmux_a86f66d320ddd64a0706a891eeb4e6be1}{usock\+\_\+owner}
+\item 
+struct \hyperlink{structnn__pipebase}{nn\+\_\+pipebase} \hyperlink{structnn__stcpmux_a1808787c61208adc62e4031b3686e10c}{pipebase}
+\item 
+int \hyperlink{structnn__stcpmux_ad8501b9f80ac93856fa96c897bcab634}{instate}
+\item 
+uint8\+\_\+t \hyperlink{structnn__stcpmux_adf8c5aea3a5ca44c20885ce04ffacf66}{inhdr} \mbox{[}8\mbox{]}
+\item 
+struct \hyperlink{structnn__msg}{nn\+\_\+msg} \hyperlink{structnn__stcpmux_a98637f2983a1e14916a0c996af8e81ff}{inmsg}
+\item 
+int \hyperlink{structnn__stcpmux_a8c32969964826f07577f6f2d3f5e4d09}{outstate}
+\item 
+uint8\+\_\+t \hyperlink{structnn__stcpmux_af2f02c5703dfec8d66124c4990061186}{outhdr} \mbox{[}8\mbox{]}
+\item 
+struct \hyperlink{structnn__msg}{nn\+\_\+msg} \hyperlink{structnn__stcpmux_abe390b012b46096d47ba8660cee75330}{outmsg}
+\item 
+struct \hyperlink{structnn__fsm__event}{nn\+\_\+fsm\+\_\+event} \hyperlink{structnn__stcpmux_a94cb62c326bafd2a2ec1b976bade82bf}{done}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}!done@{done}}
+\index{done@{done}!nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+\subsubsection[{done}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+event} nn\+\_\+stcpmux\+::done}\hypertarget{structnn__stcpmux_a94cb62c326bafd2a2ec1b976bade82bf}{}\label{structnn__stcpmux_a94cb62c326bafd2a2ec1b976bade82bf}
+\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}!fsm@{fsm}}
+\index{fsm@{fsm}!nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+\subsubsection[{fsm}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm} nn\+\_\+stcpmux\+::fsm}\hypertarget{structnn__stcpmux_a13e11d3e9ff4638309d71ed95befdf26}{}\label{structnn__stcpmux_a13e11d3e9ff4638309d71ed95befdf26}
+\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}!inhdr@{inhdr}}
+\index{inhdr@{inhdr}!nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+\subsubsection[{inhdr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t nn\+\_\+stcpmux\+::inhdr\mbox{[}8\mbox{]}}\hypertarget{structnn__stcpmux_adf8c5aea3a5ca44c20885ce04ffacf66}{}\label{structnn__stcpmux_adf8c5aea3a5ca44c20885ce04ffacf66}
+\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}!inmsg@{inmsg}}
+\index{inmsg@{inmsg}!nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+\subsubsection[{inmsg}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+msg} nn\+\_\+stcpmux\+::inmsg}\hypertarget{structnn__stcpmux_a98637f2983a1e14916a0c996af8e81ff}{}\label{structnn__stcpmux_a98637f2983a1e14916a0c996af8e81ff}
+\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}!instate@{instate}}
+\index{instate@{instate}!nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+\subsubsection[{instate}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+stcpmux\+::instate}\hypertarget{structnn__stcpmux_ad8501b9f80ac93856fa96c897bcab634}{}\label{structnn__stcpmux_ad8501b9f80ac93856fa96c897bcab634}
+\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}!outhdr@{outhdr}}
+\index{outhdr@{outhdr}!nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+\subsubsection[{outhdr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t nn\+\_\+stcpmux\+::outhdr\mbox{[}8\mbox{]}}\hypertarget{structnn__stcpmux_af2f02c5703dfec8d66124c4990061186}{}\label{structnn__stcpmux_af2f02c5703dfec8d66124c4990061186}
+\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}!outmsg@{outmsg}}
+\index{outmsg@{outmsg}!nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+\subsubsection[{outmsg}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+msg} nn\+\_\+stcpmux\+::outmsg}\hypertarget{structnn__stcpmux_abe390b012b46096d47ba8660cee75330}{}\label{structnn__stcpmux_abe390b012b46096d47ba8660cee75330}
+\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}!outstate@{outstate}}
+\index{outstate@{outstate}!nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+\subsubsection[{outstate}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+stcpmux\+::outstate}\hypertarget{structnn__stcpmux_a8c32969964826f07577f6f2d3f5e4d09}{}\label{structnn__stcpmux_a8c32969964826f07577f6f2d3f5e4d09}
+\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}!pipebase@{pipebase}}
+\index{pipebase@{pipebase}!nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+\subsubsection[{pipebase}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+pipebase} nn\+\_\+stcpmux\+::pipebase}\hypertarget{structnn__stcpmux_a1808787c61208adc62e4031b3686e10c}{}\label{structnn__stcpmux_a1808787c61208adc62e4031b3686e10c}
+\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}!state@{state}}
+\index{state@{state}!nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+stcpmux\+::state}\hypertarget{structnn__stcpmux_a7d61af0bb8deb581093f7f038be8d3c1}{}\label{structnn__stcpmux_a7d61af0bb8deb581093f7f038be8d3c1}
+\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}!streamhdr@{streamhdr}}
+\index{streamhdr@{streamhdr}!nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+\subsubsection[{streamhdr}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+streamhdr} nn\+\_\+stcpmux\+::streamhdr}\hypertarget{structnn__stcpmux_a6e0e4eb9a4390a90c2e681506c97ab26}{}\label{structnn__stcpmux_a6e0e4eb9a4390a90c2e681506c97ab26}
+\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}!usock@{usock}}
+\index{usock@{usock}!nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+\subsubsection[{usock}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+usock}$\ast$ nn\+\_\+stcpmux\+::usock}\hypertarget{structnn__stcpmux_a9d1942933afe0c3ce956c4045286680f}{}\label{structnn__stcpmux_a9d1942933afe0c3ce956c4045286680f}
+\index{nn\+\_\+stcpmux@{nn\+\_\+stcpmux}!usock\+\_\+owner@{usock\+\_\+owner}}
+\index{usock\+\_\+owner@{usock\+\_\+owner}!nn\+\_\+stcpmux@{nn\+\_\+stcpmux}}
+\subsubsection[{usock\+\_\+owner}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+owner} nn\+\_\+stcpmux\+::usock\+\_\+owner}\hypertarget{structnn__stcpmux_a86f66d320ddd64a0706a891eeb4e6be1}{}\label{structnn__stcpmux_a86f66d320ddd64a0706a891eeb4e6be1}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/transports/tcpmux/\hyperlink{stcpmux_8h}{stcpmux.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,10 @@
+<map id="src/utils/random.h" name="src/utils/random.h">
+<area shape="rect" id="node2" href="$global_8c.html" title="src/core/global.c" alt="" coords="5,88,123,115"/>
+<area shape="rect" id="node3" href="$req_8c.html" title="src/protocols/reqrep\l/req.c" alt="" coords="147,81,284,122"/>
+<area shape="rect" id="node4" href="$xrep_8c.html" title="src/protocols/reqrep\l/xrep.c" alt="" coords="309,81,445,122"/>
+<area shape="rect" id="node5" href="$surveyor_8c.html" title="src/protocols/survey\l/surveyor.c" alt="" coords="470,81,609,122"/>
+<area shape="rect" id="node6" href="$xrespondent_8c.html" title="src/protocols/survey\l/xrespondent.c" alt="" coords="634,81,773,122"/>
+<area shape="rect" id="node7" href="$sws_8c.html" title="src/transports/ws/sws.c" alt="" coords="799,88,961,115"/>
+<area shape="rect" id="node8" href="$ws__handshake_8c.html" title="src/transports/ws/ws\l_handshake.c" alt="" coords="985,81,1129,122"/>
+<area shape="rect" id="node9" href="$random_8c.html" title="src/utils/random.c" alt="" coords="1154,88,1280,115"/>
+</map>

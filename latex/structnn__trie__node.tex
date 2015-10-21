@@ -1,0 +1,81 @@
+\hypertarget{structnn__trie__node}{}\section{nn\+\_\+trie\+\_\+node Struct Reference}
+\label{structnn__trie__node}\index{nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}}
+
+
+{\ttfamily \#include $<$trie.\+h$>$}
+
+
+
+Collaboration diagram for nn\+\_\+trie\+\_\+node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{structnn__trie__node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{structnn__trie__node_a6dc1089a8be3d504fab316eb5c550ac8}{refcount}
+\item 
+uint8\+\_\+t \hyperlink{structnn__trie__node_a1ad8cbb3a89780ea9958b48ecc0a2f45}{type}
+\item 
+uint8\+\_\+t \hyperlink{structnn__trie__node_a15bfe2d362609805b0a38881413347e9}{prefix\+\_\+len}
+\item 
+uint8\+\_\+t \hyperlink{structnn__trie__node_a7aefc668cabcbce6cad09c5e77637d31}{prefix} \mbox{[}\hyperlink{trie_8h_a164802a5386c0f04e37a9eb118c7707c}{N\+N\+\_\+\+T\+R\+I\+E\+\_\+\+P\+R\+E\+F\+I\+X\+\_\+\+M\+AX}\mbox{]}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>uint8\_t \hyperlink{structnn__trie__node_a452a8682dddb092a2a60fa43c15aaee6}{children} \mbox{[}\hyperlink{trie_8h_a54988260b3cd5b5f2321f25c74d369fe}{NN\_TRIE\_SPARSE\_MAX}\mbox{]}\\
+\>\} \hyperlink{structnn__trie__node_ae430bf1862fd92f30bd991647645fc05}{sparse}\\
+\>struct \{\\
+\>\>uint8\_t \hyperlink{structnn__trie__node_a105e3aba00cda22951192c6fb12b43b8}{min}\\
+\>\>uint8\_t \hyperlink{structnn__trie__node_ad164df8e7446669447ce5c8d6575fdc0}{max}\\
+\>\>uint16\_t \hyperlink{structnn__trie__node_aa1b62c9e7cff55e4b2284124345c03ec}{nbr}\\
+\>\} \hyperlink{structnn__trie__node_a431468d12b2188d837c28b75be39e323}{dense}\\
+\} \hyperlink{structnn__trie__node_a2769fd778428eb659a86fdc725c6fbe4}{u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}!children@{children}}
+\index{children@{children}!nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}}
+\subsubsection[{children}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t nn\+\_\+trie\+\_\+node\+::children\mbox{[}{\bf N\+N\+\_\+\+T\+R\+I\+E\+\_\+\+S\+P\+A\+R\+S\+E\+\_\+\+M\+AX}\mbox{]}}\hypertarget{structnn__trie__node_a452a8682dddb092a2a60fa43c15aaee6}{}\label{structnn__trie__node_a452a8682dddb092a2a60fa43c15aaee6}
+\index{nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}!dense@{dense}}
+\index{dense@{dense}!nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}}
+\subsubsection[{dense}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   nn\+\_\+trie\+\_\+node\+::dense}\hypertarget{structnn__trie__node_a431468d12b2188d837c28b75be39e323}{}\label{structnn__trie__node_a431468d12b2188d837c28b75be39e323}
+\index{nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}!max@{max}}
+\index{max@{max}!nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}}
+\subsubsection[{max}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t nn\+\_\+trie\+\_\+node\+::max}\hypertarget{structnn__trie__node_ad164df8e7446669447ce5c8d6575fdc0}{}\label{structnn__trie__node_ad164df8e7446669447ce5c8d6575fdc0}
+\index{nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}!min@{min}}
+\index{min@{min}!nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}}
+\subsubsection[{min}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t nn\+\_\+trie\+\_\+node\+::min}\hypertarget{structnn__trie__node_a105e3aba00cda22951192c6fb12b43b8}{}\label{structnn__trie__node_a105e3aba00cda22951192c6fb12b43b8}
+\index{nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}!nbr@{nbr}}
+\index{nbr@{nbr}!nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}}
+\subsubsection[{nbr}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t nn\+\_\+trie\+\_\+node\+::nbr}\hypertarget{structnn__trie__node_aa1b62c9e7cff55e4b2284124345c03ec}{}\label{structnn__trie__node_aa1b62c9e7cff55e4b2284124345c03ec}
+\index{nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}!prefix@{prefix}}
+\index{prefix@{prefix}!nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}}
+\subsubsection[{prefix}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t nn\+\_\+trie\+\_\+node\+::prefix\mbox{[}{\bf N\+N\+\_\+\+T\+R\+I\+E\+\_\+\+P\+R\+E\+F\+I\+X\+\_\+\+M\+AX}\mbox{]}}\hypertarget{structnn__trie__node_a7aefc668cabcbce6cad09c5e77637d31}{}\label{structnn__trie__node_a7aefc668cabcbce6cad09c5e77637d31}
+\index{nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}!prefix\+\_\+len@{prefix\+\_\+len}}
+\index{prefix\+\_\+len@{prefix\+\_\+len}!nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}}
+\subsubsection[{prefix\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t nn\+\_\+trie\+\_\+node\+::prefix\+\_\+len}\hypertarget{structnn__trie__node_a15bfe2d362609805b0a38881413347e9}{}\label{structnn__trie__node_a15bfe2d362609805b0a38881413347e9}
+\index{nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}!refcount@{refcount}}
+\index{refcount@{refcount}!nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}}
+\subsubsection[{refcount}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t nn\+\_\+trie\+\_\+node\+::refcount}\hypertarget{structnn__trie__node_a6dc1089a8be3d504fab316eb5c550ac8}{}\label{structnn__trie__node_a6dc1089a8be3d504fab316eb5c550ac8}
+\index{nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}!sparse@{sparse}}
+\index{sparse@{sparse}!nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}}
+\subsubsection[{sparse}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   nn\+\_\+trie\+\_\+node\+::sparse}\hypertarget{structnn__trie__node_ae430bf1862fd92f30bd991647645fc05}{}\label{structnn__trie__node_ae430bf1862fd92f30bd991647645fc05}
+\index{nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}!type@{type}}
+\index{type@{type}!nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t nn\+\_\+trie\+\_\+node\+::type}\hypertarget{structnn__trie__node_a1ad8cbb3a89780ea9958b48ecc0a2f45}{}\label{structnn__trie__node_a1ad8cbb3a89780ea9958b48ecc0a2f45}
+\index{nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}!u@{u}}
+\index{u@{u}!nn\+\_\+trie\+\_\+node@{nn\+\_\+trie\+\_\+node}}
+\subsubsection[{u}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \}   nn\+\_\+trie\+\_\+node\+::u}\hypertarget{structnn__trie__node_a2769fd778428eb659a86fdc725c6fbe4}{}\label{structnn__trie__node_a2769fd778428eb659a86fdc725c6fbe4}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/protocols/pubsub/\hyperlink{trie_8h}{trie.\+h}\end{DoxyCompactItemize}

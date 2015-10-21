@@ -1,0 +1,6 @@
+<map id="nn_xrespondent_data" name="nn_xrespondent_data">
+<area shape="rect" id="node2" href="$structnn__fq__data.html" title="{nn_fq_data\n||}" alt="" coords="14,365,100,443"/>
+<area shape="rect" id="node3" href="$structnn__priolist__data.html" title="{nn_priolist_data\n|+ pipe\l+ priority\l|}" alt="" coords="5,147,117,239"/>
+<area shape="rect" id="node4" href="$structnn__list__item.html" title="{nn_list_item\n||}" alt="" coords="73,5,164,83"/>
+<area shape="rect" id="node5" href="$structnn__hash__item.html" title="{nn_hash_item\n|+ key\l|}" alt="" coords="117,264,219,341"/>
+</map>

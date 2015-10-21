@@ -1,0 +1,18 @@
+<map id="src/protocols/pipeline/xpull.c" name="src/protocols/pipeline/xpull.c">
+<area shape="rect" id="node2" href="$xpull_8h.html" title="xpull.h" alt="" coords="305,171,364,197"/>
+<area shape="rect" id="node11" href="$nn_8h.html" title="../../nn.h" alt="" coords="451,171,521,197"/>
+<area shape="rect" id="node13" href="$pipeline_8h.html" title="../../pipeline.h" alt="" coords="904,96,1005,123"/>
+<area shape="rect" id="node14" href="$fq_8h.html" title="../utils/fq.h" alt="" coords="205,96,288,123"/>
+<area shape="rect" id="node16" href="$err_8h.html" title="../../utils/err.h" alt="" coords="561,96,660,123"/>
+<area shape="rect" id="node20" href="$cont_8h.html" title="../../utils/cont.h" alt="" coords="699,395,809,421"/>
+<area shape="rect" id="node19" href="$fast_8h.html" title="fast.h" alt="" coords="774,171,828,197"/>
+<area shape="rect" id="node21" href="$alloc_8h.html" title="../../utils/alloc.h" alt="" coords="400,469,512,496"/>
+<area shape="rect" id="node10" href="$list_8h.html" title="utils/list.h" alt="" coords="5,320,83,347"/>
+<area shape="rect" id="node22" href="$attr_8h.html" title="../../utils/attr.h" alt="" coords="1029,96,1133,123"/>
+<area shape="rect" id="node3" href="$protocol_8h.html" title="../../protocol.h" alt="" coords="193,245,295,272"/>
+<area shape="rect" id="node4" href="$msg_8h.html" title="utils/msg.h" alt="" coords="201,320,287,347"/>
+<area shape="rect" id="node8" href="$int_8h.html" title="int.h" alt="" coords="94,544,140,571"/>
+<area shape="rect" id="node5" href="$chunkref_8h.html" title="chunkref.h" alt="" coords="169,395,252,421"/>
+<area shape="rect" id="node6" href="$chunk_8h.html" title="chunk.h" alt="" coords="155,469,223,496"/>
+<area shape="rect" id="node15" href="$priolist_8h.html" title="priolist.h" alt="" coords="138,171,208,197"/>
+</map>

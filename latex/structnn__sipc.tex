@@ -1,0 +1,91 @@
+\hypertarget{structnn__sipc}{}\section{nn\+\_\+sipc Struct Reference}
+\label{structnn__sipc}\index{nn\+\_\+sipc@{nn\+\_\+sipc}}
+
+
+{\ttfamily \#include $<$sipc.\+h$>$}
+
+
+
+Collaboration diagram for nn\+\_\+sipc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structnn__sipc__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} \hyperlink{structnn__sipc_a87d9da9fa28a5657b0aa55fac311de02}{fsm}
+\item 
+int \hyperlink{structnn__sipc_aee023008a3ddf7b8a7b4bb4b3794dec2}{state}
+\item 
+struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$ \hyperlink{structnn__sipc_adc95a413352d2739ad66cb182ca34dbc}{usock}
+\item 
+struct \hyperlink{structnn__streamhdr}{nn\+\_\+streamhdr} \hyperlink{structnn__sipc_a8c72bf1257a05f914b59ce67e6b80a64}{streamhdr}
+\item 
+struct \hyperlink{structnn__fsm__owner}{nn\+\_\+fsm\+\_\+owner} \hyperlink{structnn__sipc_a5f5d602ecba8aabe32671874b2e40adb}{usock\+\_\+owner}
+\item 
+struct \hyperlink{structnn__pipebase}{nn\+\_\+pipebase} \hyperlink{structnn__sipc_ab5d0ceac7e850f4d12eff3a323e89824}{pipebase}
+\item 
+int \hyperlink{structnn__sipc_ac1145ec262ed3684d3d0f2625bcf699b}{instate}
+\item 
+uint8\+\_\+t \hyperlink{structnn__sipc_acc4edce715de1ec964ca6b1bbd7bd495}{inhdr} \mbox{[}9\mbox{]}
+\item 
+struct \hyperlink{structnn__msg}{nn\+\_\+msg} \hyperlink{structnn__sipc_a9d2c2aaae57d4b332a3c73db340b036d}{inmsg}
+\item 
+int \hyperlink{structnn__sipc_aa55363371878ff4b4782147f123face8}{outstate}
+\item 
+uint8\+\_\+t \hyperlink{structnn__sipc_a660705dddfd7289a6ca2de2090655157}{outhdr} \mbox{[}9\mbox{]}
+\item 
+struct \hyperlink{structnn__msg}{nn\+\_\+msg} \hyperlink{structnn__sipc_a6a129285cd3d0abc998c255433750151}{outmsg}
+\item 
+struct \hyperlink{structnn__fsm__event}{nn\+\_\+fsm\+\_\+event} \hyperlink{structnn__sipc_a1c0da8d5bfce0d9889f1c2329ec0df6e}{done}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+sipc@{nn\+\_\+sipc}!done@{done}}
+\index{done@{done}!nn\+\_\+sipc@{nn\+\_\+sipc}}
+\subsubsection[{done}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+event} nn\+\_\+sipc\+::done}\hypertarget{structnn__sipc_a1c0da8d5bfce0d9889f1c2329ec0df6e}{}\label{structnn__sipc_a1c0da8d5bfce0d9889f1c2329ec0df6e}
+\index{nn\+\_\+sipc@{nn\+\_\+sipc}!fsm@{fsm}}
+\index{fsm@{fsm}!nn\+\_\+sipc@{nn\+\_\+sipc}}
+\subsubsection[{fsm}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm} nn\+\_\+sipc\+::fsm}\hypertarget{structnn__sipc_a87d9da9fa28a5657b0aa55fac311de02}{}\label{structnn__sipc_a87d9da9fa28a5657b0aa55fac311de02}
+\index{nn\+\_\+sipc@{nn\+\_\+sipc}!inhdr@{inhdr}}
+\index{inhdr@{inhdr}!nn\+\_\+sipc@{nn\+\_\+sipc}}
+\subsubsection[{inhdr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t nn\+\_\+sipc\+::inhdr\mbox{[}9\mbox{]}}\hypertarget{structnn__sipc_acc4edce715de1ec964ca6b1bbd7bd495}{}\label{structnn__sipc_acc4edce715de1ec964ca6b1bbd7bd495}
+\index{nn\+\_\+sipc@{nn\+\_\+sipc}!inmsg@{inmsg}}
+\index{inmsg@{inmsg}!nn\+\_\+sipc@{nn\+\_\+sipc}}
+\subsubsection[{inmsg}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+msg} nn\+\_\+sipc\+::inmsg}\hypertarget{structnn__sipc_a9d2c2aaae57d4b332a3c73db340b036d}{}\label{structnn__sipc_a9d2c2aaae57d4b332a3c73db340b036d}
+\index{nn\+\_\+sipc@{nn\+\_\+sipc}!instate@{instate}}
+\index{instate@{instate}!nn\+\_\+sipc@{nn\+\_\+sipc}}
+\subsubsection[{instate}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sipc\+::instate}\hypertarget{structnn__sipc_ac1145ec262ed3684d3d0f2625bcf699b}{}\label{structnn__sipc_ac1145ec262ed3684d3d0f2625bcf699b}
+\index{nn\+\_\+sipc@{nn\+\_\+sipc}!outhdr@{outhdr}}
+\index{outhdr@{outhdr}!nn\+\_\+sipc@{nn\+\_\+sipc}}
+\subsubsection[{outhdr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t nn\+\_\+sipc\+::outhdr\mbox{[}9\mbox{]}}\hypertarget{structnn__sipc_a660705dddfd7289a6ca2de2090655157}{}\label{structnn__sipc_a660705dddfd7289a6ca2de2090655157}
+\index{nn\+\_\+sipc@{nn\+\_\+sipc}!outmsg@{outmsg}}
+\index{outmsg@{outmsg}!nn\+\_\+sipc@{nn\+\_\+sipc}}
+\subsubsection[{outmsg}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+msg} nn\+\_\+sipc\+::outmsg}\hypertarget{structnn__sipc_a6a129285cd3d0abc998c255433750151}{}\label{structnn__sipc_a6a129285cd3d0abc998c255433750151}
+\index{nn\+\_\+sipc@{nn\+\_\+sipc}!outstate@{outstate}}
+\index{outstate@{outstate}!nn\+\_\+sipc@{nn\+\_\+sipc}}
+\subsubsection[{outstate}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sipc\+::outstate}\hypertarget{structnn__sipc_aa55363371878ff4b4782147f123face8}{}\label{structnn__sipc_aa55363371878ff4b4782147f123face8}
+\index{nn\+\_\+sipc@{nn\+\_\+sipc}!pipebase@{pipebase}}
+\index{pipebase@{pipebase}!nn\+\_\+sipc@{nn\+\_\+sipc}}
+\subsubsection[{pipebase}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+pipebase} nn\+\_\+sipc\+::pipebase}\hypertarget{structnn__sipc_ab5d0ceac7e850f4d12eff3a323e89824}{}\label{structnn__sipc_ab5d0ceac7e850f4d12eff3a323e89824}
+\index{nn\+\_\+sipc@{nn\+\_\+sipc}!state@{state}}
+\index{state@{state}!nn\+\_\+sipc@{nn\+\_\+sipc}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sipc\+::state}\hypertarget{structnn__sipc_aee023008a3ddf7b8a7b4bb4b3794dec2}{}\label{structnn__sipc_aee023008a3ddf7b8a7b4bb4b3794dec2}
+\index{nn\+\_\+sipc@{nn\+\_\+sipc}!streamhdr@{streamhdr}}
+\index{streamhdr@{streamhdr}!nn\+\_\+sipc@{nn\+\_\+sipc}}
+\subsubsection[{streamhdr}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+streamhdr} nn\+\_\+sipc\+::streamhdr}\hypertarget{structnn__sipc_a8c72bf1257a05f914b59ce67e6b80a64}{}\label{structnn__sipc_a8c72bf1257a05f914b59ce67e6b80a64}
+\index{nn\+\_\+sipc@{nn\+\_\+sipc}!usock@{usock}}
+\index{usock@{usock}!nn\+\_\+sipc@{nn\+\_\+sipc}}
+\subsubsection[{usock}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+usock}$\ast$ nn\+\_\+sipc\+::usock}\hypertarget{structnn__sipc_adc95a413352d2739ad66cb182ca34dbc}{}\label{structnn__sipc_adc95a413352d2739ad66cb182ca34dbc}
+\index{nn\+\_\+sipc@{nn\+\_\+sipc}!usock\+\_\+owner@{usock\+\_\+owner}}
+\index{usock\+\_\+owner@{usock\+\_\+owner}!nn\+\_\+sipc@{nn\+\_\+sipc}}
+\subsubsection[{usock\+\_\+owner}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+owner} nn\+\_\+sipc\+::usock\+\_\+owner}\hypertarget{structnn__sipc_a5f5d602ecba8aabe32671874b2e40adb}{}\label{structnn__sipc_a5f5d602ecba8aabe32671874b2e40adb}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/transports/ipc/\hyperlink{sipc_8h}{sipc.\+h}\end{DoxyCompactItemize}

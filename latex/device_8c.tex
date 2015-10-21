@@ -1,0 +1,106 @@
+\hypertarget{device_8c}{}\section{src/devices/device.c File Reference}
+\label{device_8c}\index{src/devices/device.\+c@{src/devices/device.\+c}}
+{\ttfamily \#include \char`\"{}../nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/fd.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/attr.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}device.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for device.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{device_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{device_8c_aa2dde9bc615b6690f2b47fb9ef9131f2}{nn\+\_\+custom\+\_\+device} (struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int s1, int s2, int flags)
+\item 
+int \hyperlink{device_8c_a6642bc334f4553cfb227a276cd093055}{nn\+\_\+device} (int s1, int s2)
+\item 
+int \hyperlink{device_8c_a553e0231bfc7562c4368a41b9ad091d4}{nn\+\_\+device\+\_\+entry} (struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int s1, int s2, int flags)
+\item 
+int \hyperlink{device_8c_a9691b8b5c57d29b8e68d1f2c8cc045b0}{nn\+\_\+device\+\_\+loopback} (struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int s)
+\item 
+int \hyperlink{device_8c_a013226625763cd433acf7a955493f798}{nn\+\_\+device\+\_\+oneway} (struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int s1, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s1rcv, int s2, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s2snd)
+\item 
+int \hyperlink{device_8c_a48652c933cfb8cf0e5f73c17fee8dd88}{nn\+\_\+device\+\_\+mvmsg} (struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int from, int to, int flags)
+\item 
+int \hyperlink{device_8c_af7d09b3ae908fa9f5e74708262b27989}{nn\+\_\+device\+\_\+rewritemsg} (struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int from, int to, int flags, struct \hyperlink{structnn__msghdr}{nn\+\_\+msghdr} $\ast$msghdr, int bytes)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{device.\+c@{device.\+c}!nn\+\_\+custom\+\_\+device@{nn\+\_\+custom\+\_\+device}}
+\index{nn\+\_\+custom\+\_\+device@{nn\+\_\+custom\+\_\+device}!device.\+c@{device.\+c}}
+\subsubsection[{nn\+\_\+custom\+\_\+device(struct nn\+\_\+device\+\_\+recipe $\ast$device, int s1, int s2, int flags)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+custom\+\_\+device (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$}]{device, }
+\item[{int}]{s1, }
+\item[{int}]{s2, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8c_aa2dde9bc615b6690f2b47fb9ef9131f2}{}\label{device_8c_aa2dde9bc615b6690f2b47fb9ef9131f2}
+\index{device.\+c@{device.\+c}!nn\+\_\+device@{nn\+\_\+device}}
+\index{nn\+\_\+device@{nn\+\_\+device}!device.\+c@{device.\+c}}
+\subsubsection[{nn\+\_\+device(int s1, int s2)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+device (
+\begin{DoxyParamCaption}
+\item[{int}]{s1, }
+\item[{int}]{s2}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8c_a6642bc334f4553cfb227a276cd093055}{}\label{device_8c_a6642bc334f4553cfb227a276cd093055}
+\index{device.\+c@{device.\+c}!nn\+\_\+device\+\_\+entry@{nn\+\_\+device\+\_\+entry}}
+\index{nn\+\_\+device\+\_\+entry@{nn\+\_\+device\+\_\+entry}!device.\+c@{device.\+c}}
+\subsubsection[{nn\+\_\+device\+\_\+entry(struct nn\+\_\+device\+\_\+recipe $\ast$device, int s1, int s2, int flags)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+device\+\_\+entry (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$}]{device, }
+\item[{int}]{s1, }
+\item[{int}]{s2, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8c_a553e0231bfc7562c4368a41b9ad091d4}{}\label{device_8c_a553e0231bfc7562c4368a41b9ad091d4}
+\index{device.\+c@{device.\+c}!nn\+\_\+device\+\_\+loopback@{nn\+\_\+device\+\_\+loopback}}
+\index{nn\+\_\+device\+\_\+loopback@{nn\+\_\+device\+\_\+loopback}!device.\+c@{device.\+c}}
+\subsubsection[{nn\+\_\+device\+\_\+loopback(struct nn\+\_\+device\+\_\+recipe $\ast$device, int s)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+device\+\_\+loopback (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$}]{device, }
+\item[{int}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8c_a9691b8b5c57d29b8e68d1f2c8cc045b0}{}\label{device_8c_a9691b8b5c57d29b8e68d1f2c8cc045b0}
+\index{device.\+c@{device.\+c}!nn\+\_\+device\+\_\+mvmsg@{nn\+\_\+device\+\_\+mvmsg}}
+\index{nn\+\_\+device\+\_\+mvmsg@{nn\+\_\+device\+\_\+mvmsg}!device.\+c@{device.\+c}}
+\subsubsection[{nn\+\_\+device\+\_\+mvmsg(struct nn\+\_\+device\+\_\+recipe $\ast$device, int from, int to, int flags)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+device\+\_\+mvmsg (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$}]{device, }
+\item[{int}]{from, }
+\item[{int}]{to, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8c_a48652c933cfb8cf0e5f73c17fee8dd88}{}\label{device_8c_a48652c933cfb8cf0e5f73c17fee8dd88}
+\index{device.\+c@{device.\+c}!nn\+\_\+device\+\_\+oneway@{nn\+\_\+device\+\_\+oneway}}
+\index{nn\+\_\+device\+\_\+oneway@{nn\+\_\+device\+\_\+oneway}!device.\+c@{device.\+c}}
+\subsubsection[{nn\+\_\+device\+\_\+oneway(struct nn\+\_\+device\+\_\+recipe $\ast$device, int s1, N\+N\+\_\+\+U\+N\+U\+S\+E\+D nn\+\_\+fd s1rcv, int s2, N\+N\+\_\+\+U\+N\+U\+S\+E\+D nn\+\_\+fd s2snd)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+device\+\_\+oneway (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$}]{device, }
+\item[{int}]{s1, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} {\bf nn\+\_\+fd}}]{s1rcv, }
+\item[{int}]{s2, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} {\bf nn\+\_\+fd}}]{s2snd}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8c_a013226625763cd433acf7a955493f798}{}\label{device_8c_a013226625763cd433acf7a955493f798}
+\index{device.\+c@{device.\+c}!nn\+\_\+device\+\_\+rewritemsg@{nn\+\_\+device\+\_\+rewritemsg}}
+\index{nn\+\_\+device\+\_\+rewritemsg@{nn\+\_\+device\+\_\+rewritemsg}!device.\+c@{device.\+c}}
+\subsubsection[{nn\+\_\+device\+\_\+rewritemsg(struct nn\+\_\+device\+\_\+recipe $\ast$device, int from, int to, int flags, struct nn\+\_\+msghdr $\ast$msghdr, int bytes)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+device\+\_\+rewritemsg (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$}]{device, }
+\item[{int}]{from, }
+\item[{int}]{to, }
+\item[{int}]{flags, }
+\item[{struct {\bf nn\+\_\+msghdr} $\ast$}]{msghdr, }
+\item[{int}]{bytes}
+\end{DoxyParamCaption}
+)}\hypertarget{device_8c_af7d09b3ae908fa9f5e74708262b27989}{}\label{device_8c_af7d09b3ae908fa9f5e74708262b27989}

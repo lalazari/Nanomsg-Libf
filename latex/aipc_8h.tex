@@ -1,0 +1,102 @@
+\hypertarget{aipc_8h}{}\section{src/transports/ipc/aipc.h File Reference}
+\label{aipc_8h}\index{src/transports/ipc/aipc.\+h@{src/transports/ipc/aipc.\+h}}
+{\ttfamily \#include \char`\"{}sipc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../transport.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/fsm.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/usock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+Include dependency graph for aipc.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aipc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{aipc_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__aipc}{nn\+\_\+aipc}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{aipc_8h_a9cb516a196a0177d0de2eb6ef68beeb5}{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED}~34231
+\item 
+\#define \hyperlink{aipc_8h_a0a563acc7698fea93c79514856b2382a}{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+E\+R\+R\+OR}~34232
+\item 
+\#define \hyperlink{aipc_8h_a43353dd8f806860269c86dadd0d77a81}{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED}~34233
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{aipc_8h_ae13c10ebbae057fd361ec506511f50a6}{nn\+\_\+aipc\+\_\+init} (struct \hyperlink{structnn__aipc}{nn\+\_\+aipc} $\ast$self, int src, struct \hyperlink{structnn__epbase}{nn\+\_\+epbase} $\ast$epbase, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{aipc_8h_ab51b47d84ff3225abc0e7557330c8f7e}{nn\+\_\+aipc\+\_\+term} (struct \hyperlink{structnn__aipc}{nn\+\_\+aipc} $\ast$self)
+\item 
+int \hyperlink{aipc_8h_a0cd6394266aa01914e9780a5e34d47a5}{nn\+\_\+aipc\+\_\+isidle} (struct \hyperlink{structnn__aipc}{nn\+\_\+aipc} $\ast$self)
+\item 
+void \hyperlink{aipc_8h_ab4d1dba17dfd82561e6d2b7a91d77b0c}{nn\+\_\+aipc\+\_\+start} (struct \hyperlink{structnn__aipc}{nn\+\_\+aipc} $\ast$self, struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$listener)
+\item 
+void \hyperlink{aipc_8h_a0e1f25a0ed19ee2aaed90c8e939020f5}{nn\+\_\+aipc\+\_\+stop} (struct \hyperlink{structnn__aipc}{nn\+\_\+aipc} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{aipc.\+h@{aipc.\+h}!N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED@{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED}}
+\index{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED@{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED}!aipc.\+h@{aipc.\+h}}
+\subsubsection[{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+A\+C\+C\+E\+P\+T\+ED~34231}\hypertarget{aipc_8h_a9cb516a196a0177d0de2eb6ef68beeb5}{}\label{aipc_8h_a9cb516a196a0177d0de2eb6ef68beeb5}
+\index{aipc.\+h@{aipc.\+h}!N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+E\+R\+R\+OR}}
+\index{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+E\+R\+R\+OR}!aipc.\+h@{aipc.\+h}}
+\subsubsection[{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+E\+R\+R\+OR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+E\+R\+R\+OR~34232}\hypertarget{aipc_8h_a0a563acc7698fea93c79514856b2382a}{}\label{aipc_8h_a0a563acc7698fea93c79514856b2382a}
+\index{aipc.\+h@{aipc.\+h}!N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED}!aipc.\+h@{aipc.\+h}}
+\subsubsection[{N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+A\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED~34233}\hypertarget{aipc_8h_a43353dd8f806860269c86dadd0d77a81}{}\label{aipc_8h_a43353dd8f806860269c86dadd0d77a81}
+
+
+\subsection{Function Documentation}
+\index{aipc.\+h@{aipc.\+h}!nn\+\_\+aipc\+\_\+init@{nn\+\_\+aipc\+\_\+init}}
+\index{nn\+\_\+aipc\+\_\+init@{nn\+\_\+aipc\+\_\+init}!aipc.\+h@{aipc.\+h}}
+\subsubsection[{nn\+\_\+aipc\+\_\+init(struct nn\+\_\+aipc $\ast$self, int src, struct nn\+\_\+epbase $\ast$epbase, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+aipc\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+aipc} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+epbase} $\ast$}]{epbase, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{aipc_8h_ae13c10ebbae057fd361ec506511f50a6}{}\label{aipc_8h_ae13c10ebbae057fd361ec506511f50a6}
+\index{aipc.\+h@{aipc.\+h}!nn\+\_\+aipc\+\_\+isidle@{nn\+\_\+aipc\+\_\+isidle}}
+\index{nn\+\_\+aipc\+\_\+isidle@{nn\+\_\+aipc\+\_\+isidle}!aipc.\+h@{aipc.\+h}}
+\subsubsection[{nn\+\_\+aipc\+\_\+isidle(struct nn\+\_\+aipc $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+aipc\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+aipc} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{aipc_8h_a0cd6394266aa01914e9780a5e34d47a5}{}\label{aipc_8h_a0cd6394266aa01914e9780a5e34d47a5}
+\index{aipc.\+h@{aipc.\+h}!nn\+\_\+aipc\+\_\+start@{nn\+\_\+aipc\+\_\+start}}
+\index{nn\+\_\+aipc\+\_\+start@{nn\+\_\+aipc\+\_\+start}!aipc.\+h@{aipc.\+h}}
+\subsubsection[{nn\+\_\+aipc\+\_\+start(struct nn\+\_\+aipc $\ast$self, struct nn\+\_\+usock $\ast$listener)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+aipc\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+aipc} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)}\hypertarget{aipc_8h_ab4d1dba17dfd82561e6d2b7a91d77b0c}{}\label{aipc_8h_ab4d1dba17dfd82561e6d2b7a91d77b0c}
+\index{aipc.\+h@{aipc.\+h}!nn\+\_\+aipc\+\_\+stop@{nn\+\_\+aipc\+\_\+stop}}
+\index{nn\+\_\+aipc\+\_\+stop@{nn\+\_\+aipc\+\_\+stop}!aipc.\+h@{aipc.\+h}}
+\subsubsection[{nn\+\_\+aipc\+\_\+stop(struct nn\+\_\+aipc $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+aipc\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+aipc} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{aipc_8h_a0e1f25a0ed19ee2aaed90c8e939020f5}{}\label{aipc_8h_a0e1f25a0ed19ee2aaed90c8e939020f5}
+\index{aipc.\+h@{aipc.\+h}!nn\+\_\+aipc\+\_\+term@{nn\+\_\+aipc\+\_\+term}}
+\index{nn\+\_\+aipc\+\_\+term@{nn\+\_\+aipc\+\_\+term}!aipc.\+h@{aipc.\+h}}
+\subsubsection[{nn\+\_\+aipc\+\_\+term(struct nn\+\_\+aipc $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+aipc\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+aipc} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{aipc_8h_ab51b47d84ff3225abc0e7557330c8f7e}{}\label{aipc_8h_ab51b47d84ff3225abc0e7557330c8f7e}

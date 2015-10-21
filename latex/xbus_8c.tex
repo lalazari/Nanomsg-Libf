@@ -1,0 +1,171 @@
+\hypertarget{xbus_8c}{}\section{src/protocols/bus/xbus.c File Reference}
+\label{xbus_8c}\index{src/protocols/bus/xbus.\+c@{src/protocols/bus/xbus.\+c}}
+{\ttfamily \#include \char`\"{}xbus.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../bus.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/int.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/attr.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for xbus.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{xbus_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{xbus_8c_acbb94ebf57a56fd1718f8b87273abcd0}{C\+T\+\_\+\+A\+S\+S\+E\+RT} (sizeof(uint64\+\_\+t) $>$=sizeof(struct nn\+\_\+pipe $\ast$))
+\item 
+void \hyperlink{xbus_8c_a6d1b7ee6fa99a32e25d7f92a308fc1ed}{nn\+\_\+xbus\+\_\+init} (struct \hyperlink{structnn__xbus}{nn\+\_\+xbus} $\ast$self, const struct \hyperlink{structnn__sockbase__vfptr}{nn\+\_\+sockbase\+\_\+vfptr} $\ast$vfptr, void $\ast$hint)
+\item 
+void \hyperlink{xbus_8c_a58ac01e2e15687b364a8835150467692}{nn\+\_\+xbus\+\_\+term} (struct \hyperlink{structnn__xbus}{nn\+\_\+xbus} $\ast$self)
+\item 
+int \hyperlink{xbus_8c_a72f33aa98bdc0c28f1427741ebb919c2}{nn\+\_\+xbus\+\_\+add} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{xbus_8c_a3796874153ca98d703cff0a251808b2d}{nn\+\_\+xbus\+\_\+rm} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{xbus_8c_a3480082a962c55267f08e2ec5d3b9d23}{nn\+\_\+xbus\+\_\+in} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{xbus_8c_a08267db4c6d1796a4ead4c9495ad5a7f}{nn\+\_\+xbus\+\_\+out} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+int \hyperlink{xbus_8c_abb58501c99a428682ed3e601252d8d72}{nn\+\_\+xbus\+\_\+events} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self)
+\item 
+int \hyperlink{xbus_8c_aa53985d4c77e42d5a2d3751b59b26a0d}{nn\+\_\+xbus\+\_\+send} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg)
+\item 
+int \hyperlink{xbus_8c_a3a072d4101fa3afb28b0a573067506c5}{nn\+\_\+xbus\+\_\+recv} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg)
+\item 
+int \hyperlink{xbus_8c_ad67bc9c9b01019b2549699b5dd826883}{nn\+\_\+xbus\+\_\+setopt} (\hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} int level, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} int option, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} const void $\ast$optval, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} size\+\_\+t optvallen)
+\item 
+int \hyperlink{xbus_8c_a181c920677776e0fbeca96c9f19e3578}{nn\+\_\+xbus\+\_\+getopt} (\hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} int level, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} int option, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$optval, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} size\+\_\+t $\ast$optvallen)
+\item 
+int \hyperlink{xbus_8c_a60a38585b9274da97c8101063408266a}{nn\+\_\+xbus\+\_\+ispeer} (int socktype)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__socktype}{nn\+\_\+socktype} $\ast$ \hyperlink{xbus_8c_a36786010edb1af30c90127c75f7b57fa}{nn\+\_\+xbus\+\_\+socktype} = \&nn\+\_\+xbus\+\_\+socktype\+\_\+struct
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{xbus.\+c@{xbus.\+c}!C\+T\+\_\+\+A\+S\+S\+E\+RT@{C\+T\+\_\+\+A\+S\+S\+E\+RT}}
+\index{C\+T\+\_\+\+A\+S\+S\+E\+RT@{C\+T\+\_\+\+A\+S\+S\+E\+RT}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{C\+T\+\_\+\+A\+S\+S\+E\+R\+T(sizeof(uint64\+\_\+t) $>$=sizeof(struct nn\+\_\+pipe $\ast$))}]{\setlength{\rightskip}{0pt plus 5cm}C\+T\+\_\+\+A\+S\+S\+E\+RT (
+\begin{DoxyParamCaption}
+\item[{sizeof(uint64\+\_\+t) $>$=sizeof(struct nn\+\_\+pipe $\ast$)}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{xbus_8c_acbb94ebf57a56fd1718f8b87273abcd0}{}\label{xbus_8c_acbb94ebf57a56fd1718f8b87273abcd0}
+\index{xbus.\+c@{xbus.\+c}!nn\+\_\+xbus\+\_\+add@{nn\+\_\+xbus\+\_\+add}}
+\index{nn\+\_\+xbus\+\_\+add@{nn\+\_\+xbus\+\_\+add}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{nn\+\_\+xbus\+\_\+add(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xbus\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{xbus_8c_a72f33aa98bdc0c28f1427741ebb919c2}{}\label{xbus_8c_a72f33aa98bdc0c28f1427741ebb919c2}
+\index{xbus.\+c@{xbus.\+c}!nn\+\_\+xbus\+\_\+events@{nn\+\_\+xbus\+\_\+events}}
+\index{nn\+\_\+xbus\+\_\+events@{nn\+\_\+xbus\+\_\+events}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{nn\+\_\+xbus\+\_\+events(struct nn\+\_\+sockbase $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xbus\+\_\+events (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{xbus_8c_abb58501c99a428682ed3e601252d8d72}{}\label{xbus_8c_abb58501c99a428682ed3e601252d8d72}
+\index{xbus.\+c@{xbus.\+c}!nn\+\_\+xbus\+\_\+getopt@{nn\+\_\+xbus\+\_\+getopt}}
+\index{nn\+\_\+xbus\+\_\+getopt@{nn\+\_\+xbus\+\_\+getopt}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{nn\+\_\+xbus\+\_\+getopt(\+N\+N\+\_\+\+U\+N\+U\+S\+E\+D struct nn\+\_\+sockbase $\ast$self, N\+N\+\_\+\+U\+N\+U\+S\+E\+D int level, N\+N\+\_\+\+U\+N\+U\+S\+E\+D int option, N\+N\+\_\+\+U\+N\+U\+S\+E\+D void $\ast$optval, N\+N\+\_\+\+U\+N\+U\+S\+E\+D size\+\_\+t $\ast$optvallen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xbus\+\_\+getopt (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} int}]{level, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} int}]{option, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$}]{optval, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} size\+\_\+t $\ast$}]{optvallen}
+\end{DoxyParamCaption}
+)}\hypertarget{xbus_8c_a181c920677776e0fbeca96c9f19e3578}{}\label{xbus_8c_a181c920677776e0fbeca96c9f19e3578}
+\index{xbus.\+c@{xbus.\+c}!nn\+\_\+xbus\+\_\+in@{nn\+\_\+xbus\+\_\+in}}
+\index{nn\+\_\+xbus\+\_\+in@{nn\+\_\+xbus\+\_\+in}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{nn\+\_\+xbus\+\_\+in(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xbus\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{xbus_8c_a3480082a962c55267f08e2ec5d3b9d23}{}\label{xbus_8c_a3480082a962c55267f08e2ec5d3b9d23}
+\index{xbus.\+c@{xbus.\+c}!nn\+\_\+xbus\+\_\+init@{nn\+\_\+xbus\+\_\+init}}
+\index{nn\+\_\+xbus\+\_\+init@{nn\+\_\+xbus\+\_\+init}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{nn\+\_\+xbus\+\_\+init(struct nn\+\_\+xbus $\ast$self, const struct nn\+\_\+sockbase\+\_\+vfptr $\ast$vfptr, void $\ast$hint)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xbus\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+xbus} $\ast$}]{self, }
+\item[{const struct {\bf nn\+\_\+sockbase\+\_\+vfptr} $\ast$}]{vfptr, }
+\item[{void $\ast$}]{hint}
+\end{DoxyParamCaption}
+)}\hypertarget{xbus_8c_a6d1b7ee6fa99a32e25d7f92a308fc1ed}{}\label{xbus_8c_a6d1b7ee6fa99a32e25d7f92a308fc1ed}
+\index{xbus.\+c@{xbus.\+c}!nn\+\_\+xbus\+\_\+ispeer@{nn\+\_\+xbus\+\_\+ispeer}}
+\index{nn\+\_\+xbus\+\_\+ispeer@{nn\+\_\+xbus\+\_\+ispeer}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{nn\+\_\+xbus\+\_\+ispeer(int socktype)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xbus\+\_\+ispeer (
+\begin{DoxyParamCaption}
+\item[{int}]{socktype}
+\end{DoxyParamCaption}
+)}\hypertarget{xbus_8c_a60a38585b9274da97c8101063408266a}{}\label{xbus_8c_a60a38585b9274da97c8101063408266a}
+\index{xbus.\+c@{xbus.\+c}!nn\+\_\+xbus\+\_\+out@{nn\+\_\+xbus\+\_\+out}}
+\index{nn\+\_\+xbus\+\_\+out@{nn\+\_\+xbus\+\_\+out}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{nn\+\_\+xbus\+\_\+out(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xbus\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{xbus_8c_a08267db4c6d1796a4ead4c9495ad5a7f}{}\label{xbus_8c_a08267db4c6d1796a4ead4c9495ad5a7f}
+\index{xbus.\+c@{xbus.\+c}!nn\+\_\+xbus\+\_\+recv@{nn\+\_\+xbus\+\_\+recv}}
+\index{nn\+\_\+xbus\+\_\+recv@{nn\+\_\+xbus\+\_\+recv}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{nn\+\_\+xbus\+\_\+recv(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xbus\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{xbus_8c_a3a072d4101fa3afb28b0a573067506c5}{}\label{xbus_8c_a3a072d4101fa3afb28b0a573067506c5}
+\index{xbus.\+c@{xbus.\+c}!nn\+\_\+xbus\+\_\+rm@{nn\+\_\+xbus\+\_\+rm}}
+\index{nn\+\_\+xbus\+\_\+rm@{nn\+\_\+xbus\+\_\+rm}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{nn\+\_\+xbus\+\_\+rm(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xbus\+\_\+rm (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{xbus_8c_a3796874153ca98d703cff0a251808b2d}{}\label{xbus_8c_a3796874153ca98d703cff0a251808b2d}
+\index{xbus.\+c@{xbus.\+c}!nn\+\_\+xbus\+\_\+send@{nn\+\_\+xbus\+\_\+send}}
+\index{nn\+\_\+xbus\+\_\+send@{nn\+\_\+xbus\+\_\+send}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{nn\+\_\+xbus\+\_\+send(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xbus\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{xbus_8c_aa53985d4c77e42d5a2d3751b59b26a0d}{}\label{xbus_8c_aa53985d4c77e42d5a2d3751b59b26a0d}
+\index{xbus.\+c@{xbus.\+c}!nn\+\_\+xbus\+\_\+setopt@{nn\+\_\+xbus\+\_\+setopt}}
+\index{nn\+\_\+xbus\+\_\+setopt@{nn\+\_\+xbus\+\_\+setopt}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{nn\+\_\+xbus\+\_\+setopt(\+N\+N\+\_\+\+U\+N\+U\+S\+E\+D struct nn\+\_\+sockbase $\ast$self, N\+N\+\_\+\+U\+N\+U\+S\+E\+D int level, N\+N\+\_\+\+U\+N\+U\+S\+E\+D int option, N\+N\+\_\+\+U\+N\+U\+S\+E\+D const void $\ast$optval, N\+N\+\_\+\+U\+N\+U\+S\+E\+D size\+\_\+t optvallen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xbus\+\_\+setopt (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} int}]{level, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} int}]{option, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} const void $\ast$}]{optval, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} size\+\_\+t}]{optvallen}
+\end{DoxyParamCaption}
+)}\hypertarget{xbus_8c_ad67bc9c9b01019b2549699b5dd826883}{}\label{xbus_8c_ad67bc9c9b01019b2549699b5dd826883}
+\index{xbus.\+c@{xbus.\+c}!nn\+\_\+xbus\+\_\+term@{nn\+\_\+xbus\+\_\+term}}
+\index{nn\+\_\+xbus\+\_\+term@{nn\+\_\+xbus\+\_\+term}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{nn\+\_\+xbus\+\_\+term(struct nn\+\_\+xbus $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xbus\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+xbus} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{xbus_8c_a58ac01e2e15687b364a8835150467692}{}\label{xbus_8c_a58ac01e2e15687b364a8835150467692}
+
+
+\subsection{Variable Documentation}
+\index{xbus.\+c@{xbus.\+c}!nn\+\_\+xbus\+\_\+socktype@{nn\+\_\+xbus\+\_\+socktype}}
+\index{nn\+\_\+xbus\+\_\+socktype@{nn\+\_\+xbus\+\_\+socktype}!xbus.\+c@{xbus.\+c}}
+\subsubsection[{nn\+\_\+xbus\+\_\+socktype}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+socktype}$\ast$ nn\+\_\+xbus\+\_\+socktype = \&nn\+\_\+xbus\+\_\+socktype\+\_\+struct}\hypertarget{xbus_8c_a36786010edb1af30c90127c75f7b57fa}{}\label{xbus_8c_a36786010edb1af30c90127c75f7b57fa}

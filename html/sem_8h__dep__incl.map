@@ -1,0 +1,11 @@
+<map id="src/utils/sem.h" name="src/utils/sem.h">
+<area shape="rect" id="node2" href="$sock_8h.html" title="src/core/sock.h" alt="" coords="420,80,532,107"/>
+<area shape="rect" id="node10" href="$sem_8c.html" title="src/utils/sem.c" alt="" coords="557,80,664,107"/>
+<area shape="rect" id="node3" href="$ep_8c.html" title="src/core/ep.c" alt="" coords="5,163,104,189"/>
+<area shape="rect" id="node4" href="$epbase_8c.html" title="src/core/epbase.c" alt="" coords="129,163,255,189"/>
+<area shape="rect" id="node5" href="$global_8c.html" title="src/core/global.c" alt="" coords="279,163,397,189"/>
+<area shape="rect" id="node6" href="$pipe_8c.html" title="src/core/pipe.c" alt="" coords="422,163,529,189"/>
+<area shape="rect" id="node7" href="$sock_8c.html" title="src/core/sock.c" alt="" coords="555,163,667,189"/>
+<area shape="rect" id="node8" href="$sockbase_8c.html" title="src/core/sockbase.c" alt="" coords="691,163,831,189"/>
+<area shape="rect" id="node9" href="$ws__handshake_8c.html" title="src/transports/ws/ws\l_handshake.c" alt="" coords="856,155,1000,197"/>
+</map>

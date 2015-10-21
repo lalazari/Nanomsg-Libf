@@ -1,0 +1,92 @@
+\hypertarget{trie_8c}{}\section{src/protocols/pubsub/trie.c File Reference}
+\label{trie_8c}\index{src/protocols/pubsub/trie.\+c@{src/protocols/pubsub/trie.\+c}}
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}trie.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+Include dependency graph for trie.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{trie_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{trie_8c_a4b9dbfc092eccea3fc60c0b365c1472c}{C\+T\+\_\+\+A\+S\+S\+E\+RT} (sizeof(struct \hyperlink{structnn__trie__node}{nn\+\_\+trie\+\_\+node})==24)
+\item 
+void \hyperlink{trie_8c_a911dd2886d706b580556dc1a294bda20}{nn\+\_\+trie\+\_\+init} (struct \hyperlink{structnn__trie}{nn\+\_\+trie} $\ast$self)
+\item 
+void \hyperlink{trie_8c_aaaef4d7a009e5c75ad17fa3e08fdf417}{nn\+\_\+trie\+\_\+term} (struct \hyperlink{structnn__trie}{nn\+\_\+trie} $\ast$self)
+\item 
+void \hyperlink{trie_8c_a68ea0b83aace150449dfb844778ec150}{nn\+\_\+trie\+\_\+dump} (struct \hyperlink{structnn__trie}{nn\+\_\+trie} $\ast$self)
+\item 
+int \hyperlink{trie_8c_a0a3479b59563743a7d1987a536443c67}{nn\+\_\+trie\+\_\+subscribe} (struct \hyperlink{structnn__trie}{nn\+\_\+trie} $\ast$self, const uint8\+\_\+t $\ast$data, size\+\_\+t size)
+\item 
+int \hyperlink{trie_8c_a718e6fac82acc662a0eca23b392a2b3d}{nn\+\_\+trie\+\_\+match} (struct \hyperlink{structnn__trie}{nn\+\_\+trie} $\ast$self, const uint8\+\_\+t $\ast$data, size\+\_\+t size)
+\item 
+int \hyperlink{trie_8c_a15461e7d40b928db34bc36a7bc9f2e6e}{nn\+\_\+trie\+\_\+unsubscribe} (struct \hyperlink{structnn__trie}{nn\+\_\+trie} $\ast$self, const uint8\+\_\+t $\ast$data, size\+\_\+t size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{trie.\+c@{trie.\+c}!C\+T\+\_\+\+A\+S\+S\+E\+RT@{C\+T\+\_\+\+A\+S\+S\+E\+RT}}
+\index{C\+T\+\_\+\+A\+S\+S\+E\+RT@{C\+T\+\_\+\+A\+S\+S\+E\+RT}!trie.\+c@{trie.\+c}}
+\subsubsection[{C\+T\+\_\+\+A\+S\+S\+E\+R\+T(sizeof(struct nn\+\_\+trie\+\_\+node)==24)}]{\setlength{\rightskip}{0pt plus 5cm}C\+T\+\_\+\+A\+S\+S\+E\+RT (
+\begin{DoxyParamCaption}
+\item[{sizeof(struct {\bf nn\+\_\+trie\+\_\+node})}]{ = {\ttfamily =24}}
+\end{DoxyParamCaption}
+)}\hypertarget{trie_8c_a4b9dbfc092eccea3fc60c0b365c1472c}{}\label{trie_8c_a4b9dbfc092eccea3fc60c0b365c1472c}
+\index{trie.\+c@{trie.\+c}!nn\+\_\+trie\+\_\+dump@{nn\+\_\+trie\+\_\+dump}}
+\index{nn\+\_\+trie\+\_\+dump@{nn\+\_\+trie\+\_\+dump}!trie.\+c@{trie.\+c}}
+\subsubsection[{nn\+\_\+trie\+\_\+dump(struct nn\+\_\+trie $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+trie\+\_\+dump (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+trie} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{trie_8c_a68ea0b83aace150449dfb844778ec150}{}\label{trie_8c_a68ea0b83aace150449dfb844778ec150}
+\index{trie.\+c@{trie.\+c}!nn\+\_\+trie\+\_\+init@{nn\+\_\+trie\+\_\+init}}
+\index{nn\+\_\+trie\+\_\+init@{nn\+\_\+trie\+\_\+init}!trie.\+c@{trie.\+c}}
+\subsubsection[{nn\+\_\+trie\+\_\+init(struct nn\+\_\+trie $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+trie\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+trie} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{trie_8c_a911dd2886d706b580556dc1a294bda20}{}\label{trie_8c_a911dd2886d706b580556dc1a294bda20}
+\index{trie.\+c@{trie.\+c}!nn\+\_\+trie\+\_\+match@{nn\+\_\+trie\+\_\+match}}
+\index{nn\+\_\+trie\+\_\+match@{nn\+\_\+trie\+\_\+match}!trie.\+c@{trie.\+c}}
+\subsubsection[{nn\+\_\+trie\+\_\+match(struct nn\+\_\+trie $\ast$self, const uint8\+\_\+t $\ast$data, size\+\_\+t size)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+trie\+\_\+match (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+trie} $\ast$}]{self, }
+\item[{const uint8\+\_\+t $\ast$}]{data, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{trie_8c_a718e6fac82acc662a0eca23b392a2b3d}{}\label{trie_8c_a718e6fac82acc662a0eca23b392a2b3d}
+\index{trie.\+c@{trie.\+c}!nn\+\_\+trie\+\_\+subscribe@{nn\+\_\+trie\+\_\+subscribe}}
+\index{nn\+\_\+trie\+\_\+subscribe@{nn\+\_\+trie\+\_\+subscribe}!trie.\+c@{trie.\+c}}
+\subsubsection[{nn\+\_\+trie\+\_\+subscribe(struct nn\+\_\+trie $\ast$self, const uint8\+\_\+t $\ast$data, size\+\_\+t size)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+trie\+\_\+subscribe (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+trie} $\ast$}]{self, }
+\item[{const uint8\+\_\+t $\ast$}]{data, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{trie_8c_a0a3479b59563743a7d1987a536443c67}{}\label{trie_8c_a0a3479b59563743a7d1987a536443c67}
+\index{trie.\+c@{trie.\+c}!nn\+\_\+trie\+\_\+term@{nn\+\_\+trie\+\_\+term}}
+\index{nn\+\_\+trie\+\_\+term@{nn\+\_\+trie\+\_\+term}!trie.\+c@{trie.\+c}}
+\subsubsection[{nn\+\_\+trie\+\_\+term(struct nn\+\_\+trie $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+trie\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+trie} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{trie_8c_aaaef4d7a009e5c75ad17fa3e08fdf417}{}\label{trie_8c_aaaef4d7a009e5c75ad17fa3e08fdf417}
+\index{trie.\+c@{trie.\+c}!nn\+\_\+trie\+\_\+unsubscribe@{nn\+\_\+trie\+\_\+unsubscribe}}
+\index{nn\+\_\+trie\+\_\+unsubscribe@{nn\+\_\+trie\+\_\+unsubscribe}!trie.\+c@{trie.\+c}}
+\subsubsection[{nn\+\_\+trie\+\_\+unsubscribe(struct nn\+\_\+trie $\ast$self, const uint8\+\_\+t $\ast$data, size\+\_\+t size)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+trie\+\_\+unsubscribe (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+trie} $\ast$}]{self, }
+\item[{const uint8\+\_\+t $\ast$}]{data, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{trie_8c_a15461e7d40b928db34bc36a7bc9f2e6e}{}\label{trie_8c_a15461e7d40b928db34bc36a7bc9f2e6e}

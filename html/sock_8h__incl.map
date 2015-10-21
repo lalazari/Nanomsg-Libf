@@ -1,0 +1,25 @@
+<map id="src/core/sock.h" name="src/core/sock.h">
+<area shape="rect" id="node2" href="$protocol_8h.html" title="../protocol.h" alt="" coords="188,155,278,181"/>
+<area shape="rect" id="node10" href="$transport_8h.html" title="../transport.h" alt="" coords="409,155,505,181"/>
+<area shape="rect" id="node15" href="$ctx_8h.html" title="../aio/ctx.h" alt="" coords="819,80,902,107"/>
+<area shape="rect" id="node13" href="$fsm_8h.html" title="aio/fsm.h" alt="" coords="698,304,773,331"/>
+<area shape="rect" id="node24" href="$efd_8h.html" title="../utils/efd.h" alt="" coords="1218,379,1309,405"/>
+<area shape="rect" id="node28" href="$sem_8h.html" title="../utils/sem.h" alt="" coords="1192,80,1290,107"/>
+<area shape="rect" id="node20" href="$clock_8h.html" title="../utils/clock.h" alt="" coords="602,379,706,405"/>
+<area shape="rect" id="node9" href="$list_8h.html" title="utils/list.h" alt="" coords="498,379,576,405"/>
+<area shape="rect" id="node3" href="$msg_8h.html" title="utils/msg.h" alt="" coords="108,229,194,256"/>
+<area shape="rect" id="node7" href="$int_8h.html" title="int.h" alt="" coords="323,453,369,480"/>
+<area shape="rect" id="node4" href="$chunkref_8h.html" title="chunkref.h" alt="" coords="112,304,194,331"/>
+<area shape="rect" id="node5" href="$chunk_8h.html" title="chunk.h" alt="" coords="139,379,206,405"/>
+<area shape="rect" id="node11" href="$nn_8h.html" title="nn.h" alt="" coords="322,229,368,256"/>
+<area shape="rect" id="node14" href="$queue_8h.html" title="../utils/queue.h" alt="" coords="731,379,838,405"/>
+<area shape="rect" id="node16" href="$mutex_8h.html" title="../utils/mutex.h" alt="" coords="1085,379,1194,405"/>
+<area shape="rect" id="node18" href="$worker_8h.html" title="worker.h" alt="" coords="802,229,874,256"/>
+<area shape="rect" id="node27" href="$pool_8h.html" title="pool.h" alt="" coords="799,155,856,181"/>
+<area shape="rect" id="node19" href="$timerset_8h.html" title="timerset.h" alt="" coords="798,304,878,331"/>
+<area shape="rect" id="node21" href="$worker__posix_8h.html" title="worker_posix.h" alt="" coords="955,304,1065,331"/>
+<area shape="rect" id="node22" href="$thread_8h.html" title="../utils/thread.h" alt="" coords="952,379,1061,405"/>
+<area shape="rect" id="node26" href="$poller_8h.html" title="poller.h" alt="" coords="864,379,928,405"/>
+<area shape="rect" id="node23" href="$thread__posix_8h.html" title="thread_posix.h" alt="" coords="964,453,1070,480"/>
+<area shape="rect" id="node25" href="$fd_8h.html" title="fd.h" alt="" coords="1242,453,1285,480"/>
+</map>

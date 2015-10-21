@@ -1,0 +1,102 @@
+\hypertarget{backoff_8h}{}\section{src/transports/utils/backoff.h File Reference}
+\label{backoff_8h}\index{src/transports/utils/backoff.\+h@{src/transports/utils/backoff.\+h}}
+{\ttfamily \#include \char`\"{}../../aio/timer.\+h\char`\"{}}\\*
+Include dependency graph for backoff.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backoff_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backoff_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__backoff}{nn\+\_\+backoff}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{backoff_8h_ad0f2e81345247a47ce1766bcc0115bcf}{N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+T\+I\+M\+E\+O\+UT}~\hyperlink{timer_8h_a2c6e26f16df28aadfc3aeea78a77213e}{N\+N\+\_\+\+T\+I\+M\+E\+R\+\_\+\+T\+I\+M\+E\+O\+UT}
+\item 
+\#define \hyperlink{backoff_8h_afb7bc2764032482f7a1638bedbb3a819}{N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+S\+T\+O\+P\+P\+ED}~\hyperlink{timer_8h_a817c98824dca90b83214804116b08331}{N\+N\+\_\+\+T\+I\+M\+E\+R\+\_\+\+S\+T\+O\+P\+P\+ED}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{backoff_8h_a86a887dd7e10266ef0ca81279fa5eaf9}{nn\+\_\+backoff\+\_\+init} (struct \hyperlink{structnn__backoff}{nn\+\_\+backoff} $\ast$self, int src, int minivl, int maxivl, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{backoff_8h_a3af6f81333053f4ae6503bc090583458}{nn\+\_\+backoff\+\_\+term} (struct \hyperlink{structnn__backoff}{nn\+\_\+backoff} $\ast$self)
+\item 
+int \hyperlink{backoff_8h_aa244a152eb83ba692ea5d0e246ee7adc}{nn\+\_\+backoff\+\_\+isidle} (struct \hyperlink{structnn__backoff}{nn\+\_\+backoff} $\ast$self)
+\item 
+void \hyperlink{backoff_8h_a024ad8ed150d6da14145e40423a93c5b}{nn\+\_\+backoff\+\_\+start} (struct \hyperlink{structnn__backoff}{nn\+\_\+backoff} $\ast$self)
+\item 
+void \hyperlink{backoff_8h_a20fac0754a8d2e5b70fc73ff22d7d2d0}{nn\+\_\+backoff\+\_\+stop} (struct \hyperlink{structnn__backoff}{nn\+\_\+backoff} $\ast$self)
+\item 
+void \hyperlink{backoff_8h_a6616f270de1275edf423c726f559d56d}{nn\+\_\+backoff\+\_\+reset} (struct \hyperlink{structnn__backoff}{nn\+\_\+backoff} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{backoff.\+h@{backoff.\+h}!N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+S\+T\+O\+P\+P\+ED}!backoff.\+h@{backoff.\+h}}
+\subsubsection[{N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+S\+T\+O\+P\+P\+ED~{\bf N\+N\+\_\+\+T\+I\+M\+E\+R\+\_\+\+S\+T\+O\+P\+P\+ED}}\hypertarget{backoff_8h_afb7bc2764032482f7a1638bedbb3a819}{}\label{backoff_8h_afb7bc2764032482f7a1638bedbb3a819}
+\index{backoff.\+h@{backoff.\+h}!N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+T\+I\+M\+E\+O\+UT@{N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+T\+I\+M\+E\+O\+UT@{N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+T\+I\+M\+E\+O\+UT}!backoff.\+h@{backoff.\+h}}
+\subsubsection[{N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+T\+I\+M\+E\+O\+UT}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+A\+C\+K\+O\+F\+F\+\_\+\+T\+I\+M\+E\+O\+UT~{\bf N\+N\+\_\+\+T\+I\+M\+E\+R\+\_\+\+T\+I\+M\+E\+O\+UT}}\hypertarget{backoff_8h_ad0f2e81345247a47ce1766bcc0115bcf}{}\label{backoff_8h_ad0f2e81345247a47ce1766bcc0115bcf}
+
+
+\subsection{Function Documentation}
+\index{backoff.\+h@{backoff.\+h}!nn\+\_\+backoff\+\_\+init@{nn\+\_\+backoff\+\_\+init}}
+\index{nn\+\_\+backoff\+\_\+init@{nn\+\_\+backoff\+\_\+init}!backoff.\+h@{backoff.\+h}}
+\subsubsection[{nn\+\_\+backoff\+\_\+init(struct nn\+\_\+backoff $\ast$self, int src, int minivl, int maxivl, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+backoff\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+backoff} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{int}]{minivl, }
+\item[{int}]{maxivl, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{backoff_8h_a86a887dd7e10266ef0ca81279fa5eaf9}{}\label{backoff_8h_a86a887dd7e10266ef0ca81279fa5eaf9}
+\index{backoff.\+h@{backoff.\+h}!nn\+\_\+backoff\+\_\+isidle@{nn\+\_\+backoff\+\_\+isidle}}
+\index{nn\+\_\+backoff\+\_\+isidle@{nn\+\_\+backoff\+\_\+isidle}!backoff.\+h@{backoff.\+h}}
+\subsubsection[{nn\+\_\+backoff\+\_\+isidle(struct nn\+\_\+backoff $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+backoff\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+backoff} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{backoff_8h_aa244a152eb83ba692ea5d0e246ee7adc}{}\label{backoff_8h_aa244a152eb83ba692ea5d0e246ee7adc}
+\index{backoff.\+h@{backoff.\+h}!nn\+\_\+backoff\+\_\+reset@{nn\+\_\+backoff\+\_\+reset}}
+\index{nn\+\_\+backoff\+\_\+reset@{nn\+\_\+backoff\+\_\+reset}!backoff.\+h@{backoff.\+h}}
+\subsubsection[{nn\+\_\+backoff\+\_\+reset(struct nn\+\_\+backoff $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+backoff\+\_\+reset (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+backoff} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{backoff_8h_a6616f270de1275edf423c726f559d56d}{}\label{backoff_8h_a6616f270de1275edf423c726f559d56d}
+\index{backoff.\+h@{backoff.\+h}!nn\+\_\+backoff\+\_\+start@{nn\+\_\+backoff\+\_\+start}}
+\index{nn\+\_\+backoff\+\_\+start@{nn\+\_\+backoff\+\_\+start}!backoff.\+h@{backoff.\+h}}
+\subsubsection[{nn\+\_\+backoff\+\_\+start(struct nn\+\_\+backoff $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+backoff\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+backoff} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{backoff_8h_a024ad8ed150d6da14145e40423a93c5b}{}\label{backoff_8h_a024ad8ed150d6da14145e40423a93c5b}
+\index{backoff.\+h@{backoff.\+h}!nn\+\_\+backoff\+\_\+stop@{nn\+\_\+backoff\+\_\+stop}}
+\index{nn\+\_\+backoff\+\_\+stop@{nn\+\_\+backoff\+\_\+stop}!backoff.\+h@{backoff.\+h}}
+\subsubsection[{nn\+\_\+backoff\+\_\+stop(struct nn\+\_\+backoff $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+backoff\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+backoff} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{backoff_8h_a20fac0754a8d2e5b70fc73ff22d7d2d0}{}\label{backoff_8h_a20fac0754a8d2e5b70fc73ff22d7d2d0}
+\index{backoff.\+h@{backoff.\+h}!nn\+\_\+backoff\+\_\+term@{nn\+\_\+backoff\+\_\+term}}
+\index{nn\+\_\+backoff\+\_\+term@{nn\+\_\+backoff\+\_\+term}!backoff.\+h@{backoff.\+h}}
+\subsubsection[{nn\+\_\+backoff\+\_\+term(struct nn\+\_\+backoff $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+backoff\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+backoff} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{backoff_8h_a3af6f81333053f4ae6503bc090583458}{}\label{backoff_8h_a3af6f81333053f4ae6503bc090583458}

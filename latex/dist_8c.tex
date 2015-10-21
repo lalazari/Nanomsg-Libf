@@ -1,0 +1,81 @@
+\hypertarget{dist_8c}{}\section{src/protocols/utils/dist.c File Reference}
+\label{dist_8c}\index{src/protocols/utils/dist.\+c@{src/protocols/utils/dist.\+c}}
+{\ttfamily \#include \char`\"{}dist.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/attr.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for dist.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dist_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{dist_8c_aedaf061502b3b29cf90ed08f62f5a9c3}{nn\+\_\+dist\+\_\+init} (struct \hyperlink{structnn__dist}{nn\+\_\+dist} $\ast$self)
+\item 
+void \hyperlink{dist_8c_a3b023168a2f19b710bd36a8c70e3e1a1}{nn\+\_\+dist\+\_\+term} (struct \hyperlink{structnn__dist}{nn\+\_\+dist} $\ast$self)
+\item 
+void \hyperlink{dist_8c_af63986cba46724b7d8563ae2998ee94a}{nn\+\_\+dist\+\_\+add} (\hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} struct \hyperlink{structnn__dist}{nn\+\_\+dist} $\ast$self, struct \hyperlink{structnn__dist__data}{nn\+\_\+dist\+\_\+data} $\ast$data, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{dist_8c_a4f11b3b9dcd6cfc33a02075cc6e45141}{nn\+\_\+dist\+\_\+rm} (struct \hyperlink{structnn__dist}{nn\+\_\+dist} $\ast$self, struct \hyperlink{structnn__dist__data}{nn\+\_\+dist\+\_\+data} $\ast$data)
+\item 
+void \hyperlink{dist_8c_abac101b53c19636b8c2625ea5549eac7}{nn\+\_\+dist\+\_\+out} (struct \hyperlink{structnn__dist}{nn\+\_\+dist} $\ast$self, struct \hyperlink{structnn__dist__data}{nn\+\_\+dist\+\_\+data} $\ast$data)
+\item 
+int \hyperlink{dist_8c_afe6f834d5faa9c5a2a9d1500c76ca564}{nn\+\_\+dist\+\_\+send} (struct \hyperlink{structnn__dist}{nn\+\_\+dist} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg, struct nn\+\_\+pipe $\ast$exclude)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{dist.\+c@{dist.\+c}!nn\+\_\+dist\+\_\+add@{nn\+\_\+dist\+\_\+add}}
+\index{nn\+\_\+dist\+\_\+add@{nn\+\_\+dist\+\_\+add}!dist.\+c@{dist.\+c}}
+\subsubsection[{nn\+\_\+dist\+\_\+add(\+N\+N\+\_\+\+U\+N\+U\+S\+E\+D struct nn\+\_\+dist $\ast$self, struct nn\+\_\+dist\+\_\+data $\ast$data, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+dist\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} struct {\bf nn\+\_\+dist} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+dist\+\_\+data} $\ast$}]{data, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{dist_8c_af63986cba46724b7d8563ae2998ee94a}{}\label{dist_8c_af63986cba46724b7d8563ae2998ee94a}
+\index{dist.\+c@{dist.\+c}!nn\+\_\+dist\+\_\+init@{nn\+\_\+dist\+\_\+init}}
+\index{nn\+\_\+dist\+\_\+init@{nn\+\_\+dist\+\_\+init}!dist.\+c@{dist.\+c}}
+\subsubsection[{nn\+\_\+dist\+\_\+init(struct nn\+\_\+dist $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+dist\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+dist} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{dist_8c_aedaf061502b3b29cf90ed08f62f5a9c3}{}\label{dist_8c_aedaf061502b3b29cf90ed08f62f5a9c3}
+\index{dist.\+c@{dist.\+c}!nn\+\_\+dist\+\_\+out@{nn\+\_\+dist\+\_\+out}}
+\index{nn\+\_\+dist\+\_\+out@{nn\+\_\+dist\+\_\+out}!dist.\+c@{dist.\+c}}
+\subsubsection[{nn\+\_\+dist\+\_\+out(struct nn\+\_\+dist $\ast$self, struct nn\+\_\+dist\+\_\+data $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+dist\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+dist} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+dist\+\_\+data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{dist_8c_abac101b53c19636b8c2625ea5549eac7}{}\label{dist_8c_abac101b53c19636b8c2625ea5549eac7}
+\index{dist.\+c@{dist.\+c}!nn\+\_\+dist\+\_\+rm@{nn\+\_\+dist\+\_\+rm}}
+\index{nn\+\_\+dist\+\_\+rm@{nn\+\_\+dist\+\_\+rm}!dist.\+c@{dist.\+c}}
+\subsubsection[{nn\+\_\+dist\+\_\+rm(struct nn\+\_\+dist $\ast$self, struct nn\+\_\+dist\+\_\+data $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+dist\+\_\+rm (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+dist} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+dist\+\_\+data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{dist_8c_a4f11b3b9dcd6cfc33a02075cc6e45141}{}\label{dist_8c_a4f11b3b9dcd6cfc33a02075cc6e45141}
+\index{dist.\+c@{dist.\+c}!nn\+\_\+dist\+\_\+send@{nn\+\_\+dist\+\_\+send}}
+\index{nn\+\_\+dist\+\_\+send@{nn\+\_\+dist\+\_\+send}!dist.\+c@{dist.\+c}}
+\subsubsection[{nn\+\_\+dist\+\_\+send(struct nn\+\_\+dist $\ast$self, struct nn\+\_\+msg $\ast$msg, struct nn\+\_\+pipe $\ast$exclude)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+dist\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+dist} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg, }
+\item[{struct nn\+\_\+pipe $\ast$}]{exclude}
+\end{DoxyParamCaption}
+)}\hypertarget{dist_8c_afe6f834d5faa9c5a2a9d1500c76ca564}{}\label{dist_8c_afe6f834d5faa9c5a2a9d1500c76ca564}
+\index{dist.\+c@{dist.\+c}!nn\+\_\+dist\+\_\+term@{nn\+\_\+dist\+\_\+term}}
+\index{nn\+\_\+dist\+\_\+term@{nn\+\_\+dist\+\_\+term}!dist.\+c@{dist.\+c}}
+\subsubsection[{nn\+\_\+dist\+\_\+term(struct nn\+\_\+dist $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+dist\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+dist} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{dist_8c_a3b023168a2f19b710bd36a8c70e3e1a1}{}\label{dist_8c_a3b023168a2f19b710bd36a8c70e3e1a1}

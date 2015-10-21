@@ -1,0 +1,62 @@
+\hypertarget{xpull_8c}{}\section{src/protocols/pipeline/xpull.c File Reference}
+\label{xpull_8c}\index{src/protocols/pipeline/xpull.\+c@{src/protocols/pipeline/xpull.\+c}}
+{\ttfamily \#include \char`\"{}xpull.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../pipeline.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/fq.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/attr.\+h\char`\"{}}\\*
+Include dependency graph for xpull.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{xpull_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__xpull__data}{nn\+\_\+xpull\+\_\+data}
+\item 
+struct \hyperlink{structnn__xpull}{nn\+\_\+xpull}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{xpull_8c_aa21c30e26b387a1be4d56ae2fd23c2d0}{nn\+\_\+xpull\+\_\+create} (void $\ast$hint, struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$$\ast$sockbase)
+\item 
+int \hyperlink{xpull_8c_ac0ce2a25fd7b57583b3a2244ef02ee1a}{nn\+\_\+xpull\+\_\+ispeer} (int socktype)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__socktype}{nn\+\_\+socktype} $\ast$ \hyperlink{xpull_8c_a2a944069b66bf24eb0fb9f4ec5613325}{nn\+\_\+xpull\+\_\+socktype} = \&nn\+\_\+xpull\+\_\+socktype\+\_\+struct
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{xpull.\+c@{xpull.\+c}!nn\+\_\+xpull\+\_\+create@{nn\+\_\+xpull\+\_\+create}}
+\index{nn\+\_\+xpull\+\_\+create@{nn\+\_\+xpull\+\_\+create}!xpull.\+c@{xpull.\+c}}
+\subsubsection[{nn\+\_\+xpull\+\_\+create(void $\ast$hint, struct nn\+\_\+sockbase $\ast$$\ast$sockbase)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xpull\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{hint, }
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$$\ast$}]{sockbase}
+\end{DoxyParamCaption}
+)}\hypertarget{xpull_8c_aa21c30e26b387a1be4d56ae2fd23c2d0}{}\label{xpull_8c_aa21c30e26b387a1be4d56ae2fd23c2d0}
+\index{xpull.\+c@{xpull.\+c}!nn\+\_\+xpull\+\_\+ispeer@{nn\+\_\+xpull\+\_\+ispeer}}
+\index{nn\+\_\+xpull\+\_\+ispeer@{nn\+\_\+xpull\+\_\+ispeer}!xpull.\+c@{xpull.\+c}}
+\subsubsection[{nn\+\_\+xpull\+\_\+ispeer(int socktype)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xpull\+\_\+ispeer (
+\begin{DoxyParamCaption}
+\item[{int}]{socktype}
+\end{DoxyParamCaption}
+)}\hypertarget{xpull_8c_ac0ce2a25fd7b57583b3a2244ef02ee1a}{}\label{xpull_8c_ac0ce2a25fd7b57583b3a2244ef02ee1a}
+
+
+\subsection{Variable Documentation}
+\index{xpull.\+c@{xpull.\+c}!nn\+\_\+xpull\+\_\+socktype@{nn\+\_\+xpull\+\_\+socktype}}
+\index{nn\+\_\+xpull\+\_\+socktype@{nn\+\_\+xpull\+\_\+socktype}!xpull.\+c@{xpull.\+c}}
+\subsubsection[{nn\+\_\+xpull\+\_\+socktype}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+socktype}$\ast$ nn\+\_\+xpull\+\_\+socktype = \&nn\+\_\+xpull\+\_\+socktype\+\_\+struct}\hypertarget{xpull_8c_a2a944069b66bf24eb0fb9f4ec5613325}{}\label{xpull_8c_a2a944069b66bf24eb0fb9f4ec5613325}

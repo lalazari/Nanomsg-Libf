@@ -1,0 +1,69 @@
+\hypertarget{cinproc_8c}{}\section{src/transports/inproc/cinproc.c File Reference}
+\label{cinproc_8c}\index{src/transports/inproc/cinproc.\+c@{src/transports/inproc/cinproc.\+c}}
+{\ttfamily \#include \char`\"{}cinproc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}binproc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ins.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/attr.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for cinproc.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cinproc_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cinproc_8c_af28e67885ceabfbcc9003b7efeff9927}{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}~1
+\item 
+\#define \hyperlink{cinproc_8c_a56991ea82e5ba1a8c17cc8eb88e8f6c7}{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}~2
+\item 
+\#define \hyperlink{cinproc_8c_ae99bf645e3e1e048755d87c59c24e749}{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}~3
+\item 
+\#define \hyperlink{cinproc_8c_aa59bc2157eb57e1e85ff6373c7709b66}{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}~4
+\item 
+\#define \hyperlink{cinproc_8c_a73b5ad47dcc374860802db405335f39a}{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+CT}~1
+\item 
+\#define \hyperlink{cinproc_8c_ad1c0376c5e0a45e49824d4a50b2f650e}{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{cinproc_8c_a70c432f76a77897b8496f9975b0510a7}{nn\+\_\+cinproc\+\_\+create} (void $\ast$hint, struct \hyperlink{structnn__epbase}{nn\+\_\+epbase} $\ast$$\ast$epbase)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{cinproc.\+c@{cinproc.\+c}!N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+CT@{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+CT}}
+\index{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+CT@{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+CT}!cinproc.\+c@{cinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+CT}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+CT~1}\hypertarget{cinproc_8c_a73b5ad47dcc374860802db405335f39a}{}\label{cinproc_8c_a73b5ad47dcc374860802db405335f39a}
+\index{cinproc.\+c@{cinproc.\+c}!N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC@{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC}}
+\index{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC@{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC}!cinproc.\+c@{cinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC~1}\hypertarget{cinproc_8c_ad1c0376c5e0a45e49824d4a50b2f650e}{}\label{cinproc_8c_ad1c0376c5e0a45e49824d4a50b2f650e}
+\index{cinproc.\+c@{cinproc.\+c}!N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}}
+\index{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}!cinproc.\+c@{cinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE~3}\hypertarget{cinproc_8c_ae99bf645e3e1e048755d87c59c24e749}{}\label{cinproc_8c_ae99bf645e3e1e048755d87c59c24e749}
+\index{cinproc.\+c@{cinproc.\+c}!N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED@{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}}
+\index{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED@{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}!cinproc.\+c@{cinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED~2}\hypertarget{cinproc_8c_a56991ea82e5ba1a8c17cc8eb88e8f6c7}{}\label{cinproc_8c_a56991ea82e5ba1a8c17cc8eb88e8f6c7}
+\index{cinproc.\+c@{cinproc.\+c}!N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE@{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}}
+\index{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE@{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}!cinproc.\+c@{cinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE~1}\hypertarget{cinproc_8c_af28e67885ceabfbcc9003b7efeff9927}{}\label{cinproc_8c_af28e67885ceabfbcc9003b7efeff9927}
+\index{cinproc.\+c@{cinproc.\+c}!N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG@{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}}
+\index{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG@{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}!cinproc.\+c@{cinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG~4}\hypertarget{cinproc_8c_aa59bc2157eb57e1e85ff6373c7709b66}{}\label{cinproc_8c_aa59bc2157eb57e1e85ff6373c7709b66}
+
+
+\subsection{Function Documentation}
+\index{cinproc.\+c@{cinproc.\+c}!nn\+\_\+cinproc\+\_\+create@{nn\+\_\+cinproc\+\_\+create}}
+\index{nn\+\_\+cinproc\+\_\+create@{nn\+\_\+cinproc\+\_\+create}!cinproc.\+c@{cinproc.\+c}}
+\subsubsection[{nn\+\_\+cinproc\+\_\+create(void $\ast$hint, struct nn\+\_\+epbase $\ast$$\ast$epbase)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+cinproc\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{hint, }
+\item[{struct {\bf nn\+\_\+epbase} $\ast$$\ast$}]{epbase}
+\end{DoxyParamCaption}
+)}\hypertarget{cinproc_8c_a70c432f76a77897b8496f9975b0510a7}{}\label{cinproc_8c_a70c432f76a77897b8496f9975b0510a7}

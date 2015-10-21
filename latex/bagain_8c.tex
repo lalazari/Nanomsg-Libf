@@ -1,0 +1,133 @@
+\hypertarget{bagain_8c}{}\section{src/transports/libfabric/bagain.c File Reference}
+\label{bagain_8c}\index{src/transports/libfabric/bagain.\+c@{src/transports/libfabric/bagain.\+c}}
+{\ttfamily \#include \char`\"{}blibfabric.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}alibfabric.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/fsm.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/usock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/backoff.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$sys/un.\+h$>$}\\*
+{\ttfamily \#include $<$fcntl.\+h$>$}\\*
+Include dependency graph for bagain.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bagain_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__blibfabric}{nn\+\_\+blibfabric}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{bagain_8c_adbb32dbde59bec1846ed92f04f8df3ee}{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+B\+A\+C\+K\+L\+OG}~10
+\item 
+\#define \hyperlink{bagain_8c_aeb2539c9a84662e4705f242ecb263c6f}{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}~1
+\item 
+\#define \hyperlink{bagain_8c_a6de75a44befb97ad1f36c33611d505da}{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}~2
+\item 
+\#define \hyperlink{bagain_8c_ac9e03279cc09c7214c67f4faa8499232}{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+PC}~3
+\item 
+\#define \hyperlink{bagain_8c_a395d84722a3747860cb38793942aeba6}{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+U\+S\+O\+CK}~4
+\item 
+\#define \hyperlink{bagain_8c_a48d6de262b329160d9c7c2f0f3a29efa}{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+P\+CS}~5
+\item 
+\#define \hyperlink{bagain_8c_a13f9ebc82efdf24a0fe08e3c52798913}{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+L\+I\+S\+T\+E\+N\+I\+NG}~6
+\item 
+\#define \hyperlink{bagain_8c_a3b0933ca743a98a95cd9eac94b2d3d9e}{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+W\+A\+I\+T\+I\+NG}~7
+\item 
+\#define \hyperlink{bagain_8c_ad8132f30e2ea22696375cf80d572c43c}{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+I\+NG}~8
+\item 
+\#define \hyperlink{bagain_8c_ae82ed4ea2388a299986695b9172eb9fa}{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+B\+A\+C\+K\+O\+FF}~9
+\item 
+\#define \hyperlink{bagain_8c_a52730a6c93b80c48634e9c0b61d58db9}{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK}~1
+\item 
+\#define \hyperlink{bagain_8c_adab3cfe89ea260443f58987dd7fd0e02}{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+A\+I\+PC}~2
+\item 
+\#define \hyperlink{bagain_8c_acb7b74503aa2869f1285e6e5342fd77f}{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+ER}~3
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{bagain_8c_a86cf66ea0581cf8944f93cac4d13b2e3}{nn\+\_\+blibfabric\+\_\+create} (void $\ast$hint, struct \hyperlink{structnn__epbase}{nn\+\_\+epbase} $\ast$$\ast$epbase)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const struct \hyperlink{structnn__epbase__vfptr}{nn\+\_\+epbase\+\_\+vfptr} \hyperlink{bagain_8c_a3cd781281e221bb43223deb2d48c7e3b}{nn\+\_\+blibfabric\+\_\+epbase\+\_\+vfptr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{bagain.\+c@{bagain.\+c}!N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+B\+A\+C\+K\+L\+OG@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+B\+A\+C\+K\+L\+OG}}
+\index{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+B\+A\+C\+K\+L\+OG@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+B\+A\+C\+K\+L\+OG}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+B\+A\+C\+K\+L\+OG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+B\+A\+C\+K\+L\+OG~10}\hypertarget{bagain_8c_adbb32dbde59bec1846ed92f04f8df3ee}{}\label{bagain_8c_adbb32dbde59bec1846ed92f04f8df3ee}
+\index{bagain.\+c@{bagain.\+c}!N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+A\+I\+PC@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+A\+I\+PC}}
+\index{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+A\+I\+PC@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+A\+I\+PC}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+A\+I\+PC}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+A\+I\+PC~2}\hypertarget{bagain_8c_adab3cfe89ea260443f58987dd7fd0e02}{}\label{bagain_8c_adab3cfe89ea260443f58987dd7fd0e02}
+\index{bagain.\+c@{bagain.\+c}!N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+ER@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+ER}}
+\index{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+ER@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+ER}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+ER}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+ER~3}\hypertarget{bagain_8c_acb7b74503aa2869f1285e6e5342fd77f}{}\label{bagain_8c_acb7b74503aa2869f1285e6e5342fd77f}
+\index{bagain.\+c@{bagain.\+c}!N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK}}
+\index{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK~1}\hypertarget{bagain_8c_a52730a6c93b80c48634e9c0b61d58db9}{}\label{bagain_8c_a52730a6c93b80c48634e9c0b61d58db9}
+\index{bagain.\+c@{bagain.\+c}!N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}}
+\index{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE~2}\hypertarget{bagain_8c_a6de75a44befb97ad1f36c33611d505da}{}\label{bagain_8c_a6de75a44befb97ad1f36c33611d505da}
+\index{bagain.\+c@{bagain.\+c}!N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+I\+NG@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+I\+NG}}
+\index{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+I\+NG@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+I\+NG}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+I\+NG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+I\+NG~8}\hypertarget{bagain_8c_ad8132f30e2ea22696375cf80d572c43c}{}\label{bagain_8c_ad8132f30e2ea22696375cf80d572c43c}
+\index{bagain.\+c@{bagain.\+c}!N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}}
+\index{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE~1}\hypertarget{bagain_8c_aeb2539c9a84662e4705f242ecb263c6f}{}\label{bagain_8c_aeb2539c9a84662e4705f242ecb263c6f}
+\index{bagain.\+c@{bagain.\+c}!N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+L\+I\+S\+T\+E\+N\+I\+NG@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+L\+I\+S\+T\+E\+N\+I\+NG}}
+\index{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+L\+I\+S\+T\+E\+N\+I\+NG@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+L\+I\+S\+T\+E\+N\+I\+NG}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+L\+I\+S\+T\+E\+N\+I\+NG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+L\+I\+S\+T\+E\+N\+I\+NG~6}\hypertarget{bagain_8c_a13f9ebc82efdf24a0fe08e3c52798913}{}\label{bagain_8c_a13f9ebc82efdf24a0fe08e3c52798913}
+\index{bagain.\+c@{bagain.\+c}!N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+PC@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+PC}}
+\index{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+PC@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+PC}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+PC}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+PC~3}\hypertarget{bagain_8c_ac9e03279cc09c7214c67f4faa8499232}{}\label{bagain_8c_ac9e03279cc09c7214c67f4faa8499232}
+\index{bagain.\+c@{bagain.\+c}!N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+P\+CS@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+P\+CS}}
+\index{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+P\+CS@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+P\+CS}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+P\+CS}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+A\+I\+P\+CS~5}\hypertarget{bagain_8c_a48d6de262b329160d9c7c2f0f3a29efa}{}\label{bagain_8c_a48d6de262b329160d9c7c2f0f3a29efa}
+\index{bagain.\+c@{bagain.\+c}!N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+B\+A\+C\+K\+O\+FF@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+B\+A\+C\+K\+O\+FF}}
+\index{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+B\+A\+C\+K\+O\+FF@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+B\+A\+C\+K\+O\+FF}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+B\+A\+C\+K\+O\+FF}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+B\+A\+C\+K\+O\+FF~9}\hypertarget{bagain_8c_ae82ed4ea2388a299986695b9172eb9fa}{}\label{bagain_8c_ae82ed4ea2388a299986695b9172eb9fa}
+\index{bagain.\+c@{bagain.\+c}!N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+U\+S\+O\+CK@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+U\+S\+O\+CK}}
+\index{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+U\+S\+O\+CK@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+U\+S\+O\+CK}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+U\+S\+O\+CK}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+U\+S\+O\+CK~4}\hypertarget{bagain_8c_a395d84722a3747860cb38793942aeba6}{}\label{bagain_8c_a395d84722a3747860cb38793942aeba6}
+\index{bagain.\+c@{bagain.\+c}!N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+W\+A\+I\+T\+I\+NG@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+W\+A\+I\+T\+I\+NG}}
+\index{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+W\+A\+I\+T\+I\+NG@{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+W\+A\+I\+T\+I\+NG}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+W\+A\+I\+T\+I\+NG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+P\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+W\+A\+I\+T\+I\+NG~7}\hypertarget{bagain_8c_a3b0933ca743a98a95cd9eac94b2d3d9e}{}\label{bagain_8c_a3b0933ca743a98a95cd9eac94b2d3d9e}
+
+
+\subsection{Function Documentation}
+\index{bagain.\+c@{bagain.\+c}!nn\+\_\+blibfabric\+\_\+create@{nn\+\_\+blibfabric\+\_\+create}}
+\index{nn\+\_\+blibfabric\+\_\+create@{nn\+\_\+blibfabric\+\_\+create}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{nn\+\_\+blibfabric\+\_\+create(void $\ast$hint, struct nn\+\_\+epbase $\ast$$\ast$epbase)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+blibfabric\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{hint, }
+\item[{struct {\bf nn\+\_\+epbase} $\ast$$\ast$}]{epbase}
+\end{DoxyParamCaption}
+)}\hypertarget{bagain_8c_a86cf66ea0581cf8944f93cac4d13b2e3}{}\label{bagain_8c_a86cf66ea0581cf8944f93cac4d13b2e3}
+
+
+\subsection{Variable Documentation}
+\index{bagain.\+c@{bagain.\+c}!nn\+\_\+blibfabric\+\_\+epbase\+\_\+vfptr@{nn\+\_\+blibfabric\+\_\+epbase\+\_\+vfptr}}
+\index{nn\+\_\+blibfabric\+\_\+epbase\+\_\+vfptr@{nn\+\_\+blibfabric\+\_\+epbase\+\_\+vfptr}!bagain.\+c@{bagain.\+c}}
+\subsubsection[{nn\+\_\+blibfabric\+\_\+epbase\+\_\+vfptr}]{\setlength{\rightskip}{0pt plus 5cm}const struct {\bf nn\+\_\+epbase\+\_\+vfptr} nn\+\_\+blibfabric\+\_\+epbase\+\_\+vfptr}\hypertarget{bagain_8c_a3cd781281e221bb43223deb2d48c7e3b}{}\label{bagain_8c_a3cd781281e221bb43223deb2d48c7e3b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    nn\_blibfabric\_stop,
+    nn\_blibfabric\_destroy
+\}
+\end{DoxyCode}

@@ -1,0 +1,65 @@
+\hypertarget{symbol_8c}{}\section{src/core/symbol.c File Reference}
+\label{symbol_8c}\index{src/core/symbol.\+c@{src/core/symbol.\+c}}
+{\ttfamily \#include \char`\"{}../nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../inproc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../ipc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../tcp.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../libfabric.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../pair.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../pubsub.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../reqrep.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../pipeline.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../survey.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../bus.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for symbol.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{symbol_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{symbol_8c_a43be01f6fbc47750f7f7c3b388f36c96}{nn\+\_\+symbol} (int i, int $\ast$value)
+\item 
+int \hyperlink{symbol_8c_a18e71044871462571fde5de466da3f9c}{nn\+\_\+symbol\+\_\+info} (int i, struct \hyperlink{structnn__symbol__properties}{nn\+\_\+symbol\+\_\+properties} $\ast$buf, int buflen)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{symbol_8c_ab1002f3be72dc1efc44db4332403b8c0}{S\+Y\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+N\+A\+M\+E\+S\+\_\+\+L\+EN}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{symbol.\+c@{symbol.\+c}!nn\+\_\+symbol@{nn\+\_\+symbol}}
+\index{nn\+\_\+symbol@{nn\+\_\+symbol}!symbol.\+c@{symbol.\+c}}
+\subsubsection[{nn\+\_\+symbol(int i, int $\ast$value)}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+symbol (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int $\ast$}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{symbol_8c_a43be01f6fbc47750f7f7c3b388f36c96}{}\label{symbol_8c_a43be01f6fbc47750f7f7c3b388f36c96}
+\index{symbol.\+c@{symbol.\+c}!nn\+\_\+symbol\+\_\+info@{nn\+\_\+symbol\+\_\+info}}
+\index{nn\+\_\+symbol\+\_\+info@{nn\+\_\+symbol\+\_\+info}!symbol.\+c@{symbol.\+c}}
+\subsubsection[{nn\+\_\+symbol\+\_\+info(int i, struct nn\+\_\+symbol\+\_\+properties $\ast$buf, int buflen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+symbol\+\_\+info (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{struct {\bf nn\+\_\+symbol\+\_\+properties} $\ast$}]{buf, }
+\item[{int}]{buflen}
+\end{DoxyParamCaption}
+)}\hypertarget{symbol_8c_a18e71044871462571fde5de466da3f9c}{}\label{symbol_8c_a18e71044871462571fde5de466da3f9c}
+
+
+\subsection{Variable Documentation}
+\index{symbol.\+c@{symbol.\+c}!S\+Y\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+N\+A\+M\+E\+S\+\_\+\+L\+EN@{S\+Y\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+N\+A\+M\+E\+S\+\_\+\+L\+EN}}
+\index{S\+Y\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+N\+A\+M\+E\+S\+\_\+\+L\+EN@{S\+Y\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+N\+A\+M\+E\+S\+\_\+\+L\+EN}!symbol.\+c@{symbol.\+c}}
+\subsubsection[{S\+Y\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+N\+A\+M\+E\+S\+\_\+\+L\+EN}]{\setlength{\rightskip}{0pt plus 5cm}const int S\+Y\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+N\+A\+M\+E\+S\+\_\+\+L\+EN}\hypertarget{symbol_8c_ab1002f3be72dc1efc44db4332403b8c0}{}\label{symbol_8c_ab1002f3be72dc1efc44db4332403b8c0}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= (\textcolor{keyword}{sizeof} (sym\_value\_names) /
+    \textcolor{keyword}{sizeof} (sym\_value\_names [0]))
+\end{DoxyCode}

@@ -1,0 +1,74 @@
+\hypertarget{structnn__msgqueue}{}\section{nn\+\_\+msgqueue Struct Reference}
+\label{structnn__msgqueue}\index{nn\+\_\+msgqueue@{nn\+\_\+msgqueue}}
+
+
+{\ttfamily \#include $<$msgqueue.\+h$>$}
+
+
+
+Collaboration diagram for nn\+\_\+msgqueue\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structnn__msgqueue__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \hyperlink{structnn__msgqueue__chunk}{nn\_msgqueue\_chunk} $\ast$ \hyperlink{structnn__msgqueue_a57b0ce10a1e3ba159bb3e05e9e25ea57}{chunk}\\
+\>int \hyperlink{structnn__msgqueue_a3714414d2aad4d30b34bc8c3bd865003}{pos}\\
+\} \hyperlink{structnn__msgqueue_a752f1190a9edc8818dbb980ce7b849f3}{out}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \hyperlink{structnn__msgqueue__chunk}{nn\_msgqueue\_chunk} $\ast$ \hyperlink{structnn__msgqueue_a57b0ce10a1e3ba159bb3e05e9e25ea57}{chunk}\\
+\>int \hyperlink{structnn__msgqueue_a3714414d2aad4d30b34bc8c3bd865003}{pos}\\
+\} \hyperlink{structnn__msgqueue_a86267100cce5ad85aa85a23c07a5cbf6}{in}\\
+
+\end{tabbing}\item 
+size\+\_\+t \hyperlink{structnn__msgqueue_aaa463916bbe4482be01ce84444383cfd}{count}
+\item 
+size\+\_\+t \hyperlink{structnn__msgqueue_afd34fe72790a56ba9d99681fd2024b6c}{mem}
+\item 
+size\+\_\+t \hyperlink{structnn__msgqueue_a1989a55354b0a334168696d9c1b3e29b}{maxmem}
+\item 
+struct \hyperlink{structnn__msgqueue__chunk}{nn\+\_\+msgqueue\+\_\+chunk} $\ast$ \hyperlink{structnn__msgqueue_a4e886b7d4c87b147648980f4af8befa3}{cache}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+msgqueue@{nn\+\_\+msgqueue}!cache@{cache}}
+\index{cache@{cache}!nn\+\_\+msgqueue@{nn\+\_\+msgqueue}}
+\subsubsection[{cache}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+msgqueue\+\_\+chunk}$\ast$ nn\+\_\+msgqueue\+::cache}\hypertarget{structnn__msgqueue_a4e886b7d4c87b147648980f4af8befa3}{}\label{structnn__msgqueue_a4e886b7d4c87b147648980f4af8befa3}
+\index{nn\+\_\+msgqueue@{nn\+\_\+msgqueue}!chunk@{chunk}}
+\index{chunk@{chunk}!nn\+\_\+msgqueue@{nn\+\_\+msgqueue}}
+\subsubsection[{chunk}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+msgqueue\+\_\+chunk}$\ast$ nn\+\_\+msgqueue\+::chunk}\hypertarget{structnn__msgqueue_a57b0ce10a1e3ba159bb3e05e9e25ea57}{}\label{structnn__msgqueue_a57b0ce10a1e3ba159bb3e05e9e25ea57}
+\index{nn\+\_\+msgqueue@{nn\+\_\+msgqueue}!count@{count}}
+\index{count@{count}!nn\+\_\+msgqueue@{nn\+\_\+msgqueue}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+msgqueue\+::count}\hypertarget{structnn__msgqueue_aaa463916bbe4482be01ce84444383cfd}{}\label{structnn__msgqueue_aaa463916bbe4482be01ce84444383cfd}
+\index{nn\+\_\+msgqueue@{nn\+\_\+msgqueue}!in@{in}}
+\index{in@{in}!nn\+\_\+msgqueue@{nn\+\_\+msgqueue}}
+\subsubsection[{in}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   nn\+\_\+msgqueue\+::in}\hypertarget{structnn__msgqueue_a86267100cce5ad85aa85a23c07a5cbf6}{}\label{structnn__msgqueue_a86267100cce5ad85aa85a23c07a5cbf6}
+\index{nn\+\_\+msgqueue@{nn\+\_\+msgqueue}!maxmem@{maxmem}}
+\index{maxmem@{maxmem}!nn\+\_\+msgqueue@{nn\+\_\+msgqueue}}
+\subsubsection[{maxmem}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+msgqueue\+::maxmem}\hypertarget{structnn__msgqueue_a1989a55354b0a334168696d9c1b3e29b}{}\label{structnn__msgqueue_a1989a55354b0a334168696d9c1b3e29b}
+\index{nn\+\_\+msgqueue@{nn\+\_\+msgqueue}!mem@{mem}}
+\index{mem@{mem}!nn\+\_\+msgqueue@{nn\+\_\+msgqueue}}
+\subsubsection[{mem}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+msgqueue\+::mem}\hypertarget{structnn__msgqueue_afd34fe72790a56ba9d99681fd2024b6c}{}\label{structnn__msgqueue_afd34fe72790a56ba9d99681fd2024b6c}
+\index{nn\+\_\+msgqueue@{nn\+\_\+msgqueue}!out@{out}}
+\index{out@{out}!nn\+\_\+msgqueue@{nn\+\_\+msgqueue}}
+\subsubsection[{out}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   nn\+\_\+msgqueue\+::out}\hypertarget{structnn__msgqueue_a752f1190a9edc8818dbb980ce7b849f3}{}\label{structnn__msgqueue_a752f1190a9edc8818dbb980ce7b849f3}
+\index{nn\+\_\+msgqueue@{nn\+\_\+msgqueue}!pos@{pos}}
+\index{pos@{pos}!nn\+\_\+msgqueue@{nn\+\_\+msgqueue}}
+\subsubsection[{pos}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+msgqueue\+::pos}\hypertarget{structnn__msgqueue_a3714414d2aad4d30b34bc8c3bd865003}{}\label{structnn__msgqueue_a3714414d2aad4d30b34bc8c3bd865003}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/transports/inproc/\hyperlink{msgqueue_8h}{msgqueue.\+h}\end{DoxyCompactItemize}

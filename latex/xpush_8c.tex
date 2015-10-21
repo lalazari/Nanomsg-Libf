@@ -1,0 +1,62 @@
+\hypertarget{xpush_8c}{}\section{src/protocols/pipeline/xpush.c File Reference}
+\label{xpush_8c}\index{src/protocols/pipeline/xpush.\+c@{src/protocols/pipeline/xpush.\+c}}
+{\ttfamily \#include \char`\"{}xpush.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../pipeline.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/lb.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/attr.\+h\char`\"{}}\\*
+Include dependency graph for xpush.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{xpush_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__xpush__data}{nn\+\_\+xpush\+\_\+data}
+\item 
+struct \hyperlink{structnn__xpush}{nn\+\_\+xpush}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{xpush_8c_a7b4ae3458c46e5182285eb81899d967f}{nn\+\_\+xpush\+\_\+create} (void $\ast$hint, struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$$\ast$sockbase)
+\item 
+int \hyperlink{xpush_8c_a6d7e324e41756e5579e9da1d474e3839}{nn\+\_\+xpush\+\_\+ispeer} (int socktype)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__socktype}{nn\+\_\+socktype} $\ast$ \hyperlink{xpush_8c_af16603a7e900cbfd7ca05545a0704b28}{nn\+\_\+xpush\+\_\+socktype} = \&nn\+\_\+xpush\+\_\+socktype\+\_\+struct
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{xpush.\+c@{xpush.\+c}!nn\+\_\+xpush\+\_\+create@{nn\+\_\+xpush\+\_\+create}}
+\index{nn\+\_\+xpush\+\_\+create@{nn\+\_\+xpush\+\_\+create}!xpush.\+c@{xpush.\+c}}
+\subsubsection[{nn\+\_\+xpush\+\_\+create(void $\ast$hint, struct nn\+\_\+sockbase $\ast$$\ast$sockbase)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xpush\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{hint, }
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$$\ast$}]{sockbase}
+\end{DoxyParamCaption}
+)}\hypertarget{xpush_8c_a7b4ae3458c46e5182285eb81899d967f}{}\label{xpush_8c_a7b4ae3458c46e5182285eb81899d967f}
+\index{xpush.\+c@{xpush.\+c}!nn\+\_\+xpush\+\_\+ispeer@{nn\+\_\+xpush\+\_\+ispeer}}
+\index{nn\+\_\+xpush\+\_\+ispeer@{nn\+\_\+xpush\+\_\+ispeer}!xpush.\+c@{xpush.\+c}}
+\subsubsection[{nn\+\_\+xpush\+\_\+ispeer(int socktype)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xpush\+\_\+ispeer (
+\begin{DoxyParamCaption}
+\item[{int}]{socktype}
+\end{DoxyParamCaption}
+)}\hypertarget{xpush_8c_a6d7e324e41756e5579e9da1d474e3839}{}\label{xpush_8c_a6d7e324e41756e5579e9da1d474e3839}
+
+
+\subsection{Variable Documentation}
+\index{xpush.\+c@{xpush.\+c}!nn\+\_\+xpush\+\_\+socktype@{nn\+\_\+xpush\+\_\+socktype}}
+\index{nn\+\_\+xpush\+\_\+socktype@{nn\+\_\+xpush\+\_\+socktype}!xpush.\+c@{xpush.\+c}}
+\subsubsection[{nn\+\_\+xpush\+\_\+socktype}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+socktype}$\ast$ nn\+\_\+xpush\+\_\+socktype = \&nn\+\_\+xpush\+\_\+socktype\+\_\+struct}\hypertarget{xpush_8c_af16603a7e900cbfd7ca05545a0704b28}{}\label{xpush_8c_af16603a7e900cbfd7ca05545a0704b28}

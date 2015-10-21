@@ -1,0 +1,6 @@
+<map id="src/transports/utils/dns.h" name="src/transports/utils/dns.h">
+<area shape="rect" id="node2" href="$ctcp_8c.html" title="src/transports/tcp\l/ctcp.c" alt="" coords="5,97,128,138"/>
+<area shape="rect" id="node3" href="$ctcpmux_8c.html" title="src/transports/tcpmux\l/ctcpmux.c" alt="" coords="153,97,303,138"/>
+<area shape="rect" id="node4" href="$dns_8c.html" title="src/transports/utils\l/dns.c" alt="" coords="327,97,457,138"/>
+<area shape="rect" id="node5" href="$cws_8c.html" title="src/transports/ws/cws.c" alt="" coords="481,104,644,131"/>
+</map>

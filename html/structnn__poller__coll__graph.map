@@ -1,0 +1,4 @@
+<map id="nn_poller" name="nn_poller">
+<area shape="rect" id="node2" href="$structnn__poller_1_1nn__hndls__item.html" title="{nn_poller::nn_hndls_item\n|+ prev\l+ next\l|}" alt="" coords="5,193,171,285"/>
+<area shape="rect" id="node3" href="$structnn__poller__hndl.html" title="{nn_poller_hndl\n|+ fd\l+ events\l+ events\l+ index\l|}" alt="" coords="35,6,140,127"/>
+</map>

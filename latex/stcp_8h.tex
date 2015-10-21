@@ -1,0 +1,97 @@
+\hypertarget{stcp_8h}{}\section{src/transports/tcp/stcp.h File Reference}
+\label{stcp_8h}\index{src/transports/tcp/stcp.\+h@{src/transports/tcp/stcp.\+h}}
+{\ttfamily \#include \char`\"{}../../transport.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/fsm.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/usock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/streamhdr.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/msg.\+h\char`\"{}}\\*
+Include dependency graph for stcp.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stcp_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stcp_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__stcp}{nn\+\_\+stcp}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{stcp_8h_a0069867ea77c7bed658fc56910f8c7ef}{N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+E\+R\+R\+OR}~1
+\item 
+\#define \hyperlink{stcp_8h_a5cfa154e62909d0370a6baa50197aaf9}{N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+S\+T\+O\+P\+P\+ED}~2
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{stcp_8h_a6968f5b1fd48ea7aa113058881e753b1}{nn\+\_\+stcp\+\_\+init} (struct \hyperlink{structnn__stcp}{nn\+\_\+stcp} $\ast$self, int src, struct \hyperlink{structnn__epbase}{nn\+\_\+epbase} $\ast$epbase, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{stcp_8h_a57747f10a45710b8fcdcb3c7602d41f3}{nn\+\_\+stcp\+\_\+term} (struct \hyperlink{structnn__stcp}{nn\+\_\+stcp} $\ast$self)
+\item 
+int \hyperlink{stcp_8h_ade85258707c36816059adb22ebc37766}{nn\+\_\+stcp\+\_\+isidle} (struct \hyperlink{structnn__stcp}{nn\+\_\+stcp} $\ast$self)
+\item 
+void \hyperlink{stcp_8h_a2ef570659995c2c821294158725369dc}{nn\+\_\+stcp\+\_\+start} (struct \hyperlink{structnn__stcp}{nn\+\_\+stcp} $\ast$self, struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$usock)
+\item 
+void \hyperlink{stcp_8h_a54cc71aeca6267a692ab52f5bedac15c}{nn\+\_\+stcp\+\_\+stop} (struct \hyperlink{structnn__stcp}{nn\+\_\+stcp} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{stcp.\+h@{stcp.\+h}!N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+E\+R\+R\+OR}}
+\index{N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+E\+R\+R\+OR}!stcp.\+h@{stcp.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+E\+R\+R\+OR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+E\+R\+R\+OR~1}\hypertarget{stcp_8h_a0069867ea77c7bed658fc56910f8c7ef}{}\label{stcp_8h_a0069867ea77c7bed658fc56910f8c7ef}
+\index{stcp.\+h@{stcp.\+h}!N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+S\+T\+O\+P\+P\+ED}!stcp.\+h@{stcp.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+T\+C\+P\+\_\+\+S\+T\+O\+P\+P\+ED~2}\hypertarget{stcp_8h_a5cfa154e62909d0370a6baa50197aaf9}{}\label{stcp_8h_a5cfa154e62909d0370a6baa50197aaf9}
+
+
+\subsection{Function Documentation}
+\index{stcp.\+h@{stcp.\+h}!nn\+\_\+stcp\+\_\+init@{nn\+\_\+stcp\+\_\+init}}
+\index{nn\+\_\+stcp\+\_\+init@{nn\+\_\+stcp\+\_\+init}!stcp.\+h@{stcp.\+h}}
+\subsubsection[{nn\+\_\+stcp\+\_\+init(struct nn\+\_\+stcp $\ast$self, int src, struct nn\+\_\+epbase $\ast$epbase, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+stcp\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+stcp} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+epbase} $\ast$}]{epbase, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{stcp_8h_a6968f5b1fd48ea7aa113058881e753b1}{}\label{stcp_8h_a6968f5b1fd48ea7aa113058881e753b1}
+\index{stcp.\+h@{stcp.\+h}!nn\+\_\+stcp\+\_\+isidle@{nn\+\_\+stcp\+\_\+isidle}}
+\index{nn\+\_\+stcp\+\_\+isidle@{nn\+\_\+stcp\+\_\+isidle}!stcp.\+h@{stcp.\+h}}
+\subsubsection[{nn\+\_\+stcp\+\_\+isidle(struct nn\+\_\+stcp $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+stcp\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+stcp} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{stcp_8h_ade85258707c36816059adb22ebc37766}{}\label{stcp_8h_ade85258707c36816059adb22ebc37766}
+\index{stcp.\+h@{stcp.\+h}!nn\+\_\+stcp\+\_\+start@{nn\+\_\+stcp\+\_\+start}}
+\index{nn\+\_\+stcp\+\_\+start@{nn\+\_\+stcp\+\_\+start}!stcp.\+h@{stcp.\+h}}
+\subsubsection[{nn\+\_\+stcp\+\_\+start(struct nn\+\_\+stcp $\ast$self, struct nn\+\_\+usock $\ast$usock)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+stcp\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+stcp} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{usock}
+\end{DoxyParamCaption}
+)}\hypertarget{stcp_8h_a2ef570659995c2c821294158725369dc}{}\label{stcp_8h_a2ef570659995c2c821294158725369dc}
+\index{stcp.\+h@{stcp.\+h}!nn\+\_\+stcp\+\_\+stop@{nn\+\_\+stcp\+\_\+stop}}
+\index{nn\+\_\+stcp\+\_\+stop@{nn\+\_\+stcp\+\_\+stop}!stcp.\+h@{stcp.\+h}}
+\subsubsection[{nn\+\_\+stcp\+\_\+stop(struct nn\+\_\+stcp $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+stcp\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+stcp} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{stcp_8h_a54cc71aeca6267a692ab52f5bedac15c}{}\label{stcp_8h_a54cc71aeca6267a692ab52f5bedac15c}
+\index{stcp.\+h@{stcp.\+h}!nn\+\_\+stcp\+\_\+term@{nn\+\_\+stcp\+\_\+term}}
+\index{nn\+\_\+stcp\+\_\+term@{nn\+\_\+stcp\+\_\+term}!stcp.\+h@{stcp.\+h}}
+\subsubsection[{nn\+\_\+stcp\+\_\+term(struct nn\+\_\+stcp $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+stcp\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+stcp} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{stcp_8h_a57747f10a45710b8fcdcb3c7602d41f3}{}\label{stcp_8h_a57747f10a45710b8fcdcb3c7602d41f3}

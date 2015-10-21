@@ -1,0 +1,167 @@
+\hypertarget{xsurveyor_8h}{}\section{src/protocols/survey/xsurveyor.h File Reference}
+\label{xsurveyor_8h}\index{src/protocols/survey/xsurveyor.\+h@{src/protocols/survey/xsurveyor.\+h}}
+{\ttfamily \#include \char`\"{}../../protocol.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/dist.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/fq.\+h\char`\"{}}\\*
+Include dependency graph for xsurveyor.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{xsurveyor_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{xsurveyor_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__xsurveyor__data}{nn\+\_\+xsurveyor\+\_\+data}
+\item 
+struct \hyperlink{structnn__xsurveyor}{nn\+\_\+xsurveyor}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{xsurveyor_8h_a8090a985e3a6ae3570caddf4f0574e45}{nn\+\_\+xsurveyor\+\_\+init} (struct \hyperlink{structnn__xsurveyor}{nn\+\_\+xsurveyor} $\ast$self, const struct \hyperlink{structnn__sockbase__vfptr}{nn\+\_\+sockbase\+\_\+vfptr} $\ast$vfptr, void $\ast$hint)
+\item 
+void \hyperlink{xsurveyor_8h_ad7e4bc274522c5602b9fb78ed4f29986}{nn\+\_\+xsurveyor\+\_\+term} (struct \hyperlink{structnn__xsurveyor}{nn\+\_\+xsurveyor} $\ast$self)
+\item 
+int \hyperlink{xsurveyor_8h_aff407d3e7e11a8cd6d56f5bd1f95da9d}{nn\+\_\+xsurveyor\+\_\+add} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{xsurveyor_8h_a86c7fe3ee3392784e8a75018c7ddc545}{nn\+\_\+xsurveyor\+\_\+rm} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{xsurveyor_8h_a259735a0488e71fd97e30491b4e9f249}{nn\+\_\+xsurveyor\+\_\+in} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{xsurveyor_8h_a8c2b6906e3a83fc91c8ad209cdae78cd}{nn\+\_\+xsurveyor\+\_\+out} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+int \hyperlink{xsurveyor_8h_a066300cdd2ebb65f2cd6f3b142d3b360}{nn\+\_\+xsurveyor\+\_\+events} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self)
+\item 
+int \hyperlink{xsurveyor_8h_ac42425121f360f76a30eaf4d0c08f6a3}{nn\+\_\+xsurveyor\+\_\+send} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg)
+\item 
+int \hyperlink{xsurveyor_8h_a8629c4621768a11d7d7edf2665ee9227}{nn\+\_\+xsurveyor\+\_\+recv} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg)
+\item 
+int \hyperlink{xsurveyor_8h_a4877b578bcce7a1de58a2dffac1c85b8}{nn\+\_\+xsurveyor\+\_\+setopt} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, int level, int option, const void $\ast$optval, size\+\_\+t optvallen)
+\item 
+int \hyperlink{xsurveyor_8h_a6deefe00a541d0c69e5b9f8a7ef22a09}{nn\+\_\+xsurveyor\+\_\+getopt} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, int level, int option, void $\ast$optval, size\+\_\+t $\ast$optvallen)
+\item 
+int \hyperlink{xsurveyor_8h_af56fe41e25bde2f84c09877525f65a0e}{nn\+\_\+xsurveyor\+\_\+ispeer} (int socktype)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__socktype}{nn\+\_\+socktype} $\ast$ \hyperlink{xsurveyor_8h_a92fcf9dbe58868536c9a32547295a81f}{nn\+\_\+xsurveyor\+\_\+socktype}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{xsurveyor.\+h@{xsurveyor.\+h}!nn\+\_\+xsurveyor\+\_\+add@{nn\+\_\+xsurveyor\+\_\+add}}
+\index{nn\+\_\+xsurveyor\+\_\+add@{nn\+\_\+xsurveyor\+\_\+add}!xsurveyor.\+h@{xsurveyor.\+h}}
+\subsubsection[{nn\+\_\+xsurveyor\+\_\+add(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xsurveyor\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{xsurveyor_8h_aff407d3e7e11a8cd6d56f5bd1f95da9d}{}\label{xsurveyor_8h_aff407d3e7e11a8cd6d56f5bd1f95da9d}
+\index{xsurveyor.\+h@{xsurveyor.\+h}!nn\+\_\+xsurveyor\+\_\+events@{nn\+\_\+xsurveyor\+\_\+events}}
+\index{nn\+\_\+xsurveyor\+\_\+events@{nn\+\_\+xsurveyor\+\_\+events}!xsurveyor.\+h@{xsurveyor.\+h}}
+\subsubsection[{nn\+\_\+xsurveyor\+\_\+events(struct nn\+\_\+sockbase $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xsurveyor\+\_\+events (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{xsurveyor_8h_a066300cdd2ebb65f2cd6f3b142d3b360}{}\label{xsurveyor_8h_a066300cdd2ebb65f2cd6f3b142d3b360}
+\index{xsurveyor.\+h@{xsurveyor.\+h}!nn\+\_\+xsurveyor\+\_\+getopt@{nn\+\_\+xsurveyor\+\_\+getopt}}
+\index{nn\+\_\+xsurveyor\+\_\+getopt@{nn\+\_\+xsurveyor\+\_\+getopt}!xsurveyor.\+h@{xsurveyor.\+h}}
+\subsubsection[{nn\+\_\+xsurveyor\+\_\+getopt(struct nn\+\_\+sockbase $\ast$self, int level, int option, void $\ast$optval, size\+\_\+t $\ast$optvallen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xsurveyor\+\_\+getopt (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{int}]{level, }
+\item[{int}]{option, }
+\item[{void $\ast$}]{optval, }
+\item[{size\+\_\+t $\ast$}]{optvallen}
+\end{DoxyParamCaption}
+)}\hypertarget{xsurveyor_8h_a6deefe00a541d0c69e5b9f8a7ef22a09}{}\label{xsurveyor_8h_a6deefe00a541d0c69e5b9f8a7ef22a09}
+\index{xsurveyor.\+h@{xsurveyor.\+h}!nn\+\_\+xsurveyor\+\_\+in@{nn\+\_\+xsurveyor\+\_\+in}}
+\index{nn\+\_\+xsurveyor\+\_\+in@{nn\+\_\+xsurveyor\+\_\+in}!xsurveyor.\+h@{xsurveyor.\+h}}
+\subsubsection[{nn\+\_\+xsurveyor\+\_\+in(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xsurveyor\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{xsurveyor_8h_a259735a0488e71fd97e30491b4e9f249}{}\label{xsurveyor_8h_a259735a0488e71fd97e30491b4e9f249}
+\index{xsurveyor.\+h@{xsurveyor.\+h}!nn\+\_\+xsurveyor\+\_\+init@{nn\+\_\+xsurveyor\+\_\+init}}
+\index{nn\+\_\+xsurveyor\+\_\+init@{nn\+\_\+xsurveyor\+\_\+init}!xsurveyor.\+h@{xsurveyor.\+h}}
+\subsubsection[{nn\+\_\+xsurveyor\+\_\+init(struct nn\+\_\+xsurveyor $\ast$self, const struct nn\+\_\+sockbase\+\_\+vfptr $\ast$vfptr, void $\ast$hint)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xsurveyor\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+xsurveyor} $\ast$}]{self, }
+\item[{const struct {\bf nn\+\_\+sockbase\+\_\+vfptr} $\ast$}]{vfptr, }
+\item[{void $\ast$}]{hint}
+\end{DoxyParamCaption}
+)}\hypertarget{xsurveyor_8h_a8090a985e3a6ae3570caddf4f0574e45}{}\label{xsurveyor_8h_a8090a985e3a6ae3570caddf4f0574e45}
+\index{xsurveyor.\+h@{xsurveyor.\+h}!nn\+\_\+xsurveyor\+\_\+ispeer@{nn\+\_\+xsurveyor\+\_\+ispeer}}
+\index{nn\+\_\+xsurveyor\+\_\+ispeer@{nn\+\_\+xsurveyor\+\_\+ispeer}!xsurveyor.\+h@{xsurveyor.\+h}}
+\subsubsection[{nn\+\_\+xsurveyor\+\_\+ispeer(int socktype)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xsurveyor\+\_\+ispeer (
+\begin{DoxyParamCaption}
+\item[{int}]{socktype}
+\end{DoxyParamCaption}
+)}\hypertarget{xsurveyor_8h_af56fe41e25bde2f84c09877525f65a0e}{}\label{xsurveyor_8h_af56fe41e25bde2f84c09877525f65a0e}
+\index{xsurveyor.\+h@{xsurveyor.\+h}!nn\+\_\+xsurveyor\+\_\+out@{nn\+\_\+xsurveyor\+\_\+out}}
+\index{nn\+\_\+xsurveyor\+\_\+out@{nn\+\_\+xsurveyor\+\_\+out}!xsurveyor.\+h@{xsurveyor.\+h}}
+\subsubsection[{nn\+\_\+xsurveyor\+\_\+out(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xsurveyor\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{xsurveyor_8h_a8c2b6906e3a83fc91c8ad209cdae78cd}{}\label{xsurveyor_8h_a8c2b6906e3a83fc91c8ad209cdae78cd}
+\index{xsurveyor.\+h@{xsurveyor.\+h}!nn\+\_\+xsurveyor\+\_\+recv@{nn\+\_\+xsurveyor\+\_\+recv}}
+\index{nn\+\_\+xsurveyor\+\_\+recv@{nn\+\_\+xsurveyor\+\_\+recv}!xsurveyor.\+h@{xsurveyor.\+h}}
+\subsubsection[{nn\+\_\+xsurveyor\+\_\+recv(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xsurveyor\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{xsurveyor_8h_a8629c4621768a11d7d7edf2665ee9227}{}\label{xsurveyor_8h_a8629c4621768a11d7d7edf2665ee9227}
+\index{xsurveyor.\+h@{xsurveyor.\+h}!nn\+\_\+xsurveyor\+\_\+rm@{nn\+\_\+xsurveyor\+\_\+rm}}
+\index{nn\+\_\+xsurveyor\+\_\+rm@{nn\+\_\+xsurveyor\+\_\+rm}!xsurveyor.\+h@{xsurveyor.\+h}}
+\subsubsection[{nn\+\_\+xsurveyor\+\_\+rm(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xsurveyor\+\_\+rm (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{xsurveyor_8h_a86c7fe3ee3392784e8a75018c7ddc545}{}\label{xsurveyor_8h_a86c7fe3ee3392784e8a75018c7ddc545}
+\index{xsurveyor.\+h@{xsurveyor.\+h}!nn\+\_\+xsurveyor\+\_\+send@{nn\+\_\+xsurveyor\+\_\+send}}
+\index{nn\+\_\+xsurveyor\+\_\+send@{nn\+\_\+xsurveyor\+\_\+send}!xsurveyor.\+h@{xsurveyor.\+h}}
+\subsubsection[{nn\+\_\+xsurveyor\+\_\+send(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xsurveyor\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{xsurveyor_8h_ac42425121f360f76a30eaf4d0c08f6a3}{}\label{xsurveyor_8h_ac42425121f360f76a30eaf4d0c08f6a3}
+\index{xsurveyor.\+h@{xsurveyor.\+h}!nn\+\_\+xsurveyor\+\_\+setopt@{nn\+\_\+xsurveyor\+\_\+setopt}}
+\index{nn\+\_\+xsurveyor\+\_\+setopt@{nn\+\_\+xsurveyor\+\_\+setopt}!xsurveyor.\+h@{xsurveyor.\+h}}
+\subsubsection[{nn\+\_\+xsurveyor\+\_\+setopt(struct nn\+\_\+sockbase $\ast$self, int level, int option, const void $\ast$optval, size\+\_\+t optvallen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xsurveyor\+\_\+setopt (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{int}]{level, }
+\item[{int}]{option, }
+\item[{const void $\ast$}]{optval, }
+\item[{size\+\_\+t}]{optvallen}
+\end{DoxyParamCaption}
+)}\hypertarget{xsurveyor_8h_a4877b578bcce7a1de58a2dffac1c85b8}{}\label{xsurveyor_8h_a4877b578bcce7a1de58a2dffac1c85b8}
+\index{xsurveyor.\+h@{xsurveyor.\+h}!nn\+\_\+xsurveyor\+\_\+term@{nn\+\_\+xsurveyor\+\_\+term}}
+\index{nn\+\_\+xsurveyor\+\_\+term@{nn\+\_\+xsurveyor\+\_\+term}!xsurveyor.\+h@{xsurveyor.\+h}}
+\subsubsection[{nn\+\_\+xsurveyor\+\_\+term(struct nn\+\_\+xsurveyor $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xsurveyor\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+xsurveyor} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{xsurveyor_8h_ad7e4bc274522c5602b9fb78ed4f29986}{}\label{xsurveyor_8h_ad7e4bc274522c5602b9fb78ed4f29986}
+
+
+\subsection{Variable Documentation}
+\index{xsurveyor.\+h@{xsurveyor.\+h}!nn\+\_\+xsurveyor\+\_\+socktype@{nn\+\_\+xsurveyor\+\_\+socktype}}
+\index{nn\+\_\+xsurveyor\+\_\+socktype@{nn\+\_\+xsurveyor\+\_\+socktype}!xsurveyor.\+h@{xsurveyor.\+h}}
+\subsubsection[{nn\+\_\+xsurveyor\+\_\+socktype}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+socktype}$\ast$ nn\+\_\+xsurveyor\+\_\+socktype}\hypertarget{xsurveyor_8h_a92fcf9dbe58868536c9a32547295a81f}{}\label{xsurveyor_8h_a92fcf9dbe58868536c9a32547295a81f}

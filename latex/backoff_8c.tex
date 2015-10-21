@@ -1,0 +1,74 @@
+\hypertarget{backoff_8c}{}\section{src/transports/utils/backoff.c File Reference}
+\label{backoff_8c}\index{src/transports/utils/backoff.\+c@{src/transports/utils/backoff.\+c}}
+{\ttfamily \#include \char`\"{}backoff.\+h\char`\"{}}\\*
+Include dependency graph for backoff.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backoff_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{backoff_8c_a86a887dd7e10266ef0ca81279fa5eaf9}{nn\+\_\+backoff\+\_\+init} (struct \hyperlink{structnn__backoff}{nn\+\_\+backoff} $\ast$self, int src, int minivl, int maxivl, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{backoff_8c_a3af6f81333053f4ae6503bc090583458}{nn\+\_\+backoff\+\_\+term} (struct \hyperlink{structnn__backoff}{nn\+\_\+backoff} $\ast$self)
+\item 
+int \hyperlink{backoff_8c_aa244a152eb83ba692ea5d0e246ee7adc}{nn\+\_\+backoff\+\_\+isidle} (struct \hyperlink{structnn__backoff}{nn\+\_\+backoff} $\ast$self)
+\item 
+void \hyperlink{backoff_8c_a024ad8ed150d6da14145e40423a93c5b}{nn\+\_\+backoff\+\_\+start} (struct \hyperlink{structnn__backoff}{nn\+\_\+backoff} $\ast$self)
+\item 
+void \hyperlink{backoff_8c_a20fac0754a8d2e5b70fc73ff22d7d2d0}{nn\+\_\+backoff\+\_\+stop} (struct \hyperlink{structnn__backoff}{nn\+\_\+backoff} $\ast$self)
+\item 
+void \hyperlink{backoff_8c_a6616f270de1275edf423c726f559d56d}{nn\+\_\+backoff\+\_\+reset} (struct \hyperlink{structnn__backoff}{nn\+\_\+backoff} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{backoff.\+c@{backoff.\+c}!nn\+\_\+backoff\+\_\+init@{nn\+\_\+backoff\+\_\+init}}
+\index{nn\+\_\+backoff\+\_\+init@{nn\+\_\+backoff\+\_\+init}!backoff.\+c@{backoff.\+c}}
+\subsubsection[{nn\+\_\+backoff\+\_\+init(struct nn\+\_\+backoff $\ast$self, int src, int minivl, int maxivl, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+backoff\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+backoff} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{int}]{minivl, }
+\item[{int}]{maxivl, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{backoff_8c_a86a887dd7e10266ef0ca81279fa5eaf9}{}\label{backoff_8c_a86a887dd7e10266ef0ca81279fa5eaf9}
+\index{backoff.\+c@{backoff.\+c}!nn\+\_\+backoff\+\_\+isidle@{nn\+\_\+backoff\+\_\+isidle}}
+\index{nn\+\_\+backoff\+\_\+isidle@{nn\+\_\+backoff\+\_\+isidle}!backoff.\+c@{backoff.\+c}}
+\subsubsection[{nn\+\_\+backoff\+\_\+isidle(struct nn\+\_\+backoff $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+backoff\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+backoff} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{backoff_8c_aa244a152eb83ba692ea5d0e246ee7adc}{}\label{backoff_8c_aa244a152eb83ba692ea5d0e246ee7adc}
+\index{backoff.\+c@{backoff.\+c}!nn\+\_\+backoff\+\_\+reset@{nn\+\_\+backoff\+\_\+reset}}
+\index{nn\+\_\+backoff\+\_\+reset@{nn\+\_\+backoff\+\_\+reset}!backoff.\+c@{backoff.\+c}}
+\subsubsection[{nn\+\_\+backoff\+\_\+reset(struct nn\+\_\+backoff $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+backoff\+\_\+reset (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+backoff} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{backoff_8c_a6616f270de1275edf423c726f559d56d}{}\label{backoff_8c_a6616f270de1275edf423c726f559d56d}
+\index{backoff.\+c@{backoff.\+c}!nn\+\_\+backoff\+\_\+start@{nn\+\_\+backoff\+\_\+start}}
+\index{nn\+\_\+backoff\+\_\+start@{nn\+\_\+backoff\+\_\+start}!backoff.\+c@{backoff.\+c}}
+\subsubsection[{nn\+\_\+backoff\+\_\+start(struct nn\+\_\+backoff $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+backoff\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+backoff} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{backoff_8c_a024ad8ed150d6da14145e40423a93c5b}{}\label{backoff_8c_a024ad8ed150d6da14145e40423a93c5b}
+\index{backoff.\+c@{backoff.\+c}!nn\+\_\+backoff\+\_\+stop@{nn\+\_\+backoff\+\_\+stop}}
+\index{nn\+\_\+backoff\+\_\+stop@{nn\+\_\+backoff\+\_\+stop}!backoff.\+c@{backoff.\+c}}
+\subsubsection[{nn\+\_\+backoff\+\_\+stop(struct nn\+\_\+backoff $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+backoff\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+backoff} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{backoff_8c_a20fac0754a8d2e5b70fc73ff22d7d2d0}{}\label{backoff_8c_a20fac0754a8d2e5b70fc73ff22d7d2d0}
+\index{backoff.\+c@{backoff.\+c}!nn\+\_\+backoff\+\_\+term@{nn\+\_\+backoff\+\_\+term}}
+\index{nn\+\_\+backoff\+\_\+term@{nn\+\_\+backoff\+\_\+term}!backoff.\+c@{backoff.\+c}}
+\subsubsection[{nn\+\_\+backoff\+\_\+term(struct nn\+\_\+backoff $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+backoff\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+backoff} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{backoff_8c_a3af6f81333053f4ae6503bc090583458}{}\label{backoff_8c_a3af6f81333053f4ae6503bc090583458}

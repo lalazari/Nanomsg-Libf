@@ -1,0 +1,12 @@
+<map id="src/protocols/pipeline/push.c" name="src/protocols/pipeline/push.c">
+<area shape="rect" id="node2" href="$push_8h.html" title="push.h" alt="" coords="272,96,333,123"/>
+<area shape="rect" id="node11" href="$xpush_8h.html" title="xpush.h" alt="" coords="179,96,247,123"/>
+<area shape="rect" id="node12" href="$nn_8h.html" title="../../nn.h" alt="" coords="54,96,124,123"/>
+<area shape="rect" id="node14" href="$pipeline_8h.html" title="../../pipeline.h" alt="" coords="408,96,509,123"/>
+<area shape="rect" id="node10" href="$list_8h.html" title="utils/list.h" alt="" coords="390,245,468,272"/>
+<area shape="rect" id="node3" href="$protocol_8h.html" title="../../protocol.h" alt="" coords="203,171,305,197"/>
+<area shape="rect" id="node4" href="$msg_8h.html" title="utils/msg.h" alt="" coords="186,245,272,272"/>
+<area shape="rect" id="node8" href="$int_8h.html" title="int.h" alt="" coords="278,469,324,496"/>
+<area shape="rect" id="node5" href="$chunkref_8h.html" title="chunkref.h" alt="" coords="188,320,271,347"/>
+<area shape="rect" id="node6" href="$chunk_8h.html" title="chunk.h" alt="" coords="195,395,263,421"/>
+</map>

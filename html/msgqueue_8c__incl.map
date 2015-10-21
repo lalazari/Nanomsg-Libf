@@ -1,0 +1,11 @@
+<map id="src/transports/inproc/msgqueue.c" name="src/transports/inproc/msgqueue.c">
+<area shape="rect" id="node2" href="$msgqueue_8h.html" title="msgqueue.h" alt="" coords="183,96,276,123"/>
+<area shape="rect" id="node9" href="$alloc_8h.html" title="../../utils/alloc.h" alt="" coords="284,320,396,347"/>
+<area shape="rect" id="node10" href="$fast_8h.html" title="../../utils/fast.h" alt="" coords="351,171,457,197"/>
+<area shape="rect" id="node11" href="$err_8h.html" title="../../utils/err.h" alt="" coords="478,96,577,123"/>
+<area shape="rect" id="node3" href="$msg_8h.html" title="../../utils/msg.h" alt="" coords="98,171,208,197"/>
+<area shape="rect" id="node4" href="$chunkref_8h.html" title="chunkref.h" alt="" coords="55,245,137,272"/>
+<area shape="rect" id="node5" href="$chunk_8h.html" title="chunk.h" alt="" coords="39,320,107,347"/>
+<area shape="rect" id="node7" href="$int_8h.html" title="int.h" alt="" coords="14,395,60,421"/>
+<area shape="rect" id="node15" href="$nn_8h.html" title="../nn.h" alt="" coords="617,171,676,197"/>
+</map>

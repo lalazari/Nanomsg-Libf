@@ -1,0 +1,86 @@
+\hypertarget{structnn__sinproc}{}\section{nn\+\_\+sinproc Struct Reference}
+\label{structnn__sinproc}\index{nn\+\_\+sinproc@{nn\+\_\+sinproc}}
+
+
+{\ttfamily \#include $<$sinproc.\+h$>$}
+
+
+
+Collaboration diagram for nn\+\_\+sinproc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structnn__sinproc__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} \hyperlink{structnn__sinproc_a003cd82bc6cff8db88c1a547a6636cb8}{fsm}
+\item 
+int \hyperlink{structnn__sinproc_a4e706c4229c2a6744caa694b4c3d180f}{state}
+\item 
+int \hyperlink{structnn__sinproc_a68d3ef16b04178ca01f3951bc0be97f7}{flags}
+\item 
+struct \hyperlink{structnn__sinproc}{nn\+\_\+sinproc} $\ast$ \hyperlink{structnn__sinproc_a5bb8b30fe9e4c46aff1bfe5ef2d555df}{peer}
+\item 
+struct \hyperlink{structnn__pipebase}{nn\+\_\+pipebase} \hyperlink{structnn__sinproc_ae5e3756290ad85bbe90b48472cea16e1}{pipebase}
+\item 
+struct \hyperlink{structnn__msgqueue}{nn\+\_\+msgqueue} \hyperlink{structnn__sinproc_ab654cbbbc30b3b2e2a26719492fa4b98}{msgqueue}
+\item 
+struct \hyperlink{structnn__msg}{nn\+\_\+msg} \hyperlink{structnn__sinproc_acc15a46ac42799ae2a0726f2baae8c4b}{msg}
+\item 
+struct \hyperlink{structnn__fsm__event}{nn\+\_\+fsm\+\_\+event} \hyperlink{structnn__sinproc_a57b51461aa38deaff898fe1409c685cb}{event\+\_\+connect}
+\item 
+struct \hyperlink{structnn__fsm__event}{nn\+\_\+fsm\+\_\+event} \hyperlink{structnn__sinproc_af3b3fc50e4e92fc6184eeb88a3ed0422}{event\+\_\+sent}
+\item 
+struct \hyperlink{structnn__fsm__event}{nn\+\_\+fsm\+\_\+event} \hyperlink{structnn__sinproc_a08ac0565377739a29680295b021fb564}{event\+\_\+received}
+\item 
+struct \hyperlink{structnn__fsm__event}{nn\+\_\+fsm\+\_\+event} \hyperlink{structnn__sinproc_ae0549cc1eaf399d76ac2f963c199b0df}{event\+\_\+disconnect}
+\item 
+struct \hyperlink{structnn__list__item}{nn\+\_\+list\+\_\+item} \hyperlink{structnn__sinproc_a21419d9f464d248bb618e8954b80c843}{item}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+sinproc@{nn\+\_\+sinproc}!event\+\_\+connect@{event\+\_\+connect}}
+\index{event\+\_\+connect@{event\+\_\+connect}!nn\+\_\+sinproc@{nn\+\_\+sinproc}}
+\subsubsection[{event\+\_\+connect}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+event} nn\+\_\+sinproc\+::event\+\_\+connect}\hypertarget{structnn__sinproc_a57b51461aa38deaff898fe1409c685cb}{}\label{structnn__sinproc_a57b51461aa38deaff898fe1409c685cb}
+\index{nn\+\_\+sinproc@{nn\+\_\+sinproc}!event\+\_\+disconnect@{event\+\_\+disconnect}}
+\index{event\+\_\+disconnect@{event\+\_\+disconnect}!nn\+\_\+sinproc@{nn\+\_\+sinproc}}
+\subsubsection[{event\+\_\+disconnect}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+event} nn\+\_\+sinproc\+::event\+\_\+disconnect}\hypertarget{structnn__sinproc_ae0549cc1eaf399d76ac2f963c199b0df}{}\label{structnn__sinproc_ae0549cc1eaf399d76ac2f963c199b0df}
+\index{nn\+\_\+sinproc@{nn\+\_\+sinproc}!event\+\_\+received@{event\+\_\+received}}
+\index{event\+\_\+received@{event\+\_\+received}!nn\+\_\+sinproc@{nn\+\_\+sinproc}}
+\subsubsection[{event\+\_\+received}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+event} nn\+\_\+sinproc\+::event\+\_\+received}\hypertarget{structnn__sinproc_a08ac0565377739a29680295b021fb564}{}\label{structnn__sinproc_a08ac0565377739a29680295b021fb564}
+\index{nn\+\_\+sinproc@{nn\+\_\+sinproc}!event\+\_\+sent@{event\+\_\+sent}}
+\index{event\+\_\+sent@{event\+\_\+sent}!nn\+\_\+sinproc@{nn\+\_\+sinproc}}
+\subsubsection[{event\+\_\+sent}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+event} nn\+\_\+sinproc\+::event\+\_\+sent}\hypertarget{structnn__sinproc_af3b3fc50e4e92fc6184eeb88a3ed0422}{}\label{structnn__sinproc_af3b3fc50e4e92fc6184eeb88a3ed0422}
+\index{nn\+\_\+sinproc@{nn\+\_\+sinproc}!flags@{flags}}
+\index{flags@{flags}!nn\+\_\+sinproc@{nn\+\_\+sinproc}}
+\subsubsection[{flags}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sinproc\+::flags}\hypertarget{structnn__sinproc_a68d3ef16b04178ca01f3951bc0be97f7}{}\label{structnn__sinproc_a68d3ef16b04178ca01f3951bc0be97f7}
+\index{nn\+\_\+sinproc@{nn\+\_\+sinproc}!fsm@{fsm}}
+\index{fsm@{fsm}!nn\+\_\+sinproc@{nn\+\_\+sinproc}}
+\subsubsection[{fsm}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm} nn\+\_\+sinproc\+::fsm}\hypertarget{structnn__sinproc_a003cd82bc6cff8db88c1a547a6636cb8}{}\label{structnn__sinproc_a003cd82bc6cff8db88c1a547a6636cb8}
+\index{nn\+\_\+sinproc@{nn\+\_\+sinproc}!item@{item}}
+\index{item@{item}!nn\+\_\+sinproc@{nn\+\_\+sinproc}}
+\subsubsection[{item}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+list\+\_\+item} nn\+\_\+sinproc\+::item}\hypertarget{structnn__sinproc_a21419d9f464d248bb618e8954b80c843}{}\label{structnn__sinproc_a21419d9f464d248bb618e8954b80c843}
+\index{nn\+\_\+sinproc@{nn\+\_\+sinproc}!msg@{msg}}
+\index{msg@{msg}!nn\+\_\+sinproc@{nn\+\_\+sinproc}}
+\subsubsection[{msg}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+msg} nn\+\_\+sinproc\+::msg}\hypertarget{structnn__sinproc_acc15a46ac42799ae2a0726f2baae8c4b}{}\label{structnn__sinproc_acc15a46ac42799ae2a0726f2baae8c4b}
+\index{nn\+\_\+sinproc@{nn\+\_\+sinproc}!msgqueue@{msgqueue}}
+\index{msgqueue@{msgqueue}!nn\+\_\+sinproc@{nn\+\_\+sinproc}}
+\subsubsection[{msgqueue}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+msgqueue} nn\+\_\+sinproc\+::msgqueue}\hypertarget{structnn__sinproc_ab654cbbbc30b3b2e2a26719492fa4b98}{}\label{structnn__sinproc_ab654cbbbc30b3b2e2a26719492fa4b98}
+\index{nn\+\_\+sinproc@{nn\+\_\+sinproc}!peer@{peer}}
+\index{peer@{peer}!nn\+\_\+sinproc@{nn\+\_\+sinproc}}
+\subsubsection[{peer}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+sinproc}$\ast$ nn\+\_\+sinproc\+::peer}\hypertarget{structnn__sinproc_a5bb8b30fe9e4c46aff1bfe5ef2d555df}{}\label{structnn__sinproc_a5bb8b30fe9e4c46aff1bfe5ef2d555df}
+\index{nn\+\_\+sinproc@{nn\+\_\+sinproc}!pipebase@{pipebase}}
+\index{pipebase@{pipebase}!nn\+\_\+sinproc@{nn\+\_\+sinproc}}
+\subsubsection[{pipebase}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+pipebase} nn\+\_\+sinproc\+::pipebase}\hypertarget{structnn__sinproc_ae5e3756290ad85bbe90b48472cea16e1}{}\label{structnn__sinproc_ae5e3756290ad85bbe90b48472cea16e1}
+\index{nn\+\_\+sinproc@{nn\+\_\+sinproc}!state@{state}}
+\index{state@{state}!nn\+\_\+sinproc@{nn\+\_\+sinproc}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sinproc\+::state}\hypertarget{structnn__sinproc_a4e706c4229c2a6744caa694b4c3d180f}{}\label{structnn__sinproc_a4e706c4229c2a6744caa694b4c3d180f}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/transports/inproc/\hyperlink{sinproc_8h}{sinproc.\+h}\end{DoxyCompactItemize}

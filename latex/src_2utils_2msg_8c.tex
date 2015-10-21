@@ -1,0 +1,97 @@
+\hypertarget{src_2utils_2msg_8c}{}\section{src/utils/msg.c File Reference}
+\label{src_2utils_2msg_8c}\index{src/utils/msg.\+c@{src/utils/msg.\+c}}
+{\ttfamily \#include \char`\"{}msg.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for msg.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{src_2utils_2msg_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{src_2utils_2msg_8c_a504a4547784b985afb0d1b976b121b9f}{nn\+\_\+msg\+\_\+init} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$self, size\+\_\+t size)
+\item 
+void \hyperlink{src_2utils_2msg_8c_a22b1d5d2e1a6f066670c1c891dc2ef97}{nn\+\_\+msg\+\_\+init\+\_\+chunk} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$self, void $\ast$chunk)
+\item 
+void \hyperlink{src_2utils_2msg_8c_a37f072fcdbf5dd67cd0e7ce683484633}{nn\+\_\+msg\+\_\+term} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$self)
+\item 
+void \hyperlink{src_2utils_2msg_8c_ad6c2254f368663c5556eeca84f1cd295}{nn\+\_\+msg\+\_\+mv} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$dst, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$src)
+\item 
+void \hyperlink{src_2utils_2msg_8c_ac25ec960549cf6c0e0dca4f1dadc4805}{nn\+\_\+msg\+\_\+cp} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$dst, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$src)
+\item 
+void \hyperlink{src_2utils_2msg_8c_ad8b4f3fa7d289051deb879126b61d771}{nn\+\_\+msg\+\_\+bulkcopy\+\_\+start} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$self, uint32\+\_\+t copies)
+\item 
+void \hyperlink{src_2utils_2msg_8c_ac49fd26eff21fa28e05e42bf6df173c8}{nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$dst, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$src)
+\item 
+void \hyperlink{src_2utils_2msg_8c_a008278d397218413f7b962ec03b0c712}{nn\+\_\+msg\+\_\+replace\+\_\+body} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$self, struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} new\+\_\+body)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{src/utils/msg.\+c@{src/utils/msg.\+c}!nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp@{nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp}}
+\index{nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp@{nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp}!src/utils/msg.\+c@{src/utils/msg.\+c}}
+\subsubsection[{nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp(struct nn\+\_\+msg $\ast$dst, struct nn\+\_\+msg $\ast$src)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{dst, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\hypertarget{src_2utils_2msg_8c_ac49fd26eff21fa28e05e42bf6df173c8}{}\label{src_2utils_2msg_8c_ac49fd26eff21fa28e05e42bf6df173c8}
+\index{src/utils/msg.\+c@{src/utils/msg.\+c}!nn\+\_\+msg\+\_\+bulkcopy\+\_\+start@{nn\+\_\+msg\+\_\+bulkcopy\+\_\+start}}
+\index{nn\+\_\+msg\+\_\+bulkcopy\+\_\+start@{nn\+\_\+msg\+\_\+bulkcopy\+\_\+start}!src/utils/msg.\+c@{src/utils/msg.\+c}}
+\subsubsection[{nn\+\_\+msg\+\_\+bulkcopy\+\_\+start(struct nn\+\_\+msg $\ast$self, uint32\+\_\+t copies)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+bulkcopy\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{self, }
+\item[{uint32\+\_\+t}]{copies}
+\end{DoxyParamCaption}
+)}\hypertarget{src_2utils_2msg_8c_ad8b4f3fa7d289051deb879126b61d771}{}\label{src_2utils_2msg_8c_ad8b4f3fa7d289051deb879126b61d771}
+\index{src/utils/msg.\+c@{src/utils/msg.\+c}!nn\+\_\+msg\+\_\+cp@{nn\+\_\+msg\+\_\+cp}}
+\index{nn\+\_\+msg\+\_\+cp@{nn\+\_\+msg\+\_\+cp}!src/utils/msg.\+c@{src/utils/msg.\+c}}
+\subsubsection[{nn\+\_\+msg\+\_\+cp(struct nn\+\_\+msg $\ast$dst, struct nn\+\_\+msg $\ast$src)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+cp (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{dst, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\hypertarget{src_2utils_2msg_8c_ac25ec960549cf6c0e0dca4f1dadc4805}{}\label{src_2utils_2msg_8c_ac25ec960549cf6c0e0dca4f1dadc4805}
+\index{src/utils/msg.\+c@{src/utils/msg.\+c}!nn\+\_\+msg\+\_\+init@{nn\+\_\+msg\+\_\+init}}
+\index{nn\+\_\+msg\+\_\+init@{nn\+\_\+msg\+\_\+init}!src/utils/msg.\+c@{src/utils/msg.\+c}}
+\subsubsection[{nn\+\_\+msg\+\_\+init(struct nn\+\_\+msg $\ast$self, size\+\_\+t size)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{self, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{src_2utils_2msg_8c_a504a4547784b985afb0d1b976b121b9f}{}\label{src_2utils_2msg_8c_a504a4547784b985afb0d1b976b121b9f}
+\index{src/utils/msg.\+c@{src/utils/msg.\+c}!nn\+\_\+msg\+\_\+init\+\_\+chunk@{nn\+\_\+msg\+\_\+init\+\_\+chunk}}
+\index{nn\+\_\+msg\+\_\+init\+\_\+chunk@{nn\+\_\+msg\+\_\+init\+\_\+chunk}!src/utils/msg.\+c@{src/utils/msg.\+c}}
+\subsubsection[{nn\+\_\+msg\+\_\+init\+\_\+chunk(struct nn\+\_\+msg $\ast$self, void $\ast$chunk)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+init\+\_\+chunk (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{self, }
+\item[{void $\ast$}]{chunk}
+\end{DoxyParamCaption}
+)}\hypertarget{src_2utils_2msg_8c_a22b1d5d2e1a6f066670c1c891dc2ef97}{}\label{src_2utils_2msg_8c_a22b1d5d2e1a6f066670c1c891dc2ef97}
+\index{src/utils/msg.\+c@{src/utils/msg.\+c}!nn\+\_\+msg\+\_\+mv@{nn\+\_\+msg\+\_\+mv}}
+\index{nn\+\_\+msg\+\_\+mv@{nn\+\_\+msg\+\_\+mv}!src/utils/msg.\+c@{src/utils/msg.\+c}}
+\subsubsection[{nn\+\_\+msg\+\_\+mv(struct nn\+\_\+msg $\ast$dst, struct nn\+\_\+msg $\ast$src)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+mv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{dst, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\hypertarget{src_2utils_2msg_8c_ad6c2254f368663c5556eeca84f1cd295}{}\label{src_2utils_2msg_8c_ad6c2254f368663c5556eeca84f1cd295}
+\index{src/utils/msg.\+c@{src/utils/msg.\+c}!nn\+\_\+msg\+\_\+replace\+\_\+body@{nn\+\_\+msg\+\_\+replace\+\_\+body}}
+\index{nn\+\_\+msg\+\_\+replace\+\_\+body@{nn\+\_\+msg\+\_\+replace\+\_\+body}!src/utils/msg.\+c@{src/utils/msg.\+c}}
+\subsubsection[{nn\+\_\+msg\+\_\+replace\+\_\+body(struct nn\+\_\+msg $\ast$self, struct nn\+\_\+chunkref new\+\_\+body)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+replace\+\_\+body (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+chunkref}}]{new\+Body}
+\end{DoxyParamCaption}
+)}\hypertarget{src_2utils_2msg_8c_a008278d397218413f7b962ec03b0c712}{}\label{src_2utils_2msg_8c_a008278d397218413f7b962ec03b0c712}
+Replaces the message body with entirely new data. This allows protocols that substantially rewrite or preprocess the userland message to be written. \index{src/utils/msg.\+c@{src/utils/msg.\+c}!nn\+\_\+msg\+\_\+term@{nn\+\_\+msg\+\_\+term}}
+\index{nn\+\_\+msg\+\_\+term@{nn\+\_\+msg\+\_\+term}!src/utils/msg.\+c@{src/utils/msg.\+c}}
+\subsubsection[{nn\+\_\+msg\+\_\+term(struct nn\+\_\+msg $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{src_2utils_2msg_8c_a37f072fcdbf5dd67cd0e7ce683484633}{}\label{src_2utils_2msg_8c_a37f072fcdbf5dd67cd0e7ce683484633}

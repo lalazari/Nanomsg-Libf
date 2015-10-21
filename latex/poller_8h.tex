@@ -1,0 +1,136 @@
+\hypertarget{poller_8h}{}\section{src/aio/poller.h File Reference}
+\label{poller_8h}\index{src/aio/poller.\+h@{src/aio/poller.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{poller_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{poller_8h_af32537e516bea823a1ae19c3a2b2fe77}{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+IN}~1
+\item 
+\#define \hyperlink{poller_8h_a6fda466401f52f32de8bc7b3872b3b00}{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+O\+UT}~2
+\item 
+\#define \hyperlink{poller_8h_a52f4b0a1298517f2cfe2a6c77f9ac816}{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+E\+RR}~3
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{poller_8h_a9f251b06e98797adc057fe6cb5fcd493}{nn\+\_\+poller\+\_\+init} (struct \hyperlink{structnn__poller}{nn\+\_\+poller} $\ast$self)
+\item 
+void \hyperlink{poller_8h_a9658796577350a351ccc07e7f71ddcb8}{nn\+\_\+poller\+\_\+term} (struct \hyperlink{structnn__poller}{nn\+\_\+poller} $\ast$self)
+\item 
+void \hyperlink{poller_8h_a0a4a07b141599725aa04ce8911eb5c48}{nn\+\_\+poller\+\_\+add} (struct \hyperlink{structnn__poller}{nn\+\_\+poller} $\ast$self, int fd, struct \hyperlink{structnn__poller__hndl}{nn\+\_\+poller\+\_\+hndl} $\ast$hndl)
+\item 
+void \hyperlink{poller_8h_a9df2b8b0048d53ea35356dfd46baa844}{nn\+\_\+poller\+\_\+rm} (struct \hyperlink{structnn__poller}{nn\+\_\+poller} $\ast$self, struct \hyperlink{structnn__poller__hndl}{nn\+\_\+poller\+\_\+hndl} $\ast$hndl)
+\item 
+void \hyperlink{poller_8h_ab7cc630b4d188c9a1d57fce6b561ee0e}{nn\+\_\+poller\+\_\+set\+\_\+in} (struct \hyperlink{structnn__poller}{nn\+\_\+poller} $\ast$self, struct \hyperlink{structnn__poller__hndl}{nn\+\_\+poller\+\_\+hndl} $\ast$hndl)
+\item 
+void \hyperlink{poller_8h_ab68842366fafe50dacbc97bc752c1c12}{nn\+\_\+poller\+\_\+reset\+\_\+in} (struct \hyperlink{structnn__poller}{nn\+\_\+poller} $\ast$self, struct \hyperlink{structnn__poller__hndl}{nn\+\_\+poller\+\_\+hndl} $\ast$hndl)
+\item 
+void \hyperlink{poller_8h_ac1572240d30f45ad8249cee325e1b4f1}{nn\+\_\+poller\+\_\+set\+\_\+out} (struct \hyperlink{structnn__poller}{nn\+\_\+poller} $\ast$self, struct \hyperlink{structnn__poller__hndl}{nn\+\_\+poller\+\_\+hndl} $\ast$hndl)
+\item 
+void \hyperlink{poller_8h_ac9a538c1248c3bc8c878a393cfe0dde9}{nn\+\_\+poller\+\_\+reset\+\_\+out} (struct \hyperlink{structnn__poller}{nn\+\_\+poller} $\ast$self, struct \hyperlink{structnn__poller__hndl}{nn\+\_\+poller\+\_\+hndl} $\ast$hndl)
+\item 
+int \hyperlink{poller_8h_a0a266f0c2edb682973738f46fb92f1cd}{nn\+\_\+poller\+\_\+wait} (struct \hyperlink{structnn__poller}{nn\+\_\+poller} $\ast$self, int timeout)
+\item 
+int \hyperlink{poller_8h_a55ddce1be1e7ecadcb0f9d0bfa582df2}{nn\+\_\+poller\+\_\+event} (struct \hyperlink{structnn__poller}{nn\+\_\+poller} $\ast$self, int $\ast$event, struct \hyperlink{structnn__poller__hndl}{nn\+\_\+poller\+\_\+hndl} $\ast$$\ast$hndl)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{poller.\+h@{poller.\+h}!N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+E\+RR@{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+E\+RR}}
+\index{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+E\+RR@{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+E\+RR}!poller.\+h@{poller.\+h}}
+\subsubsection[{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+E\+RR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+E\+RR~3}\hypertarget{poller_8h_a52f4b0a1298517f2cfe2a6c77f9ac816}{}\label{poller_8h_a52f4b0a1298517f2cfe2a6c77f9ac816}
+\index{poller.\+h@{poller.\+h}!N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+IN@{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+IN}}
+\index{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+IN@{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+IN}!poller.\+h@{poller.\+h}}
+\subsubsection[{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+IN}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+IN~1}\hypertarget{poller_8h_af32537e516bea823a1ae19c3a2b2fe77}{}\label{poller_8h_af32537e516bea823a1ae19c3a2b2fe77}
+\index{poller.\+h@{poller.\+h}!N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+O\+UT@{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+O\+UT}}
+\index{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+O\+UT@{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+O\+UT}!poller.\+h@{poller.\+h}}
+\subsubsection[{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+O\+UT}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+O\+UT~2}\hypertarget{poller_8h_a6fda466401f52f32de8bc7b3872b3b00}{}\label{poller_8h_a6fda466401f52f32de8bc7b3872b3b00}
+
+
+\subsection{Function Documentation}
+\index{poller.\+h@{poller.\+h}!nn\+\_\+poller\+\_\+add@{nn\+\_\+poller\+\_\+add}}
+\index{nn\+\_\+poller\+\_\+add@{nn\+\_\+poller\+\_\+add}!poller.\+h@{poller.\+h}}
+\subsubsection[{nn\+\_\+poller\+\_\+add(struct nn\+\_\+poller $\ast$self, int fd, struct nn\+\_\+poller\+\_\+hndl $\ast$hndl)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+poller\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+poller} $\ast$}]{self, }
+\item[{int}]{fd, }
+\item[{struct {\bf nn\+\_\+poller\+\_\+hndl} $\ast$}]{hndl}
+\end{DoxyParamCaption}
+)}\hypertarget{poller_8h_a0a4a07b141599725aa04ce8911eb5c48}{}\label{poller_8h_a0a4a07b141599725aa04ce8911eb5c48}
+\index{poller.\+h@{poller.\+h}!nn\+\_\+poller\+\_\+event@{nn\+\_\+poller\+\_\+event}}
+\index{nn\+\_\+poller\+\_\+event@{nn\+\_\+poller\+\_\+event}!poller.\+h@{poller.\+h}}
+\subsubsection[{nn\+\_\+poller\+\_\+event(struct nn\+\_\+poller $\ast$self, int $\ast$event, struct nn\+\_\+poller\+\_\+hndl $\ast$$\ast$hndl)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+poller\+\_\+event (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+poller} $\ast$}]{self, }
+\item[{int $\ast$}]{event, }
+\item[{struct {\bf nn\+\_\+poller\+\_\+hndl} $\ast$$\ast$}]{hndl}
+\end{DoxyParamCaption}
+)}\hypertarget{poller_8h_a55ddce1be1e7ecadcb0f9d0bfa582df2}{}\label{poller_8h_a55ddce1be1e7ecadcb0f9d0bfa582df2}
+\index{poller.\+h@{poller.\+h}!nn\+\_\+poller\+\_\+init@{nn\+\_\+poller\+\_\+init}}
+\index{nn\+\_\+poller\+\_\+init@{nn\+\_\+poller\+\_\+init}!poller.\+h@{poller.\+h}}
+\subsubsection[{nn\+\_\+poller\+\_\+init(struct nn\+\_\+poller $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+poller\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+poller} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{poller_8h_a9f251b06e98797adc057fe6cb5fcd493}{}\label{poller_8h_a9f251b06e98797adc057fe6cb5fcd493}
+\index{poller.\+h@{poller.\+h}!nn\+\_\+poller\+\_\+reset\+\_\+in@{nn\+\_\+poller\+\_\+reset\+\_\+in}}
+\index{nn\+\_\+poller\+\_\+reset\+\_\+in@{nn\+\_\+poller\+\_\+reset\+\_\+in}!poller.\+h@{poller.\+h}}
+\subsubsection[{nn\+\_\+poller\+\_\+reset\+\_\+in(struct nn\+\_\+poller $\ast$self, struct nn\+\_\+poller\+\_\+hndl $\ast$hndl)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+poller\+\_\+reset\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+poller} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+poller\+\_\+hndl} $\ast$}]{hndl}
+\end{DoxyParamCaption}
+)}\hypertarget{poller_8h_ab68842366fafe50dacbc97bc752c1c12}{}\label{poller_8h_ab68842366fafe50dacbc97bc752c1c12}
+\index{poller.\+h@{poller.\+h}!nn\+\_\+poller\+\_\+reset\+\_\+out@{nn\+\_\+poller\+\_\+reset\+\_\+out}}
+\index{nn\+\_\+poller\+\_\+reset\+\_\+out@{nn\+\_\+poller\+\_\+reset\+\_\+out}!poller.\+h@{poller.\+h}}
+\subsubsection[{nn\+\_\+poller\+\_\+reset\+\_\+out(struct nn\+\_\+poller $\ast$self, struct nn\+\_\+poller\+\_\+hndl $\ast$hndl)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+poller\+\_\+reset\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+poller} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+poller\+\_\+hndl} $\ast$}]{hndl}
+\end{DoxyParamCaption}
+)}\hypertarget{poller_8h_ac9a538c1248c3bc8c878a393cfe0dde9}{}\label{poller_8h_ac9a538c1248c3bc8c878a393cfe0dde9}
+\index{poller.\+h@{poller.\+h}!nn\+\_\+poller\+\_\+rm@{nn\+\_\+poller\+\_\+rm}}
+\index{nn\+\_\+poller\+\_\+rm@{nn\+\_\+poller\+\_\+rm}!poller.\+h@{poller.\+h}}
+\subsubsection[{nn\+\_\+poller\+\_\+rm(struct nn\+\_\+poller $\ast$self, struct nn\+\_\+poller\+\_\+hndl $\ast$hndl)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+poller\+\_\+rm (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+poller} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+poller\+\_\+hndl} $\ast$}]{hndl}
+\end{DoxyParamCaption}
+)}\hypertarget{poller_8h_a9df2b8b0048d53ea35356dfd46baa844}{}\label{poller_8h_a9df2b8b0048d53ea35356dfd46baa844}
+\index{poller.\+h@{poller.\+h}!nn\+\_\+poller\+\_\+set\+\_\+in@{nn\+\_\+poller\+\_\+set\+\_\+in}}
+\index{nn\+\_\+poller\+\_\+set\+\_\+in@{nn\+\_\+poller\+\_\+set\+\_\+in}!poller.\+h@{poller.\+h}}
+\subsubsection[{nn\+\_\+poller\+\_\+set\+\_\+in(struct nn\+\_\+poller $\ast$self, struct nn\+\_\+poller\+\_\+hndl $\ast$hndl)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+poller\+\_\+set\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+poller} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+poller\+\_\+hndl} $\ast$}]{hndl}
+\end{DoxyParamCaption}
+)}\hypertarget{poller_8h_ab7cc630b4d188c9a1d57fce6b561ee0e}{}\label{poller_8h_ab7cc630b4d188c9a1d57fce6b561ee0e}
+\index{poller.\+h@{poller.\+h}!nn\+\_\+poller\+\_\+set\+\_\+out@{nn\+\_\+poller\+\_\+set\+\_\+out}}
+\index{nn\+\_\+poller\+\_\+set\+\_\+out@{nn\+\_\+poller\+\_\+set\+\_\+out}!poller.\+h@{poller.\+h}}
+\subsubsection[{nn\+\_\+poller\+\_\+set\+\_\+out(struct nn\+\_\+poller $\ast$self, struct nn\+\_\+poller\+\_\+hndl $\ast$hndl)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+poller\+\_\+set\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+poller} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+poller\+\_\+hndl} $\ast$}]{hndl}
+\end{DoxyParamCaption}
+)}\hypertarget{poller_8h_ac1572240d30f45ad8249cee325e1b4f1}{}\label{poller_8h_ac1572240d30f45ad8249cee325e1b4f1}
+\index{poller.\+h@{poller.\+h}!nn\+\_\+poller\+\_\+term@{nn\+\_\+poller\+\_\+term}}
+\index{nn\+\_\+poller\+\_\+term@{nn\+\_\+poller\+\_\+term}!poller.\+h@{poller.\+h}}
+\subsubsection[{nn\+\_\+poller\+\_\+term(struct nn\+\_\+poller $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+poller\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+poller} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{poller_8h_a9658796577350a351ccc07e7f71ddcb8}{}\label{poller_8h_a9658796577350a351ccc07e7f71ddcb8}
+\index{poller.\+h@{poller.\+h}!nn\+\_\+poller\+\_\+wait@{nn\+\_\+poller\+\_\+wait}}
+\index{nn\+\_\+poller\+\_\+wait@{nn\+\_\+poller\+\_\+wait}!poller.\+h@{poller.\+h}}
+\subsubsection[{nn\+\_\+poller\+\_\+wait(struct nn\+\_\+poller $\ast$self, int timeout)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+poller\+\_\+wait (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+poller} $\ast$}]{self, }
+\item[{int}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{poller_8h_a0a266f0c2edb682973738f46fb92f1cd}{}\label{poller_8h_a0a266f0c2edb682973738f46fb92f1cd}

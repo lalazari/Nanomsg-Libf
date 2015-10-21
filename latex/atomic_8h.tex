@@ -1,0 +1,80 @@
+\hypertarget{atomic_8h}{}\section{src/utils/atomic.h File Reference}
+\label{atomic_8h}\index{src/utils/atomic.\+h@{src/utils/atomic.\+h}}
+{\ttfamily \#include \char`\"{}mutex.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}int.\+h\char`\"{}}\\*
+Include dependency graph for atomic.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{atomic_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{atomic_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__atomic}{nn\+\_\+atomic}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{atomic_8h_ad13046449c88e05a66c4f4d940e934f7}{N\+N\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+U\+T\+EX}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{atomic_8h_a98fae5dcaa88ec097c703439289193aa}{nn\+\_\+atomic\+\_\+init} (struct \hyperlink{structnn__atomic}{nn\+\_\+atomic} $\ast$self, uint32\+\_\+t n)
+\item 
+void \hyperlink{atomic_8h_a2da8df50f04641dfcef5fa740cb49118}{nn\+\_\+atomic\+\_\+term} (struct \hyperlink{structnn__atomic}{nn\+\_\+atomic} $\ast$self)
+\item 
+uint32\+\_\+t \hyperlink{atomic_8h_a2d073bd7d9dd77af30218fdba58f7b0d}{nn\+\_\+atomic\+\_\+inc} (struct \hyperlink{structnn__atomic}{nn\+\_\+atomic} $\ast$self, uint32\+\_\+t n)
+\item 
+uint32\+\_\+t \hyperlink{atomic_8h_ac90e5aedfb6a399e2ff72e06f7656080}{nn\+\_\+atomic\+\_\+dec} (struct \hyperlink{structnn__atomic}{nn\+\_\+atomic} $\ast$self, uint32\+\_\+t n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{atomic.\+h@{atomic.\+h}!N\+N\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+U\+T\+EX@{N\+N\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+U\+T\+EX}}
+\index{N\+N\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+U\+T\+EX@{N\+N\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+U\+T\+EX}!atomic.\+h@{atomic.\+h}}
+\subsubsection[{N\+N\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+U\+T\+EX}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+U\+T\+EX}\hypertarget{atomic_8h_ad13046449c88e05a66c4f4d940e934f7}{}\label{atomic_8h_ad13046449c88e05a66c4f4d940e934f7}
+
+
+\subsection{Function Documentation}
+\index{atomic.\+h@{atomic.\+h}!nn\+\_\+atomic\+\_\+dec@{nn\+\_\+atomic\+\_\+dec}}
+\index{nn\+\_\+atomic\+\_\+dec@{nn\+\_\+atomic\+\_\+dec}!atomic.\+h@{atomic.\+h}}
+\subsubsection[{nn\+\_\+atomic\+\_\+dec(struct nn\+\_\+atomic $\ast$self, uint32\+\_\+t n)}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t nn\+\_\+atomic\+\_\+dec (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+atomic} $\ast$}]{self, }
+\item[{uint32\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{atomic_8h_ac90e5aedfb6a399e2ff72e06f7656080}{}\label{atomic_8h_ac90e5aedfb6a399e2ff72e06f7656080}
+\index{atomic.\+h@{atomic.\+h}!nn\+\_\+atomic\+\_\+inc@{nn\+\_\+atomic\+\_\+inc}}
+\index{nn\+\_\+atomic\+\_\+inc@{nn\+\_\+atomic\+\_\+inc}!atomic.\+h@{atomic.\+h}}
+\subsubsection[{nn\+\_\+atomic\+\_\+inc(struct nn\+\_\+atomic $\ast$self, uint32\+\_\+t n)}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t nn\+\_\+atomic\+\_\+inc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+atomic} $\ast$}]{self, }
+\item[{uint32\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{atomic_8h_a2d073bd7d9dd77af30218fdba58f7b0d}{}\label{atomic_8h_a2d073bd7d9dd77af30218fdba58f7b0d}
+\index{atomic.\+h@{atomic.\+h}!nn\+\_\+atomic\+\_\+init@{nn\+\_\+atomic\+\_\+init}}
+\index{nn\+\_\+atomic\+\_\+init@{nn\+\_\+atomic\+\_\+init}!atomic.\+h@{atomic.\+h}}
+\subsubsection[{nn\+\_\+atomic\+\_\+init(struct nn\+\_\+atomic $\ast$self, uint32\+\_\+t n)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+atomic\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+atomic} $\ast$}]{self, }
+\item[{uint32\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{atomic_8h_a98fae5dcaa88ec097c703439289193aa}{}\label{atomic_8h_a98fae5dcaa88ec097c703439289193aa}
+\index{atomic.\+h@{atomic.\+h}!nn\+\_\+atomic\+\_\+term@{nn\+\_\+atomic\+\_\+term}}
+\index{nn\+\_\+atomic\+\_\+term@{nn\+\_\+atomic\+\_\+term}!atomic.\+h@{atomic.\+h}}
+\subsubsection[{nn\+\_\+atomic\+\_\+term(struct nn\+\_\+atomic $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+atomic\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+atomic} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{atomic_8h_a2da8df50f04641dfcef5fa740cb49118}{}\label{atomic_8h_a2da8df50f04641dfcef5fa740cb49118}

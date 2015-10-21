@@ -1,0 +1,29 @@
+<map id="nn_ins_item" name="nn_ins_item">
+<area shape="rect" id="node2" href="$structnn__epbase.html" title="{nn_epbase\n||}" alt="" coords="1252,1481,1337,1559"/>
+<area shape="rect" id="node3" href="$structnn__ep.html" title="{nn_ep\n|+ state\l+ eid\l+ addr\l+ last_errno\l|}" alt="" coords="1219,1697,1309,1818"/>
+<area shape="rect" id="node4" href="$structnn__fsm.html" title="{nn_fsm\n|+ state\l+ src\l+ srcptr\l|}" alt="" coords="319,1237,385,1344"/>
+<area shape="rect" id="node5" href="$structnn__fsm__event.html" title="{nn_fsm_event\n|+ src\l+ srcptr\l+ type\l|}" alt="" coords="168,1467,272,1573"/>
+<area shape="rect" id="node22" href="$structnn__sock.html" title="{nn_sock\n|+ state\l+ flags\l+ termsem\l+ eid\l+ linger\l+ sndbuf\l+ rcvbuf\l+ rcvmaxsize\l+ sndtimeo\l+ rcvtimeo\land 19 more...\l|}" alt="" coords="720,1408,827,1632"/>
+<area shape="rect" id="node6" href="$structnn__queue__item.html" title="{nn_queue_item\n||}" alt="" coords="27,213,137,291"/>
+<area shape="rect" id="node9" href="$structnn__queue.html" title="{nn_queue\n||}" alt="" coords="43,549,121,627"/>
+<area shape="rect" id="node11" href="$structnn__worker.html" title="{nn_worker\n|+ cp\l|}" alt="" coords="335,757,417,835"/>
+<area shape="rect" id="node7" href="$structnn__ctx.html" title="{nn_ctx\n||}" alt="" coords="321,1081,383,1159"/>
+<area shape="rect" id="node8" href="$structnn__mutex.html" title="{nn_mutex\n|+ mutex\l|}" alt="" coords="146,549,224,627"/>
+<area shape="rect" id="node10" href="$structnn__pool.html" title="{nn_pool\n||}" alt="" coords="333,912,400,989"/>
+<area shape="rect" id="node12" href="$structnn__poller__hndl.html" title="{nn_poller_hndl\n|+ fd\l+ events\l+ events\l+ index\l|}" alt="" coords="429,6,533,127"/>
+<area shape="rect" id="node14" href="$structnn__poller_1_1nn__hndls__item.html" title="{nn_poller::nn_hndls_item\n|+ prev\l+ next\l|}" alt="" coords="489,206,655,298"/>
+<area shape="rect" id="node13" href="$structnn__poller.html" title="{nn_poller\n|+ ep\l+ nevents\l+ index\l+ events\l+ kq\l+ events\l+ size\l+ capacity\l+ pollset\l+ removed\l|}" alt="" coords="489,483,572,693"/>
+<area shape="rect" id="node15" href="$structnn__timerset.html" title="{nn_timerset\n||}" alt="" coords="597,549,688,627"/>
+<area shape="rect" id="node16" href="$structnn__clock.html" title="{nn_clock\n|+ last_tsc\l+ last_time\l|}" alt="" coords="717,206,803,298"/>
+<area shape="rect" id="node17" href="$structnn__list.html" title="{nn_list\n||}" alt="" coords="866,213,925,291"/>
+<area shape="rect" id="node18" href="$structnn__list__item.html" title="{nn_list_item\n||}" alt="" coords="1039,28,1131,105"/>
+<area shape="rect" id="node25" href="$structnn__socktype.html" title="{nn_socktype\n|+ domain\l+ protocol\l+ flags\l+ create\l+ ispeer\l|}" alt="" coords="969,323,1065,459"/>
+<area shape="rect" id="node19" href="$structnn__efd.html" title="{nn_efd\n|+ efd\l+ r\l+ w\l+ r\l+ w\l+ fds\l|}" alt="" coords="712,513,773,663"/>
+<area shape="rect" id="node20" href="$structnn__thread.html" title="{nn_thread\n|+ routine\l+ arg\l+ handle\l+ handle\l|}" alt="" coords="249,527,327,649"/>
+<area shape="rect" id="node21" href="$structnn__ep__options.html" title="{nn_ep_options\n|+ sndprio\l+ rcvprio\l+ ipv4only\l|}" alt="" coords="984,1237,1091,1344"/>
+<area shape="rect" id="node26" href="$structnn__sockbase.html" title="{nn_sockbase\n||}" alt="" coords="624,1719,723,1796"/>
+<area shape="rect" id="node23" href="$structnn__optset.html" title="{nn_optset\n||}" alt="" coords="631,1252,709,1329"/>
+<area shape="rect" id="node24" href="$structnn__optset__vfptr.html" title="{nn_optset_vfptr\n|+ destroy\l+ setopt\l+ getopt\l|}" alt="" coords="599,1067,711,1173"/>
+<area shape="rect" id="node27" href="$structnn__sockbase__vfptr.html" title="{nn_sockbase_vfptr\n|+ stop\l+ destroy\l+ add\l+ rm\l+ in\l+ out\l+ events\l+ send\l+ recv\l+ setopt\l+ getopt\l|}" alt="" coords="297,1408,428,1632"/>
+<area shape="rect" id="node28" href="$structnn__epbase__vfptr.html" title="{nn_epbase_vfptr\n|+ stop\l+ destroy\l|}" alt="" coords="1235,1245,1353,1337"/>
+</map>

@@ -1,0 +1,64 @@
+\hypertarget{atomic_8c}{}\section{src/utils/atomic.c File Reference}
+\label{atomic_8c}\index{src/utils/atomic.\+c@{src/utils/atomic.\+c}}
+{\ttfamily \#include \char`\"{}atomic.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}err.\+h\char`\"{}}\\*
+Include dependency graph for atomic.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{atomic_8c__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{atomic_8c__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{atomic_8c_a98fae5dcaa88ec097c703439289193aa}{nn\+\_\+atomic\+\_\+init} (struct \hyperlink{structnn__atomic}{nn\+\_\+atomic} $\ast$self, uint32\+\_\+t n)
+\item 
+void \hyperlink{atomic_8c_a2da8df50f04641dfcef5fa740cb49118}{nn\+\_\+atomic\+\_\+term} (struct \hyperlink{structnn__atomic}{nn\+\_\+atomic} $\ast$self)
+\item 
+uint32\+\_\+t \hyperlink{atomic_8c_a2d073bd7d9dd77af30218fdba58f7b0d}{nn\+\_\+atomic\+\_\+inc} (struct \hyperlink{structnn__atomic}{nn\+\_\+atomic} $\ast$self, uint32\+\_\+t n)
+\item 
+uint32\+\_\+t \hyperlink{atomic_8c_ac90e5aedfb6a399e2ff72e06f7656080}{nn\+\_\+atomic\+\_\+dec} (struct \hyperlink{structnn__atomic}{nn\+\_\+atomic} $\ast$self, uint32\+\_\+t n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{atomic.\+c@{atomic.\+c}!nn\+\_\+atomic\+\_\+dec@{nn\+\_\+atomic\+\_\+dec}}
+\index{nn\+\_\+atomic\+\_\+dec@{nn\+\_\+atomic\+\_\+dec}!atomic.\+c@{atomic.\+c}}
+\subsubsection[{nn\+\_\+atomic\+\_\+dec(struct nn\+\_\+atomic $\ast$self, uint32\+\_\+t n)}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t nn\+\_\+atomic\+\_\+dec (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+atomic} $\ast$}]{self, }
+\item[{uint32\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{atomic_8c_ac90e5aedfb6a399e2ff72e06f7656080}{}\label{atomic_8c_ac90e5aedfb6a399e2ff72e06f7656080}
+\index{atomic.\+c@{atomic.\+c}!nn\+\_\+atomic\+\_\+inc@{nn\+\_\+atomic\+\_\+inc}}
+\index{nn\+\_\+atomic\+\_\+inc@{nn\+\_\+atomic\+\_\+inc}!atomic.\+c@{atomic.\+c}}
+\subsubsection[{nn\+\_\+atomic\+\_\+inc(struct nn\+\_\+atomic $\ast$self, uint32\+\_\+t n)}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t nn\+\_\+atomic\+\_\+inc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+atomic} $\ast$}]{self, }
+\item[{uint32\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{atomic_8c_a2d073bd7d9dd77af30218fdba58f7b0d}{}\label{atomic_8c_a2d073bd7d9dd77af30218fdba58f7b0d}
+\index{atomic.\+c@{atomic.\+c}!nn\+\_\+atomic\+\_\+init@{nn\+\_\+atomic\+\_\+init}}
+\index{nn\+\_\+atomic\+\_\+init@{nn\+\_\+atomic\+\_\+init}!atomic.\+c@{atomic.\+c}}
+\subsubsection[{nn\+\_\+atomic\+\_\+init(struct nn\+\_\+atomic $\ast$self, uint32\+\_\+t n)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+atomic\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+atomic} $\ast$}]{self, }
+\item[{uint32\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{atomic_8c_a98fae5dcaa88ec097c703439289193aa}{}\label{atomic_8c_a98fae5dcaa88ec097c703439289193aa}
+\index{atomic.\+c@{atomic.\+c}!nn\+\_\+atomic\+\_\+term@{nn\+\_\+atomic\+\_\+term}}
+\index{nn\+\_\+atomic\+\_\+term@{nn\+\_\+atomic\+\_\+term}!atomic.\+c@{atomic.\+c}}
+\subsubsection[{nn\+\_\+atomic\+\_\+term(struct nn\+\_\+atomic $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+atomic\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+atomic} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{atomic_8c_a2da8df50f04641dfcef5fa740cb49118}{}\label{atomic_8c_a2da8df50f04641dfcef5fa740cb49118}

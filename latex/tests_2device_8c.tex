@@ -1,0 +1,91 @@
+\hypertarget{tests_2device_8c}{}\section{tests/device.c File Reference}
+\label{tests_2device_8c}\index{tests/device.\+c@{tests/device.\+c}}
+{\ttfamily \#include \char`\"{}../src/nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/bus.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/pair.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/pipeline.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/inproc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}testutil.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/utils/attr.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/utils/thread.\+c\char`\"{}}\\*
+Include dependency graph for device.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_2device_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{tests_2device_8c_a12ae7d943bb54204d36908c146048934}{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+A}~\char`\"{}inproc\+://a\char`\"{}
+\item 
+\#define \hyperlink{tests_2device_8c_a55366de1b95c21e3762a829691feb910}{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+B}~\char`\"{}inproc\+://\hyperlink{jquery_8js_a2fa551895933fae935a0a6b87282241d}{b}\char`\"{}
+\item 
+\#define \hyperlink{tests_2device_8c_a94377f659680fe9068f17879054ed3de}{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+C}~\char`\"{}inproc\+://\hyperlink{all__1_8js_a7d4a455e4f44360eeccfbf0c3079fc32}{c}\char`\"{}
+\item 
+\#define \hyperlink{tests_2device_8c_a2741eb852ba6a876627615a3600c9b67}{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+D}~\char`\"{}inproc\+://d\char`\"{}
+\item 
+\#define \hyperlink{tests_2device_8c_af4258afb9d7451f7d3a81f979aeda0ac}{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+E}~\char`\"{}inproc\+://e\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{tests_2device_8c_ae3032248f1561afec3100eb533625ab9}{device1} (\hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$arg)
+\item 
+void \hyperlink{tests_2device_8c_a6097d2cfb2f6be2c6dde902afe890c75}{device2} (\hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$arg)
+\item 
+void \hyperlink{tests_2device_8c_a59633aca134c80eff6c7ba83c3bc3eb3}{device3} (\hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$arg)
+\item 
+int \hyperlink{tests_2device_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{tests/device.\+c@{tests/device.\+c}!S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+A@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+A}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+A@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+A}!tests/device.\+c@{tests/device.\+c}}
+\subsubsection[{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+A}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+A~\char`\"{}inproc\+://a\char`\"{}}\hypertarget{tests_2device_8c_a12ae7d943bb54204d36908c146048934}{}\label{tests_2device_8c_a12ae7d943bb54204d36908c146048934}
+\index{tests/device.\+c@{tests/device.\+c}!S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+B@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+B}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+B@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+B}!tests/device.\+c@{tests/device.\+c}}
+\subsubsection[{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+B}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+B~\char`\"{}inproc\+://{\bf b}\char`\"{}}\hypertarget{tests_2device_8c_a55366de1b95c21e3762a829691feb910}{}\label{tests_2device_8c_a55366de1b95c21e3762a829691feb910}
+\index{tests/device.\+c@{tests/device.\+c}!S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+C@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+C}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+C@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+C}!tests/device.\+c@{tests/device.\+c}}
+\subsubsection[{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+C}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+C~\char`\"{}inproc\+://{\bf c}\char`\"{}}\hypertarget{tests_2device_8c_a94377f659680fe9068f17879054ed3de}{}\label{tests_2device_8c_a94377f659680fe9068f17879054ed3de}
+\index{tests/device.\+c@{tests/device.\+c}!S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+D@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+D}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+D@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+D}!tests/device.\+c@{tests/device.\+c}}
+\subsubsection[{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+D~\char`\"{}inproc\+://d\char`\"{}}\hypertarget{tests_2device_8c_a2741eb852ba6a876627615a3600c9b67}{}\label{tests_2device_8c_a2741eb852ba6a876627615a3600c9b67}
+\index{tests/device.\+c@{tests/device.\+c}!S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+E@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+E}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+E@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+E}!tests/device.\+c@{tests/device.\+c}}
+\subsubsection[{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+E~\char`\"{}inproc\+://e\char`\"{}}\hypertarget{tests_2device_8c_af4258afb9d7451f7d3a81f979aeda0ac}{}\label{tests_2device_8c_af4258afb9d7451f7d3a81f979aeda0ac}
+
+
+\subsection{Function Documentation}
+\index{tests/device.\+c@{tests/device.\+c}!device1@{device1}}
+\index{device1@{device1}!tests/device.\+c@{tests/device.\+c}}
+\subsubsection[{device1(\+N\+N\+\_\+\+U\+N\+U\+S\+E\+D void $\ast$arg)}]{\setlength{\rightskip}{0pt plus 5cm}void device1 (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_2device_8c_ae3032248f1561afec3100eb533625ab9}{}\label{tests_2device_8c_ae3032248f1561afec3100eb533625ab9}
+\index{tests/device.\+c@{tests/device.\+c}!device2@{device2}}
+\index{device2@{device2}!tests/device.\+c@{tests/device.\+c}}
+\subsubsection[{device2(\+N\+N\+\_\+\+U\+N\+U\+S\+E\+D void $\ast$arg)}]{\setlength{\rightskip}{0pt plus 5cm}void device2 (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_2device_8c_a6097d2cfb2f6be2c6dde902afe890c75}{}\label{tests_2device_8c_a6097d2cfb2f6be2c6dde902afe890c75}
+\index{tests/device.\+c@{tests/device.\+c}!device3@{device3}}
+\index{device3@{device3}!tests/device.\+c@{tests/device.\+c}}
+\subsubsection[{device3(\+N\+N\+\_\+\+U\+N\+U\+S\+E\+D void $\ast$arg)}]{\setlength{\rightskip}{0pt plus 5cm}void device3 (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_2device_8c_a59633aca134c80eff6c7ba83c3bc3eb3}{}\label{tests_2device_8c_a59633aca134c80eff6c7ba83c3bc3eb3}
+\index{tests/device.\+c@{tests/device.\+c}!main@{main}}
+\index{main@{main}!tests/device.\+c@{tests/device.\+c}}
+\subsubsection[{main()}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_2device_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{tests_2device_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}

@@ -1,0 +1,86 @@
+\hypertarget{testutil_8h}{}\section{tests/testutil.h File Reference}
+\label{testutil_8h}\index{tests/testutil.\+h@{tests/testutil.\+h}}
+{\ttfamily \#include \char`\"{}../src/utils/attr.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/utils/err.\+c\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/utils/sleep.\+c\char`\"{}}\\*
+Include dependency graph for testutil.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{testutil_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{testutil_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{testutil_8h_afcb434302442244ccde595d15b308c74}{test\+\_\+socket}(f,  \hyperlink{jquery_8js_a2335e57f79b6acfb6de59c235dc8a83e}{p})~test\+\_\+socket\+\_\+impl (\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (f), (\hyperlink{jquery_8js_a2335e57f79b6acfb6de59c235dc8a83e}{p}))
+\item 
+\#define \hyperlink{testutil_8h_aa4dc9c38615ca6e944765fcd43f58224}{test\+\_\+connect}(s,  a)~test\+\_\+connect\+\_\+impl (\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (s), (a))
+\item 
+\#define \hyperlink{testutil_8h_a205b34e358998025464d284ce15e48ee}{test\+\_\+bind}(s,  a)~test\+\_\+bind\+\_\+impl (\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (s), (a))
+\item 
+\#define \hyperlink{testutil_8h_a7d23d196bc4792e25213fca522757bd8}{test\+\_\+send}(s,  d)~test\+\_\+send\+\_\+impl (\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (s), (d))
+\item 
+\#define \hyperlink{testutil_8h_aad1e0945bda2d1d559468b0ef2341be5}{test\+\_\+recv}(s,  d)~test\+\_\+recv\+\_\+impl (\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (s), (d))
+\item 
+\#define \hyperlink{testutil_8h_a2afd0098111903928defe6f581a4cd53}{test\+\_\+close}(s)~test\+\_\+close\+\_\+impl (\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (s))
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{testutil.\+h@{testutil.\+h}!test\+\_\+bind@{test\+\_\+bind}}
+\index{test\+\_\+bind@{test\+\_\+bind}!testutil.\+h@{testutil.\+h}}
+\subsubsection[{test\+\_\+bind}]{\setlength{\rightskip}{0pt plus 5cm}\#define test\+\_\+bind(
+\begin{DoxyParamCaption}
+\item[{}]{s, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)~test\+\_\+bind\+\_\+impl (\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (s), (a))}\hypertarget{testutil_8h_a205b34e358998025464d284ce15e48ee}{}\label{testutil_8h_a205b34e358998025464d284ce15e48ee}
+\index{testutil.\+h@{testutil.\+h}!test\+\_\+close@{test\+\_\+close}}
+\index{test\+\_\+close@{test\+\_\+close}!testutil.\+h@{testutil.\+h}}
+\subsubsection[{test\+\_\+close}]{\setlength{\rightskip}{0pt plus 5cm}\#define test\+\_\+close(
+\begin{DoxyParamCaption}
+\item[{}]{s}
+\end{DoxyParamCaption}
+)~test\+\_\+close\+\_\+impl (\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (s))}\hypertarget{testutil_8h_a2afd0098111903928defe6f581a4cd53}{}\label{testutil_8h_a2afd0098111903928defe6f581a4cd53}
+\index{testutil.\+h@{testutil.\+h}!test\+\_\+connect@{test\+\_\+connect}}
+\index{test\+\_\+connect@{test\+\_\+connect}!testutil.\+h@{testutil.\+h}}
+\subsubsection[{test\+\_\+connect}]{\setlength{\rightskip}{0pt plus 5cm}\#define test\+\_\+connect(
+\begin{DoxyParamCaption}
+\item[{}]{s, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)~test\+\_\+connect\+\_\+impl (\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (s), (a))}\hypertarget{testutil_8h_aa4dc9c38615ca6e944765fcd43f58224}{}\label{testutil_8h_aa4dc9c38615ca6e944765fcd43f58224}
+\index{testutil.\+h@{testutil.\+h}!test\+\_\+recv@{test\+\_\+recv}}
+\index{test\+\_\+recv@{test\+\_\+recv}!testutil.\+h@{testutil.\+h}}
+\subsubsection[{test\+\_\+recv}]{\setlength{\rightskip}{0pt plus 5cm}\#define test\+\_\+recv(
+\begin{DoxyParamCaption}
+\item[{}]{s, }
+\item[{}]{d}
+\end{DoxyParamCaption}
+)~test\+\_\+recv\+\_\+impl (\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (s), (d))}\hypertarget{testutil_8h_aad1e0945bda2d1d559468b0ef2341be5}{}\label{testutil_8h_aad1e0945bda2d1d559468b0ef2341be5}
+\index{testutil.\+h@{testutil.\+h}!test\+\_\+send@{test\+\_\+send}}
+\index{test\+\_\+send@{test\+\_\+send}!testutil.\+h@{testutil.\+h}}
+\subsubsection[{test\+\_\+send}]{\setlength{\rightskip}{0pt plus 5cm}\#define test\+\_\+send(
+\begin{DoxyParamCaption}
+\item[{}]{s, }
+\item[{}]{d}
+\end{DoxyParamCaption}
+)~test\+\_\+send\+\_\+impl (\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (s), (d))}\hypertarget{testutil_8h_a7d23d196bc4792e25213fca522757bd8}{}\label{testutil_8h_a7d23d196bc4792e25213fca522757bd8}
+\index{testutil.\+h@{testutil.\+h}!test\+\_\+socket@{test\+\_\+socket}}
+\index{test\+\_\+socket@{test\+\_\+socket}!testutil.\+h@{testutil.\+h}}
+\subsubsection[{test\+\_\+socket}]{\setlength{\rightskip}{0pt plus 5cm}\#define test\+\_\+socket(
+\begin{DoxyParamCaption}
+\item[{}]{f, }
+\item[{}]{{\bf p}}
+\end{DoxyParamCaption}
+)~test\+\_\+socket\+\_\+impl (\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (f), ({\bf p}))}\hypertarget{testutil_8h_afcb434302442244ccde595d15b308c74}{}\label{testutil_8h_afcb434302442244ccde595d15b308c74}

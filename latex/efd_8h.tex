@@ -1,0 +1,78 @@
+\hypertarget{efd_8h}{}\section{src/utils/efd.h File Reference}
+\label{efd_8h}\index{src/utils/efd.\+h@{src/utils/efd.\+h}}
+{\ttfamily \#include \char`\"{}fd.\+h\char`\"{}}\\*
+Include dependency graph for efd.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{efd_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{efd_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{efd_8h_ac46f4000e083bb715bbc9a9b222d42c3}{nn\+\_\+efd\+\_\+init} (struct \hyperlink{structnn__efd}{nn\+\_\+efd} $\ast$self)
+\item 
+void \hyperlink{efd_8h_a79436c17016ce195518e5e9f17fc8366}{nn\+\_\+efd\+\_\+term} (struct \hyperlink{structnn__efd}{nn\+\_\+efd} $\ast$self)
+\item 
+\hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} \hyperlink{efd_8h_a8fbe007c728991774bb488c62b6fc5c1}{nn\+\_\+efd\+\_\+getfd} (struct \hyperlink{structnn__efd}{nn\+\_\+efd} $\ast$self)
+\item 
+void \hyperlink{efd_8h_a2ce35be9dbe2a6a6eb6c778862e9015b}{nn\+\_\+efd\+\_\+signal} (struct \hyperlink{structnn__efd}{nn\+\_\+efd} $\ast$self)
+\item 
+void \hyperlink{efd_8h_ac4f98b021533ef487788edcb9edcf95a}{nn\+\_\+efd\+\_\+unsignal} (struct \hyperlink{structnn__efd}{nn\+\_\+efd} $\ast$self)
+\item 
+int \hyperlink{efd_8h_ab27cf262a385d4cd775432f20fbdbe79}{nn\+\_\+efd\+\_\+wait} (struct \hyperlink{structnn__efd}{nn\+\_\+efd} $\ast$self, int timeout)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{efd.\+h@{efd.\+h}!nn\+\_\+efd\+\_\+getfd@{nn\+\_\+efd\+\_\+getfd}}
+\index{nn\+\_\+efd\+\_\+getfd@{nn\+\_\+efd\+\_\+getfd}!efd.\+h@{efd.\+h}}
+\subsubsection[{nn\+\_\+efd\+\_\+getfd(struct nn\+\_\+efd $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nn\+\_\+fd} nn\+\_\+efd\+\_\+getfd (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+efd} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{efd_8h_a8fbe007c728991774bb488c62b6fc5c1}{}\label{efd_8h_a8fbe007c728991774bb488c62b6fc5c1}
+\index{efd.\+h@{efd.\+h}!nn\+\_\+efd\+\_\+init@{nn\+\_\+efd\+\_\+init}}
+\index{nn\+\_\+efd\+\_\+init@{nn\+\_\+efd\+\_\+init}!efd.\+h@{efd.\+h}}
+\subsubsection[{nn\+\_\+efd\+\_\+init(struct nn\+\_\+efd $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+efd\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+efd} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{efd_8h_ac46f4000e083bb715bbc9a9b222d42c3}{}\label{efd_8h_ac46f4000e083bb715bbc9a9b222d42c3}
+\index{efd.\+h@{efd.\+h}!nn\+\_\+efd\+\_\+signal@{nn\+\_\+efd\+\_\+signal}}
+\index{nn\+\_\+efd\+\_\+signal@{nn\+\_\+efd\+\_\+signal}!efd.\+h@{efd.\+h}}
+\subsubsection[{nn\+\_\+efd\+\_\+signal(struct nn\+\_\+efd $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+efd\+\_\+signal (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+efd} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{efd_8h_a2ce35be9dbe2a6a6eb6c778862e9015b}{}\label{efd_8h_a2ce35be9dbe2a6a6eb6c778862e9015b}
+\index{efd.\+h@{efd.\+h}!nn\+\_\+efd\+\_\+term@{nn\+\_\+efd\+\_\+term}}
+\index{nn\+\_\+efd\+\_\+term@{nn\+\_\+efd\+\_\+term}!efd.\+h@{efd.\+h}}
+\subsubsection[{nn\+\_\+efd\+\_\+term(struct nn\+\_\+efd $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+efd\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+efd} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{efd_8h_a79436c17016ce195518e5e9f17fc8366}{}\label{efd_8h_a79436c17016ce195518e5e9f17fc8366}
+\index{efd.\+h@{efd.\+h}!nn\+\_\+efd\+\_\+unsignal@{nn\+\_\+efd\+\_\+unsignal}}
+\index{nn\+\_\+efd\+\_\+unsignal@{nn\+\_\+efd\+\_\+unsignal}!efd.\+h@{efd.\+h}}
+\subsubsection[{nn\+\_\+efd\+\_\+unsignal(struct nn\+\_\+efd $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+efd\+\_\+unsignal (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+efd} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{efd_8h_ac4f98b021533ef487788edcb9edcf95a}{}\label{efd_8h_ac4f98b021533ef487788edcb9edcf95a}
+\index{efd.\+h@{efd.\+h}!nn\+\_\+efd\+\_\+wait@{nn\+\_\+efd\+\_\+wait}}
+\index{nn\+\_\+efd\+\_\+wait@{nn\+\_\+efd\+\_\+wait}!efd.\+h@{efd.\+h}}
+\subsubsection[{nn\+\_\+efd\+\_\+wait(struct nn\+\_\+efd $\ast$self, int timeout)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+efd\+\_\+wait (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+efd} $\ast$}]{self, }
+\item[{int}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{efd_8h_ab27cf262a385d4cd775432f20fbdbe79}{}\label{efd_8h_ab27cf262a385d4cd775432f20fbdbe79}

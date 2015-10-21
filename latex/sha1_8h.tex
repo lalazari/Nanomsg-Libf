@@ -1,0 +1,72 @@
+\hypertarget{sha1_8h}{}\section{src/transports/ws/sha1.h File Reference}
+\label{sha1_8h}\index{src/transports/ws/sha1.\+h@{src/transports/ws/sha1.\+h}}
+{\ttfamily \#include \char`\"{}../../utils/int.\+h\char`\"{}}\\*
+Include dependency graph for sha1.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{sha1_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{sha1_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__sha1}{nn\+\_\+sha1}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sha1_8h_abc253430c98bab25e98aa93483fd6ce7}{S\+H\+A1\+\_\+\+H\+A\+S\+H\+\_\+\+L\+EN}~20
+\item 
+\#define \hyperlink{sha1_8h_ab29ebd3b274e21e96fb89f5993e0ed4b}{S\+H\+A1\+\_\+\+B\+L\+O\+C\+K\+\_\+\+L\+EN}~64
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sha1_8h_acab4386a49da0d60d3deaacd0f54aece}{nn\+\_\+sha1\+\_\+init} (struct \hyperlink{structnn__sha1}{nn\+\_\+sha1} $\ast$self)
+\item 
+void \hyperlink{sha1_8h_a4372c1503d54499b6057560a80cbb610}{nn\+\_\+sha1\+\_\+hashbyte} (struct \hyperlink{structnn__sha1}{nn\+\_\+sha1} $\ast$self, uint8\+\_\+t data)
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{sha1_8h_ab7fccffa6f7b625961ff12571dcc16ba}{nn\+\_\+sha1\+\_\+result} (struct \hyperlink{structnn__sha1}{nn\+\_\+sha1} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{sha1.\+h@{sha1.\+h}!S\+H\+A1\+\_\+\+B\+L\+O\+C\+K\+\_\+\+L\+EN@{S\+H\+A1\+\_\+\+B\+L\+O\+C\+K\+\_\+\+L\+EN}}
+\index{S\+H\+A1\+\_\+\+B\+L\+O\+C\+K\+\_\+\+L\+EN@{S\+H\+A1\+\_\+\+B\+L\+O\+C\+K\+\_\+\+L\+EN}!sha1.\+h@{sha1.\+h}}
+\subsubsection[{S\+H\+A1\+\_\+\+B\+L\+O\+C\+K\+\_\+\+L\+EN}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+A1\+\_\+\+B\+L\+O\+C\+K\+\_\+\+L\+EN~64}\hypertarget{sha1_8h_ab29ebd3b274e21e96fb89f5993e0ed4b}{}\label{sha1_8h_ab29ebd3b274e21e96fb89f5993e0ed4b}
+\index{sha1.\+h@{sha1.\+h}!S\+H\+A1\+\_\+\+H\+A\+S\+H\+\_\+\+L\+EN@{S\+H\+A1\+\_\+\+H\+A\+S\+H\+\_\+\+L\+EN}}
+\index{S\+H\+A1\+\_\+\+H\+A\+S\+H\+\_\+\+L\+EN@{S\+H\+A1\+\_\+\+H\+A\+S\+H\+\_\+\+L\+EN}!sha1.\+h@{sha1.\+h}}
+\subsubsection[{S\+H\+A1\+\_\+\+H\+A\+S\+H\+\_\+\+L\+EN}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+A1\+\_\+\+H\+A\+S\+H\+\_\+\+L\+EN~20}\hypertarget{sha1_8h_abc253430c98bab25e98aa93483fd6ce7}{}\label{sha1_8h_abc253430c98bab25e98aa93483fd6ce7}
+
+
+\subsection{Function Documentation}
+\index{sha1.\+h@{sha1.\+h}!nn\+\_\+sha1\+\_\+hashbyte@{nn\+\_\+sha1\+\_\+hashbyte}}
+\index{nn\+\_\+sha1\+\_\+hashbyte@{nn\+\_\+sha1\+\_\+hashbyte}!sha1.\+h@{sha1.\+h}}
+\subsubsection[{nn\+\_\+sha1\+\_\+hashbyte(struct nn\+\_\+sha1 $\ast$self, uint8\+\_\+t data)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sha1\+\_\+hashbyte (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sha1} $\ast$}]{self, }
+\item[{uint8\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{sha1_8h_a4372c1503d54499b6057560a80cbb610}{}\label{sha1_8h_a4372c1503d54499b6057560a80cbb610}
+\index{sha1.\+h@{sha1.\+h}!nn\+\_\+sha1\+\_\+init@{nn\+\_\+sha1\+\_\+init}}
+\index{nn\+\_\+sha1\+\_\+init@{nn\+\_\+sha1\+\_\+init}!sha1.\+h@{sha1.\+h}}
+\subsubsection[{nn\+\_\+sha1\+\_\+init(struct nn\+\_\+sha1 $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sha1\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sha1} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sha1_8h_acab4386a49da0d60d3deaacd0f54aece}{}\label{sha1_8h_acab4386a49da0d60d3deaacd0f54aece}
+\index{sha1.\+h@{sha1.\+h}!nn\+\_\+sha1\+\_\+result@{nn\+\_\+sha1\+\_\+result}}
+\index{nn\+\_\+sha1\+\_\+result@{nn\+\_\+sha1\+\_\+result}!sha1.\+h@{sha1.\+h}}
+\subsubsection[{nn\+\_\+sha1\+\_\+result(struct nn\+\_\+sha1 $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ nn\+\_\+sha1\+\_\+result (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sha1} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sha1_8h_ab7fccffa6f7b625961ff12571dcc16ba}{}\label{sha1_8h_ab7fccffa6f7b625961ff12571dcc16ba}

@@ -1,0 +1,163 @@
+\hypertarget{ep_8h}{}\section{src/core/ep.h File Reference}
+\label{ep_8h}\index{src/core/ep.\+h@{src/core/ep.\+h}}
+{\ttfamily \#include \char`\"{}../transport.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../aio/fsm.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/list.\+h\char`\"{}}\\*
+Include dependency graph for ep.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ep_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ep_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__ep}{nn\+\_\+ep}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ep_8h_a02edd575e77fc0d69b98c82de0ae92df}{N\+N\+\_\+\+E\+P\+\_\+\+S\+T\+O\+P\+P\+ED}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ep_8h_a184952f801d59965a7d663488fe3042e}{nn\+\_\+ep\+\_\+init} (struct \hyperlink{structnn__ep}{nn\+\_\+ep} $\ast$self, int src, struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$sock, int eid, struct \hyperlink{structnn__transport}{nn\+\_\+transport} $\ast$transport, int bind, const char $\ast$addr)
+\item 
+void \hyperlink{ep_8h_a01476bf96920e5f6006725409d4a878f}{nn\+\_\+ep\+\_\+term} (struct \hyperlink{structnn__ep}{nn\+\_\+ep} $\ast$self)
+\item 
+void \hyperlink{ep_8h_a32ee84a3147f2a9b2cccc90797af9e35}{nn\+\_\+ep\+\_\+start} (struct \hyperlink{structnn__ep}{nn\+\_\+ep} $\ast$self)
+\item 
+void \hyperlink{ep_8h_a65109729a2e518acfc32fb39d8050a68}{nn\+\_\+ep\+\_\+stop} (struct \hyperlink{structnn__ep}{nn\+\_\+ep} $\ast$self)
+\item 
+void \hyperlink{ep_8h_aa37baf05ef9c4904b0f996387df02049}{nn\+\_\+ep\+\_\+stopped} (struct \hyperlink{structnn__ep}{nn\+\_\+ep} $\ast$self)
+\item 
+struct \hyperlink{structnn__ctx}{nn\+\_\+ctx} $\ast$ \hyperlink{ep_8h_a053fb56fbda305460f90b4f5f02479db}{nn\+\_\+ep\+\_\+getctx} (struct \hyperlink{structnn__ep}{nn\+\_\+ep} $\ast$self)
+\item 
+const char $\ast$ \hyperlink{ep_8h_a88dd2edc60c34143f32d5054a2047ebd}{nn\+\_\+ep\+\_\+getaddr} (struct \hyperlink{structnn__ep}{nn\+\_\+ep} $\ast$self)
+\item 
+void \hyperlink{ep_8h_a15a0ddf70bc0c1aea699ed0b3caeec10}{nn\+\_\+ep\+\_\+getopt} (struct \hyperlink{structnn__ep}{nn\+\_\+ep} $\ast$self, int level, int option, void $\ast$optval, size\+\_\+t $\ast$optvallen)
+\item 
+int \hyperlink{ep_8h_a48725aec760dcd62060cc51a4a6083fb}{nn\+\_\+ep\+\_\+ispeer} (struct \hyperlink{structnn__ep}{nn\+\_\+ep} $\ast$self, int socktype)
+\item 
+void \hyperlink{ep_8h_a186810c58465aac3768ad4a3a8dfb6c2}{nn\+\_\+ep\+\_\+set\+\_\+error} (struct \hyperlink{structnn__ep}{nn\+\_\+ep} $\ast$self, int errnum)
+\item 
+void \hyperlink{ep_8h_ab229c649e58a7b8935bcda62df26601f}{nn\+\_\+ep\+\_\+clear\+\_\+error} (struct \hyperlink{structnn__ep}{nn\+\_\+ep} $\ast$self)
+\item 
+void \hyperlink{ep_8h_aeefd7ead91c20e2fe31e8d8c03464aae}{nn\+\_\+ep\+\_\+stat\+\_\+increment} (struct \hyperlink{structnn__ep}{nn\+\_\+ep} $\ast$self, int name, int increment)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{ep.\+h@{ep.\+h}!N\+N\+\_\+\+E\+P\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+E\+P\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+E\+P\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+E\+P\+\_\+\+S\+T\+O\+P\+P\+ED}!ep.\+h@{ep.\+h}}
+\subsubsection[{N\+N\+\_\+\+E\+P\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+E\+P\+\_\+\+S\+T\+O\+P\+P\+ED~1}\hypertarget{ep_8h_a02edd575e77fc0d69b98c82de0ae92df}{}\label{ep_8h_a02edd575e77fc0d69b98c82de0ae92df}
+
+
+\subsection{Function Documentation}
+\index{ep.\+h@{ep.\+h}!nn\+\_\+ep\+\_\+clear\+\_\+error@{nn\+\_\+ep\+\_\+clear\+\_\+error}}
+\index{nn\+\_\+ep\+\_\+clear\+\_\+error@{nn\+\_\+ep\+\_\+clear\+\_\+error}!ep.\+h@{ep.\+h}}
+\subsubsection[{nn\+\_\+ep\+\_\+clear\+\_\+error(struct nn\+\_\+ep $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ep\+\_\+clear\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ep} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ep_8h_ab229c649e58a7b8935bcda62df26601f}{}\label{ep_8h_ab229c649e58a7b8935bcda62df26601f}
+\index{ep.\+h@{ep.\+h}!nn\+\_\+ep\+\_\+getaddr@{nn\+\_\+ep\+\_\+getaddr}}
+\index{nn\+\_\+ep\+\_\+getaddr@{nn\+\_\+ep\+\_\+getaddr}!ep.\+h@{ep.\+h}}
+\subsubsection[{nn\+\_\+ep\+\_\+getaddr(struct nn\+\_\+ep $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ep\+\_\+getaddr (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ep} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ep_8h_a88dd2edc60c34143f32d5054a2047ebd}{}\label{ep_8h_a88dd2edc60c34143f32d5054a2047ebd}
+\index{ep.\+h@{ep.\+h}!nn\+\_\+ep\+\_\+getctx@{nn\+\_\+ep\+\_\+getctx}}
+\index{nn\+\_\+ep\+\_\+getctx@{nn\+\_\+ep\+\_\+getctx}!ep.\+h@{ep.\+h}}
+\subsubsection[{nn\+\_\+ep\+\_\+getctx(struct nn\+\_\+ep $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+ctx}$\ast$ nn\+\_\+ep\+\_\+getctx (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ep} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ep_8h_a053fb56fbda305460f90b4f5f02479db}{}\label{ep_8h_a053fb56fbda305460f90b4f5f02479db}
+\index{ep.\+h@{ep.\+h}!nn\+\_\+ep\+\_\+getopt@{nn\+\_\+ep\+\_\+getopt}}
+\index{nn\+\_\+ep\+\_\+getopt@{nn\+\_\+ep\+\_\+getopt}!ep.\+h@{ep.\+h}}
+\subsubsection[{nn\+\_\+ep\+\_\+getopt(struct nn\+\_\+ep $\ast$self, int level, int option, void $\ast$optval, size\+\_\+t $\ast$optvallen)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ep\+\_\+getopt (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ep} $\ast$}]{self, }
+\item[{int}]{level, }
+\item[{int}]{option, }
+\item[{void $\ast$}]{optval, }
+\item[{size\+\_\+t $\ast$}]{optvallen}
+\end{DoxyParamCaption}
+)}\hypertarget{ep_8h_a15a0ddf70bc0c1aea699ed0b3caeec10}{}\label{ep_8h_a15a0ddf70bc0c1aea699ed0b3caeec10}
+\index{ep.\+h@{ep.\+h}!nn\+\_\+ep\+\_\+init@{nn\+\_\+ep\+\_\+init}}
+\index{nn\+\_\+ep\+\_\+init@{nn\+\_\+ep\+\_\+init}!ep.\+h@{ep.\+h}}
+\subsubsection[{nn\+\_\+ep\+\_\+init(struct nn\+\_\+ep $\ast$self, int src, struct nn\+\_\+sock $\ast$sock, int eid, struct nn\+\_\+transport $\ast$transport, int bind, const char $\ast$addr)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+ep\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ep} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+sock} $\ast$}]{sock, }
+\item[{int}]{eid, }
+\item[{struct {\bf nn\+\_\+transport} $\ast$}]{transport, }
+\item[{int}]{bind, }
+\item[{const char $\ast$}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{ep_8h_a184952f801d59965a7d663488fe3042e}{}\label{ep_8h_a184952f801d59965a7d663488fe3042e}
+\index{ep.\+h@{ep.\+h}!nn\+\_\+ep\+\_\+ispeer@{nn\+\_\+ep\+\_\+ispeer}}
+\index{nn\+\_\+ep\+\_\+ispeer@{nn\+\_\+ep\+\_\+ispeer}!ep.\+h@{ep.\+h}}
+\subsubsection[{nn\+\_\+ep\+\_\+ispeer(struct nn\+\_\+ep $\ast$self, int socktype)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+ep\+\_\+ispeer (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ep} $\ast$}]{self, }
+\item[{int}]{socktype}
+\end{DoxyParamCaption}
+)}\hypertarget{ep_8h_a48725aec760dcd62060cc51a4a6083fb}{}\label{ep_8h_a48725aec760dcd62060cc51a4a6083fb}
+\index{ep.\+h@{ep.\+h}!nn\+\_\+ep\+\_\+set\+\_\+error@{nn\+\_\+ep\+\_\+set\+\_\+error}}
+\index{nn\+\_\+ep\+\_\+set\+\_\+error@{nn\+\_\+ep\+\_\+set\+\_\+error}!ep.\+h@{ep.\+h}}
+\subsubsection[{nn\+\_\+ep\+\_\+set\+\_\+error(struct nn\+\_\+ep $\ast$self, int errnum)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ep\+\_\+set\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ep} $\ast$}]{self, }
+\item[{int}]{errnum}
+\end{DoxyParamCaption}
+)}\hypertarget{ep_8h_a186810c58465aac3768ad4a3a8dfb6c2}{}\label{ep_8h_a186810c58465aac3768ad4a3a8dfb6c2}
+\index{ep.\+h@{ep.\+h}!nn\+\_\+ep\+\_\+start@{nn\+\_\+ep\+\_\+start}}
+\index{nn\+\_\+ep\+\_\+start@{nn\+\_\+ep\+\_\+start}!ep.\+h@{ep.\+h}}
+\subsubsection[{nn\+\_\+ep\+\_\+start(struct nn\+\_\+ep $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ep\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ep} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ep_8h_a32ee84a3147f2a9b2cccc90797af9e35}{}\label{ep_8h_a32ee84a3147f2a9b2cccc90797af9e35}
+\index{ep.\+h@{ep.\+h}!nn\+\_\+ep\+\_\+stat\+\_\+increment@{nn\+\_\+ep\+\_\+stat\+\_\+increment}}
+\index{nn\+\_\+ep\+\_\+stat\+\_\+increment@{nn\+\_\+ep\+\_\+stat\+\_\+increment}!ep.\+h@{ep.\+h}}
+\subsubsection[{nn\+\_\+ep\+\_\+stat\+\_\+increment(struct nn\+\_\+ep $\ast$self, int name, int increment)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ep\+\_\+stat\+\_\+increment (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ep} $\ast$}]{self, }
+\item[{int}]{name, }
+\item[{int}]{increment}
+\end{DoxyParamCaption}
+)}\hypertarget{ep_8h_aeefd7ead91c20e2fe31e8d8c03464aae}{}\label{ep_8h_aeefd7ead91c20e2fe31e8d8c03464aae}
+\index{ep.\+h@{ep.\+h}!nn\+\_\+ep\+\_\+stop@{nn\+\_\+ep\+\_\+stop}}
+\index{nn\+\_\+ep\+\_\+stop@{nn\+\_\+ep\+\_\+stop}!ep.\+h@{ep.\+h}}
+\subsubsection[{nn\+\_\+ep\+\_\+stop(struct nn\+\_\+ep $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ep\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ep} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ep_8h_a65109729a2e518acfc32fb39d8050a68}{}\label{ep_8h_a65109729a2e518acfc32fb39d8050a68}
+\index{ep.\+h@{ep.\+h}!nn\+\_\+ep\+\_\+stopped@{nn\+\_\+ep\+\_\+stopped}}
+\index{nn\+\_\+ep\+\_\+stopped@{nn\+\_\+ep\+\_\+stopped}!ep.\+h@{ep.\+h}}
+\subsubsection[{nn\+\_\+ep\+\_\+stopped(struct nn\+\_\+ep $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ep\+\_\+stopped (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ep} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ep_8h_aa37baf05ef9c4904b0f996387df02049}{}\label{ep_8h_aa37baf05ef9c4904b0f996387df02049}
+\index{ep.\+h@{ep.\+h}!nn\+\_\+ep\+\_\+term@{nn\+\_\+ep\+\_\+term}}
+\index{nn\+\_\+ep\+\_\+term@{nn\+\_\+ep\+\_\+term}!ep.\+h@{ep.\+h}}
+\subsubsection[{nn\+\_\+ep\+\_\+term(struct nn\+\_\+ep $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ep\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ep} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ep_8h_a01476bf96920e5f6006725409d4a878f}{}\label{ep_8h_a01476bf96920e5f6006725409d4a878f}

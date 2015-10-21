@@ -1,0 +1,13 @@
+<map id="tests/ws.c" name="tests/ws.c">
+<area shape="rect" id="node2" href="$nn_8h.html" title="../src/nn.h" alt="" coords="83,304,164,331"/>
+<area shape="rect" id="node5" href="$pair_8h.html" title="../src/pair.h" alt="" coords="33,80,121,107"/>
+<area shape="rect" id="node6" href="$ws_8h.html" title="../src/ws.h" alt="" coords="146,80,229,107"/>
+<area shape="rect" id="node7" href="$int_8h.html" title="utils/int.h" alt="" coords="150,155,225,181"/>
+<area shape="rect" id="node9" href="$testutil_8h.html" title="testutil.h" alt="" coords="356,80,428,107"/>
+<area shape="rect" id="node10" href="$attr_8h.html" title="../src/utils/attr.h" alt="" coords="249,155,364,181"/>
+<area shape="rect" id="node11" href="$err_8c.html" title="../src/utils/err.c" alt="" coords="388,155,498,181"/>
+<area shape="rect" id="node17" href="$sleep_8c.html" title="../src/utils/sleep.c" alt="" coords="523,155,649,181"/>
+<area shape="rect" id="node12" href="$err_8h.html" title="err.h" alt="" coords="420,229,468,256"/>
+<area shape="rect" id="node15" href="$fast_8h.html" title="fast.h" alt="" coords="500,304,554,331"/>
+<area shape="rect" id="node18" href="$sleep_8h.html" title="sleep.h" alt="" coords="522,229,586,256"/>
+</map>

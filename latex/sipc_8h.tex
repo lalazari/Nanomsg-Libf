@@ -1,0 +1,97 @@
+\hypertarget{sipc_8h}{}\section{src/transports/ipc/sipc.h File Reference}
+\label{sipc_8h}\index{src/transports/ipc/sipc.\+h@{src/transports/ipc/sipc.\+h}}
+{\ttfamily \#include \char`\"{}../../transport.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/fsm.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/usock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/streamhdr.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/msg.\+h\char`\"{}}\\*
+Include dependency graph for sipc.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sipc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sipc_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__sipc}{nn\+\_\+sipc}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sipc_8h_aa481ee131b98711d642b5cdafd06d74d}{N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+E\+R\+R\+OR}~1
+\item 
+\#define \hyperlink{sipc_8h_a76a1048e4e69bf48ed85d02373f4127f}{N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED}~2
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sipc_8h_ab81576bed05f12058a4c0fb5ebc96c77}{nn\+\_\+sipc\+\_\+init} (struct \hyperlink{structnn__sipc}{nn\+\_\+sipc} $\ast$self, int src, struct \hyperlink{structnn__epbase}{nn\+\_\+epbase} $\ast$epbase, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{sipc_8h_aefcd5c5e29798f820c91cd95c83beae6}{nn\+\_\+sipc\+\_\+term} (struct \hyperlink{structnn__sipc}{nn\+\_\+sipc} $\ast$self)
+\item 
+int \hyperlink{sipc_8h_a17ffbddac1ee46198e4590c0af66f96c}{nn\+\_\+sipc\+\_\+isidle} (struct \hyperlink{structnn__sipc}{nn\+\_\+sipc} $\ast$self)
+\item 
+void \hyperlink{sipc_8h_a2960e69c6b34c7c6ce5f5ae5d59e7ab7}{nn\+\_\+sipc\+\_\+start} (struct \hyperlink{structnn__sipc}{nn\+\_\+sipc} $\ast$self, struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$usock)
+\item 
+void \hyperlink{sipc_8h_a3081a4f97d9617c77e39042a0094fe3e}{nn\+\_\+sipc\+\_\+stop} (struct \hyperlink{structnn__sipc}{nn\+\_\+sipc} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{sipc.\+h@{sipc.\+h}!N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+E\+R\+R\+OR}}
+\index{N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+E\+R\+R\+OR}!sipc.\+h@{sipc.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+E\+R\+R\+OR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+E\+R\+R\+OR~1}\hypertarget{sipc_8h_aa481ee131b98711d642b5cdafd06d74d}{}\label{sipc_8h_aa481ee131b98711d642b5cdafd06d74d}
+\index{sipc.\+h@{sipc.\+h}!N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED}!sipc.\+h@{sipc.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+I\+P\+C\+\_\+\+S\+T\+O\+P\+P\+ED~2}\hypertarget{sipc_8h_a76a1048e4e69bf48ed85d02373f4127f}{}\label{sipc_8h_a76a1048e4e69bf48ed85d02373f4127f}
+
+
+\subsection{Function Documentation}
+\index{sipc.\+h@{sipc.\+h}!nn\+\_\+sipc\+\_\+init@{nn\+\_\+sipc\+\_\+init}}
+\index{nn\+\_\+sipc\+\_\+init@{nn\+\_\+sipc\+\_\+init}!sipc.\+h@{sipc.\+h}}
+\subsubsection[{nn\+\_\+sipc\+\_\+init(struct nn\+\_\+sipc $\ast$self, int src, struct nn\+\_\+epbase $\ast$epbase, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sipc\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sipc} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+epbase} $\ast$}]{epbase, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{sipc_8h_ab81576bed05f12058a4c0fb5ebc96c77}{}\label{sipc_8h_ab81576bed05f12058a4c0fb5ebc96c77}
+\index{sipc.\+h@{sipc.\+h}!nn\+\_\+sipc\+\_\+isidle@{nn\+\_\+sipc\+\_\+isidle}}
+\index{nn\+\_\+sipc\+\_\+isidle@{nn\+\_\+sipc\+\_\+isidle}!sipc.\+h@{sipc.\+h}}
+\subsubsection[{nn\+\_\+sipc\+\_\+isidle(struct nn\+\_\+sipc $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sipc\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sipc} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sipc_8h_a17ffbddac1ee46198e4590c0af66f96c}{}\label{sipc_8h_a17ffbddac1ee46198e4590c0af66f96c}
+\index{sipc.\+h@{sipc.\+h}!nn\+\_\+sipc\+\_\+start@{nn\+\_\+sipc\+\_\+start}}
+\index{nn\+\_\+sipc\+\_\+start@{nn\+\_\+sipc\+\_\+start}!sipc.\+h@{sipc.\+h}}
+\subsubsection[{nn\+\_\+sipc\+\_\+start(struct nn\+\_\+sipc $\ast$self, struct nn\+\_\+usock $\ast$usock)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sipc\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sipc} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{usock}
+\end{DoxyParamCaption}
+)}\hypertarget{sipc_8h_a2960e69c6b34c7c6ce5f5ae5d59e7ab7}{}\label{sipc_8h_a2960e69c6b34c7c6ce5f5ae5d59e7ab7}
+\index{sipc.\+h@{sipc.\+h}!nn\+\_\+sipc\+\_\+stop@{nn\+\_\+sipc\+\_\+stop}}
+\index{nn\+\_\+sipc\+\_\+stop@{nn\+\_\+sipc\+\_\+stop}!sipc.\+h@{sipc.\+h}}
+\subsubsection[{nn\+\_\+sipc\+\_\+stop(struct nn\+\_\+sipc $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sipc\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sipc} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sipc_8h_a3081a4f97d9617c77e39042a0094fe3e}{}\label{sipc_8h_a3081a4f97d9617c77e39042a0094fe3e}
+\index{sipc.\+h@{sipc.\+h}!nn\+\_\+sipc\+\_\+term@{nn\+\_\+sipc\+\_\+term}}
+\index{nn\+\_\+sipc\+\_\+term@{nn\+\_\+sipc\+\_\+term}!sipc.\+h@{sipc.\+h}}
+\subsubsection[{nn\+\_\+sipc\+\_\+term(struct nn\+\_\+sipc $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sipc\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sipc} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sipc_8h_aefcd5c5e29798f820c91cd95c83beae6}{}\label{sipc_8h_aefcd5c5e29798f820c91cd95c83beae6}

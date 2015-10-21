@@ -1,0 +1,97 @@
+\hypertarget{stcpmux_8h}{}\section{src/transports/tcpmux/stcpmux.h File Reference}
+\label{stcpmux_8h}\index{src/transports/tcpmux/stcpmux.\+h@{src/transports/tcpmux/stcpmux.\+h}}
+{\ttfamily \#include \char`\"{}../../transport.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/fsm.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/usock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/streamhdr.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/msg.\+h\char`\"{}}\\*
+Include dependency graph for stcpmux.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stcpmux_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stcpmux_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__stcpmux}{nn\+\_\+stcpmux}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{stcpmux_8h_aeaa7134ba64a961d596d659b6309a3c6}{N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR}~1
+\item 
+\#define \hyperlink{stcpmux_8h_afd23480cf5756b55b7ec53eb948eeaf2}{N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED}~2
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{stcpmux_8h_aca8355ed12538f65003e56112b9d7dd2}{nn\+\_\+stcpmux\+\_\+init} (struct \hyperlink{structnn__stcpmux}{nn\+\_\+stcpmux} $\ast$self, int src, struct \hyperlink{structnn__epbase}{nn\+\_\+epbase} $\ast$epbase, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{stcpmux_8h_a634afcf257ca40ecb14f9b06cea1f86c}{nn\+\_\+stcpmux\+\_\+term} (struct \hyperlink{structnn__stcpmux}{nn\+\_\+stcpmux} $\ast$self)
+\item 
+int \hyperlink{stcpmux_8h_a1b27ce8361b165d1db1379617e5961af}{nn\+\_\+stcpmux\+\_\+isidle} (struct \hyperlink{structnn__stcpmux}{nn\+\_\+stcpmux} $\ast$self)
+\item 
+void \hyperlink{stcpmux_8h_a99966838fc5c46c7e1940404dcfd0a89}{nn\+\_\+stcpmux\+\_\+start} (struct \hyperlink{structnn__stcpmux}{nn\+\_\+stcpmux} $\ast$self, struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$usock)
+\item 
+void \hyperlink{stcpmux_8h_acfbe8f11efe314926182ab745b0e3cef}{nn\+\_\+stcpmux\+\_\+stop} (struct \hyperlink{structnn__stcpmux}{nn\+\_\+stcpmux} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{stcpmux.\+h@{stcpmux.\+h}!N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR}}
+\index{N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR}!stcpmux.\+h@{stcpmux.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR~1}\hypertarget{stcpmux_8h_aeaa7134ba64a961d596d659b6309a3c6}{}\label{stcpmux_8h_aeaa7134ba64a961d596d659b6309a3c6}
+\index{stcpmux.\+h@{stcpmux.\+h}!N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED}!stcpmux.\+h@{stcpmux.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED~2}\hypertarget{stcpmux_8h_afd23480cf5756b55b7ec53eb948eeaf2}{}\label{stcpmux_8h_afd23480cf5756b55b7ec53eb948eeaf2}
+
+
+\subsection{Function Documentation}
+\index{stcpmux.\+h@{stcpmux.\+h}!nn\+\_\+stcpmux\+\_\+init@{nn\+\_\+stcpmux\+\_\+init}}
+\index{nn\+\_\+stcpmux\+\_\+init@{nn\+\_\+stcpmux\+\_\+init}!stcpmux.\+h@{stcpmux.\+h}}
+\subsubsection[{nn\+\_\+stcpmux\+\_\+init(struct nn\+\_\+stcpmux $\ast$self, int src, struct nn\+\_\+epbase $\ast$epbase, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+stcpmux\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+stcpmux} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+epbase} $\ast$}]{epbase, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{stcpmux_8h_aca8355ed12538f65003e56112b9d7dd2}{}\label{stcpmux_8h_aca8355ed12538f65003e56112b9d7dd2}
+\index{stcpmux.\+h@{stcpmux.\+h}!nn\+\_\+stcpmux\+\_\+isidle@{nn\+\_\+stcpmux\+\_\+isidle}}
+\index{nn\+\_\+stcpmux\+\_\+isidle@{nn\+\_\+stcpmux\+\_\+isidle}!stcpmux.\+h@{stcpmux.\+h}}
+\subsubsection[{nn\+\_\+stcpmux\+\_\+isidle(struct nn\+\_\+stcpmux $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+stcpmux\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+stcpmux} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{stcpmux_8h_a1b27ce8361b165d1db1379617e5961af}{}\label{stcpmux_8h_a1b27ce8361b165d1db1379617e5961af}
+\index{stcpmux.\+h@{stcpmux.\+h}!nn\+\_\+stcpmux\+\_\+start@{nn\+\_\+stcpmux\+\_\+start}}
+\index{nn\+\_\+stcpmux\+\_\+start@{nn\+\_\+stcpmux\+\_\+start}!stcpmux.\+h@{stcpmux.\+h}}
+\subsubsection[{nn\+\_\+stcpmux\+\_\+start(struct nn\+\_\+stcpmux $\ast$self, struct nn\+\_\+usock $\ast$usock)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+stcpmux\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+stcpmux} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{usock}
+\end{DoxyParamCaption}
+)}\hypertarget{stcpmux_8h_a99966838fc5c46c7e1940404dcfd0a89}{}\label{stcpmux_8h_a99966838fc5c46c7e1940404dcfd0a89}
+\index{stcpmux.\+h@{stcpmux.\+h}!nn\+\_\+stcpmux\+\_\+stop@{nn\+\_\+stcpmux\+\_\+stop}}
+\index{nn\+\_\+stcpmux\+\_\+stop@{nn\+\_\+stcpmux\+\_\+stop}!stcpmux.\+h@{stcpmux.\+h}}
+\subsubsection[{nn\+\_\+stcpmux\+\_\+stop(struct nn\+\_\+stcpmux $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+stcpmux\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+stcpmux} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{stcpmux_8h_acfbe8f11efe314926182ab745b0e3cef}{}\label{stcpmux_8h_acfbe8f11efe314926182ab745b0e3cef}
+\index{stcpmux.\+h@{stcpmux.\+h}!nn\+\_\+stcpmux\+\_\+term@{nn\+\_\+stcpmux\+\_\+term}}
+\index{nn\+\_\+stcpmux\+\_\+term@{nn\+\_\+stcpmux\+\_\+term}!stcpmux.\+h@{stcpmux.\+h}}
+\subsubsection[{nn\+\_\+stcpmux\+\_\+term(struct nn\+\_\+stcpmux $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+stcpmux\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+stcpmux} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{stcpmux_8h_a634afcf257ca40ecb14f9b06cea1f86c}{}\label{stcpmux_8h_a634afcf257ca40ecb14f9b06cea1f86c}

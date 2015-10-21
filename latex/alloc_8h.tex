@@ -1,0 +1,86 @@
+\hypertarget{alloc_8h}{}\section{src/utils/alloc.h File Reference}
+\label{alloc_8h}\index{src/utils/alloc.\+h@{src/utils/alloc.\+h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for alloc.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{alloc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alloc_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{alloc_8h_a657c3b34fa38d1d824a28015d4766dc4}{nn\+\_\+alloc}(size,  name)~\hyperlink{alloc_8h_a6966e344a8051206b332e08c58925fa0}{nn\+\_\+alloc\+\_\+}(size)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{alloc_8h_a852fdc75df10b3f3c18d0fe7804677a9}{nn\+\_\+alloc\+\_\+init} (void)
+\item 
+void \hyperlink{alloc_8h_a0ec7481bcdb04256f56a68bdcdd56e3c}{nn\+\_\+alloc\+\_\+term} (void)
+\item 
+void $\ast$ \hyperlink{alloc_8h_a5b5b9a6b44ebe9cc8d483cdcd03a1095}{nn\+\_\+realloc} (void $\ast$ptr, size\+\_\+t size)
+\item 
+void \hyperlink{alloc_8h_a79179388c9277b6594b0329f1c64a26a}{nn\+\_\+free} (void $\ast$ptr)
+\item 
+void $\ast$ \hyperlink{alloc_8h_a6966e344a8051206b332e08c58925fa0}{nn\+\_\+alloc\+\_\+} (size\+\_\+t size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{alloc.\+h@{alloc.\+h}!nn\+\_\+alloc@{nn\+\_\+alloc}}
+\index{nn\+\_\+alloc@{nn\+\_\+alloc}!alloc.\+h@{alloc.\+h}}
+\subsubsection[{nn\+\_\+alloc}]{\setlength{\rightskip}{0pt plus 5cm}\#define nn\+\_\+alloc(
+\begin{DoxyParamCaption}
+\item[{}]{size, }
+\item[{}]{name}
+\end{DoxyParamCaption}
+)~{\bf nn\+\_\+alloc\+\_\+}(size)}\hypertarget{alloc_8h_a657c3b34fa38d1d824a28015d4766dc4}{}\label{alloc_8h_a657c3b34fa38d1d824a28015d4766dc4}
+
+
+\subsection{Function Documentation}
+\index{alloc.\+h@{alloc.\+h}!nn\+\_\+alloc\+\_\+@{nn\+\_\+alloc\+\_\+}}
+\index{nn\+\_\+alloc\+\_\+@{nn\+\_\+alloc\+\_\+}!alloc.\+h@{alloc.\+h}}
+\subsubsection[{nn\+\_\+alloc\+\_\+(size\+\_\+t size)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ nn\+\_\+alloc\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{alloc_8h_a6966e344a8051206b332e08c58925fa0}{}\label{alloc_8h_a6966e344a8051206b332e08c58925fa0}
+\index{alloc.\+h@{alloc.\+h}!nn\+\_\+alloc\+\_\+init@{nn\+\_\+alloc\+\_\+init}}
+\index{nn\+\_\+alloc\+\_\+init@{nn\+\_\+alloc\+\_\+init}!alloc.\+h@{alloc.\+h}}
+\subsubsection[{nn\+\_\+alloc\+\_\+init(void)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+alloc\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{alloc_8h_a852fdc75df10b3f3c18d0fe7804677a9}{}\label{alloc_8h_a852fdc75df10b3f3c18d0fe7804677a9}
+\index{alloc.\+h@{alloc.\+h}!nn\+\_\+alloc\+\_\+term@{nn\+\_\+alloc\+\_\+term}}
+\index{nn\+\_\+alloc\+\_\+term@{nn\+\_\+alloc\+\_\+term}!alloc.\+h@{alloc.\+h}}
+\subsubsection[{nn\+\_\+alloc\+\_\+term(void)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+alloc\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{alloc_8h_a0ec7481bcdb04256f56a68bdcdd56e3c}{}\label{alloc_8h_a0ec7481bcdb04256f56a68bdcdd56e3c}
+\index{alloc.\+h@{alloc.\+h}!nn\+\_\+free@{nn\+\_\+free}}
+\index{nn\+\_\+free@{nn\+\_\+free}!alloc.\+h@{alloc.\+h}}
+\subsubsection[{nn\+\_\+free(void $\ast$ptr)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{alloc_8h_a79179388c9277b6594b0329f1c64a26a}{}\label{alloc_8h_a79179388c9277b6594b0329f1c64a26a}
+\index{alloc.\+h@{alloc.\+h}!nn\+\_\+realloc@{nn\+\_\+realloc}}
+\index{nn\+\_\+realloc@{nn\+\_\+realloc}!alloc.\+h@{alloc.\+h}}
+\subsubsection[{nn\+\_\+realloc(void $\ast$ptr, size\+\_\+t size)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ nn\+\_\+realloc (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{alloc_8h_a5b5b9a6b44ebe9cc8d483cdcd03a1095}{}\label{alloc_8h_a5b5b9a6b44ebe9cc8d483cdcd03a1095}

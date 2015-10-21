@@ -1,0 +1,72 @@
+\hypertarget{structnn__btcpmux}{}\section{nn\+\_\+btcpmux Struct Reference}
+\label{structnn__btcpmux}\index{nn\+\_\+btcpmux@{nn\+\_\+btcpmux}}
+
+
+Collaboration diagram for nn\+\_\+btcpmux\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structnn__btcpmux__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} \hyperlink{structnn__btcpmux_ad05869d3010457846d3f0b4a9dbb61e3}{fsm}
+\item 
+int \hyperlink{structnn__btcpmux_afc599be6405e8a1646274ab3a378ed87}{state}
+\item 
+struct \hyperlink{structnn__epbase}{nn\+\_\+epbase} \hyperlink{structnn__btcpmux_a0228259a8bfcdb9a2f7863ff48e6a7ae}{epbase}
+\item 
+struct \hyperlink{structnn__usock}{nn\+\_\+usock} \hyperlink{structnn__btcpmux_ab566e4fee610dd8580194d14a4ee2417}{usock}
+\item 
+struct \hyperlink{structnn__list}{nn\+\_\+list} \hyperlink{structnn__btcpmux_adf2c3cbed0a8498e5963b3abd45c1408}{atcpmuxes}
+\item 
+struct \hyperlink{structnn__backoff}{nn\+\_\+backoff} \hyperlink{structnn__btcpmux_a910b39218598d10125dd5ff82b33914e}{retry}
+\item 
+const char $\ast$ \hyperlink{structnn__btcpmux_a7b397ca4f026d6da4959f031ff9e759d}{service}
+\item 
+uint16\+\_\+t \hyperlink{structnn__btcpmux_a6908f0b688e86cbab503cec8bae0afbd}{servicelen}
+\item 
+int \hyperlink{structnn__btcpmux_a996d4e690af37aad865017b598a14189}{newfd}
+\item 
+char \hyperlink{structnn__btcpmux_a33ca4d6da08be0f9da1b140f445c30a0}{code}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+btcpmux@{nn\+\_\+btcpmux}!atcpmuxes@{atcpmuxes}}
+\index{atcpmuxes@{atcpmuxes}!nn\+\_\+btcpmux@{nn\+\_\+btcpmux}}
+\subsubsection[{atcpmuxes}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+list} nn\+\_\+btcpmux\+::atcpmuxes}\hypertarget{structnn__btcpmux_adf2c3cbed0a8498e5963b3abd45c1408}{}\label{structnn__btcpmux_adf2c3cbed0a8498e5963b3abd45c1408}
+\index{nn\+\_\+btcpmux@{nn\+\_\+btcpmux}!code@{code}}
+\index{code@{code}!nn\+\_\+btcpmux@{nn\+\_\+btcpmux}}
+\subsubsection[{code}]{\setlength{\rightskip}{0pt plus 5cm}char nn\+\_\+btcpmux\+::code}\hypertarget{structnn__btcpmux_a33ca4d6da08be0f9da1b140f445c30a0}{}\label{structnn__btcpmux_a33ca4d6da08be0f9da1b140f445c30a0}
+\index{nn\+\_\+btcpmux@{nn\+\_\+btcpmux}!epbase@{epbase}}
+\index{epbase@{epbase}!nn\+\_\+btcpmux@{nn\+\_\+btcpmux}}
+\subsubsection[{epbase}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+epbase} nn\+\_\+btcpmux\+::epbase}\hypertarget{structnn__btcpmux_a0228259a8bfcdb9a2f7863ff48e6a7ae}{}\label{structnn__btcpmux_a0228259a8bfcdb9a2f7863ff48e6a7ae}
+\index{nn\+\_\+btcpmux@{nn\+\_\+btcpmux}!fsm@{fsm}}
+\index{fsm@{fsm}!nn\+\_\+btcpmux@{nn\+\_\+btcpmux}}
+\subsubsection[{fsm}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm} nn\+\_\+btcpmux\+::fsm}\hypertarget{structnn__btcpmux_ad05869d3010457846d3f0b4a9dbb61e3}{}\label{structnn__btcpmux_ad05869d3010457846d3f0b4a9dbb61e3}
+\index{nn\+\_\+btcpmux@{nn\+\_\+btcpmux}!newfd@{newfd}}
+\index{newfd@{newfd}!nn\+\_\+btcpmux@{nn\+\_\+btcpmux}}
+\subsubsection[{newfd}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+btcpmux\+::newfd}\hypertarget{structnn__btcpmux_a996d4e690af37aad865017b598a14189}{}\label{structnn__btcpmux_a996d4e690af37aad865017b598a14189}
+\index{nn\+\_\+btcpmux@{nn\+\_\+btcpmux}!retry@{retry}}
+\index{retry@{retry}!nn\+\_\+btcpmux@{nn\+\_\+btcpmux}}
+\subsubsection[{retry}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+backoff} nn\+\_\+btcpmux\+::retry}\hypertarget{structnn__btcpmux_a910b39218598d10125dd5ff82b33914e}{}\label{structnn__btcpmux_a910b39218598d10125dd5ff82b33914e}
+\index{nn\+\_\+btcpmux@{nn\+\_\+btcpmux}!service@{service}}
+\index{service@{service}!nn\+\_\+btcpmux@{nn\+\_\+btcpmux}}
+\subsubsection[{service}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+btcpmux\+::service}\hypertarget{structnn__btcpmux_a7b397ca4f026d6da4959f031ff9e759d}{}\label{structnn__btcpmux_a7b397ca4f026d6da4959f031ff9e759d}
+\index{nn\+\_\+btcpmux@{nn\+\_\+btcpmux}!servicelen@{servicelen}}
+\index{servicelen@{servicelen}!nn\+\_\+btcpmux@{nn\+\_\+btcpmux}}
+\subsubsection[{servicelen}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t nn\+\_\+btcpmux\+::servicelen}\hypertarget{structnn__btcpmux_a6908f0b688e86cbab503cec8bae0afbd}{}\label{structnn__btcpmux_a6908f0b688e86cbab503cec8bae0afbd}
+\index{nn\+\_\+btcpmux@{nn\+\_\+btcpmux}!state@{state}}
+\index{state@{state}!nn\+\_\+btcpmux@{nn\+\_\+btcpmux}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+btcpmux\+::state}\hypertarget{structnn__btcpmux_afc599be6405e8a1646274ab3a378ed87}{}\label{structnn__btcpmux_afc599be6405e8a1646274ab3a378ed87}
+\index{nn\+\_\+btcpmux@{nn\+\_\+btcpmux}!usock@{usock}}
+\index{usock@{usock}!nn\+\_\+btcpmux@{nn\+\_\+btcpmux}}
+\subsubsection[{usock}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+usock} nn\+\_\+btcpmux\+::usock}\hypertarget{structnn__btcpmux_ab566e4fee610dd8580194d14a4ee2417}{}\label{structnn__btcpmux_ab566e4fee610dd8580194d14a4ee2417}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/transports/tcpmux/\hyperlink{btcpmux_8c}{btcpmux.\+c}\end{DoxyCompactItemize}

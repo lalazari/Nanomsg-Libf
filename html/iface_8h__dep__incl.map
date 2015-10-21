@@ -1,0 +1,12 @@
+<map id="src/transports/utils/iface.h" name="src/transports/utils/iface.h">
+<area shape="rect" id="node2" href="$btcp_8c.html" title="src/transports/tcp\l/btcp.c" alt="" coords="5,97,128,138"/>
+<area shape="rect" id="node3" href="$ctcp_8c.html" title="src/transports/tcp\l/ctcp.c" alt="" coords="153,97,276,138"/>
+<area shape="rect" id="node4" href="$src_2transports_2tcp_2tcp_8c.html" title="src/transports/tcp\l/tcp.c" alt="" coords="301,97,424,138"/>
+<area shape="rect" id="node5" href="$btcpmux_8c.html" title="src/transports/tcpmux\l/btcpmux.c" alt="" coords="449,97,599,138"/>
+<area shape="rect" id="node6" href="$ctcpmux_8c.html" title="src/transports/tcpmux\l/ctcpmux.c" alt="" coords="623,97,772,138"/>
+<area shape="rect" id="node7" href="$src_2transports_2tcpmux_2tcpmux_8c.html" title="src/transports/tcpmux\l/tcpmux.c" alt="" coords="796,97,945,138"/>
+<area shape="rect" id="node8" href="$iface_8c.html" title="src/transports/utils\l/iface.c" alt="" coords="969,97,1100,138"/>
+<area shape="rect" id="node9" href="$bws_8c.html" title="src/transports/ws/bws.c" alt="" coords="1124,104,1287,131"/>
+<area shape="rect" id="node10" href="$cws_8c.html" title="src/transports/ws/cws.c" alt="" coords="1311,104,1473,131"/>
+<area shape="rect" id="node11" href="$src_2transports_2ws_2ws_8c.html" title="src/transports/ws/ws.c" alt="" coords="1497,104,1652,131"/>
+</map>

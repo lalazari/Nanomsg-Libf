@@ -1,0 +1,175 @@
+\hypertarget{slibfabric_8c}{}\section{src/transports/libfabric/slibfabric.c File Reference}
+\label{slibfabric_8c}\index{src/transports/libfabric/slibfabric.\+c@{src/transports/libfabric/slibfabric.\+c}}
+{\ttfamily \#include \char`\"{}slibfabric.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/wire.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/int.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/attr.\+h\char`\"{}}\\*
+Include dependency graph for slibfabric.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{slibfabric_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{slibfabric_8c_ad40f2afc85632cec3144b82fd60ea7a9}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+N\+O\+R\+M\+AL}~1
+\item 
+\#define \hyperlink{slibfabric_8c_a68e2a756a0c88cafe3597648690b0530}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+S\+H\+M\+EM}~2
+\item 
+\#define \hyperlink{slibfabric_8c_a81ccdc7ee8e1d028d40edd3fff345d7a}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}~1
+\item 
+\#define \hyperlink{slibfabric_8c_a44e255db565b68c9740846c8770764e0}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+T\+O\+H\+DR}~2
+\item 
+\#define \hyperlink{slibfabric_8c_a365eaba07a1209b4386405c0efc4859b}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR}~3
+\item 
+\#define \hyperlink{slibfabric_8c_a72b7ac51121bf0413c8dd6f0043efc59}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}~4
+\item 
+\#define \hyperlink{slibfabric_8c_ad0733f66a53e14b8181b187b4b86e7c5}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+H\+U\+T\+T\+I\+N\+G\+\_\+\+D\+O\+WN}~5
+\item 
+\#define \hyperlink{slibfabric_8c_a2a6914c748eb931f68f531265892ef96}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+NE}~6
+\item 
+\#define \hyperlink{slibfabric_8c_a00d9ab2f6fcbad467e465e33c83f9df3}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}~7
+\item 
+\#define \hyperlink{slibfabric_8c_a334610a2148f0e0ea3d35ab8cd04ee5a}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK}~1
+\item 
+\#define \hyperlink{slibfabric_8c_a31f069659048f086fb4809f5906fbdd9}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR}~2
+\item 
+\#define \hyperlink{slibfabric_8c_ad2cb9a7966042074d19688587486612e}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+DR}~1
+\item 
+\#define \hyperlink{slibfabric_8c_ad5f3b45d43996373886efc49aafb6e6c}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+B\+O\+DY}~2
+\item 
+\#define \hyperlink{slibfabric_8c_a8d4442ff6fcaf00b53759449fd422a41}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+A\+S\+M\+SG}~3
+\item 
+\#define \hyperlink{slibfabric_8c_a709b32c44f192fdb0d7f25a486d8701c}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}~1
+\item 
+\#define \hyperlink{slibfabric_8c_ac90163c2007ac0d9d9a99a9ca271ac29}{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+S\+E\+N\+D\+I\+NG}~2
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{slibfabric_8c_a4f75ec51b99df7cfe736272ceb17ec1e}{nn\+\_\+slibfabric\+\_\+init} (struct \hyperlink{structnn__slibfabric}{nn\+\_\+slibfabric} $\ast$self, int src, struct \hyperlink{structnn__epbase}{nn\+\_\+epbase} $\ast$epbase, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{slibfabric_8c_a01dce926413f72bb93842fe523507f63}{nn\+\_\+slibfabric\+\_\+term} (struct \hyperlink{structnn__slibfabric}{nn\+\_\+slibfabric} $\ast$self)
+\item 
+int \hyperlink{slibfabric_8c_a773c26ea3aca920c62b4eed3f88bd7a3}{nn\+\_\+slibfabric\+\_\+isidle} (struct \hyperlink{structnn__slibfabric}{nn\+\_\+slibfabric} $\ast$self)
+\item 
+void \hyperlink{slibfabric_8c_a842dbf3ee3ebb7bf5a3c64639df0591c}{nn\+\_\+slibfabric\+\_\+start} (struct \hyperlink{structnn__slibfabric}{nn\+\_\+slibfabric} $\ast$self, struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$usock)
+\item 
+void \hyperlink{slibfabric_8c_a5e4e0294580828521b850542c540ef12}{nn\+\_\+slibfabric\+\_\+stop} (struct \hyperlink{structnn__slibfabric}{nn\+\_\+slibfabric} $\ast$self)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const struct \hyperlink{structnn__pipebase__vfptr}{nn\+\_\+pipebase\+\_\+vfptr} \hyperlink{slibfabric_8c_aa00bee1e4a23b8f0ad3b745d1812dca0}{nn\+\_\+slibfabric\+\_\+pipebase\+\_\+vfptr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+B\+O\+DY@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+B\+O\+DY}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+B\+O\+DY@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+B\+O\+DY}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+B\+O\+DY}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+B\+O\+DY~2}\hypertarget{slibfabric_8c_ad5f3b45d43996373886efc49aafb6e6c}{}\label{slibfabric_8c_ad5f3b45d43996373886efc49aafb6e6c}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+A\+S\+M\+SG@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+A\+S\+M\+SG}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+A\+S\+M\+SG@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+A\+S\+M\+SG}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+A\+S\+M\+SG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+A\+S\+M\+SG~3}\hypertarget{slibfabric_8c_a8d4442ff6fcaf00b53759449fd422a41}{}\label{slibfabric_8c_a8d4442ff6fcaf00b53759449fd422a41}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+DR@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+DR}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+DR@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+DR}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+DR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+I\+N\+S\+T\+A\+T\+E\+\_\+\+H\+DR~1}\hypertarget{slibfabric_8c_ad2cb9a7966042074d19688587486612e}{}\label{slibfabric_8c_ad2cb9a7966042074d19688587486612e}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+N\+O\+R\+M\+AL@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+N\+O\+R\+M\+AL}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+N\+O\+R\+M\+AL@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+N\+O\+R\+M\+AL}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+N\+O\+R\+M\+AL}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+N\+O\+R\+M\+AL~1}\hypertarget{slibfabric_8c_ad40f2afc85632cec3144b82fd60ea7a9}{}\label{slibfabric_8c_ad40f2afc85632cec3144b82fd60ea7a9}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+S\+H\+M\+EM@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+S\+H\+M\+EM}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+S\+H\+M\+EM@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+S\+H\+M\+EM}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+S\+H\+M\+EM}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+M\+S\+G\+\_\+\+S\+H\+M\+EM~2}\hypertarget{slibfabric_8c_a68e2a756a0c88cafe3597648690b0530}{}\label{slibfabric_8c_a68e2a756a0c88cafe3597648690b0530}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE~1}\hypertarget{slibfabric_8c_a709b32c44f192fdb0d7f25a486d8701c}{}\label{slibfabric_8c_a709b32c44f192fdb0d7f25a486d8701c}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+S\+E\+N\+D\+I\+NG@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+S\+E\+N\+D\+I\+NG}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+S\+E\+N\+D\+I\+NG@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+S\+E\+N\+D\+I\+NG}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+S\+E\+N\+D\+I\+NG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+O\+U\+T\+S\+T\+A\+T\+E\+\_\+\+S\+E\+N\+D\+I\+NG~2}\hypertarget{slibfabric_8c_ac90163c2007ac0d9d9a99a9ca271ac29}{}\label{slibfabric_8c_ac90163c2007ac0d9d9a99a9ca271ac29}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR~2}\hypertarget{slibfabric_8c_a31f069659048f086fb4809f5906fbdd9}{}\label{slibfabric_8c_a31f069659048f086fb4809f5906fbdd9}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+R\+C\+\_\+\+U\+S\+O\+CK~1}\hypertarget{slibfabric_8c_a334610a2148f0e0ea3d35ab8cd04ee5a}{}\label{slibfabric_8c_a334610a2148f0e0ea3d35ab8cd04ee5a}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE~4}\hypertarget{slibfabric_8c_a72b7ac51121bf0413c8dd6f0043efc59}{}\label{slibfabric_8c_a72b7ac51121bf0413c8dd6f0043efc59}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+NE@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+NE}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+NE@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+NE}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+NE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+NE~6}\hypertarget{slibfabric_8c_a2a6914c748eb931f68f531265892ef96}{}\label{slibfabric_8c_a2a6914c748eb931f68f531265892ef96}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE~1}\hypertarget{slibfabric_8c_a81ccdc7ee8e1d028d40edd3fff345d7a}{}\label{slibfabric_8c_a81ccdc7ee8e1d028d40edd3fff345d7a}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+T\+O\+H\+DR@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+T\+O\+H\+DR}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+T\+O\+H\+DR@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+T\+O\+H\+DR}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+T\+O\+H\+DR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+T\+O\+H\+DR~2}\hypertarget{slibfabric_8c_a44e255db565b68c9740846c8770764e0}{}\label{slibfabric_8c_a44e255db565b68c9740846c8770764e0}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+H\+U\+T\+T\+I\+N\+G\+\_\+\+D\+O\+WN@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+H\+U\+T\+T\+I\+N\+G\+\_\+\+D\+O\+WN}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+H\+U\+T\+T\+I\+N\+G\+\_\+\+D\+O\+WN@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+H\+U\+T\+T\+I\+N\+G\+\_\+\+D\+O\+WN}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+H\+U\+T\+T\+I\+N\+G\+\_\+\+D\+O\+WN}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+H\+U\+T\+T\+I\+N\+G\+\_\+\+D\+O\+WN~5}\hypertarget{slibfabric_8c_ad0733f66a53e14b8181b187b4b86e7c5}{}\label{slibfabric_8c_ad0733f66a53e14b8181b187b4b86e7c5}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG~7}\hypertarget{slibfabric_8c_a00d9ab2f6fcbad467e465e33c83f9df3}{}\label{slibfabric_8c_a00d9ab2f6fcbad467e465e33c83f9df3}
+\index{slibfabric.\+c@{slibfabric.\+c}!N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR}}
+\index{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR@{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+L\+I\+B\+F\+A\+B\+R\+I\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+S\+T\+R\+E\+A\+M\+H\+DR~3}\hypertarget{slibfabric_8c_a365eaba07a1209b4386405c0efc4859b}{}\label{slibfabric_8c_a365eaba07a1209b4386405c0efc4859b}
+
+
+\subsection{Function Documentation}
+\index{slibfabric.\+c@{slibfabric.\+c}!nn\+\_\+slibfabric\+\_\+init@{nn\+\_\+slibfabric\+\_\+init}}
+\index{nn\+\_\+slibfabric\+\_\+init@{nn\+\_\+slibfabric\+\_\+init}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{nn\+\_\+slibfabric\+\_\+init(struct nn\+\_\+slibfabric $\ast$self, int src, struct nn\+\_\+epbase $\ast$epbase, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+slibfabric\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+slibfabric} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+epbase} $\ast$}]{epbase, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{slibfabric_8c_a4f75ec51b99df7cfe736272ceb17ec1e}{}\label{slibfabric_8c_a4f75ec51b99df7cfe736272ceb17ec1e}
+\index{slibfabric.\+c@{slibfabric.\+c}!nn\+\_\+slibfabric\+\_\+isidle@{nn\+\_\+slibfabric\+\_\+isidle}}
+\index{nn\+\_\+slibfabric\+\_\+isidle@{nn\+\_\+slibfabric\+\_\+isidle}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{nn\+\_\+slibfabric\+\_\+isidle(struct nn\+\_\+slibfabric $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+slibfabric\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+slibfabric} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{slibfabric_8c_a773c26ea3aca920c62b4eed3f88bd7a3}{}\label{slibfabric_8c_a773c26ea3aca920c62b4eed3f88bd7a3}
+\index{slibfabric.\+c@{slibfabric.\+c}!nn\+\_\+slibfabric\+\_\+start@{nn\+\_\+slibfabric\+\_\+start}}
+\index{nn\+\_\+slibfabric\+\_\+start@{nn\+\_\+slibfabric\+\_\+start}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{nn\+\_\+slibfabric\+\_\+start(struct nn\+\_\+slibfabric $\ast$self, struct nn\+\_\+usock $\ast$usock)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+slibfabric\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+slibfabric} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{usock}
+\end{DoxyParamCaption}
+)}\hypertarget{slibfabric_8c_a842dbf3ee3ebb7bf5a3c64639df0591c}{}\label{slibfabric_8c_a842dbf3ee3ebb7bf5a3c64639df0591c}
+\index{slibfabric.\+c@{slibfabric.\+c}!nn\+\_\+slibfabric\+\_\+stop@{nn\+\_\+slibfabric\+\_\+stop}}
+\index{nn\+\_\+slibfabric\+\_\+stop@{nn\+\_\+slibfabric\+\_\+stop}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{nn\+\_\+slibfabric\+\_\+stop(struct nn\+\_\+slibfabric $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+slibfabric\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+slibfabric} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{slibfabric_8c_a5e4e0294580828521b850542c540ef12}{}\label{slibfabric_8c_a5e4e0294580828521b850542c540ef12}
+\index{slibfabric.\+c@{slibfabric.\+c}!nn\+\_\+slibfabric\+\_\+term@{nn\+\_\+slibfabric\+\_\+term}}
+\index{nn\+\_\+slibfabric\+\_\+term@{nn\+\_\+slibfabric\+\_\+term}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{nn\+\_\+slibfabric\+\_\+term(struct nn\+\_\+slibfabric $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+slibfabric\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+slibfabric} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{slibfabric_8c_a01dce926413f72bb93842fe523507f63}{}\label{slibfabric_8c_a01dce926413f72bb93842fe523507f63}
+
+
+\subsection{Variable Documentation}
+\index{slibfabric.\+c@{slibfabric.\+c}!nn\+\_\+slibfabric\+\_\+pipebase\+\_\+vfptr@{nn\+\_\+slibfabric\+\_\+pipebase\+\_\+vfptr}}
+\index{nn\+\_\+slibfabric\+\_\+pipebase\+\_\+vfptr@{nn\+\_\+slibfabric\+\_\+pipebase\+\_\+vfptr}!slibfabric.\+c@{slibfabric.\+c}}
+\subsubsection[{nn\+\_\+slibfabric\+\_\+pipebase\+\_\+vfptr}]{\setlength{\rightskip}{0pt plus 5cm}const struct {\bf nn\+\_\+pipebase\+\_\+vfptr} nn\+\_\+slibfabric\+\_\+pipebase\+\_\+vfptr}\hypertarget{slibfabric_8c_aa00bee1e4a23b8f0ad3b745d1812dca0}{}\label{slibfabric_8c_aa00bee1e4a23b8f0ad3b745d1812dca0}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    nn\_slibfabric\_send,
+    nn\_slibfabric\_recv
+\}
+\end{DoxyCode}

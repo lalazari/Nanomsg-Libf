@@ -1,0 +1,76 @@
+\hypertarget{tcp__shutdown_8c}{}\section{tests/tcp\+\_\+shutdown.c File Reference}
+\label{tcp__shutdown_8c}\index{tests/tcp\+\_\+shutdown.\+c@{tests/tcp\+\_\+shutdown.\+c}}
+{\ttfamily \#include \char`\"{}../src/nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/pair.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/pubsub.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/pipeline.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/tcp.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}testutil.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/utils/attr.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/utils/thread.\+c\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/utils/atomic.\+c\char`\"{}}\\*
+Include dependency graph for tcp\+\_\+shutdown.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tcp__shutdown_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{tcp__shutdown_8c_ae4f10e3506669382a3a5b19ce7a5eb7c}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT}~100
+\item 
+\#define \hyperlink{tcp__shutdown_8c_a4c1a0241cde68521eaaa6f6d8db431e2}{T\+E\+S\+T2\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT}~10
+\item 
+\#define \hyperlink{tcp__shutdown_8c_a417e614bd2df80c04c3cb6ece30adc1c}{M\+E\+S\+S\+A\+G\+E\+S\+\_\+\+P\+E\+R\+\_\+\+T\+H\+R\+E\+AD}~10
+\item 
+\#define \hyperlink{tcp__shutdown_8c_a277905f4a4be4b9e7d4144f9b938d516}{T\+E\+S\+T\+\_\+\+L\+O\+O\+PS}~10
+\item 
+\#define \hyperlink{tcp__shutdown_8c_a8cccdb3b239ce7cf58e9781af267072b}{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}~\char`\"{}tcp\+://127.\+0.\+0.\+1\+:5557\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{tcp__shutdown_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__atomic}{nn\+\_\+atomic} \hyperlink{tcp__shutdown_8c_aee421ea980c268ec591245d095ae224f}{active}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}!M\+E\+S\+S\+A\+G\+E\+S\+\_\+\+P\+E\+R\+\_\+\+T\+H\+R\+E\+AD@{M\+E\+S\+S\+A\+G\+E\+S\+\_\+\+P\+E\+R\+\_\+\+T\+H\+R\+E\+AD}}
+\index{M\+E\+S\+S\+A\+G\+E\+S\+\_\+\+P\+E\+R\+\_\+\+T\+H\+R\+E\+AD@{M\+E\+S\+S\+A\+G\+E\+S\+\_\+\+P\+E\+R\+\_\+\+T\+H\+R\+E\+AD}!tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}}
+\subsubsection[{M\+E\+S\+S\+A\+G\+E\+S\+\_\+\+P\+E\+R\+\_\+\+T\+H\+R\+E\+AD}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+E\+S\+S\+A\+G\+E\+S\+\_\+\+P\+E\+R\+\_\+\+T\+H\+R\+E\+AD~10}\hypertarget{tcp__shutdown_8c_a417e614bd2df80c04c3cb6ece30adc1c}{}\label{tcp__shutdown_8c_a417e614bd2df80c04c3cb6ece30adc1c}
+\index{tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}!S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}!tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}}
+\subsubsection[{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS~\char`\"{}tcp\+://127.\+0.\+0.\+1\+:5557\char`\"{}}\hypertarget{tcp__shutdown_8c_a8cccdb3b239ce7cf58e9781af267072b}{}\label{tcp__shutdown_8c_a8cccdb3b239ce7cf58e9781af267072b}
+\index{tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}!T\+E\+S\+T2\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT@{T\+E\+S\+T2\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT}}
+\index{T\+E\+S\+T2\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT@{T\+E\+S\+T2\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT}!tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}}
+\subsubsection[{T\+E\+S\+T2\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+S\+T2\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT~10}\hypertarget{tcp__shutdown_8c_a4c1a0241cde68521eaaa6f6d8db431e2}{}\label{tcp__shutdown_8c_a4c1a0241cde68521eaaa6f6d8db431e2}
+\index{tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}!T\+E\+S\+T\+\_\+\+L\+O\+O\+PS@{T\+E\+S\+T\+\_\+\+L\+O\+O\+PS}}
+\index{T\+E\+S\+T\+\_\+\+L\+O\+O\+PS@{T\+E\+S\+T\+\_\+\+L\+O\+O\+PS}!tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}}
+\subsubsection[{T\+E\+S\+T\+\_\+\+L\+O\+O\+PS}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+S\+T\+\_\+\+L\+O\+O\+PS~10}\hypertarget{tcp__shutdown_8c_a277905f4a4be4b9e7d4144f9b938d516}{}\label{tcp__shutdown_8c_a277905f4a4be4b9e7d4144f9b938d516}
+\index{tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}!T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT@{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT}}
+\index{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT@{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT}!tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}}
+\subsubsection[{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT~100}\hypertarget{tcp__shutdown_8c_ae4f10e3506669382a3a5b19ce7a5eb7c}{}\label{tcp__shutdown_8c_ae4f10e3506669382a3a5b19ce7a5eb7c}
+
+
+\subsection{Function Documentation}
+\index{tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}!main@{main}}
+\index{main@{main}!tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}}
+\subsubsection[{main()}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tcp__shutdown_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{tcp__shutdown_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+\subsection{Variable Documentation}
+\index{tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}!active@{active}}
+\index{active@{active}!tcp\+\_\+shutdown.\+c@{tcp\+\_\+shutdown.\+c}}
+\subsubsection[{active}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+atomic} active}\hypertarget{tcp__shutdown_8c_aee421ea980c268ec591245d095ae224f}{}\label{tcp__shutdown_8c_aee421ea980c268ec591245d095ae224f}

@@ -1,0 +1,246 @@
+\hypertarget{structnn__ws__handshake}{}\section{nn\+\_\+ws\+\_\+handshake Struct Reference}
+\label{structnn__ws__handshake}\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+
+
+{\ttfamily \#include $<$ws\+\_\+handshake.\+h$>$}
+
+
+
+Collaboration diagram for nn\+\_\+ws\+\_\+handshake\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structnn__ws__handshake__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} \hyperlink{structnn__ws__handshake_aa80c61adc0dc7a0231487fb769050e65}{fsm}
+\item 
+int \hyperlink{structnn__ws__handshake_ab97b3c075f8b24eed4e04b491ad7cf06}{state}
+\item 
+int \hyperlink{structnn__ws__handshake_a15288545ca40c9759a9f75bff1c53709}{mode}
+\item 
+struct \hyperlink{structnn__timer}{nn\+\_\+timer} \hyperlink{structnn__ws__handshake_ae3a442388d2724d46575eb9de36224fa}{timer}
+\item 
+int \hyperlink{structnn__ws__handshake_a7f914e8dc5832e38d64f383af5e37942}{timeout}
+\item 
+struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$ \hyperlink{structnn__ws__handshake_aafe5096050974f37b482331217a97d02}{usock}
+\item 
+struct \hyperlink{structnn__fsm__owner}{nn\+\_\+fsm\+\_\+owner} \hyperlink{structnn__ws__handshake_a464dff1c646c33536bb1b38e66632866}{usock\+\_\+owner}
+\item 
+struct \hyperlink{structnn__pipebase}{nn\+\_\+pipebase} $\ast$ \hyperlink{structnn__ws__handshake_a8cf713ab9292e7a6019d192004ef7c38}{pipebase}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_aa3fee6149a01e22d561b247ca393e933}{resource}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_a67458638c68ae77cdb160d37ebbf6070}{remote\+\_\+host}
+\item 
+char \hyperlink{structnn__ws__handshake_a517c18c19321c84f50b5db3bc54df51e}{opening\+\_\+hs} \mbox{[}\hyperlink{ws__handshake_8h_a69ce694d268a249264eced5ef505d018}{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+int \hyperlink{structnn__ws__handshake_a0e398b73cc863d25a21c8e83024adf9a}{retries}
+\item 
+int \hyperlink{structnn__ws__handshake_ae6cf4d8f60004838480ef0f76e263906}{recv\+\_\+pos}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_af82168d1f0322e6f902b99f9632b7871}{recv\+\_\+len}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_a6e149d454f1591b67a2e8f3c473a8544}{host}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_a3fcda23dfc0cbfb4735e98641550994c}{host\+\_\+len}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_a5c331996ce021b6ea02a7b200a5df48d}{origin}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_abf46ff8c803a47842c664d190231a71f}{origin\+\_\+len}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_a813b1dff0fd69dcd24e3fc3d7192c264}{key}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_acb2918c6c1c39d65226c5ba4b7c465c1}{key\+\_\+len}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_adf65e6d5c2c1b72c6ef7e866946ace1e}{upgrade}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_a97b63de5debf69884b865c0f43ea246c}{upgrade\+\_\+len}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_a39e9cea471ac3688cc9911c763328205}{conn}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_a269c67abfd22c22f4a9574fe6385f085}{conn\+\_\+len}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_a48a9a5ca67775c6a84e470550a0a2693}{version}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_a03669e42c930987c0b22fb800a8bb99f}{version\+\_\+len}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_ad5fe69ee577cb19eba0750c7bf22bc3b}{protocol}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_a732ca68ff4d0194fee2bee4976107f22}{protocol\+\_\+len}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_ac7abcd6b36ed3b067c85dc1befed1276}{server}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_a591115fd65e49df25abd07502ccdeee6}{server\+\_\+len}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_a232c6eea32e0d68c40af288537aa71f8}{accept\+\_\+key}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_ae4b845cff494c6c1fb5884f8ed3ebd8c}{accept\+\_\+key\+\_\+len}
+\item 
+char \hyperlink{structnn__ws__handshake_a6900b8db78f0e831cc5cbb88cbfa2756}{expected\+\_\+accept\+\_\+key} \mbox{[}\hyperlink{ws__handshake_8h_a0e0823af286def8ab04c551a94cafaf6}{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+K\+E\+Y\+\_\+\+L\+EN}+1\mbox{]}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_af78bc2f401a7685aa775c418cc02caea}{status\+\_\+code}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_a3f3ce6da3070b1fd8257c097ced20ee7}{status\+\_\+code\+\_\+len}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_a5767b466d666d242eaf8867ba643ead6}{reason\+\_\+phrase}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_a380f0a37eb17376ef276eb81f8d9078b}{reason\+\_\+phrase\+\_\+len}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_a740db748995241b2322b3e3fba7d413f}{uri}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_aadf45c47c57915ff53b8465f9548ef7a}{uri\+\_\+len}
+\item 
+const char $\ast$ \hyperlink{structnn__ws__handshake_a06b381413703475f05d6007c12572005}{extensions}
+\item 
+size\+\_\+t \hyperlink{structnn__ws__handshake_a728de6886e84d680f7b461a1a9811e87}{extensions\+\_\+len}
+\item 
+int \hyperlink{structnn__ws__handshake_a927e74042f958433c47490c7e3aa18dc}{response\+\_\+code}
+\item 
+char \hyperlink{structnn__ws__handshake_a4ccc152559b66bb3be8c631c1d8d50ae}{response} \mbox{[}512\mbox{]}
+\item 
+struct \hyperlink{structnn__fsm__event}{nn\+\_\+fsm\+\_\+event} \hyperlink{structnn__ws__handshake_a29e3a8e55ea0e660734b1e242d1e6e1f}{done}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!accept\+\_\+key@{accept\+\_\+key}}
+\index{accept\+\_\+key@{accept\+\_\+key}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{accept\+\_\+key}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::accept\+\_\+key}\hypertarget{structnn__ws__handshake_a232c6eea32e0d68c40af288537aa71f8}{}\label{structnn__ws__handshake_a232c6eea32e0d68c40af288537aa71f8}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!accept\+\_\+key\+\_\+len@{accept\+\_\+key\+\_\+len}}
+\index{accept\+\_\+key\+\_\+len@{accept\+\_\+key\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{accept\+\_\+key\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::accept\+\_\+key\+\_\+len}\hypertarget{structnn__ws__handshake_ae4b845cff494c6c1fb5884f8ed3ebd8c}{}\label{structnn__ws__handshake_ae4b845cff494c6c1fb5884f8ed3ebd8c}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!conn@{conn}}
+\index{conn@{conn}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{conn}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::conn}\hypertarget{structnn__ws__handshake_a39e9cea471ac3688cc9911c763328205}{}\label{structnn__ws__handshake_a39e9cea471ac3688cc9911c763328205}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!conn\+\_\+len@{conn\+\_\+len}}
+\index{conn\+\_\+len@{conn\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{conn\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::conn\+\_\+len}\hypertarget{structnn__ws__handshake_a269c67abfd22c22f4a9574fe6385f085}{}\label{structnn__ws__handshake_a269c67abfd22c22f4a9574fe6385f085}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!done@{done}}
+\index{done@{done}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{done}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+event} nn\+\_\+ws\+\_\+handshake\+::done}\hypertarget{structnn__ws__handshake_a29e3a8e55ea0e660734b1e242d1e6e1f}{}\label{structnn__ws__handshake_a29e3a8e55ea0e660734b1e242d1e6e1f}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!expected\+\_\+accept\+\_\+key@{expected\+\_\+accept\+\_\+key}}
+\index{expected\+\_\+accept\+\_\+key@{expected\+\_\+accept\+\_\+key}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{expected\+\_\+accept\+\_\+key}]{\setlength{\rightskip}{0pt plus 5cm}char nn\+\_\+ws\+\_\+handshake\+::expected\+\_\+accept\+\_\+key\mbox{[}{\bf N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+K\+E\+Y\+\_\+\+L\+EN}+1\mbox{]}}\hypertarget{structnn__ws__handshake_a6900b8db78f0e831cc5cbb88cbfa2756}{}\label{structnn__ws__handshake_a6900b8db78f0e831cc5cbb88cbfa2756}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!extensions@{extensions}}
+\index{extensions@{extensions}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{extensions}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::extensions}\hypertarget{structnn__ws__handshake_a06b381413703475f05d6007c12572005}{}\label{structnn__ws__handshake_a06b381413703475f05d6007c12572005}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!extensions\+\_\+len@{extensions\+\_\+len}}
+\index{extensions\+\_\+len@{extensions\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{extensions\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::extensions\+\_\+len}\hypertarget{structnn__ws__handshake_a728de6886e84d680f7b461a1a9811e87}{}\label{structnn__ws__handshake_a728de6886e84d680f7b461a1a9811e87}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!fsm@{fsm}}
+\index{fsm@{fsm}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{fsm}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm} nn\+\_\+ws\+\_\+handshake\+::fsm}\hypertarget{structnn__ws__handshake_aa80c61adc0dc7a0231487fb769050e65}{}\label{structnn__ws__handshake_aa80c61adc0dc7a0231487fb769050e65}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!host@{host}}
+\index{host@{host}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{host}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::host}\hypertarget{structnn__ws__handshake_a6e149d454f1591b67a2e8f3c473a8544}{}\label{structnn__ws__handshake_a6e149d454f1591b67a2e8f3c473a8544}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!host\+\_\+len@{host\+\_\+len}}
+\index{host\+\_\+len@{host\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{host\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::host\+\_\+len}\hypertarget{structnn__ws__handshake_a3fcda23dfc0cbfb4735e98641550994c}{}\label{structnn__ws__handshake_a3fcda23dfc0cbfb4735e98641550994c}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!key@{key}}
+\index{key@{key}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{key}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::key}\hypertarget{structnn__ws__handshake_a813b1dff0fd69dcd24e3fc3d7192c264}{}\label{structnn__ws__handshake_a813b1dff0fd69dcd24e3fc3d7192c264}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!key\+\_\+len@{key\+\_\+len}}
+\index{key\+\_\+len@{key\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{key\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::key\+\_\+len}\hypertarget{structnn__ws__handshake_acb2918c6c1c39d65226c5ba4b7c465c1}{}\label{structnn__ws__handshake_acb2918c6c1c39d65226c5ba4b7c465c1}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!mode@{mode}}
+\index{mode@{mode}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{mode}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+ws\+\_\+handshake\+::mode}\hypertarget{structnn__ws__handshake_a15288545ca40c9759a9f75bff1c53709}{}\label{structnn__ws__handshake_a15288545ca40c9759a9f75bff1c53709}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!opening\+\_\+hs@{opening\+\_\+hs}}
+\index{opening\+\_\+hs@{opening\+\_\+hs}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{opening\+\_\+hs}]{\setlength{\rightskip}{0pt plus 5cm}char nn\+\_\+ws\+\_\+handshake\+::opening\+\_\+hs\mbox{[}{\bf N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE}\mbox{]}}\hypertarget{structnn__ws__handshake_a517c18c19321c84f50b5db3bc54df51e}{}\label{structnn__ws__handshake_a517c18c19321c84f50b5db3bc54df51e}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!origin@{origin}}
+\index{origin@{origin}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{origin}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::origin}\hypertarget{structnn__ws__handshake_a5c331996ce021b6ea02a7b200a5df48d}{}\label{structnn__ws__handshake_a5c331996ce021b6ea02a7b200a5df48d}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!origin\+\_\+len@{origin\+\_\+len}}
+\index{origin\+\_\+len@{origin\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{origin\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::origin\+\_\+len}\hypertarget{structnn__ws__handshake_abf46ff8c803a47842c664d190231a71f}{}\label{structnn__ws__handshake_abf46ff8c803a47842c664d190231a71f}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!pipebase@{pipebase}}
+\index{pipebase@{pipebase}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{pipebase}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+pipebase}$\ast$ nn\+\_\+ws\+\_\+handshake\+::pipebase}\hypertarget{structnn__ws__handshake_a8cf713ab9292e7a6019d192004ef7c38}{}\label{structnn__ws__handshake_a8cf713ab9292e7a6019d192004ef7c38}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!protocol@{protocol}}
+\index{protocol@{protocol}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{protocol}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::protocol}\hypertarget{structnn__ws__handshake_ad5fe69ee577cb19eba0750c7bf22bc3b}{}\label{structnn__ws__handshake_ad5fe69ee577cb19eba0750c7bf22bc3b}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!protocol\+\_\+len@{protocol\+\_\+len}}
+\index{protocol\+\_\+len@{protocol\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{protocol\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::protocol\+\_\+len}\hypertarget{structnn__ws__handshake_a732ca68ff4d0194fee2bee4976107f22}{}\label{structnn__ws__handshake_a732ca68ff4d0194fee2bee4976107f22}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!reason\+\_\+phrase@{reason\+\_\+phrase}}
+\index{reason\+\_\+phrase@{reason\+\_\+phrase}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{reason\+\_\+phrase}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::reason\+\_\+phrase}\hypertarget{structnn__ws__handshake_a5767b466d666d242eaf8867ba643ead6}{}\label{structnn__ws__handshake_a5767b466d666d242eaf8867ba643ead6}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!reason\+\_\+phrase\+\_\+len@{reason\+\_\+phrase\+\_\+len}}
+\index{reason\+\_\+phrase\+\_\+len@{reason\+\_\+phrase\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{reason\+\_\+phrase\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::reason\+\_\+phrase\+\_\+len}\hypertarget{structnn__ws__handshake_a380f0a37eb17376ef276eb81f8d9078b}{}\label{structnn__ws__handshake_a380f0a37eb17376ef276eb81f8d9078b}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!recv\+\_\+len@{recv\+\_\+len}}
+\index{recv\+\_\+len@{recv\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{recv\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::recv\+\_\+len}\hypertarget{structnn__ws__handshake_af82168d1f0322e6f902b99f9632b7871}{}\label{structnn__ws__handshake_af82168d1f0322e6f902b99f9632b7871}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!recv\+\_\+pos@{recv\+\_\+pos}}
+\index{recv\+\_\+pos@{recv\+\_\+pos}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{recv\+\_\+pos}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+ws\+\_\+handshake\+::recv\+\_\+pos}\hypertarget{structnn__ws__handshake_ae6cf4d8f60004838480ef0f76e263906}{}\label{structnn__ws__handshake_ae6cf4d8f60004838480ef0f76e263906}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!remote\+\_\+host@{remote\+\_\+host}}
+\index{remote\+\_\+host@{remote\+\_\+host}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{remote\+\_\+host}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::remote\+\_\+host}\hypertarget{structnn__ws__handshake_a67458638c68ae77cdb160d37ebbf6070}{}\label{structnn__ws__handshake_a67458638c68ae77cdb160d37ebbf6070}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!resource@{resource}}
+\index{resource@{resource}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{resource}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::resource}\hypertarget{structnn__ws__handshake_aa3fee6149a01e22d561b247ca393e933}{}\label{structnn__ws__handshake_aa3fee6149a01e22d561b247ca393e933}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!response@{response}}
+\index{response@{response}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{response}]{\setlength{\rightskip}{0pt plus 5cm}char nn\+\_\+ws\+\_\+handshake\+::response\mbox{[}512\mbox{]}}\hypertarget{structnn__ws__handshake_a4ccc152559b66bb3be8c631c1d8d50ae}{}\label{structnn__ws__handshake_a4ccc152559b66bb3be8c631c1d8d50ae}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!response\+\_\+code@{response\+\_\+code}}
+\index{response\+\_\+code@{response\+\_\+code}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{response\+\_\+code}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+ws\+\_\+handshake\+::response\+\_\+code}\hypertarget{structnn__ws__handshake_a927e74042f958433c47490c7e3aa18dc}{}\label{structnn__ws__handshake_a927e74042f958433c47490c7e3aa18dc}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!retries@{retries}}
+\index{retries@{retries}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{retries}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+ws\+\_\+handshake\+::retries}\hypertarget{structnn__ws__handshake_a0e398b73cc863d25a21c8e83024adf9a}{}\label{structnn__ws__handshake_a0e398b73cc863d25a21c8e83024adf9a}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!server@{server}}
+\index{server@{server}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{server}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::server}\hypertarget{structnn__ws__handshake_ac7abcd6b36ed3b067c85dc1befed1276}{}\label{structnn__ws__handshake_ac7abcd6b36ed3b067c85dc1befed1276}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!server\+\_\+len@{server\+\_\+len}}
+\index{server\+\_\+len@{server\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{server\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::server\+\_\+len}\hypertarget{structnn__ws__handshake_a591115fd65e49df25abd07502ccdeee6}{}\label{structnn__ws__handshake_a591115fd65e49df25abd07502ccdeee6}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!state@{state}}
+\index{state@{state}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+ws\+\_\+handshake\+::state}\hypertarget{structnn__ws__handshake_ab97b3c075f8b24eed4e04b491ad7cf06}{}\label{structnn__ws__handshake_ab97b3c075f8b24eed4e04b491ad7cf06}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!status\+\_\+code@{status\+\_\+code}}
+\index{status\+\_\+code@{status\+\_\+code}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{status\+\_\+code}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::status\+\_\+code}\hypertarget{structnn__ws__handshake_af78bc2f401a7685aa775c418cc02caea}{}\label{structnn__ws__handshake_af78bc2f401a7685aa775c418cc02caea}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!status\+\_\+code\+\_\+len@{status\+\_\+code\+\_\+len}}
+\index{status\+\_\+code\+\_\+len@{status\+\_\+code\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{status\+\_\+code\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::status\+\_\+code\+\_\+len}\hypertarget{structnn__ws__handshake_a3f3ce6da3070b1fd8257c097ced20ee7}{}\label{structnn__ws__handshake_a3f3ce6da3070b1fd8257c097ced20ee7}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!timeout@{timeout}}
+\index{timeout@{timeout}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{timeout}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+ws\+\_\+handshake\+::timeout}\hypertarget{structnn__ws__handshake_a7f914e8dc5832e38d64f383af5e37942}{}\label{structnn__ws__handshake_a7f914e8dc5832e38d64f383af5e37942}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!timer@{timer}}
+\index{timer@{timer}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{timer}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+timer} nn\+\_\+ws\+\_\+handshake\+::timer}\hypertarget{structnn__ws__handshake_ae3a442388d2724d46575eb9de36224fa}{}\label{structnn__ws__handshake_ae3a442388d2724d46575eb9de36224fa}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!upgrade@{upgrade}}
+\index{upgrade@{upgrade}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{upgrade}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::upgrade}\hypertarget{structnn__ws__handshake_adf65e6d5c2c1b72c6ef7e866946ace1e}{}\label{structnn__ws__handshake_adf65e6d5c2c1b72c6ef7e866946ace1e}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!upgrade\+\_\+len@{upgrade\+\_\+len}}
+\index{upgrade\+\_\+len@{upgrade\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{upgrade\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::upgrade\+\_\+len}\hypertarget{structnn__ws__handshake_a97b63de5debf69884b865c0f43ea246c}{}\label{structnn__ws__handshake_a97b63de5debf69884b865c0f43ea246c}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!uri@{uri}}
+\index{uri@{uri}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{uri}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::uri}\hypertarget{structnn__ws__handshake_a740db748995241b2322b3e3fba7d413f}{}\label{structnn__ws__handshake_a740db748995241b2322b3e3fba7d413f}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!uri\+\_\+len@{uri\+\_\+len}}
+\index{uri\+\_\+len@{uri\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{uri\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::uri\+\_\+len}\hypertarget{structnn__ws__handshake_aadf45c47c57915ff53b8465f9548ef7a}{}\label{structnn__ws__handshake_aadf45c47c57915ff53b8465f9548ef7a}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!usock@{usock}}
+\index{usock@{usock}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{usock}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+usock}$\ast$ nn\+\_\+ws\+\_\+handshake\+::usock}\hypertarget{structnn__ws__handshake_aafe5096050974f37b482331217a97d02}{}\label{structnn__ws__handshake_aafe5096050974f37b482331217a97d02}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!usock\+\_\+owner@{usock\+\_\+owner}}
+\index{usock\+\_\+owner@{usock\+\_\+owner}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{usock\+\_\+owner}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+owner} nn\+\_\+ws\+\_\+handshake\+::usock\+\_\+owner}\hypertarget{structnn__ws__handshake_a464dff1c646c33536bb1b38e66632866}{}\label{structnn__ws__handshake_a464dff1c646c33536bb1b38e66632866}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!version@{version}}
+\index{version@{version}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ nn\+\_\+ws\+\_\+handshake\+::version}\hypertarget{structnn__ws__handshake_a48a9a5ca67775c6a84e470550a0a2693}{}\label{structnn__ws__handshake_a48a9a5ca67775c6a84e470550a0a2693}
+\index{nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}!version\+\_\+len@{version\+\_\+len}}
+\index{version\+\_\+len@{version\+\_\+len}!nn\+\_\+ws\+\_\+handshake@{nn\+\_\+ws\+\_\+handshake}}
+\subsubsection[{version\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t nn\+\_\+ws\+\_\+handshake\+::version\+\_\+len}\hypertarget{structnn__ws__handshake_a03669e42c930987c0b22fb800a8bb99f}{}\label{structnn__ws__handshake_a03669e42c930987c0b22fb800a8bb99f}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/transports/ws/\hyperlink{ws__handshake_8h}{ws\+\_\+handshake.\+h}\end{DoxyCompactItemize}

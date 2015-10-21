@@ -1,0 +1,61 @@
+\hypertarget{structnn__device__recipe}{}\section{nn\+\_\+device\+\_\+recipe Struct Reference}
+\label{structnn__device__recipe}\index{nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}}
+
+
+{\ttfamily \#include $<$device.\+h$>$}
+
+
+
+Collaboration diagram for nn\+\_\+device\+\_\+recipe\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{structnn__device__recipe__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structnn__device__recipe_a78ce62e7ab6b45a11e8dfeb5894b356e}{required\+\_\+checks}
+\item 
+int($\ast$ \hyperlink{structnn__device__recipe_adeb5d36621f14a9837fdc4cb94c3d051}{nn\+\_\+device\+\_\+entry} )(struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int s1, int s2, int flags)
+\item 
+int($\ast$ \hyperlink{structnn__device__recipe_aff9065238d098af6a963756174a4043d}{nn\+\_\+device\+\_\+twoway} )(struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int s1, \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s1rcv, \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s1snd, int s2, \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s2rcv, \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s2snd)
+\item 
+int($\ast$ \hyperlink{structnn__device__recipe_a2228a6409b18679d8ae17d5c230967cc}{nn\+\_\+device\+\_\+oneway} )(struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int s1, \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s1rcv, int s2, \hyperlink{efd__socketpair_8h_ac7ca4a7f723a6addf724ee88951a4d02}{nn\+\_\+fd} s2snd)
+\item 
+int($\ast$ \hyperlink{structnn__device__recipe_a942a556adb7a502cce98f9090a6d0ebf}{nn\+\_\+device\+\_\+loopback} )(struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int s)
+\item 
+int($\ast$ \hyperlink{structnn__device__recipe_aaf7ad40c45c50814de02aa920f5e8a24}{nn\+\_\+device\+\_\+mvmsg} )(struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int from, int to, int flags)
+\item 
+int($\ast$ \hyperlink{structnn__device__recipe_afcfda6f162ed7dd5bb98f3d796a3a6ea}{nn\+\_\+device\+\_\+rewritemsg} )(struct \hyperlink{structnn__device__recipe}{nn\+\_\+device\+\_\+recipe} $\ast$device, int from, int to, int flags, struct \hyperlink{structnn__msghdr}{nn\+\_\+msghdr} $\ast$msghdr, int bytes)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}!nn\+\_\+device\+\_\+entry@{nn\+\_\+device\+\_\+entry}}
+\index{nn\+\_\+device\+\_\+entry@{nn\+\_\+device\+\_\+entry}!nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}}
+\subsubsection[{nn\+\_\+device\+\_\+entry}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ nn\+\_\+device\+\_\+recipe\+::nn\+\_\+device\+\_\+entry) (struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$device, int s1, int s2, int flags)}\hypertarget{structnn__device__recipe_adeb5d36621f14a9837fdc4cb94c3d051}{}\label{structnn__device__recipe_adeb5d36621f14a9837fdc4cb94c3d051}
+\index{nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}!nn\+\_\+device\+\_\+loopback@{nn\+\_\+device\+\_\+loopback}}
+\index{nn\+\_\+device\+\_\+loopback@{nn\+\_\+device\+\_\+loopback}!nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}}
+\subsubsection[{nn\+\_\+device\+\_\+loopback}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ nn\+\_\+device\+\_\+recipe\+::nn\+\_\+device\+\_\+loopback) (struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$device, int s)}\hypertarget{structnn__device__recipe_a942a556adb7a502cce98f9090a6d0ebf}{}\label{structnn__device__recipe_a942a556adb7a502cce98f9090a6d0ebf}
+\index{nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}!nn\+\_\+device\+\_\+mvmsg@{nn\+\_\+device\+\_\+mvmsg}}
+\index{nn\+\_\+device\+\_\+mvmsg@{nn\+\_\+device\+\_\+mvmsg}!nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}}
+\subsubsection[{nn\+\_\+device\+\_\+mvmsg}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ nn\+\_\+device\+\_\+recipe\+::nn\+\_\+device\+\_\+mvmsg) (struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$device, int from, int to, int flags)}\hypertarget{structnn__device__recipe_aaf7ad40c45c50814de02aa920f5e8a24}{}\label{structnn__device__recipe_aaf7ad40c45c50814de02aa920f5e8a24}
+\index{nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}!nn\+\_\+device\+\_\+oneway@{nn\+\_\+device\+\_\+oneway}}
+\index{nn\+\_\+device\+\_\+oneway@{nn\+\_\+device\+\_\+oneway}!nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}}
+\subsubsection[{nn\+\_\+device\+\_\+oneway}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ nn\+\_\+device\+\_\+recipe\+::nn\+\_\+device\+\_\+oneway) (struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$device, int s1, {\bf nn\+\_\+fd} s1rcv, int s2, {\bf nn\+\_\+fd} s2snd)}\hypertarget{structnn__device__recipe_a2228a6409b18679d8ae17d5c230967cc}{}\label{structnn__device__recipe_a2228a6409b18679d8ae17d5c230967cc}
+\index{nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}!nn\+\_\+device\+\_\+rewritemsg@{nn\+\_\+device\+\_\+rewritemsg}}
+\index{nn\+\_\+device\+\_\+rewritemsg@{nn\+\_\+device\+\_\+rewritemsg}!nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}}
+\subsubsection[{nn\+\_\+device\+\_\+rewritemsg}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ nn\+\_\+device\+\_\+recipe\+::nn\+\_\+device\+\_\+rewritemsg) (struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$device, int from, int to, int flags, struct {\bf nn\+\_\+msghdr} $\ast$msghdr, int bytes)}\hypertarget{structnn__device__recipe_afcfda6f162ed7dd5bb98f3d796a3a6ea}{}\label{structnn__device__recipe_afcfda6f162ed7dd5bb98f3d796a3a6ea}
+\index{nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}!nn\+\_\+device\+\_\+twoway@{nn\+\_\+device\+\_\+twoway}}
+\index{nn\+\_\+device\+\_\+twoway@{nn\+\_\+device\+\_\+twoway}!nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}}
+\subsubsection[{nn\+\_\+device\+\_\+twoway}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ nn\+\_\+device\+\_\+recipe\+::nn\+\_\+device\+\_\+twoway) (struct {\bf nn\+\_\+device\+\_\+recipe} $\ast$device, int s1, {\bf nn\+\_\+fd} s1rcv, {\bf nn\+\_\+fd} s1snd, int s2, {\bf nn\+\_\+fd} s2rcv, {\bf nn\+\_\+fd} s2snd)}\hypertarget{structnn__device__recipe_aff9065238d098af6a963756174a4043d}{}\label{structnn__device__recipe_aff9065238d098af6a963756174a4043d}
+\index{nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}!required\+\_\+checks@{required\+\_\+checks}}
+\index{required\+\_\+checks@{required\+\_\+checks}!nn\+\_\+device\+\_\+recipe@{nn\+\_\+device\+\_\+recipe}}
+\subsubsection[{required\+\_\+checks}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+device\+\_\+recipe\+::required\+\_\+checks}\hypertarget{structnn__device__recipe_a78ce62e7ab6b45a11e8dfeb5894b356e}{}\label{structnn__device__recipe_a78ce62e7ab6b45a11e8dfeb5894b356e}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/devices/\hyperlink{device_8h}{device.\+h}\end{DoxyCompactItemize}

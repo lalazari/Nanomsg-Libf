@@ -1,0 +1,110 @@
+\hypertarget{lb_8h}{}\section{src/protocols/utils/lb.h File Reference}
+\label{lb_8h}\index{src/protocols/utils/lb.\+h@{src/protocols/utils/lb.\+h}}
+{\ttfamily \#include \char`\"{}../../protocol.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}priolist.\+h\char`\"{}}\\*
+Include dependency graph for lb.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lb_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lb_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__lb__data}{nn\+\_\+lb\+\_\+data}
+\item 
+struct \hyperlink{structnn__lb}{nn\+\_\+lb}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{lb_8h_accf5cfbeeb51a29119bc68d4b0e59654}{nn\+\_\+lb\+\_\+init} (struct \hyperlink{structnn__lb}{nn\+\_\+lb} $\ast$self)
+\item 
+void \hyperlink{lb_8h_a5f54d3c0fd83a48143344294d6a895b2}{nn\+\_\+lb\+\_\+term} (struct \hyperlink{structnn__lb}{nn\+\_\+lb} $\ast$self)
+\item 
+void \hyperlink{lb_8h_a9016b064955be6569a2e772db5cb2736}{nn\+\_\+lb\+\_\+add} (struct \hyperlink{structnn__lb}{nn\+\_\+lb} $\ast$self, struct \hyperlink{structnn__lb__data}{nn\+\_\+lb\+\_\+data} $\ast$data, struct nn\+\_\+pipe $\ast$pipe, int priority)
+\item 
+void \hyperlink{lb_8h_a03940b6bd0722d397cbfea9c09601286}{nn\+\_\+lb\+\_\+rm} (struct \hyperlink{structnn__lb}{nn\+\_\+lb} $\ast$self, struct \hyperlink{structnn__lb__data}{nn\+\_\+lb\+\_\+data} $\ast$data)
+\item 
+void \hyperlink{lb_8h_a820c660cd2db020c15ec510ca4dc4409}{nn\+\_\+lb\+\_\+out} (struct \hyperlink{structnn__lb}{nn\+\_\+lb} $\ast$self, struct \hyperlink{structnn__lb__data}{nn\+\_\+lb\+\_\+data} $\ast$data)
+\item 
+int \hyperlink{lb_8h_a11d5719dec765435ce41693162b47dc5}{nn\+\_\+lb\+\_\+can\+\_\+send} (struct \hyperlink{structnn__lb}{nn\+\_\+lb} $\ast$self)
+\item 
+int \hyperlink{lb_8h_aea0e8c47b1ed5055fca3e3918479fec0}{nn\+\_\+lb\+\_\+get\+\_\+priority} (struct \hyperlink{structnn__lb}{nn\+\_\+lb} $\ast$self)
+\item 
+int \hyperlink{lb_8h_add79cd9b533023e72470a42c7cb0ba57}{nn\+\_\+lb\+\_\+send} (struct \hyperlink{structnn__lb}{nn\+\_\+lb} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg, struct nn\+\_\+pipe $\ast$$\ast$to)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{lb.\+h@{lb.\+h}!nn\+\_\+lb\+\_\+add@{nn\+\_\+lb\+\_\+add}}
+\index{nn\+\_\+lb\+\_\+add@{nn\+\_\+lb\+\_\+add}!lb.\+h@{lb.\+h}}
+\subsubsection[{nn\+\_\+lb\+\_\+add(struct nn\+\_\+lb $\ast$self, struct nn\+\_\+lb\+\_\+data $\ast$data, struct nn\+\_\+pipe $\ast$pipe, int priority)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+lb\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+lb} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+lb\+\_\+data} $\ast$}]{data, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe, }
+\item[{int}]{priority}
+\end{DoxyParamCaption}
+)}\hypertarget{lb_8h_a9016b064955be6569a2e772db5cb2736}{}\label{lb_8h_a9016b064955be6569a2e772db5cb2736}
+\index{lb.\+h@{lb.\+h}!nn\+\_\+lb\+\_\+can\+\_\+send@{nn\+\_\+lb\+\_\+can\+\_\+send}}
+\index{nn\+\_\+lb\+\_\+can\+\_\+send@{nn\+\_\+lb\+\_\+can\+\_\+send}!lb.\+h@{lb.\+h}}
+\subsubsection[{nn\+\_\+lb\+\_\+can\+\_\+send(struct nn\+\_\+lb $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+lb\+\_\+can\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+lb} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{lb_8h_a11d5719dec765435ce41693162b47dc5}{}\label{lb_8h_a11d5719dec765435ce41693162b47dc5}
+\index{lb.\+h@{lb.\+h}!nn\+\_\+lb\+\_\+get\+\_\+priority@{nn\+\_\+lb\+\_\+get\+\_\+priority}}
+\index{nn\+\_\+lb\+\_\+get\+\_\+priority@{nn\+\_\+lb\+\_\+get\+\_\+priority}!lb.\+h@{lb.\+h}}
+\subsubsection[{nn\+\_\+lb\+\_\+get\+\_\+priority(struct nn\+\_\+lb $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+lb\+\_\+get\+\_\+priority (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+lb} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{lb_8h_aea0e8c47b1ed5055fca3e3918479fec0}{}\label{lb_8h_aea0e8c47b1ed5055fca3e3918479fec0}
+\index{lb.\+h@{lb.\+h}!nn\+\_\+lb\+\_\+init@{nn\+\_\+lb\+\_\+init}}
+\index{nn\+\_\+lb\+\_\+init@{nn\+\_\+lb\+\_\+init}!lb.\+h@{lb.\+h}}
+\subsubsection[{nn\+\_\+lb\+\_\+init(struct nn\+\_\+lb $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+lb\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+lb} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{lb_8h_accf5cfbeeb51a29119bc68d4b0e59654}{}\label{lb_8h_accf5cfbeeb51a29119bc68d4b0e59654}
+\index{lb.\+h@{lb.\+h}!nn\+\_\+lb\+\_\+out@{nn\+\_\+lb\+\_\+out}}
+\index{nn\+\_\+lb\+\_\+out@{nn\+\_\+lb\+\_\+out}!lb.\+h@{lb.\+h}}
+\subsubsection[{nn\+\_\+lb\+\_\+out(struct nn\+\_\+lb $\ast$self, struct nn\+\_\+lb\+\_\+data $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+lb\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+lb} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+lb\+\_\+data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{lb_8h_a820c660cd2db020c15ec510ca4dc4409}{}\label{lb_8h_a820c660cd2db020c15ec510ca4dc4409}
+\index{lb.\+h@{lb.\+h}!nn\+\_\+lb\+\_\+rm@{nn\+\_\+lb\+\_\+rm}}
+\index{nn\+\_\+lb\+\_\+rm@{nn\+\_\+lb\+\_\+rm}!lb.\+h@{lb.\+h}}
+\subsubsection[{nn\+\_\+lb\+\_\+rm(struct nn\+\_\+lb $\ast$self, struct nn\+\_\+lb\+\_\+data $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+lb\+\_\+rm (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+lb} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+lb\+\_\+data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{lb_8h_a03940b6bd0722d397cbfea9c09601286}{}\label{lb_8h_a03940b6bd0722d397cbfea9c09601286}
+\index{lb.\+h@{lb.\+h}!nn\+\_\+lb\+\_\+send@{nn\+\_\+lb\+\_\+send}}
+\index{nn\+\_\+lb\+\_\+send@{nn\+\_\+lb\+\_\+send}!lb.\+h@{lb.\+h}}
+\subsubsection[{nn\+\_\+lb\+\_\+send(struct nn\+\_\+lb $\ast$self, struct nn\+\_\+msg $\ast$msg, struct nn\+\_\+pipe $\ast$$\ast$to)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+lb\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+lb} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg, }
+\item[{struct nn\+\_\+pipe $\ast$$\ast$}]{to}
+\end{DoxyParamCaption}
+)}\hypertarget{lb_8h_add79cd9b533023e72470a42c7cb0ba57}{}\label{lb_8h_add79cd9b533023e72470a42c7cb0ba57}
+\index{lb.\+h@{lb.\+h}!nn\+\_\+lb\+\_\+term@{nn\+\_\+lb\+\_\+term}}
+\index{nn\+\_\+lb\+\_\+term@{nn\+\_\+lb\+\_\+term}!lb.\+h@{lb.\+h}}
+\subsubsection[{nn\+\_\+lb\+\_\+term(struct nn\+\_\+lb $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+lb\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+lb} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{lb_8h_a5f54d3c0fd83a48143344294d6a895b2}{}\label{lb_8h_a5f54d3c0fd83a48143344294d6a895b2}

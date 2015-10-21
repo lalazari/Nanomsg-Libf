@@ -1,0 +1,59 @@
+\hypertarget{binproc_8c}{}\section{src/transports/inproc/binproc.c File Reference}
+\label{binproc_8c}\index{src/transports/inproc/binproc.\+c@{src/transports/inproc/binproc.\+c}}
+{\ttfamily \#include \char`\"{}binproc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sinproc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}cinproc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ins.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/alloc.\+h\char`\"{}}\\*
+Include dependency graph for binproc.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{binproc_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{binproc_8c_aa3e6584ac6179bd89f64cd1030c99c31}{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}~1
+\item 
+\#define \hyperlink{binproc_8c_a71c798748786c00bcbce7dcafc44513d}{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}~2
+\item 
+\#define \hyperlink{binproc_8c_abaff774386d2d2d5d0c3a584dee9eeb9}{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}~3
+\item 
+\#define \hyperlink{binproc_8c_a6b24671bcfb98fbfd4d8f2363545086c}{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{binproc_8c_a077fc057b3610500220231820392c588}{nn\+\_\+binproc\+\_\+create} (void $\ast$hint, struct \hyperlink{structnn__epbase}{nn\+\_\+epbase} $\ast$$\ast$epbase)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{binproc.\+c@{binproc.\+c}!N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC@{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC}}
+\index{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC@{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC}!binproc.\+c@{binproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+R\+C\+\_\+\+S\+I\+N\+P\+R\+OC~1}\hypertarget{binproc_8c_a6b24671bcfb98fbfd4d8f2363545086c}{}\label{binproc_8c_a6b24671bcfb98fbfd4d8f2363545086c}
+\index{binproc.\+c@{binproc.\+c}!N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}}
+\index{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}!binproc.\+c@{binproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE~2}\hypertarget{binproc_8c_a71c798748786c00bcbce7dcafc44513d}{}\label{binproc_8c_a71c798748786c00bcbce7dcafc44513d}
+\index{binproc.\+c@{binproc.\+c}!N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE@{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}}
+\index{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE@{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}!binproc.\+c@{binproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE~1}\hypertarget{binproc_8c_aa3e6584ac6179bd89f64cd1030c99c31}{}\label{binproc_8c_aa3e6584ac6179bd89f64cd1030c99c31}
+\index{binproc.\+c@{binproc.\+c}!N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG@{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}}
+\index{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG@{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}!binproc.\+c@{binproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+B\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG~3}\hypertarget{binproc_8c_abaff774386d2d2d5d0c3a584dee9eeb9}{}\label{binproc_8c_abaff774386d2d2d5d0c3a584dee9eeb9}
+
+
+\subsection{Function Documentation}
+\index{binproc.\+c@{binproc.\+c}!nn\+\_\+binproc\+\_\+create@{nn\+\_\+binproc\+\_\+create}}
+\index{nn\+\_\+binproc\+\_\+create@{nn\+\_\+binproc\+\_\+create}!binproc.\+c@{binproc.\+c}}
+\subsubsection[{nn\+\_\+binproc\+\_\+create(void $\ast$hint, struct nn\+\_\+epbase $\ast$$\ast$epbase)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+binproc\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{hint, }
+\item[{struct {\bf nn\+\_\+epbase} $\ast$$\ast$}]{epbase}
+\end{DoxyParamCaption}
+)}\hypertarget{binproc_8c_a077fc057b3610500220231820392c588}{}\label{binproc_8c_a077fc057b3610500220231820392c588}

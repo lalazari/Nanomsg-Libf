@@ -1,0 +1,66 @@
+\hypertarget{structnn__timer}{}\section{nn\+\_\+timer Struct Reference}
+\label{structnn__timer}\index{nn\+\_\+timer@{nn\+\_\+timer}}
+
+
+{\ttfamily \#include $<$timer.\+h$>$}
+
+
+
+Collaboration diagram for nn\+\_\+timer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structnn__timer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} \hyperlink{structnn__timer_aee9372c284e1ed98d42ae2d638a3307b}{fsm}
+\item 
+int \hyperlink{structnn__timer_add4f847855d22e1fe8dc34761dd6cf9a}{state}
+\item 
+struct \hyperlink{structnn__worker__task}{nn\+\_\+worker\+\_\+task} \hyperlink{structnn__timer_ae8c14b7f156c28cf75eb0853ea5a3ff1}{start\+\_\+task}
+\item 
+struct \hyperlink{structnn__worker__task}{nn\+\_\+worker\+\_\+task} \hyperlink{structnn__timer_ae06667d9c88c1da44d67328354f75ae0}{stop\+\_\+task}
+\item 
+struct \hyperlink{structnn__worker__timer}{nn\+\_\+worker\+\_\+timer} \hyperlink{structnn__timer_abfb3e66a216d8c107add935b2b7aeb61}{wtimer}
+\item 
+struct \hyperlink{structnn__fsm__event}{nn\+\_\+fsm\+\_\+event} \hyperlink{structnn__timer_a96fed38db516133378a286bb38665b81}{done}
+\item 
+struct \hyperlink{structnn__worker}{nn\+\_\+worker} $\ast$ \hyperlink{structnn__timer_aefae7d82dbdbc7ed2e52b59be2f1977e}{worker}
+\item 
+int \hyperlink{structnn__timer_ae745dcc75be2f6878bb77b21223f1b02}{timeout}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+timer@{nn\+\_\+timer}!done@{done}}
+\index{done@{done}!nn\+\_\+timer@{nn\+\_\+timer}}
+\subsubsection[{done}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+event} nn\+\_\+timer\+::done}\hypertarget{structnn__timer_a96fed38db516133378a286bb38665b81}{}\label{structnn__timer_a96fed38db516133378a286bb38665b81}
+\index{nn\+\_\+timer@{nn\+\_\+timer}!fsm@{fsm}}
+\index{fsm@{fsm}!nn\+\_\+timer@{nn\+\_\+timer}}
+\subsubsection[{fsm}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm} nn\+\_\+timer\+::fsm}\hypertarget{structnn__timer_aee9372c284e1ed98d42ae2d638a3307b}{}\label{structnn__timer_aee9372c284e1ed98d42ae2d638a3307b}
+\index{nn\+\_\+timer@{nn\+\_\+timer}!start\+\_\+task@{start\+\_\+task}}
+\index{start\+\_\+task@{start\+\_\+task}!nn\+\_\+timer@{nn\+\_\+timer}}
+\subsubsection[{start\+\_\+task}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+worker\+\_\+task} nn\+\_\+timer\+::start\+\_\+task}\hypertarget{structnn__timer_ae8c14b7f156c28cf75eb0853ea5a3ff1}{}\label{structnn__timer_ae8c14b7f156c28cf75eb0853ea5a3ff1}
+\index{nn\+\_\+timer@{nn\+\_\+timer}!state@{state}}
+\index{state@{state}!nn\+\_\+timer@{nn\+\_\+timer}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+timer\+::state}\hypertarget{structnn__timer_add4f847855d22e1fe8dc34761dd6cf9a}{}\label{structnn__timer_add4f847855d22e1fe8dc34761dd6cf9a}
+\index{nn\+\_\+timer@{nn\+\_\+timer}!stop\+\_\+task@{stop\+\_\+task}}
+\index{stop\+\_\+task@{stop\+\_\+task}!nn\+\_\+timer@{nn\+\_\+timer}}
+\subsubsection[{stop\+\_\+task}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+worker\+\_\+task} nn\+\_\+timer\+::stop\+\_\+task}\hypertarget{structnn__timer_ae06667d9c88c1da44d67328354f75ae0}{}\label{structnn__timer_ae06667d9c88c1da44d67328354f75ae0}
+\index{nn\+\_\+timer@{nn\+\_\+timer}!timeout@{timeout}}
+\index{timeout@{timeout}!nn\+\_\+timer@{nn\+\_\+timer}}
+\subsubsection[{timeout}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+timer\+::timeout}\hypertarget{structnn__timer_ae745dcc75be2f6878bb77b21223f1b02}{}\label{structnn__timer_ae745dcc75be2f6878bb77b21223f1b02}
+\index{nn\+\_\+timer@{nn\+\_\+timer}!worker@{worker}}
+\index{worker@{worker}!nn\+\_\+timer@{nn\+\_\+timer}}
+\subsubsection[{worker}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+worker}$\ast$ nn\+\_\+timer\+::worker}\hypertarget{structnn__timer_aefae7d82dbdbc7ed2e52b59be2f1977e}{}\label{structnn__timer_aefae7d82dbdbc7ed2e52b59be2f1977e}
+\index{nn\+\_\+timer@{nn\+\_\+timer}!wtimer@{wtimer}}
+\index{wtimer@{wtimer}!nn\+\_\+timer@{nn\+\_\+timer}}
+\subsubsection[{wtimer}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+worker\+\_\+timer} nn\+\_\+timer\+::wtimer}\hypertarget{structnn__timer_abfb3e66a216d8c107add935b2b7aeb61}{}\label{structnn__timer_abfb3e66a216d8c107add935b2b7aeb61}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/aio/\hyperlink{timer_8h}{timer.\+h}\end{DoxyCompactItemize}

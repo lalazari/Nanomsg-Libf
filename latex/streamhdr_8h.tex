@@ -1,0 +1,102 @@
+\hypertarget{streamhdr_8h}{}\section{src/transports/utils/streamhdr.h File Reference}
+\label{streamhdr_8h}\index{src/transports/utils/streamhdr.\+h@{src/transports/utils/streamhdr.\+h}}
+{\ttfamily \#include \char`\"{}../../transport.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/fsm.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/usock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/timer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/int.\+h\char`\"{}}\\*
+Include dependency graph for streamhdr.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{streamhdr_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{streamhdr_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__streamhdr}{nn\+\_\+streamhdr}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{streamhdr_8h_aa819265fb7ec11fb570f57ce1f9fd98d}{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+OK}~1
+\item 
+\#define \hyperlink{streamhdr_8h_ac590331e25e298b023e50e8c2798630e}{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+E\+R\+R\+OR}~2
+\item 
+\#define \hyperlink{streamhdr_8h_a62604ce8d14d68ba5c63d8f6cb6507a9}{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+S\+T\+O\+P\+P\+ED}~3
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{streamhdr_8h_a7693829b12a848b975b9ef39c47ff24e}{nn\+\_\+streamhdr\+\_\+init} (struct \hyperlink{structnn__streamhdr}{nn\+\_\+streamhdr} $\ast$self, int src, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{streamhdr_8h_ad2f6b90fa206917039277f72533eeedc}{nn\+\_\+streamhdr\+\_\+term} (struct \hyperlink{structnn__streamhdr}{nn\+\_\+streamhdr} $\ast$self)
+\item 
+int \hyperlink{streamhdr_8h_a5c78e5794d074f007cb107a37f3786b3}{nn\+\_\+streamhdr\+\_\+isidle} (struct \hyperlink{structnn__streamhdr}{nn\+\_\+streamhdr} $\ast$self)
+\item 
+void \hyperlink{streamhdr_8h_a1c44527c3597edb3002d5bc78cee0c0b}{nn\+\_\+streamhdr\+\_\+start} (struct \hyperlink{structnn__streamhdr}{nn\+\_\+streamhdr} $\ast$self, struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$usock, struct \hyperlink{structnn__pipebase}{nn\+\_\+pipebase} $\ast$pipebase)
+\item 
+void \hyperlink{streamhdr_8h_a93299813cb0b6c8a4af04b2684a93864}{nn\+\_\+streamhdr\+\_\+stop} (struct \hyperlink{structnn__streamhdr}{nn\+\_\+streamhdr} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{streamhdr.\+h@{streamhdr.\+h}!N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+E\+R\+R\+OR}}
+\index{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+E\+R\+R\+OR}!streamhdr.\+h@{streamhdr.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+E\+R\+R\+OR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+E\+R\+R\+OR~2}\hypertarget{streamhdr_8h_ac590331e25e298b023e50e8c2798630e}{}\label{streamhdr_8h_ac590331e25e298b023e50e8c2798630e}
+\index{streamhdr.\+h@{streamhdr.\+h}!N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+OK@{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+OK}}
+\index{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+OK@{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+OK}!streamhdr.\+h@{streamhdr.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+OK}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+OK~1}\hypertarget{streamhdr_8h_aa819265fb7ec11fb570f57ce1f9fd98d}{}\label{streamhdr_8h_aa819265fb7ec11fb570f57ce1f9fd98d}
+\index{streamhdr.\+h@{streamhdr.\+h}!N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+S\+T\+O\+P\+P\+ED}!streamhdr.\+h@{streamhdr.\+h}}
+\subsubsection[{N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+T\+R\+E\+A\+M\+H\+D\+R\+\_\+\+S\+T\+O\+P\+P\+ED~3}\hypertarget{streamhdr_8h_a62604ce8d14d68ba5c63d8f6cb6507a9}{}\label{streamhdr_8h_a62604ce8d14d68ba5c63d8f6cb6507a9}
+
+
+\subsection{Function Documentation}
+\index{streamhdr.\+h@{streamhdr.\+h}!nn\+\_\+streamhdr\+\_\+init@{nn\+\_\+streamhdr\+\_\+init}}
+\index{nn\+\_\+streamhdr\+\_\+init@{nn\+\_\+streamhdr\+\_\+init}!streamhdr.\+h@{streamhdr.\+h}}
+\subsubsection[{nn\+\_\+streamhdr\+\_\+init(struct nn\+\_\+streamhdr $\ast$self, int src, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+streamhdr\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+streamhdr} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{streamhdr_8h_a7693829b12a848b975b9ef39c47ff24e}{}\label{streamhdr_8h_a7693829b12a848b975b9ef39c47ff24e}
+\index{streamhdr.\+h@{streamhdr.\+h}!nn\+\_\+streamhdr\+\_\+isidle@{nn\+\_\+streamhdr\+\_\+isidle}}
+\index{nn\+\_\+streamhdr\+\_\+isidle@{nn\+\_\+streamhdr\+\_\+isidle}!streamhdr.\+h@{streamhdr.\+h}}
+\subsubsection[{nn\+\_\+streamhdr\+\_\+isidle(struct nn\+\_\+streamhdr $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+streamhdr\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+streamhdr} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{streamhdr_8h_a5c78e5794d074f007cb107a37f3786b3}{}\label{streamhdr_8h_a5c78e5794d074f007cb107a37f3786b3}
+\index{streamhdr.\+h@{streamhdr.\+h}!nn\+\_\+streamhdr\+\_\+start@{nn\+\_\+streamhdr\+\_\+start}}
+\index{nn\+\_\+streamhdr\+\_\+start@{nn\+\_\+streamhdr\+\_\+start}!streamhdr.\+h@{streamhdr.\+h}}
+\subsubsection[{nn\+\_\+streamhdr\+\_\+start(struct nn\+\_\+streamhdr $\ast$self, struct nn\+\_\+usock $\ast$usock, struct nn\+\_\+pipebase $\ast$pipebase)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+streamhdr\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+streamhdr} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{usock, }
+\item[{struct {\bf nn\+\_\+pipebase} $\ast$}]{pipebase}
+\end{DoxyParamCaption}
+)}\hypertarget{streamhdr_8h_a1c44527c3597edb3002d5bc78cee0c0b}{}\label{streamhdr_8h_a1c44527c3597edb3002d5bc78cee0c0b}
+\index{streamhdr.\+h@{streamhdr.\+h}!nn\+\_\+streamhdr\+\_\+stop@{nn\+\_\+streamhdr\+\_\+stop}}
+\index{nn\+\_\+streamhdr\+\_\+stop@{nn\+\_\+streamhdr\+\_\+stop}!streamhdr.\+h@{streamhdr.\+h}}
+\subsubsection[{nn\+\_\+streamhdr\+\_\+stop(struct nn\+\_\+streamhdr $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+streamhdr\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+streamhdr} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{streamhdr_8h_a93299813cb0b6c8a4af04b2684a93864}{}\label{streamhdr_8h_a93299813cb0b6c8a4af04b2684a93864}
+\index{streamhdr.\+h@{streamhdr.\+h}!nn\+\_\+streamhdr\+\_\+term@{nn\+\_\+streamhdr\+\_\+term}}
+\index{nn\+\_\+streamhdr\+\_\+term@{nn\+\_\+streamhdr\+\_\+term}!streamhdr.\+h@{streamhdr.\+h}}
+\subsubsection[{nn\+\_\+streamhdr\+\_\+term(struct nn\+\_\+streamhdr $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+streamhdr\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+streamhdr} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{streamhdr_8h_ad2f6b90fa206917039277f72533eeedc}{}\label{streamhdr_8h_ad2f6b90fa206917039277f72533eeedc}

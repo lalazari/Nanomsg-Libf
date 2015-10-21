@@ -1,0 +1,148 @@
+\hypertarget{ws__handshake_8h}{}\section{src/transports/ws/ws\+\_\+handshake.h File Reference}
+\label{ws__handshake_8h}\index{src/transports/ws/ws\+\_\+handshake.\+h@{src/transports/ws/ws\+\_\+handshake.\+h}}
+{\ttfamily \#include \char`\"{}../../transport.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/fsm.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/usock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/timer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/int.\+h\char`\"{}}\\*
+Include dependency graph for ws\+\_\+handshake.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ws__handshake_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ws__handshake_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__ws__handshake}{nn\+\_\+ws\+\_\+handshake}
+\item 
+struct \hyperlink{structnn__ws__sp__map}{nn\+\_\+ws\+\_\+sp\+\_\+map}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ws__handshake_8h_a56a86c40268bcda56d8c864f9ae4cd18}{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+OK}~1
+\item 
+\#define \hyperlink{ws__handshake_8h_aa6091e88d48df808bd95aca964d6e7ae}{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+E\+R\+R\+OR}~2
+\item 
+\#define \hyperlink{ws__handshake_8h_a2f12eccb4a62b854f59f21ebb667c505}{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+S\+T\+O\+P\+P\+ED}~3
+\item 
+\#define \hyperlink{ws__handshake_8h_ab6faa4f5f7328b44a74f7f59ec619faf}{N\+N\+\_\+\+W\+S\+\_\+\+C\+L\+I\+E\+NT}~1
+\item 
+\#define \hyperlink{ws__handshake_8h_a580abb1bab387d433f736b8a620c8a16}{N\+N\+\_\+\+W\+S\+\_\+\+S\+E\+R\+V\+ER}~2
+\item 
+\#define \hyperlink{ws__handshake_8h_a69ce694d268a249264eced5ef505d018}{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE}~4096
+\item 
+\#define \hyperlink{ws__handshake_8h_ae5534c5a4bafc721d721160abfc4e6d2}{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+G\+U\+ID}~\char`\"{}258\+E\+A\+F\+A5-\/\+E914-\/47\+D\+A-\/95\+C\+A-\/\+C5\+A\+B0\+D\+C85\+B11\char`\"{}
+\item 
+\#define \hyperlink{ws__handshake_8h_a699f9e6dec67f70517b9c6fe51a0ed58}{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+C\+R\+LF}~\char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+\#define \hyperlink{ws__handshake_8h_a5dd9054dcc7b1c30c535dba3575fb355}{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+EQ}~\char`\"{}\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+\#define \hyperlink{ws__handshake_8h_aee76961d07a082e3d05b7a4c86147285}{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+E\+Q\+\_\+\+L\+EN}~strlen (\hyperlink{ws__handshake_8h_a5dd9054dcc7b1c30c535dba3575fb355}{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+EQ})
+\item 
+\#define \hyperlink{ws__handshake_8h_a0e0823af286def8ab04c551a94cafaf6}{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+K\+E\+Y\+\_\+\+L\+EN}~28
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ws__handshake_8h_a21816c70fa132d5e98b3cbc7750161dc}{nn\+\_\+ws\+\_\+handshake\+\_\+init} (struct \hyperlink{structnn__ws__handshake}{nn\+\_\+ws\+\_\+handshake} $\ast$self, int src, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{ws__handshake_8h_a7cea2df806883555171f8aafa059a26a}{nn\+\_\+ws\+\_\+handshake\+\_\+term} (struct \hyperlink{structnn__ws__handshake}{nn\+\_\+ws\+\_\+handshake} $\ast$self)
+\item 
+int \hyperlink{ws__handshake_8h_afc1df47423d74a3b8dfc10ccf21cdf7e}{nn\+\_\+ws\+\_\+handshake\+\_\+isidle} (struct \hyperlink{structnn__ws__handshake}{nn\+\_\+ws\+\_\+handshake} $\ast$self)
+\item 
+void \hyperlink{ws__handshake_8h_a6ea23fe660517cc8a3d8e22acdfae2ae}{nn\+\_\+ws\+\_\+handshake\+\_\+start} (struct \hyperlink{structnn__ws__handshake}{nn\+\_\+ws\+\_\+handshake} $\ast$self, struct \hyperlink{structnn__usock}{nn\+\_\+usock} $\ast$usock, struct \hyperlink{structnn__pipebase}{nn\+\_\+pipebase} $\ast$pipebase, int mode, const char $\ast$resource, const char $\ast$host)
+\item 
+void \hyperlink{ws__handshake_8h_ada886523ad597003903730727e3735c4}{nn\+\_\+ws\+\_\+handshake\+\_\+stop} (struct \hyperlink{structnn__ws__handshake}{nn\+\_\+ws\+\_\+handshake} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!N\+N\+\_\+\+W\+S\+\_\+\+C\+L\+I\+E\+NT@{N\+N\+\_\+\+W\+S\+\_\+\+C\+L\+I\+E\+NT}}
+\index{N\+N\+\_\+\+W\+S\+\_\+\+C\+L\+I\+E\+NT@{N\+N\+\_\+\+W\+S\+\_\+\+C\+L\+I\+E\+NT}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{N\+N\+\_\+\+W\+S\+\_\+\+C\+L\+I\+E\+NT}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+W\+S\+\_\+\+C\+L\+I\+E\+NT~1}\hypertarget{ws__handshake_8h_ab6faa4f5f7328b44a74f7f59ec619faf}{}\label{ws__handshake_8h_ab6faa4f5f7328b44a74f7f59ec619faf}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+K\+E\+Y\+\_\+\+L\+EN@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+K\+E\+Y\+\_\+\+L\+EN}}
+\index{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+K\+E\+Y\+\_\+\+L\+EN@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+K\+E\+Y\+\_\+\+L\+EN}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+K\+E\+Y\+\_\+\+L\+EN}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+K\+E\+Y\+\_\+\+L\+EN~28}\hypertarget{ws__handshake_8h_a0e0823af286def8ab04c551a94cafaf6}{}\label{ws__handshake_8h_a0e0823af286def8ab04c551a94cafaf6}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+C\+R\+LF@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+C\+R\+LF}}
+\index{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+C\+R\+LF@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+C\+R\+LF}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+C\+R\+LF}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+C\+R\+LF~\char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{}}\hypertarget{ws__handshake_8h_a699f9e6dec67f70517b9c6fe51a0ed58}{}\label{ws__handshake_8h_a699f9e6dec67f70517b9c6fe51a0ed58}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+E\+R\+R\+OR}}
+\index{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+E\+R\+R\+OR}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+E\+R\+R\+OR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+E\+R\+R\+OR~2}\hypertarget{ws__handshake_8h_aa6091e88d48df808bd95aca964d6e7ae}{}\label{ws__handshake_8h_aa6091e88d48df808bd95aca964d6e7ae}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+G\+U\+ID@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+G\+U\+ID}}
+\index{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+G\+U\+ID@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+G\+U\+ID}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+G\+U\+ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+G\+U\+ID~\char`\"{}258\+E\+A\+F\+A5-\/\+E914-\/47\+D\+A-\/95\+C\+A-\/\+C5\+A\+B0\+D\+C85\+B11\char`\"{}}\hypertarget{ws__handshake_8h_ae5534c5a4bafc721d721160abfc4e6d2}{}\label{ws__handshake_8h_ae5534c5a4bafc721d721160abfc4e6d2}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE}}
+\index{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE~4096}\hypertarget{ws__handshake_8h_a69ce694d268a249264eced5ef505d018}{}\label{ws__handshake_8h_a69ce694d268a249264eced5ef505d018}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+OK@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+OK}}
+\index{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+OK@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+OK}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+OK}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+OK~1}\hypertarget{ws__handshake_8h_a56a86c40268bcda56d8c864f9ae4cd18}{}\label{ws__handshake_8h_a56a86c40268bcda56d8c864f9ae4cd18}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+S\+T\+O\+P\+P\+ED}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+S\+T\+O\+P\+P\+ED~3}\hypertarget{ws__handshake_8h_a2f12eccb4a62b854f59f21ebb667c505}{}\label{ws__handshake_8h_a2f12eccb4a62b854f59f21ebb667c505}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+EQ@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+EQ}}
+\index{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+EQ@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+EQ}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+EQ}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+EQ~\char`\"{}\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n\char`\"{}}\hypertarget{ws__handshake_8h_a5dd9054dcc7b1c30c535dba3575fb355}{}\label{ws__handshake_8h_a5dd9054dcc7b1c30c535dba3575fb355}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+E\+Q\+\_\+\+L\+EN@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+E\+Q\+\_\+\+L\+EN}}
+\index{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+E\+Q\+\_\+\+L\+EN@{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+E\+Q\+\_\+\+L\+EN}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+E\+Q\+\_\+\+L\+EN}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+E\+Q\+\_\+\+L\+EN~strlen ({\bf N\+N\+\_\+\+W\+S\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+T\+E\+R\+M\+S\+EQ})}\hypertarget{ws__handshake_8h_aee76961d07a082e3d05b7a4c86147285}{}\label{ws__handshake_8h_aee76961d07a082e3d05b7a4c86147285}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!N\+N\+\_\+\+W\+S\+\_\+\+S\+E\+R\+V\+ER@{N\+N\+\_\+\+W\+S\+\_\+\+S\+E\+R\+V\+ER}}
+\index{N\+N\+\_\+\+W\+S\+\_\+\+S\+E\+R\+V\+ER@{N\+N\+\_\+\+W\+S\+\_\+\+S\+E\+R\+V\+ER}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{N\+N\+\_\+\+W\+S\+\_\+\+S\+E\+R\+V\+ER}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+W\+S\+\_\+\+S\+E\+R\+V\+ER~2}\hypertarget{ws__handshake_8h_a580abb1bab387d433f736b8a620c8a16}{}\label{ws__handshake_8h_a580abb1bab387d433f736b8a620c8a16}
+
+
+\subsection{Function Documentation}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!nn\+\_\+ws\+\_\+handshake\+\_\+init@{nn\+\_\+ws\+\_\+handshake\+\_\+init}}
+\index{nn\+\_\+ws\+\_\+handshake\+\_\+init@{nn\+\_\+ws\+\_\+handshake\+\_\+init}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{nn\+\_\+ws\+\_\+handshake\+\_\+init(struct nn\+\_\+ws\+\_\+handshake $\ast$self, int src, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ws\+\_\+handshake\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ws\+\_\+handshake} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{ws__handshake_8h_a21816c70fa132d5e98b3cbc7750161dc}{}\label{ws__handshake_8h_a21816c70fa132d5e98b3cbc7750161dc}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!nn\+\_\+ws\+\_\+handshake\+\_\+isidle@{nn\+\_\+ws\+\_\+handshake\+\_\+isidle}}
+\index{nn\+\_\+ws\+\_\+handshake\+\_\+isidle@{nn\+\_\+ws\+\_\+handshake\+\_\+isidle}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{nn\+\_\+ws\+\_\+handshake\+\_\+isidle(struct nn\+\_\+ws\+\_\+handshake $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+ws\+\_\+handshake\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ws\+\_\+handshake} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ws__handshake_8h_afc1df47423d74a3b8dfc10ccf21cdf7e}{}\label{ws__handshake_8h_afc1df47423d74a3b8dfc10ccf21cdf7e}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!nn\+\_\+ws\+\_\+handshake\+\_\+start@{nn\+\_\+ws\+\_\+handshake\+\_\+start}}
+\index{nn\+\_\+ws\+\_\+handshake\+\_\+start@{nn\+\_\+ws\+\_\+handshake\+\_\+start}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{nn\+\_\+ws\+\_\+handshake\+\_\+start(struct nn\+\_\+ws\+\_\+handshake $\ast$self, struct nn\+\_\+usock $\ast$usock, struct nn\+\_\+pipebase $\ast$pipebase, int mode, const char $\ast$resource, const char $\ast$host)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ws\+\_\+handshake\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ws\+\_\+handshake} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+usock} $\ast$}]{usock, }
+\item[{struct {\bf nn\+\_\+pipebase} $\ast$}]{pipebase, }
+\item[{int}]{mode, }
+\item[{const char $\ast$}]{resource, }
+\item[{const char $\ast$}]{host}
+\end{DoxyParamCaption}
+)}\hypertarget{ws__handshake_8h_a6ea23fe660517cc8a3d8e22acdfae2ae}{}\label{ws__handshake_8h_a6ea23fe660517cc8a3d8e22acdfae2ae}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!nn\+\_\+ws\+\_\+handshake\+\_\+stop@{nn\+\_\+ws\+\_\+handshake\+\_\+stop}}
+\index{nn\+\_\+ws\+\_\+handshake\+\_\+stop@{nn\+\_\+ws\+\_\+handshake\+\_\+stop}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{nn\+\_\+ws\+\_\+handshake\+\_\+stop(struct nn\+\_\+ws\+\_\+handshake $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ws\+\_\+handshake\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ws\+\_\+handshake} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ws__handshake_8h_ada886523ad597003903730727e3735c4}{}\label{ws__handshake_8h_ada886523ad597003903730727e3735c4}
+\index{ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}!nn\+\_\+ws\+\_\+handshake\+\_\+term@{nn\+\_\+ws\+\_\+handshake\+\_\+term}}
+\index{nn\+\_\+ws\+\_\+handshake\+\_\+term@{nn\+\_\+ws\+\_\+handshake\+\_\+term}!ws\+\_\+handshake.\+h@{ws\+\_\+handshake.\+h}}
+\subsubsection[{nn\+\_\+ws\+\_\+handshake\+\_\+term(struct nn\+\_\+ws\+\_\+handshake $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ws\+\_\+handshake\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ws\+\_\+handshake} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ws__handshake_8h_a7cea2df806883555171f8aafa059a26a}{}\label{ws__handshake_8h_a7cea2df806883555171f8aafa059a26a}

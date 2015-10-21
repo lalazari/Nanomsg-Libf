@@ -1,0 +1,125 @@
+\hypertarget{excl_8h}{}\section{src/protocols/utils/excl.h File Reference}
+\label{excl_8h}\index{src/protocols/utils/excl.\+h@{src/protocols/utils/excl.\+h}}
+{\ttfamily \#include \char`\"{}../../protocol.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for excl.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{excl_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{excl_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__excl}{nn\+\_\+excl}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{excl_8h_aac85ce15a51aeb35621ee63200c752b8}{nn\+\_\+excl\+\_\+init} (struct \hyperlink{structnn__excl}{nn\+\_\+excl} $\ast$self)
+\item 
+void \hyperlink{excl_8h_a55199710e5bd1ad71e28f01565f380aa}{nn\+\_\+excl\+\_\+term} (struct \hyperlink{structnn__excl}{nn\+\_\+excl} $\ast$self)
+\item 
+int \hyperlink{excl_8h_a525fc975bbec1f39d7e73b49c8a4e1a1}{nn\+\_\+excl\+\_\+add} (struct \hyperlink{structnn__excl}{nn\+\_\+excl} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{excl_8h_a8546d81931916c7328ae8dd50ed3b452}{nn\+\_\+excl\+\_\+rm} (struct \hyperlink{structnn__excl}{nn\+\_\+excl} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{excl_8h_abf2cc9f0566b15270ae35a3d7c3c1e23}{nn\+\_\+excl\+\_\+in} (struct \hyperlink{structnn__excl}{nn\+\_\+excl} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{excl_8h_ae165c3d87381a2ddc00e7aa074a2ce26}{nn\+\_\+excl\+\_\+out} (struct \hyperlink{structnn__excl}{nn\+\_\+excl} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+int \hyperlink{excl_8h_addb91d78b7d468d1cc6735fab78743f8}{nn\+\_\+excl\+\_\+send} (struct \hyperlink{structnn__excl}{nn\+\_\+excl} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg)
+\item 
+int \hyperlink{excl_8h_a3af1381ea5bc4f6a597d5e939397cb49}{nn\+\_\+excl\+\_\+recv} (struct \hyperlink{structnn__excl}{nn\+\_\+excl} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg)
+\item 
+int \hyperlink{excl_8h_a035702ea808c476484b80d3822d1a5b9}{nn\+\_\+excl\+\_\+can\+\_\+send} (struct \hyperlink{structnn__excl}{nn\+\_\+excl} $\ast$self)
+\item 
+int \hyperlink{excl_8h_a7f60ee15f0154efe9f83971abfec9ee8}{nn\+\_\+excl\+\_\+can\+\_\+recv} (struct \hyperlink{structnn__excl}{nn\+\_\+excl} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{excl.\+h@{excl.\+h}!nn\+\_\+excl\+\_\+add@{nn\+\_\+excl\+\_\+add}}
+\index{nn\+\_\+excl\+\_\+add@{nn\+\_\+excl\+\_\+add}!excl.\+h@{excl.\+h}}
+\subsubsection[{nn\+\_\+excl\+\_\+add(struct nn\+\_\+excl $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+excl\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+excl} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{excl_8h_a525fc975bbec1f39d7e73b49c8a4e1a1}{}\label{excl_8h_a525fc975bbec1f39d7e73b49c8a4e1a1}
+\index{excl.\+h@{excl.\+h}!nn\+\_\+excl\+\_\+can\+\_\+recv@{nn\+\_\+excl\+\_\+can\+\_\+recv}}
+\index{nn\+\_\+excl\+\_\+can\+\_\+recv@{nn\+\_\+excl\+\_\+can\+\_\+recv}!excl.\+h@{excl.\+h}}
+\subsubsection[{nn\+\_\+excl\+\_\+can\+\_\+recv(struct nn\+\_\+excl $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+excl\+\_\+can\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+excl} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{excl_8h_a7f60ee15f0154efe9f83971abfec9ee8}{}\label{excl_8h_a7f60ee15f0154efe9f83971abfec9ee8}
+\index{excl.\+h@{excl.\+h}!nn\+\_\+excl\+\_\+can\+\_\+send@{nn\+\_\+excl\+\_\+can\+\_\+send}}
+\index{nn\+\_\+excl\+\_\+can\+\_\+send@{nn\+\_\+excl\+\_\+can\+\_\+send}!excl.\+h@{excl.\+h}}
+\subsubsection[{nn\+\_\+excl\+\_\+can\+\_\+send(struct nn\+\_\+excl $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+excl\+\_\+can\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+excl} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{excl_8h_a035702ea808c476484b80d3822d1a5b9}{}\label{excl_8h_a035702ea808c476484b80d3822d1a5b9}
+\index{excl.\+h@{excl.\+h}!nn\+\_\+excl\+\_\+in@{nn\+\_\+excl\+\_\+in}}
+\index{nn\+\_\+excl\+\_\+in@{nn\+\_\+excl\+\_\+in}!excl.\+h@{excl.\+h}}
+\subsubsection[{nn\+\_\+excl\+\_\+in(struct nn\+\_\+excl $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+excl\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+excl} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{excl_8h_abf2cc9f0566b15270ae35a3d7c3c1e23}{}\label{excl_8h_abf2cc9f0566b15270ae35a3d7c3c1e23}
+\index{excl.\+h@{excl.\+h}!nn\+\_\+excl\+\_\+init@{nn\+\_\+excl\+\_\+init}}
+\index{nn\+\_\+excl\+\_\+init@{nn\+\_\+excl\+\_\+init}!excl.\+h@{excl.\+h}}
+\subsubsection[{nn\+\_\+excl\+\_\+init(struct nn\+\_\+excl $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+excl\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+excl} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{excl_8h_aac85ce15a51aeb35621ee63200c752b8}{}\label{excl_8h_aac85ce15a51aeb35621ee63200c752b8}
+\index{excl.\+h@{excl.\+h}!nn\+\_\+excl\+\_\+out@{nn\+\_\+excl\+\_\+out}}
+\index{nn\+\_\+excl\+\_\+out@{nn\+\_\+excl\+\_\+out}!excl.\+h@{excl.\+h}}
+\subsubsection[{nn\+\_\+excl\+\_\+out(struct nn\+\_\+excl $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+excl\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+excl} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{excl_8h_ae165c3d87381a2ddc00e7aa074a2ce26}{}\label{excl_8h_ae165c3d87381a2ddc00e7aa074a2ce26}
+\index{excl.\+h@{excl.\+h}!nn\+\_\+excl\+\_\+recv@{nn\+\_\+excl\+\_\+recv}}
+\index{nn\+\_\+excl\+\_\+recv@{nn\+\_\+excl\+\_\+recv}!excl.\+h@{excl.\+h}}
+\subsubsection[{nn\+\_\+excl\+\_\+recv(struct nn\+\_\+excl $\ast$self, struct nn\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+excl\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+excl} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{excl_8h_a3af1381ea5bc4f6a597d5e939397cb49}{}\label{excl_8h_a3af1381ea5bc4f6a597d5e939397cb49}
+\index{excl.\+h@{excl.\+h}!nn\+\_\+excl\+\_\+rm@{nn\+\_\+excl\+\_\+rm}}
+\index{nn\+\_\+excl\+\_\+rm@{nn\+\_\+excl\+\_\+rm}!excl.\+h@{excl.\+h}}
+\subsubsection[{nn\+\_\+excl\+\_\+rm(struct nn\+\_\+excl $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+excl\+\_\+rm (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+excl} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{excl_8h_a8546d81931916c7328ae8dd50ed3b452}{}\label{excl_8h_a8546d81931916c7328ae8dd50ed3b452}
+\index{excl.\+h@{excl.\+h}!nn\+\_\+excl\+\_\+send@{nn\+\_\+excl\+\_\+send}}
+\index{nn\+\_\+excl\+\_\+send@{nn\+\_\+excl\+\_\+send}!excl.\+h@{excl.\+h}}
+\subsubsection[{nn\+\_\+excl\+\_\+send(struct nn\+\_\+excl $\ast$self, struct nn\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+excl\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+excl} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{excl_8h_addb91d78b7d468d1cc6735fab78743f8}{}\label{excl_8h_addb91d78b7d468d1cc6735fab78743f8}
+\index{excl.\+h@{excl.\+h}!nn\+\_\+excl\+\_\+term@{nn\+\_\+excl\+\_\+term}}
+\index{nn\+\_\+excl\+\_\+term@{nn\+\_\+excl\+\_\+term}!excl.\+h@{excl.\+h}}
+\subsubsection[{nn\+\_\+excl\+\_\+term(struct nn\+\_\+excl $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+excl\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+excl} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{excl_8h_a55199710e5bd1ad71e28f01565f380aa}{}\label{excl_8h_a55199710e5bd1ad71e28f01565f380aa}

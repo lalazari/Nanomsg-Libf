@@ -1,0 +1,91 @@
+\hypertarget{msgqueue_8h}{}\section{src/transports/inproc/msgqueue.h File Reference}
+\label{msgqueue_8h}\index{src/transports/inproc/msgqueue.\+h@{src/transports/inproc/msgqueue.\+h}}
+{\ttfamily \#include \char`\"{}../../utils/msg.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for msgqueue.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{msgqueue_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{msgqueue_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__msgqueue__chunk}{nn\+\_\+msgqueue\+\_\+chunk}
+\item 
+struct \hyperlink{structnn__msgqueue}{nn\+\_\+msgqueue}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{msgqueue_8h_a13fd89d03f816db3fdc589dfb3c706ff}{N\+N\+\_\+\+M\+S\+G\+Q\+U\+E\+U\+E\+\_\+\+G\+R\+A\+N\+U\+L\+A\+R\+I\+TY}~126
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{msgqueue_8h_a6909b72b822cbe910b928e6916274de8}{nn\+\_\+msgqueue\+\_\+init} (struct \hyperlink{structnn__msgqueue}{nn\+\_\+msgqueue} $\ast$self, size\+\_\+t maxmem)
+\item 
+void \hyperlink{msgqueue_8h_a57e964ab36ea444323b706d72c850cc6}{nn\+\_\+msgqueue\+\_\+term} (struct \hyperlink{structnn__msgqueue}{nn\+\_\+msgqueue} $\ast$self)
+\item 
+int \hyperlink{msgqueue_8h_a026a3de978ac295f5db8422989c2b92a}{nn\+\_\+msgqueue\+\_\+empty} (struct \hyperlink{structnn__msgqueue}{nn\+\_\+msgqueue} $\ast$self)
+\item 
+int \hyperlink{msgqueue_8h_a07c232d74a3c80b40daa0a24908e6497}{nn\+\_\+msgqueue\+\_\+send} (struct \hyperlink{structnn__msgqueue}{nn\+\_\+msgqueue} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg)
+\item 
+int \hyperlink{msgqueue_8h_abc8723e78075b5f48a81c8ab8c4cc74a}{nn\+\_\+msgqueue\+\_\+recv} (struct \hyperlink{structnn__msgqueue}{nn\+\_\+msgqueue} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{msgqueue.\+h@{msgqueue.\+h}!N\+N\+\_\+\+M\+S\+G\+Q\+U\+E\+U\+E\+\_\+\+G\+R\+A\+N\+U\+L\+A\+R\+I\+TY@{N\+N\+\_\+\+M\+S\+G\+Q\+U\+E\+U\+E\+\_\+\+G\+R\+A\+N\+U\+L\+A\+R\+I\+TY}}
+\index{N\+N\+\_\+\+M\+S\+G\+Q\+U\+E\+U\+E\+\_\+\+G\+R\+A\+N\+U\+L\+A\+R\+I\+TY@{N\+N\+\_\+\+M\+S\+G\+Q\+U\+E\+U\+E\+\_\+\+G\+R\+A\+N\+U\+L\+A\+R\+I\+TY}!msgqueue.\+h@{msgqueue.\+h}}
+\subsubsection[{N\+N\+\_\+\+M\+S\+G\+Q\+U\+E\+U\+E\+\_\+\+G\+R\+A\+N\+U\+L\+A\+R\+I\+TY}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+M\+S\+G\+Q\+U\+E\+U\+E\+\_\+\+G\+R\+A\+N\+U\+L\+A\+R\+I\+TY~126}\hypertarget{msgqueue_8h_a13fd89d03f816db3fdc589dfb3c706ff}{}\label{msgqueue_8h_a13fd89d03f816db3fdc589dfb3c706ff}
+
+
+\subsection{Function Documentation}
+\index{msgqueue.\+h@{msgqueue.\+h}!nn\+\_\+msgqueue\+\_\+empty@{nn\+\_\+msgqueue\+\_\+empty}}
+\index{nn\+\_\+msgqueue\+\_\+empty@{nn\+\_\+msgqueue\+\_\+empty}!msgqueue.\+h@{msgqueue.\+h}}
+\subsubsection[{nn\+\_\+msgqueue\+\_\+empty(struct nn\+\_\+msgqueue $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+msgqueue\+\_\+empty (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msgqueue} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{msgqueue_8h_a026a3de978ac295f5db8422989c2b92a}{}\label{msgqueue_8h_a026a3de978ac295f5db8422989c2b92a}
+\index{msgqueue.\+h@{msgqueue.\+h}!nn\+\_\+msgqueue\+\_\+init@{nn\+\_\+msgqueue\+\_\+init}}
+\index{nn\+\_\+msgqueue\+\_\+init@{nn\+\_\+msgqueue\+\_\+init}!msgqueue.\+h@{msgqueue.\+h}}
+\subsubsection[{nn\+\_\+msgqueue\+\_\+init(struct nn\+\_\+msgqueue $\ast$self, size\+\_\+t maxmem)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msgqueue\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msgqueue} $\ast$}]{self, }
+\item[{size\+\_\+t}]{maxmem}
+\end{DoxyParamCaption}
+)}\hypertarget{msgqueue_8h_a6909b72b822cbe910b928e6916274de8}{}\label{msgqueue_8h_a6909b72b822cbe910b928e6916274de8}
+\index{msgqueue.\+h@{msgqueue.\+h}!nn\+\_\+msgqueue\+\_\+recv@{nn\+\_\+msgqueue\+\_\+recv}}
+\index{nn\+\_\+msgqueue\+\_\+recv@{nn\+\_\+msgqueue\+\_\+recv}!msgqueue.\+h@{msgqueue.\+h}}
+\subsubsection[{nn\+\_\+msgqueue\+\_\+recv(struct nn\+\_\+msgqueue $\ast$self, struct nn\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+msgqueue\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msgqueue} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{msgqueue_8h_abc8723e78075b5f48a81c8ab8c4cc74a}{}\label{msgqueue_8h_abc8723e78075b5f48a81c8ab8c4cc74a}
+\index{msgqueue.\+h@{msgqueue.\+h}!nn\+\_\+msgqueue\+\_\+send@{nn\+\_\+msgqueue\+\_\+send}}
+\index{nn\+\_\+msgqueue\+\_\+send@{nn\+\_\+msgqueue\+\_\+send}!msgqueue.\+h@{msgqueue.\+h}}
+\subsubsection[{nn\+\_\+msgqueue\+\_\+send(struct nn\+\_\+msgqueue $\ast$self, struct nn\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+msgqueue\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msgqueue} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{msgqueue_8h_a07c232d74a3c80b40daa0a24908e6497}{}\label{msgqueue_8h_a07c232d74a3c80b40daa0a24908e6497}
+\index{msgqueue.\+h@{msgqueue.\+h}!nn\+\_\+msgqueue\+\_\+term@{nn\+\_\+msgqueue\+\_\+term}}
+\index{nn\+\_\+msgqueue\+\_\+term@{nn\+\_\+msgqueue\+\_\+term}!msgqueue.\+h@{msgqueue.\+h}}
+\subsubsection[{nn\+\_\+msgqueue\+\_\+term(struct nn\+\_\+msgqueue $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msgqueue\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msgqueue} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{msgqueue_8h_a57e964ab36ea444323b706d72c850cc6}{}\label{msgqueue_8h_a57e964ab36ea444323b706d72c850cc6}

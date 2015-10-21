@@ -1,0 +1,88 @@
+\hypertarget{structnn__poller}{}\section{nn\+\_\+poller Struct Reference}
+\label{structnn__poller}\index{nn\+\_\+poller@{nn\+\_\+poller}}
+
+
+{\ttfamily \#include $<$poller\+\_\+epoll.\+h$>$}
+
+
+
+Collaboration diagram for nn\+\_\+poller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{structnn__poller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__poller_1_1nn__hndls__item}{nn\+\_\+hndls\+\_\+item}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structnn__poller_af927ff1ee0aabc2380bb1f5294c7aec2}{ep}
+\item 
+int \hyperlink{structnn__poller_afb554c7c16ed86202143b7b9edb0e810}{nevents}
+\item 
+int \hyperlink{structnn__poller_aeca31ffaf2a580f98fc8c727f8a3fa3b}{index}
+\item 
+struct epoll\+\_\+event \hyperlink{structnn__poller_a2e305f681cba77febc1864f249de5192}{events} \mbox{[}\hyperlink{poller__kqueue_8h_aaeb4a27a8666be4693e5626046f809b0}{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+M\+A\+X\+\_\+\+E\+V\+E\+N\+TS}\mbox{]}
+\item 
+int \hyperlink{structnn__poller_a2c791ee1963160c78f0e69f87c520618}{kq}
+\item 
+struct kevent \hyperlink{structnn__poller_a832e2b68ccf516c6db96c42ec37c65a7}{events} \mbox{[}\hyperlink{poller__kqueue_8h_aaeb4a27a8666be4693e5626046f809b0}{N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+M\+A\+X\+\_\+\+E\+V\+E\+N\+TS}\mbox{]}
+\item 
+int \hyperlink{structnn__poller_ab898f454acc5a9cb9a6133e2273e753a}{size}
+\item 
+int \hyperlink{structnn__poller_abb25f431598ab8cf0e6245b7a39a4b74}{capacity}
+\item 
+struct pollfd $\ast$ \hyperlink{structnn__poller_ab8868a38e93b921fdc9822e4ee4bae38}{pollset}
+\item 
+struct \hyperlink{structnn__poller_1_1nn__hndls__item}{nn\+\_\+poller\+::nn\+\_\+hndls\+\_\+item} $\ast$ \hyperlink{structnn__poller_a4eed53b9b6ece7d8dfbc96bc80f988ce}{hndls}
+\item 
+int \hyperlink{structnn__poller_a6db22cb59d715d1afdf008cf58c3d419}{removed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+poller@{nn\+\_\+poller}!capacity@{capacity}}
+\index{capacity@{capacity}!nn\+\_\+poller@{nn\+\_\+poller}}
+\subsubsection[{capacity}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+poller\+::capacity}\hypertarget{structnn__poller_abb25f431598ab8cf0e6245b7a39a4b74}{}\label{structnn__poller_abb25f431598ab8cf0e6245b7a39a4b74}
+\index{nn\+\_\+poller@{nn\+\_\+poller}!ep@{ep}}
+\index{ep@{ep}!nn\+\_\+poller@{nn\+\_\+poller}}
+\subsubsection[{ep}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+poller\+::ep}\hypertarget{structnn__poller_af927ff1ee0aabc2380bb1f5294c7aec2}{}\label{structnn__poller_af927ff1ee0aabc2380bb1f5294c7aec2}
+\index{nn\+\_\+poller@{nn\+\_\+poller}!events@{events}}
+\index{events@{events}!nn\+\_\+poller@{nn\+\_\+poller}}
+\subsubsection[{events}]{\setlength{\rightskip}{0pt plus 5cm}struct epoll\+\_\+event nn\+\_\+poller\+::events\mbox{[}{\bf N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+M\+A\+X\+\_\+\+E\+V\+E\+N\+TS}\mbox{]}}\hypertarget{structnn__poller_a2e305f681cba77febc1864f249de5192}{}\label{structnn__poller_a2e305f681cba77febc1864f249de5192}
+\index{nn\+\_\+poller@{nn\+\_\+poller}!events@{events}}
+\index{events@{events}!nn\+\_\+poller@{nn\+\_\+poller}}
+\subsubsection[{events}]{\setlength{\rightskip}{0pt plus 5cm}struct kevent nn\+\_\+poller\+::events\mbox{[}{\bf N\+N\+\_\+\+P\+O\+L\+L\+E\+R\+\_\+\+M\+A\+X\+\_\+\+E\+V\+E\+N\+TS}\mbox{]}}\hypertarget{structnn__poller_a832e2b68ccf516c6db96c42ec37c65a7}{}\label{structnn__poller_a832e2b68ccf516c6db96c42ec37c65a7}
+\index{nn\+\_\+poller@{nn\+\_\+poller}!hndls@{hndls}}
+\index{hndls@{hndls}!nn\+\_\+poller@{nn\+\_\+poller}}
+\subsubsection[{hndls}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+poller\+::nn\+\_\+hndls\+\_\+item} $\ast$ nn\+\_\+poller\+::hndls}\hypertarget{structnn__poller_a4eed53b9b6ece7d8dfbc96bc80f988ce}{}\label{structnn__poller_a4eed53b9b6ece7d8dfbc96bc80f988ce}
+\index{nn\+\_\+poller@{nn\+\_\+poller}!index@{index}}
+\index{index@{index}!nn\+\_\+poller@{nn\+\_\+poller}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+poller\+::index}\hypertarget{structnn__poller_aeca31ffaf2a580f98fc8c727f8a3fa3b}{}\label{structnn__poller_aeca31ffaf2a580f98fc8c727f8a3fa3b}
+\index{nn\+\_\+poller@{nn\+\_\+poller}!kq@{kq}}
+\index{kq@{kq}!nn\+\_\+poller@{nn\+\_\+poller}}
+\subsubsection[{kq}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+poller\+::kq}\hypertarget{structnn__poller_a2c791ee1963160c78f0e69f87c520618}{}\label{structnn__poller_a2c791ee1963160c78f0e69f87c520618}
+\index{nn\+\_\+poller@{nn\+\_\+poller}!nevents@{nevents}}
+\index{nevents@{nevents}!nn\+\_\+poller@{nn\+\_\+poller}}
+\subsubsection[{nevents}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+poller\+::nevents}\hypertarget{structnn__poller_afb554c7c16ed86202143b7b9edb0e810}{}\label{structnn__poller_afb554c7c16ed86202143b7b9edb0e810}
+\index{nn\+\_\+poller@{nn\+\_\+poller}!pollset@{pollset}}
+\index{pollset@{pollset}!nn\+\_\+poller@{nn\+\_\+poller}}
+\subsubsection[{pollset}]{\setlength{\rightskip}{0pt plus 5cm}struct pollfd$\ast$ nn\+\_\+poller\+::pollset}\hypertarget{structnn__poller_ab8868a38e93b921fdc9822e4ee4bae38}{}\label{structnn__poller_ab8868a38e93b921fdc9822e4ee4bae38}
+\index{nn\+\_\+poller@{nn\+\_\+poller}!removed@{removed}}
+\index{removed@{removed}!nn\+\_\+poller@{nn\+\_\+poller}}
+\subsubsection[{removed}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+poller\+::removed}\hypertarget{structnn__poller_a6db22cb59d715d1afdf008cf58c3d419}{}\label{structnn__poller_a6db22cb59d715d1afdf008cf58c3d419}
+\index{nn\+\_\+poller@{nn\+\_\+poller}!size@{size}}
+\index{size@{size}!nn\+\_\+poller@{nn\+\_\+poller}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+poller\+::size}\hypertarget{structnn__poller_ab898f454acc5a9cb9a6133e2273e753a}{}\label{structnn__poller_ab898f454acc5a9cb9a6133e2273e753a}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/aio/\hyperlink{poller__epoll_8h}{poller\+\_\+epoll.\+h}\item 
+src/aio/\hyperlink{poller__kqueue_8h}{poller\+\_\+kqueue.\+h}\item 
+src/aio/\hyperlink{poller__poll_8h}{poller\+\_\+poll.\+h}\end{DoxyCompactItemize}

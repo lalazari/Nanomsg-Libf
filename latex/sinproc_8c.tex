@@ -1,0 +1,158 @@
+\hypertarget{sinproc_8c}{}\section{src/transports/inproc/sinproc.c File Reference}
+\label{sinproc_8c}\index{src/transports/inproc/sinproc.\+c@{src/transports/inproc/sinproc.\+c}}
+{\ttfamily \#include \char`\"{}sinproc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/attr.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for sinproc.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sinproc_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sinproc_8c_acd8c872635101ab6de37097ee478c883}{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}~1
+\item 
+\#define \hyperlink{sinproc_8c_ab20abf0846694672cb3608f386666feb}{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}~2
+\item 
+\#define \hyperlink{sinproc_8c_a565b52938bb3493ff37dc2b903fe4293}{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+DY}~3
+\item 
+\#define \hyperlink{sinproc_8c_a6112ee08ede54b57f7740d9b240257a0}{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}~4
+\item 
+\#define \hyperlink{sinproc_8c_a4e8e459eb8a88251b491c82e796755c6}{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}~5
+\item 
+\#define \hyperlink{sinproc_8c_a7b84d3e5d77149b69c8910b8e129292e}{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+P\+E\+ER}~6
+\item 
+\#define \hyperlink{sinproc_8c_ac7a84afdbba10e2fd1f030eab2c2d799}{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}~7
+\item 
+\#define \hyperlink{sinproc_8c_a37bf2a57b93867079f2eb22b4bacb61d}{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+DY}~1
+\item 
+\#define \hyperlink{sinproc_8c_ae9104257186bcfc117e50914d9a2fd84}{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+A\+C\+C\+E\+P\+T\+ED}~2
+\item 
+\#define \hyperlink{sinproc_8c_a79192377825d7619c72c11700da23ef6}{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+S\+E\+N\+D\+I\+NG}~1
+\item 
+\#define \hyperlink{sinproc_8c_aa8b99a5da3d60135ae7c848d3d438efd}{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+E\+C\+E\+I\+V\+I\+NG}~2
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sinproc_8c_a6665d2cd892a7132ee29117778c2539a}{nn\+\_\+sinproc\+\_\+init} (struct \hyperlink{structnn__sinproc}{nn\+\_\+sinproc} $\ast$self, int src, struct \hyperlink{structnn__epbase}{nn\+\_\+epbase} $\ast$epbase, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{sinproc_8c_afe8db31cad5f9d9fff1a430da3964ef7}{nn\+\_\+sinproc\+\_\+term} (struct \hyperlink{structnn__sinproc}{nn\+\_\+sinproc} $\ast$self)
+\item 
+int \hyperlink{sinproc_8c_aa2a2c5ce6ebcc9099ac435da14650265}{nn\+\_\+sinproc\+\_\+isidle} (struct \hyperlink{structnn__sinproc}{nn\+\_\+sinproc} $\ast$self)
+\item 
+void \hyperlink{sinproc_8c_a730451da3ad38abb884a5096e6f419d7}{nn\+\_\+sinproc\+\_\+connect} (struct \hyperlink{structnn__sinproc}{nn\+\_\+sinproc} $\ast$self, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$peer)
+\item 
+void \hyperlink{sinproc_8c_a58908ed231d44f7b42b3668a893adba0}{nn\+\_\+sinproc\+\_\+accept} (struct \hyperlink{structnn__sinproc}{nn\+\_\+sinproc} $\ast$self, struct \hyperlink{structnn__sinproc}{nn\+\_\+sinproc} $\ast$peer)
+\item 
+void \hyperlink{sinproc_8c_a337033945ccab9551e4ac321124f988a}{nn\+\_\+sinproc\+\_\+stop} (struct \hyperlink{structnn__sinproc}{nn\+\_\+sinproc} $\ast$self)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const struct \hyperlink{structnn__pipebase__vfptr}{nn\+\_\+pipebase\+\_\+vfptr} \hyperlink{sinproc_8c_af2fd2fa6caaabc038d6111b470b665c8}{nn\+\_\+sinproc\+\_\+pipebase\+\_\+vfptr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{sinproc.\+c@{sinproc.\+c}!N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+A\+C\+C\+E\+P\+T\+ED@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+A\+C\+C\+E\+P\+T\+ED}}
+\index{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+A\+C\+C\+E\+P\+T\+ED@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+A\+C\+C\+E\+P\+T\+ED}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+A\+C\+C\+E\+P\+T\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+A\+C\+C\+E\+P\+T\+ED~2}\hypertarget{sinproc_8c_ae9104257186bcfc117e50914d9a2fd84}{}\label{sinproc_8c_ae9104257186bcfc117e50914d9a2fd84}
+\index{sinproc.\+c@{sinproc.\+c}!N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+DY@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+DY}}
+\index{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+DY@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+DY}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+DY}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+DY~1}\hypertarget{sinproc_8c_a37bf2a57b93867079f2eb22b4bacb61d}{}\label{sinproc_8c_a37bf2a57b93867079f2eb22b4bacb61d}
+\index{sinproc.\+c@{sinproc.\+c}!N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+E\+C\+E\+I\+V\+I\+NG@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+E\+C\+E\+I\+V\+I\+NG}}
+\index{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+E\+C\+E\+I\+V\+I\+NG@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+E\+C\+E\+I\+V\+I\+NG}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+E\+C\+E\+I\+V\+I\+NG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+E\+C\+E\+I\+V\+I\+NG~2}\hypertarget{sinproc_8c_aa8b99a5da3d60135ae7c848d3d438efd}{}\label{sinproc_8c_aa8b99a5da3d60135ae7c848d3d438efd}
+\index{sinproc.\+c@{sinproc.\+c}!N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+S\+E\+N\+D\+I\+NG@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+S\+E\+N\+D\+I\+NG}}
+\index{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+S\+E\+N\+D\+I\+NG@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+S\+E\+N\+D\+I\+NG}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+S\+E\+N\+D\+I\+NG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+F\+L\+A\+G\+\_\+\+S\+E\+N\+D\+I\+NG~1}\hypertarget{sinproc_8c_a79192377825d7619c72c11700da23ef6}{}\label{sinproc_8c_a79192377825d7619c72c11700da23ef6}
+\index{sinproc.\+c@{sinproc.\+c}!N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}}
+\index{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+T\+I\+VE~4}\hypertarget{sinproc_8c_a6112ee08ede54b57f7740d9b240257a0}{}\label{sinproc_8c_a6112ee08ede54b57f7740d9b240257a0}
+\index{sinproc.\+c@{sinproc.\+c}!N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}}
+\index{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG~2}\hypertarget{sinproc_8c_ab20abf0846694672cb3608f386666feb}{}\label{sinproc_8c_ab20abf0846694672cb3608f386666feb}
+\index{sinproc.\+c@{sinproc.\+c}!N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}}
+\index{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED~5}\hypertarget{sinproc_8c_a4e8e459eb8a88251b491c82e796755c6}{}\label{sinproc_8c_a4e8e459eb8a88251b491c82e796755c6}
+\index{sinproc.\+c@{sinproc.\+c}!N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}}
+\index{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE~1}\hypertarget{sinproc_8c_acd8c872635101ab6de37097ee478c883}{}\label{sinproc_8c_acd8c872635101ab6de37097ee478c883}
+\index{sinproc.\+c@{sinproc.\+c}!N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+DY@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+DY}}
+\index{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+DY@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+DY}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+DY}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+DY~3}\hypertarget{sinproc_8c_a565b52938bb3493ff37dc2b903fe4293}{}\label{sinproc_8c_a565b52938bb3493ff37dc2b903fe4293}
+\index{sinproc.\+c@{sinproc.\+c}!N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}}
+\index{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+NG~7}\hypertarget{sinproc_8c_ac7a84afdbba10e2fd1f030eab2c2d799}{}\label{sinproc_8c_ac7a84afdbba10e2fd1f030eab2c2d799}
+\index{sinproc.\+c@{sinproc.\+c}!N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+P\+E\+ER@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+P\+E\+ER}}
+\index{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+P\+E\+ER@{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+P\+E\+ER}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+P\+E\+ER}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+S\+I\+N\+P\+R\+O\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+T\+O\+P\+P\+I\+N\+G\+\_\+\+P\+E\+ER~6}\hypertarget{sinproc_8c_a7b84d3e5d77149b69c8910b8e129292e}{}\label{sinproc_8c_a7b84d3e5d77149b69c8910b8e129292e}
+
+
+\subsection{Function Documentation}
+\index{sinproc.\+c@{sinproc.\+c}!nn\+\_\+sinproc\+\_\+accept@{nn\+\_\+sinproc\+\_\+accept}}
+\index{nn\+\_\+sinproc\+\_\+accept@{nn\+\_\+sinproc\+\_\+accept}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{nn\+\_\+sinproc\+\_\+accept(struct nn\+\_\+sinproc $\ast$self, struct nn\+\_\+sinproc $\ast$peer)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sinproc\+\_\+accept (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sinproc} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+sinproc} $\ast$}]{peer}
+\end{DoxyParamCaption}
+)}\hypertarget{sinproc_8c_a58908ed231d44f7b42b3668a893adba0}{}\label{sinproc_8c_a58908ed231d44f7b42b3668a893adba0}
+\index{sinproc.\+c@{sinproc.\+c}!nn\+\_\+sinproc\+\_\+connect@{nn\+\_\+sinproc\+\_\+connect}}
+\index{nn\+\_\+sinproc\+\_\+connect@{nn\+\_\+sinproc\+\_\+connect}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{nn\+\_\+sinproc\+\_\+connect(struct nn\+\_\+sinproc $\ast$self, struct nn\+\_\+fsm $\ast$peer)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sinproc\+\_\+connect (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sinproc} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{peer}
+\end{DoxyParamCaption}
+)}\hypertarget{sinproc_8c_a730451da3ad38abb884a5096e6f419d7}{}\label{sinproc_8c_a730451da3ad38abb884a5096e6f419d7}
+\index{sinproc.\+c@{sinproc.\+c}!nn\+\_\+sinproc\+\_\+init@{nn\+\_\+sinproc\+\_\+init}}
+\index{nn\+\_\+sinproc\+\_\+init@{nn\+\_\+sinproc\+\_\+init}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{nn\+\_\+sinproc\+\_\+init(struct nn\+\_\+sinproc $\ast$self, int src, struct nn\+\_\+epbase $\ast$epbase, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sinproc\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sinproc} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+epbase} $\ast$}]{epbase, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{sinproc_8c_a6665d2cd892a7132ee29117778c2539a}{}\label{sinproc_8c_a6665d2cd892a7132ee29117778c2539a}
+\index{sinproc.\+c@{sinproc.\+c}!nn\+\_\+sinproc\+\_\+isidle@{nn\+\_\+sinproc\+\_\+isidle}}
+\index{nn\+\_\+sinproc\+\_\+isidle@{nn\+\_\+sinproc\+\_\+isidle}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{nn\+\_\+sinproc\+\_\+isidle(struct nn\+\_\+sinproc $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+sinproc\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sinproc} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sinproc_8c_aa2a2c5ce6ebcc9099ac435da14650265}{}\label{sinproc_8c_aa2a2c5ce6ebcc9099ac435da14650265}
+\index{sinproc.\+c@{sinproc.\+c}!nn\+\_\+sinproc\+\_\+stop@{nn\+\_\+sinproc\+\_\+stop}}
+\index{nn\+\_\+sinproc\+\_\+stop@{nn\+\_\+sinproc\+\_\+stop}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{nn\+\_\+sinproc\+\_\+stop(struct nn\+\_\+sinproc $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sinproc\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sinproc} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sinproc_8c_a337033945ccab9551e4ac321124f988a}{}\label{sinproc_8c_a337033945ccab9551e4ac321124f988a}
+\index{sinproc.\+c@{sinproc.\+c}!nn\+\_\+sinproc\+\_\+term@{nn\+\_\+sinproc\+\_\+term}}
+\index{nn\+\_\+sinproc\+\_\+term@{nn\+\_\+sinproc\+\_\+term}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{nn\+\_\+sinproc\+\_\+term(struct nn\+\_\+sinproc $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sinproc\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sinproc} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sinproc_8c_afe8db31cad5f9d9fff1a430da3964ef7}{}\label{sinproc_8c_afe8db31cad5f9d9fff1a430da3964ef7}
+
+
+\subsection{Variable Documentation}
+\index{sinproc.\+c@{sinproc.\+c}!nn\+\_\+sinproc\+\_\+pipebase\+\_\+vfptr@{nn\+\_\+sinproc\+\_\+pipebase\+\_\+vfptr}}
+\index{nn\+\_\+sinproc\+\_\+pipebase\+\_\+vfptr@{nn\+\_\+sinproc\+\_\+pipebase\+\_\+vfptr}!sinproc.\+c@{sinproc.\+c}}
+\subsubsection[{nn\+\_\+sinproc\+\_\+pipebase\+\_\+vfptr}]{\setlength{\rightskip}{0pt plus 5cm}const struct {\bf nn\+\_\+pipebase\+\_\+vfptr} nn\+\_\+sinproc\+\_\+pipebase\+\_\+vfptr}\hypertarget{sinproc_8c_af2fd2fa6caaabc038d6111b470b665c8}{}\label{sinproc_8c_af2fd2fa6caaabc038d6111b470b665c8}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    nn\_sinproc\_send,
+    nn\_sinproc\_recv
+\}
+\end{DoxyCode}

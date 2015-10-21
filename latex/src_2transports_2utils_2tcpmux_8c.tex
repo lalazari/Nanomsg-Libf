@@ -1,0 +1,53 @@
+\hypertarget{src_2transports_2utils_2tcpmux_8c}{}\section{src/transports/utils/tcpmux.c File Reference}
+\label{src_2transports_2utils_2tcpmux_8c}\index{src/transports/utils/tcpmux.\+c@{src/transports/utils/tcpmux.\+c}}
+{\ttfamily \#include \char`\"{}../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/wire.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$sys/socket.\+h$>$}\\*
+{\ttfamily \#include $<$sys/un.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}tcpmux.\+h\char`\"{}}\\*
+Include dependency graph for tcpmux.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{src_2transports_2utils_2tcpmux_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{src_2transports_2utils_2tcpmux_8c_aa529feef1eab58a03c5e8cec487b7a3e}{tcpmux\+\_\+listen} (int port, const char $\ast$service)
+\item 
+int \hyperlink{src_2transports_2utils_2tcpmux_8c_a55bdcf7ab9ab4c8cc8cb81b3f155141d}{tcpmux\+\_\+accept} (int s)
+\item 
+int \hyperlink{src_2transports_2utils_2tcpmux_8c_a8c70634cedf2686da9e9a319909c1332}{tcpmux\+\_\+connect} (int s, const struct sockaddr $\ast$addr, socklen\+\_\+t addrlen, const char $\ast$service)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{src/transports/utils/tcpmux.\+c@{src/transports/utils/tcpmux.\+c}!tcpmux\+\_\+accept@{tcpmux\+\_\+accept}}
+\index{tcpmux\+\_\+accept@{tcpmux\+\_\+accept}!src/transports/utils/tcpmux.\+c@{src/transports/utils/tcpmux.\+c}}
+\subsubsection[{tcpmux\+\_\+accept(int s)}]{\setlength{\rightskip}{0pt plus 5cm}int tcpmux\+\_\+accept (
+\begin{DoxyParamCaption}
+\item[{int}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{src_2transports_2utils_2tcpmux_8c_a55bdcf7ab9ab4c8cc8cb81b3f155141d}{}\label{src_2transports_2utils_2tcpmux_8c_a55bdcf7ab9ab4c8cc8cb81b3f155141d}
+\index{src/transports/utils/tcpmux.\+c@{src/transports/utils/tcpmux.\+c}!tcpmux\+\_\+connect@{tcpmux\+\_\+connect}}
+\index{tcpmux\+\_\+connect@{tcpmux\+\_\+connect}!src/transports/utils/tcpmux.\+c@{src/transports/utils/tcpmux.\+c}}
+\subsubsection[{tcpmux\+\_\+connect(int s, const struct sockaddr $\ast$addr, socklen\+\_\+t addrlen, const char $\ast$service)}]{\setlength{\rightskip}{0pt plus 5cm}int tcpmux\+\_\+connect (
+\begin{DoxyParamCaption}
+\item[{int}]{s, }
+\item[{const struct sockaddr $\ast$}]{addr, }
+\item[{socklen\+\_\+t}]{addrlen, }
+\item[{const char $\ast$}]{service}
+\end{DoxyParamCaption}
+)}\hypertarget{src_2transports_2utils_2tcpmux_8c_a8c70634cedf2686da9e9a319909c1332}{}\label{src_2transports_2utils_2tcpmux_8c_a8c70634cedf2686da9e9a319909c1332}
+\index{src/transports/utils/tcpmux.\+c@{src/transports/utils/tcpmux.\+c}!tcpmux\+\_\+listen@{tcpmux\+\_\+listen}}
+\index{tcpmux\+\_\+listen@{tcpmux\+\_\+listen}!src/transports/utils/tcpmux.\+c@{src/transports/utils/tcpmux.\+c}}
+\subsubsection[{tcpmux\+\_\+listen(int port, const char $\ast$service)}]{\setlength{\rightskip}{0pt plus 5cm}int tcpmux\+\_\+listen (
+\begin{DoxyParamCaption}
+\item[{int}]{port, }
+\item[{const char $\ast$}]{service}
+\end{DoxyParamCaption}
+)}\hypertarget{src_2transports_2utils_2tcpmux_8c_aa529feef1eab58a03c5e8cec487b7a3e}{}\label{src_2transports_2utils_2tcpmux_8c_aa529feef1eab58a03c5e8cec487b7a3e}

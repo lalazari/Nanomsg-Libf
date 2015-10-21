@@ -1,0 +1,7 @@
+<map id="src/core/ep.h" name="src/core/ep.h">
+<area shape="rect" id="node2" href="$ep_8c.html" title="src/core/ep.c" alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node3" href="$epbase_8c.html" title="src/core/epbase.c" alt="" coords="129,80,255,107"/>
+<area shape="rect" id="node4" href="$global_8c.html" title="src/core/global.c" alt="" coords="279,80,397,107"/>
+<area shape="rect" id="node5" href="$pipe_8c.html" title="src/core/pipe.c" alt="" coords="422,80,529,107"/>
+<area shape="rect" id="node6" href="$sock_8c.html" title="src/core/sock.c" alt="" coords="555,80,667,107"/>
+</map>

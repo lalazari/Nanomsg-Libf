@@ -1,0 +1,92 @@
+\hypertarget{reqrep_8h}{}\section{src/reqrep.h File Reference}
+\label{reqrep_8h}\index{src/reqrep.\+h@{src/reqrep.\+h}}
+{\ttfamily \#include \char`\"{}nn.\+h\char`\"{}}\\*
+Include dependency graph for reqrep.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{reqrep_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{reqrep_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionnn__req__handle}{nn\+\_\+req\+\_\+handle}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{reqrep_8h_aab4b9e8ac8e5e03b38979ea12201fa4b}{N\+N\+\_\+\+P\+R\+O\+T\+O\+\_\+\+R\+E\+Q\+R\+EP}~3
+\item 
+\#define \hyperlink{reqrep_8h_ac7e3998108a6631776999ef8e72afceb}{N\+N\+\_\+\+R\+EQ}~(\hyperlink{reqrep_8h_aab4b9e8ac8e5e03b38979ea12201fa4b}{N\+N\+\_\+\+P\+R\+O\+T\+O\+\_\+\+R\+E\+Q\+R\+EP} $\ast$ 16 + 0)
+\item 
+\#define \hyperlink{reqrep_8h_a55f92a33fbfaa66fbfc1fe535f7f1501}{N\+N\+\_\+\+R\+EP}~(\hyperlink{reqrep_8h_aab4b9e8ac8e5e03b38979ea12201fa4b}{N\+N\+\_\+\+P\+R\+O\+T\+O\+\_\+\+R\+E\+Q\+R\+EP} $\ast$ 16 + 1)
+\item 
+\#define \hyperlink{reqrep_8h_aa185f2520f55cef8ef1c1145b1284e35}{N\+N\+\_\+\+R\+E\+Q\+\_\+\+R\+E\+S\+E\+N\+D\+\_\+\+I\+VL}~1
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef union \hyperlink{unionnn__req__handle}{nn\+\_\+req\+\_\+handle} \hyperlink{reqrep_8h_a33b0ebaa0b5d8a86362b437e5809b1df}{nn\+\_\+req\+\_\+handle}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nn_8h_a0fc0f004f73e11705b7d3c568c2fba13}{N\+N\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{reqrep_8h_a9a02cbd13dda41d9c51038f05d7351d8}{nn\+\_\+req\+\_\+send} (int s, \hyperlink{unionnn__req__handle}{nn\+\_\+req\+\_\+handle} hndl, const void $\ast$buf, size\+\_\+t len, int flags)
+\item 
+\hyperlink{nn_8h_a0fc0f004f73e11705b7d3c568c2fba13}{N\+N\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{reqrep_8h_a910cef297c53f37ede50784e55594c32}{nn\+\_\+req\+\_\+recv} (int s, \hyperlink{unionnn__req__handle}{nn\+\_\+req\+\_\+handle} $\ast$hndl, void $\ast$buf, size\+\_\+t len, int flags)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{reqrep.\+h@{reqrep.\+h}!N\+N\+\_\+\+P\+R\+O\+T\+O\+\_\+\+R\+E\+Q\+R\+EP@{N\+N\+\_\+\+P\+R\+O\+T\+O\+\_\+\+R\+E\+Q\+R\+EP}}
+\index{N\+N\+\_\+\+P\+R\+O\+T\+O\+\_\+\+R\+E\+Q\+R\+EP@{N\+N\+\_\+\+P\+R\+O\+T\+O\+\_\+\+R\+E\+Q\+R\+EP}!reqrep.\+h@{reqrep.\+h}}
+\subsubsection[{N\+N\+\_\+\+P\+R\+O\+T\+O\+\_\+\+R\+E\+Q\+R\+EP}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+P\+R\+O\+T\+O\+\_\+\+R\+E\+Q\+R\+EP~3}\hypertarget{reqrep_8h_aab4b9e8ac8e5e03b38979ea12201fa4b}{}\label{reqrep_8h_aab4b9e8ac8e5e03b38979ea12201fa4b}
+\index{reqrep.\+h@{reqrep.\+h}!N\+N\+\_\+\+R\+EP@{N\+N\+\_\+\+R\+EP}}
+\index{N\+N\+\_\+\+R\+EP@{N\+N\+\_\+\+R\+EP}!reqrep.\+h@{reqrep.\+h}}
+\subsubsection[{N\+N\+\_\+\+R\+EP}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+R\+EP~({\bf N\+N\+\_\+\+P\+R\+O\+T\+O\+\_\+\+R\+E\+Q\+R\+EP} $\ast$ 16 + 1)}\hypertarget{reqrep_8h_a55f92a33fbfaa66fbfc1fe535f7f1501}{}\label{reqrep_8h_a55f92a33fbfaa66fbfc1fe535f7f1501}
+\index{reqrep.\+h@{reqrep.\+h}!N\+N\+\_\+\+R\+EQ@{N\+N\+\_\+\+R\+EQ}}
+\index{N\+N\+\_\+\+R\+EQ@{N\+N\+\_\+\+R\+EQ}!reqrep.\+h@{reqrep.\+h}}
+\subsubsection[{N\+N\+\_\+\+R\+EQ}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+R\+EQ~({\bf N\+N\+\_\+\+P\+R\+O\+T\+O\+\_\+\+R\+E\+Q\+R\+EP} $\ast$ 16 + 0)}\hypertarget{reqrep_8h_ac7e3998108a6631776999ef8e72afceb}{}\label{reqrep_8h_ac7e3998108a6631776999ef8e72afceb}
+\index{reqrep.\+h@{reqrep.\+h}!N\+N\+\_\+\+R\+E\+Q\+\_\+\+R\+E\+S\+E\+N\+D\+\_\+\+I\+VL@{N\+N\+\_\+\+R\+E\+Q\+\_\+\+R\+E\+S\+E\+N\+D\+\_\+\+I\+VL}}
+\index{N\+N\+\_\+\+R\+E\+Q\+\_\+\+R\+E\+S\+E\+N\+D\+\_\+\+I\+VL@{N\+N\+\_\+\+R\+E\+Q\+\_\+\+R\+E\+S\+E\+N\+D\+\_\+\+I\+VL}!reqrep.\+h@{reqrep.\+h}}
+\subsubsection[{N\+N\+\_\+\+R\+E\+Q\+\_\+\+R\+E\+S\+E\+N\+D\+\_\+\+I\+VL}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+R\+E\+Q\+\_\+\+R\+E\+S\+E\+N\+D\+\_\+\+I\+VL~1}\hypertarget{reqrep_8h_aa185f2520f55cef8ef1c1145b1284e35}{}\label{reqrep_8h_aa185f2520f55cef8ef1c1145b1284e35}
+
+
+\subsection{Typedef Documentation}
+\index{reqrep.\+h@{reqrep.\+h}!nn\+\_\+req\+\_\+handle@{nn\+\_\+req\+\_\+handle}}
+\index{nn\+\_\+req\+\_\+handle@{nn\+\_\+req\+\_\+handle}!reqrep.\+h@{reqrep.\+h}}
+\subsubsection[{nn\+\_\+req\+\_\+handle}]{\setlength{\rightskip}{0pt plus 5cm}typedef union {\bf nn\+\_\+req\+\_\+handle}  {\bf nn\+\_\+req\+\_\+handle}}\hypertarget{reqrep_8h_a33b0ebaa0b5d8a86362b437e5809b1df}{}\label{reqrep_8h_a33b0ebaa0b5d8a86362b437e5809b1df}
+
+
+\subsection{Function Documentation}
+\index{reqrep.\+h@{reqrep.\+h}!nn\+\_\+req\+\_\+recv@{nn\+\_\+req\+\_\+recv}}
+\index{nn\+\_\+req\+\_\+recv@{nn\+\_\+req\+\_\+recv}!reqrep.\+h@{reqrep.\+h}}
+\subsubsection[{nn\+\_\+req\+\_\+recv(int s, nn\+\_\+req\+\_\+handle $\ast$hndl, void $\ast$buf, size\+\_\+t len, int flags)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\+N\+\_\+\+E\+X\+P\+O\+RT} int nn\+\_\+req\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{int}]{s, }
+\item[{{\bf nn\+\_\+req\+\_\+handle} $\ast$}]{hndl, }
+\item[{void $\ast$}]{buf, }
+\item[{size\+\_\+t}]{len, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{reqrep_8h_a910cef297c53f37ede50784e55594c32}{}\label{reqrep_8h_a910cef297c53f37ede50784e55594c32}
+\index{reqrep.\+h@{reqrep.\+h}!nn\+\_\+req\+\_\+send@{nn\+\_\+req\+\_\+send}}
+\index{nn\+\_\+req\+\_\+send@{nn\+\_\+req\+\_\+send}!reqrep.\+h@{reqrep.\+h}}
+\subsubsection[{nn\+\_\+req\+\_\+send(int s, nn\+\_\+req\+\_\+handle hndl, const void $\ast$buf, size\+\_\+t len, int flags)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\+N\+\_\+\+E\+X\+P\+O\+RT} int nn\+\_\+req\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{int}]{s, }
+\item[{{\bf nn\+\_\+req\+\_\+handle}}]{hndl, }
+\item[{const void $\ast$}]{buf, }
+\item[{size\+\_\+t}]{len, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{reqrep_8h_a9a02cbd13dda41d9c51038f05d7351d8}{}\label{reqrep_8h_a9a02cbd13dda41d9c51038f05d7351d8}

@@ -1,0 +1,107 @@
+\hypertarget{dns_8h}{}\section{src/transports/utils/dns.h File Reference}
+\label{dns_8h}\index{src/transports/utils/dns.\+h@{src/transports/utils/dns.\+h}}
+{\ttfamily \#include \char`\"{}../../aio/fsm.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}dns\+\_\+getaddrinfo.\+h\char`\"{}}\\*
+Include dependency graph for dns.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{dns_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dns_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__dns__result}{nn\+\_\+dns\+\_\+result}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{dns_8h_a1ccbf1da4a16ee3597d68551dfc701a6}{N\+N\+\_\+\+D\+N\+S\+\_\+\+D\+O\+NE}~1
+\item 
+\#define \hyperlink{dns_8h_a4565c5c444ad39c286a2906cb22dce0a}{N\+N\+\_\+\+D\+N\+S\+\_\+\+S\+T\+O\+P\+P\+ED}~2
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{dns_8h_a3ed97c5e195d1b4ec2d29a8549e092d4}{nn\+\_\+dns\+\_\+check\+\_\+hostname} (const char $\ast$name, size\+\_\+t namelen)
+\item 
+void \hyperlink{dns_8h_a052fbf46ad920d765a80aa18dff7883c}{nn\+\_\+dns\+\_\+init} (struct \hyperlink{structnn__dns}{nn\+\_\+dns} $\ast$self, int src, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{dns_8h_a04e9a1dbba6d7f9daf19469ff243a60d}{nn\+\_\+dns\+\_\+term} (struct \hyperlink{structnn__dns}{nn\+\_\+dns} $\ast$self)
+\item 
+int \hyperlink{dns_8h_a14149584a101acde9abbf5d24bd2fd58}{nn\+\_\+dns\+\_\+isidle} (struct \hyperlink{structnn__dns}{nn\+\_\+dns} $\ast$self)
+\item 
+void \hyperlink{dns_8h_aa8502ac7f1d0bec31ffc115de6387037}{nn\+\_\+dns\+\_\+start} (struct \hyperlink{structnn__dns}{nn\+\_\+dns} $\ast$self, const char $\ast$addr, size\+\_\+t addrlen, int ipv4only, struct \hyperlink{structnn__dns__result}{nn\+\_\+dns\+\_\+result} $\ast$result)
+\item 
+void \hyperlink{dns_8h_a47d220e6de1e37ee45143c5d56cd32db}{nn\+\_\+dns\+\_\+stop} (struct \hyperlink{structnn__dns}{nn\+\_\+dns} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{dns.\+h@{dns.\+h}!N\+N\+\_\+\+D\+N\+S\+\_\+\+D\+O\+NE@{N\+N\+\_\+\+D\+N\+S\+\_\+\+D\+O\+NE}}
+\index{N\+N\+\_\+\+D\+N\+S\+\_\+\+D\+O\+NE@{N\+N\+\_\+\+D\+N\+S\+\_\+\+D\+O\+NE}!dns.\+h@{dns.\+h}}
+\subsubsection[{N\+N\+\_\+\+D\+N\+S\+\_\+\+D\+O\+NE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+D\+N\+S\+\_\+\+D\+O\+NE~1}\hypertarget{dns_8h_a1ccbf1da4a16ee3597d68551dfc701a6}{}\label{dns_8h_a1ccbf1da4a16ee3597d68551dfc701a6}
+\index{dns.\+h@{dns.\+h}!N\+N\+\_\+\+D\+N\+S\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+D\+N\+S\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+D\+N\+S\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+D\+N\+S\+\_\+\+S\+T\+O\+P\+P\+ED}!dns.\+h@{dns.\+h}}
+\subsubsection[{N\+N\+\_\+\+D\+N\+S\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+D\+N\+S\+\_\+\+S\+T\+O\+P\+P\+ED~2}\hypertarget{dns_8h_a4565c5c444ad39c286a2906cb22dce0a}{}\label{dns_8h_a4565c5c444ad39c286a2906cb22dce0a}
+
+
+\subsection{Function Documentation}
+\index{dns.\+h@{dns.\+h}!nn\+\_\+dns\+\_\+check\+\_\+hostname@{nn\+\_\+dns\+\_\+check\+\_\+hostname}}
+\index{nn\+\_\+dns\+\_\+check\+\_\+hostname@{nn\+\_\+dns\+\_\+check\+\_\+hostname}!dns.\+h@{dns.\+h}}
+\subsubsection[{nn\+\_\+dns\+\_\+check\+\_\+hostname(const char $\ast$name, size\+\_\+t namelen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+dns\+\_\+check\+\_\+hostname (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{size\+\_\+t}]{namelen}
+\end{DoxyParamCaption}
+)}\hypertarget{dns_8h_a3ed97c5e195d1b4ec2d29a8549e092d4}{}\label{dns_8h_a3ed97c5e195d1b4ec2d29a8549e092d4}
+\index{dns.\+h@{dns.\+h}!nn\+\_\+dns\+\_\+init@{nn\+\_\+dns\+\_\+init}}
+\index{nn\+\_\+dns\+\_\+init@{nn\+\_\+dns\+\_\+init}!dns.\+h@{dns.\+h}}
+\subsubsection[{nn\+\_\+dns\+\_\+init(struct nn\+\_\+dns $\ast$self, int src, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+dns\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+dns} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{dns_8h_a052fbf46ad920d765a80aa18dff7883c}{}\label{dns_8h_a052fbf46ad920d765a80aa18dff7883c}
+\index{dns.\+h@{dns.\+h}!nn\+\_\+dns\+\_\+isidle@{nn\+\_\+dns\+\_\+isidle}}
+\index{nn\+\_\+dns\+\_\+isidle@{nn\+\_\+dns\+\_\+isidle}!dns.\+h@{dns.\+h}}
+\subsubsection[{nn\+\_\+dns\+\_\+isidle(struct nn\+\_\+dns $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+dns\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+dns} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{dns_8h_a14149584a101acde9abbf5d24bd2fd58}{}\label{dns_8h_a14149584a101acde9abbf5d24bd2fd58}
+\index{dns.\+h@{dns.\+h}!nn\+\_\+dns\+\_\+start@{nn\+\_\+dns\+\_\+start}}
+\index{nn\+\_\+dns\+\_\+start@{nn\+\_\+dns\+\_\+start}!dns.\+h@{dns.\+h}}
+\subsubsection[{nn\+\_\+dns\+\_\+start(struct nn\+\_\+dns $\ast$self, const char $\ast$addr, size\+\_\+t addrlen, int ipv4only, struct nn\+\_\+dns\+\_\+result $\ast$result)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+dns\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+dns} $\ast$}]{self, }
+\item[{const char $\ast$}]{addr, }
+\item[{size\+\_\+t}]{addrlen, }
+\item[{int}]{ipv4only, }
+\item[{struct {\bf nn\+\_\+dns\+\_\+result} $\ast$}]{result}
+\end{DoxyParamCaption}
+)}\hypertarget{dns_8h_aa8502ac7f1d0bec31ffc115de6387037}{}\label{dns_8h_aa8502ac7f1d0bec31ffc115de6387037}
+\index{dns.\+h@{dns.\+h}!nn\+\_\+dns\+\_\+stop@{nn\+\_\+dns\+\_\+stop}}
+\index{nn\+\_\+dns\+\_\+stop@{nn\+\_\+dns\+\_\+stop}!dns.\+h@{dns.\+h}}
+\subsubsection[{nn\+\_\+dns\+\_\+stop(struct nn\+\_\+dns $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+dns\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+dns} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{dns_8h_a47d220e6de1e37ee45143c5d56cd32db}{}\label{dns_8h_a47d220e6de1e37ee45143c5d56cd32db}
+\index{dns.\+h@{dns.\+h}!nn\+\_\+dns\+\_\+term@{nn\+\_\+dns\+\_\+term}}
+\index{nn\+\_\+dns\+\_\+term@{nn\+\_\+dns\+\_\+term}!dns.\+h@{dns.\+h}}
+\subsubsection[{nn\+\_\+dns\+\_\+term(struct nn\+\_\+dns $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+dns\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+dns} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{dns_8h_a04e9a1dbba6d7f9daf19469ff243a60d}{}\label{dns_8h_a04e9a1dbba6d7f9daf19469ff243a60d}

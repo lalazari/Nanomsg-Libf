@@ -1,0 +1,66 @@
+\hypertarget{ipc__stress_8c}{}\section{tests/ipc\+\_\+stress.c File Reference}
+\label{ipc__stress_8c}\index{tests/ipc\+\_\+stress.\+c@{tests/ipc\+\_\+stress.\+c}}
+{\ttfamily \#include \char`\"{}../src/nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/pair.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/pubsub.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/pipeline.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/ipc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}testutil.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/utils/thread.\+c\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/utils/atomic.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../src/utils/atomic.\+c\char`\"{}}\\*
+Include dependency graph for ipc\+\_\+stress.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ipc__stress_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ipc__stress_8c_ae4f10e3506669382a3a5b19ce7a5eb7c}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT}~10
+\item 
+\#define \hyperlink{ipc__stress_8c_a277905f4a4be4b9e7d4144f9b938d516}{T\+E\+S\+T\+\_\+\+L\+O\+O\+PS}~10
+\item 
+\#define \hyperlink{ipc__stress_8c_a8cccdb3b239ce7cf58e9781af267072b}{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}~\char`\"{}ipc\+://test-\/stress.\+ipc\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ipc__stress_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__atomic}{nn\+\_\+atomic} \hyperlink{ipc__stress_8c_aee421ea980c268ec591245d095ae224f}{active}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{ipc\+\_\+stress.\+c@{ipc\+\_\+stress.\+c}!S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}!ipc\+\_\+stress.\+c@{ipc\+\_\+stress.\+c}}
+\subsubsection[{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS~\char`\"{}ipc\+://test-\/stress.\+ipc\char`\"{}}\hypertarget{ipc__stress_8c_a8cccdb3b239ce7cf58e9781af267072b}{}\label{ipc__stress_8c_a8cccdb3b239ce7cf58e9781af267072b}
+\index{ipc\+\_\+stress.\+c@{ipc\+\_\+stress.\+c}!T\+E\+S\+T\+\_\+\+L\+O\+O\+PS@{T\+E\+S\+T\+\_\+\+L\+O\+O\+PS}}
+\index{T\+E\+S\+T\+\_\+\+L\+O\+O\+PS@{T\+E\+S\+T\+\_\+\+L\+O\+O\+PS}!ipc\+\_\+stress.\+c@{ipc\+\_\+stress.\+c}}
+\subsubsection[{T\+E\+S\+T\+\_\+\+L\+O\+O\+PS}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+S\+T\+\_\+\+L\+O\+O\+PS~10}\hypertarget{ipc__stress_8c_a277905f4a4be4b9e7d4144f9b938d516}{}\label{ipc__stress_8c_a277905f4a4be4b9e7d4144f9b938d516}
+\index{ipc\+\_\+stress.\+c@{ipc\+\_\+stress.\+c}!T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT@{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT}}
+\index{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT@{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT}!ipc\+\_\+stress.\+c@{ipc\+\_\+stress.\+c}}
+\subsubsection[{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+U\+NT~10}\hypertarget{ipc__stress_8c_ae4f10e3506669382a3a5b19ce7a5eb7c}{}\label{ipc__stress_8c_ae4f10e3506669382a3a5b19ce7a5eb7c}
+
+
+\subsection{Function Documentation}
+\index{ipc\+\_\+stress.\+c@{ipc\+\_\+stress.\+c}!main@{main}}
+\index{main@{main}!ipc\+\_\+stress.\+c@{ipc\+\_\+stress.\+c}}
+\subsubsection[{main()}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ipc__stress_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{ipc__stress_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+\subsection{Variable Documentation}
+\index{ipc\+\_\+stress.\+c@{ipc\+\_\+stress.\+c}!active@{active}}
+\index{active@{active}!ipc\+\_\+stress.\+c@{ipc\+\_\+stress.\+c}}
+\subsubsection[{active}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+atomic} active}\hypertarget{ipc__stress_8c_aee421ea980c268ec591245d095ae224f}{}\label{ipc__stress_8c_aee421ea980c268ec591245d095ae224f}

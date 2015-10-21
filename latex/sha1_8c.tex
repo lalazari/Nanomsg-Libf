@@ -1,0 +1,60 @@
+\hypertarget{sha1_8c}{}\section{src/transports/ws/sha1.c File Reference}
+\label{sha1_8c}\index{src/transports/ws/sha1.\+c@{src/transports/ws/sha1.\+c}}
+{\ttfamily \#include \char`\"{}sha1.\+h\char`\"{}}\\*
+Include dependency graph for sha1.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{sha1_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sha1_8c_a0b9668d42f2d7745e68df13d0aa3db36}{sha1\+\_\+rol32}(num,  bits)~((num $<$$<$ bits) $\vert$ (num $>$$>$ (32 -\/ bits)))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sha1_8c_acab4386a49da0d60d3deaacd0f54aece}{nn\+\_\+sha1\+\_\+init} (struct \hyperlink{structnn__sha1}{nn\+\_\+sha1} $\ast$self)
+\item 
+void \hyperlink{sha1_8c_a4372c1503d54499b6057560a80cbb610}{nn\+\_\+sha1\+\_\+hashbyte} (struct \hyperlink{structnn__sha1}{nn\+\_\+sha1} $\ast$self, uint8\+\_\+t data)
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{sha1_8c_ab7fccffa6f7b625961ff12571dcc16ba}{nn\+\_\+sha1\+\_\+result} (struct \hyperlink{structnn__sha1}{nn\+\_\+sha1} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{sha1.\+c@{sha1.\+c}!sha1\+\_\+rol32@{sha1\+\_\+rol32}}
+\index{sha1\+\_\+rol32@{sha1\+\_\+rol32}!sha1.\+c@{sha1.\+c}}
+\subsubsection[{sha1\+\_\+rol32}]{\setlength{\rightskip}{0pt plus 5cm}\#define sha1\+\_\+rol32(
+\begin{DoxyParamCaption}
+\item[{}]{num, }
+\item[{}]{bits}
+\end{DoxyParamCaption}
+)~((num $<$$<$ bits) $\vert$ (num $>$$>$ (32 -\/ bits)))}\hypertarget{sha1_8c_a0b9668d42f2d7745e68df13d0aa3db36}{}\label{sha1_8c_a0b9668d42f2d7745e68df13d0aa3db36}
+
+
+\subsection{Function Documentation}
+\index{sha1.\+c@{sha1.\+c}!nn\+\_\+sha1\+\_\+hashbyte@{nn\+\_\+sha1\+\_\+hashbyte}}
+\index{nn\+\_\+sha1\+\_\+hashbyte@{nn\+\_\+sha1\+\_\+hashbyte}!sha1.\+c@{sha1.\+c}}
+\subsubsection[{nn\+\_\+sha1\+\_\+hashbyte(struct nn\+\_\+sha1 $\ast$self, uint8\+\_\+t data)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sha1\+\_\+hashbyte (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sha1} $\ast$}]{self, }
+\item[{uint8\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{sha1_8c_a4372c1503d54499b6057560a80cbb610}{}\label{sha1_8c_a4372c1503d54499b6057560a80cbb610}
+\index{sha1.\+c@{sha1.\+c}!nn\+\_\+sha1\+\_\+init@{nn\+\_\+sha1\+\_\+init}}
+\index{nn\+\_\+sha1\+\_\+init@{nn\+\_\+sha1\+\_\+init}!sha1.\+c@{sha1.\+c}}
+\subsubsection[{nn\+\_\+sha1\+\_\+init(struct nn\+\_\+sha1 $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+sha1\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sha1} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sha1_8c_acab4386a49da0d60d3deaacd0f54aece}{}\label{sha1_8c_acab4386a49da0d60d3deaacd0f54aece}
+\index{sha1.\+c@{sha1.\+c}!nn\+\_\+sha1\+\_\+result@{nn\+\_\+sha1\+\_\+result}}
+\index{nn\+\_\+sha1\+\_\+result@{nn\+\_\+sha1\+\_\+result}!sha1.\+c@{sha1.\+c}}
+\subsubsection[{nn\+\_\+sha1\+\_\+result(struct nn\+\_\+sha1 $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ nn\+\_\+sha1\+\_\+result (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sha1} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{sha1_8c_ab7fccffa6f7b625961ff12571dcc16ba}{}\label{sha1_8c_ab7fccffa6f7b625961ff12571dcc16ba}

@@ -1,0 +1,46 @@
+<map id="nn_bipc" name="nn_bipc">
+<area shape="rect" id="node2" href="$structnn__aipc.html" title="{nn_aipc\n|+ state\l|}" alt="" coords="752,2637,818,2715"/>
+<area shape="rect" id="node3" href="$structnn__fsm__event.html" title="{nn_fsm_event\n|+ src\l+ srcptr\l+ type\l|}" alt="" coords="1058,1128,1162,1235"/>
+<area shape="rect" id="node4" href="$structnn__fsm.html" title="{nn_fsm\n|+ state\l+ src\l+ srcptr\l|}" alt="" coords="1078,1299,1145,1405"/>
+<area shape="rect" id="node20" href="$structnn__usock.html" title="{nn_usock\n|+ state\l+ s\l+ buf\l+ len\l+ batch\l+ batch_len\l+ batch_pos\l+ pfd\l+ hdr\l+ iov\land 10 more...\l|}" alt="" coords="685,1872,792,2096"/>
+<area shape="rect" id="node36" href="$structnn__sipc.html" title="{nn_sipc\n|+ state\l+ instate\l+ inhdr\l+ outstate\l+ outhdr\l|}" alt="" coords="1028,2437,1109,2573"/>
+<area shape="rect" id="node39" href="$structnn__pipebase.html" title="{nn_pipebase\n|+ state\l+ instate\l+ outstate\l+ data\l|}" alt="" coords="1486,1923,1580,2045"/>
+<area shape="rect" id="node41" href="$structnn__streamhdr.html" title="{nn_streamhdr\n|+ state\l+ protohdr\l|}" alt="" coords="1149,2190,1250,2282"/>
+<area shape="rect" id="node42" href="$structnn__timer.html" title="{nn_timer\n|+ state\l+ timeout\l|}" alt="" coords="333,1938,410,2030"/>
+<area shape="rect" id="node21" href="$structnn__worker__fd.html" title="{nn_worker_fd\n|+ src\l|}" alt="" coords="539,1585,638,1663"/>
+<area shape="rect" id="node22" href="$structnn__worker__task.html" title="{nn_worker_task\n|+ src\l|}" alt="" coords="266,1585,381,1663"/>
+<area shape="rect" id="node24" href="$structnn__worker__op.html" title="{nn_worker_op\n|+ src\l+ state\l+ olpd\l|}" alt="" coords="971,1571,1073,1677"/>
+<area shape="rect" id="node25" href="$structnn__fsm__owner.html" title="{nn_fsm_owner\n|+ src\l|}" alt="" coords="1294,1945,1401,2023"/>
+<area shape="rect" id="node27" href="$structnn__ep.html" title="{nn_ep\n|+ state\l+ eid\l+ addr\l+ last_errno\l|}" alt="" coords="1925,1923,2016,2045"/>
+<area shape="rect" id="node29" href="$structnn__sock.html" title="{nn_sock\n|+ state\l+ flags\l+ termsem\l+ eid\l+ linger\l+ sndbuf\l+ rcvbuf\l+ rcvmaxsize\l+ sndtimeo\l+ rcvtimeo\land 19 more...\l|}" alt="" coords="2046,1512,2153,1736"/>
+<area shape="rect" id="node43" href="$structnn__worker__timer.html" title="{nn_worker_timer\n||}" alt="" coords="123,1585,241,1663"/>
+<area shape="rect" id="node5" href="$structnn__ctx.html" title="{nn_ctx\n||}" alt="" coords="1186,1143,1248,1220"/>
+<area shape="rect" id="node6" href="$structnn__mutex.html" title="{nn_mutex\n|+ mutex\l|}" alt="" coords="1163,549,1241,627"/>
+<area shape="rect" id="node10" href="$structnn__worker.html" title="{nn_worker\n|+ cp\l|}" alt="" coords="820,819,902,896"/>
+<area shape="rect" id="node7" href="$structnn__queue.html" title="{nn_queue\n||}" alt="" coords="924,549,1002,627"/>
+<area shape="rect" id="node8" href="$structnn__queue__item.html" title="{nn_queue_item\n||}" alt="" coords="726,213,836,291"/>
+<area shape="rect" id="node9" href="$structnn__pool.html" title="{nn_pool\n||}" alt="" coords="910,973,977,1051"/>
+<area shape="rect" id="node11" href="$structnn__poller__hndl.html" title="{nn_poller_hndl\n|+ fd\l+ events\l+ events\l+ index\l|}" alt="" coords="18,6,122,127"/>
+<area shape="rect" id="node13" href="$structnn__poller_1_1nn__hndls__item.html" title="{nn_poller::nn_hndls_item\n|+ prev\l+ next\l|}" alt="" coords="259,206,425,298"/>
+<area shape="rect" id="node12" href="$structnn__poller.html" title="{nn_poller\n|+ ep\l+ nevents\l+ index\l+ events\l+ kq\l+ events\l+ size\l+ capacity\l+ pollset\l+ removed\l|}" alt="" coords="243,483,326,693"/>
+<area shape="rect" id="node14" href="$structnn__timerset.html" title="{nn_timerset\n||}" alt="" coords="1048,549,1138,627"/>
+<area shape="rect" id="node15" href="$structnn__clock.html" title="{nn_clock\n|+ last_tsc\l+ last_time\l|}" alt="" coords="1475,206,1561,298"/>
+<area shape="rect" id="node16" href="$structnn__list.html" title="{nn_list\n||}" alt="" coords="2216,213,2276,291"/>
+<area shape="rect" id="node17" href="$structnn__list__item.html" title="{nn_list_item\n||}" alt="" coords="2042,28,2133,105"/>
+<area shape="rect" id="node32" href="$structnn__socktype.html" title="{nn_socktype\n|+ domain\l+ protocol\l+ flags\l+ create\l+ ispeer\l|}" alt="" coords="2117,323,2213,459"/>
+<area shape="rect" id="node44" href="$structnn__timerset__hndl.html" title="{nn_timerset_hndl\n|+ timeout\l|}" alt="" coords="94,717,214,795"/>
+<area shape="rect" id="node18" href="$structnn__efd.html" title="{nn_efd\n|+ efd\l+ r\l+ w\l+ r\l+ w\l+ fds\l|}" alt="" coords="1593,513,1654,663"/>
+<area shape="rect" id="node19" href="$structnn__thread.html" title="{nn_thread\n|+ routine\l+ arg\l+ handle\l+ handle\l|}" alt="" coords="822,527,900,649"/>
+<area shape="rect" id="node23" href="$structsockaddr__un.html" title="{sockaddr_un\n|+ sun_family\l+ sun_path\l|}" alt="" coords="798,1578,894,1670"/>
+<area shape="rect" id="node26" href="$structnn__epbase.html" title="{nn_epbase\n||}" alt="" coords="1832,2197,1917,2275"/>
+<area shape="rect" id="node28" href="$structnn__ep__options.html" title="{nn_ep_options\n|+ sndprio\l+ rcvprio\l+ ipv4only\l|}" alt="" coords="1792,1299,1898,1405"/>
+<area shape="rect" id="node33" href="$structnn__sockbase.html" title="{nn_sockbase\n||}" alt="" coords="2173,1945,2272,2023"/>
+<area shape="rect" id="node30" href="$structnn__optset.html" title="{nn_optset\n||}" alt="" coords="2103,1313,2181,1391"/>
+<area shape="rect" id="node31" href="$structnn__optset__vfptr.html" title="{nn_optset_vfptr\n|+ destroy\l+ setopt\l+ getopt\l|}" alt="" coords="2086,1128,2198,1235"/>
+<area shape="rect" id="node34" href="$structnn__sockbase__vfptr.html" title="{nn_sockbase_vfptr\n|+ stop\l+ destroy\l+ add\l+ rm\l+ in\l+ out\l+ events\l+ send\l+ recv\l+ setopt\l+ getopt\l|}" alt="" coords="2228,1512,2360,1736"/>
+<area shape="rect" id="node35" href="$structnn__epbase__vfptr.html" title="{nn_epbase_vfptr\n|+ stop\l+ destroy\l|}" alt="" coords="1759,1938,1877,2030"/>
+<area shape="rect" id="node37" href="$structnn__msg.html" title="{nn_msg\n||}" alt="" coords="988,2197,1056,2275"/>
+<area shape="rect" id="node38" href="$structnn__chunkref.html" title="{nn_chunkref\n|+ ref\l+ unused\l+ u\l|}" alt="" coords="970,1931,1064,2037"/>
+<area shape="rect" id="node40" href="$structnn__pipebase__vfptr.html" title="{nn_pipebase_vfptr\n|+ send\l+ recv\l|}" alt="" coords="1556,1578,1684,1670"/>
+<area shape="rect" id="node45" href="$structnn__backoff.html" title="{nn_backoff\n|+ minivl\l+ maxivl\l+ n\l|}" alt="" coords="328,2307,414,2413"/>
+</map>

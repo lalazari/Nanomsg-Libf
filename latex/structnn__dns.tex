@@ -1,0 +1,67 @@
+\hypertarget{structnn__dns}{}\section{nn\+\_\+dns Struct Reference}
+\label{structnn__dns}\index{nn\+\_\+dns@{nn\+\_\+dns}}
+
+
+{\ttfamily \#include $<$dns\+\_\+getaddrinfo.\+h$>$}
+
+
+
+Collaboration diagram for nn\+\_\+dns\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structnn__dns__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} \hyperlink{structnn__dns_a0f2f987efe48894f96a30199fbbf08d9}{fsm}
+\item 
+int \hyperlink{structnn__dns_a95a661cf2fc34d5dcb28bada51eee803}{state}
+\item 
+struct \hyperlink{structnn__dns__result}{nn\+\_\+dns\+\_\+result} $\ast$ \hyperlink{structnn__dns_a379539bb0b7354a8520acb23fdaac027}{result}
+\item 
+struct \hyperlink{structnn__fsm__event}{nn\+\_\+fsm\+\_\+event} \hyperlink{structnn__dns_a843e151f44152faf03780cf793842223}{done}
+\item 
+int \hyperlink{structnn__dns_a17d208ceb0ee12ec77eb91ecbaf21537}{error}
+\item 
+char \hyperlink{structnn__dns_aa9b2b6de4e2ac1e18876370ada8c8a7a}{hostname} \mbox{[}\hyperlink{nn_8h_a9b3759ef32562c8b4f0c8c75f54c8b03}{N\+N\+\_\+\+S\+O\+C\+K\+A\+D\+D\+R\+\_\+\+M\+AX}\mbox{]}
+\item 
+struct addrinfo \hyperlink{structnn__dns_aa16cc1ee1b29647de32a28ff2abe9ed3}{request}
+\item 
+struct gaicb \hyperlink{structnn__dns_ab81aea732ded93810fdf265eb2f257ea}{gcb}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+dns@{nn\+\_\+dns}!done@{done}}
+\index{done@{done}!nn\+\_\+dns@{nn\+\_\+dns}}
+\subsubsection[{done}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+event} nn\+\_\+dns\+::done}\hypertarget{structnn__dns_a843e151f44152faf03780cf793842223}{}\label{structnn__dns_a843e151f44152faf03780cf793842223}
+\index{nn\+\_\+dns@{nn\+\_\+dns}!error@{error}}
+\index{error@{error}!nn\+\_\+dns@{nn\+\_\+dns}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+dns\+::error}\hypertarget{structnn__dns_a17d208ceb0ee12ec77eb91ecbaf21537}{}\label{structnn__dns_a17d208ceb0ee12ec77eb91ecbaf21537}
+\index{nn\+\_\+dns@{nn\+\_\+dns}!fsm@{fsm}}
+\index{fsm@{fsm}!nn\+\_\+dns@{nn\+\_\+dns}}
+\subsubsection[{fsm}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm} nn\+\_\+dns\+::fsm}\hypertarget{structnn__dns_a0f2f987efe48894f96a30199fbbf08d9}{}\label{structnn__dns_a0f2f987efe48894f96a30199fbbf08d9}
+\index{nn\+\_\+dns@{nn\+\_\+dns}!gcb@{gcb}}
+\index{gcb@{gcb}!nn\+\_\+dns@{nn\+\_\+dns}}
+\subsubsection[{gcb}]{\setlength{\rightskip}{0pt plus 5cm}struct gaicb nn\+\_\+dns\+::gcb}\hypertarget{structnn__dns_ab81aea732ded93810fdf265eb2f257ea}{}\label{structnn__dns_ab81aea732ded93810fdf265eb2f257ea}
+\index{nn\+\_\+dns@{nn\+\_\+dns}!hostname@{hostname}}
+\index{hostname@{hostname}!nn\+\_\+dns@{nn\+\_\+dns}}
+\subsubsection[{hostname}]{\setlength{\rightskip}{0pt plus 5cm}char nn\+\_\+dns\+::hostname\mbox{[}{\bf N\+N\+\_\+\+S\+O\+C\+K\+A\+D\+D\+R\+\_\+\+M\+AX}\mbox{]}}\hypertarget{structnn__dns_aa9b2b6de4e2ac1e18876370ada8c8a7a}{}\label{structnn__dns_aa9b2b6de4e2ac1e18876370ada8c8a7a}
+\index{nn\+\_\+dns@{nn\+\_\+dns}!request@{request}}
+\index{request@{request}!nn\+\_\+dns@{nn\+\_\+dns}}
+\subsubsection[{request}]{\setlength{\rightskip}{0pt plus 5cm}struct addrinfo nn\+\_\+dns\+::request}\hypertarget{structnn__dns_aa16cc1ee1b29647de32a28ff2abe9ed3}{}\label{structnn__dns_aa16cc1ee1b29647de32a28ff2abe9ed3}
+\index{nn\+\_\+dns@{nn\+\_\+dns}!result@{result}}
+\index{result@{result}!nn\+\_\+dns@{nn\+\_\+dns}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+dns\+\_\+result} $\ast$ nn\+\_\+dns\+::result}\hypertarget{structnn__dns_a379539bb0b7354a8520acb23fdaac027}{}\label{structnn__dns_a379539bb0b7354a8520acb23fdaac027}
+\index{nn\+\_\+dns@{nn\+\_\+dns}!state@{state}}
+\index{state@{state}!nn\+\_\+dns@{nn\+\_\+dns}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+dns\+::state}\hypertarget{structnn__dns_a95a661cf2fc34d5dcb28bada51eee803}{}\label{structnn__dns_a95a661cf2fc34d5dcb28bada51eee803}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/transports/utils/\hyperlink{dns__getaddrinfo_8h}{dns\+\_\+getaddrinfo.\+h}\item 
+src/transports/utils/\hyperlink{dns__getaddrinfo__a_8h}{dns\+\_\+getaddrinfo\+\_\+a.\+h}\end{DoxyCompactItemize}

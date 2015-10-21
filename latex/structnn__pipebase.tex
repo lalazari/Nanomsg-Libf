@@ -1,0 +1,76 @@
+\hypertarget{structnn__pipebase}{}\section{nn\+\_\+pipebase Struct Reference}
+\label{structnn__pipebase}\index{nn\+\_\+pipebase@{nn\+\_\+pipebase}}
+
+
+{\ttfamily \#include $<$transport.\+h$>$}
+
+
+
+Collaboration diagram for nn\+\_\+pipebase\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structnn__pipebase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} \hyperlink{structnn__pipebase_a2df83f45bfd06e19ef9519e95e8c459d}{fsm}
+\item 
+const struct \hyperlink{structnn__pipebase__vfptr}{nn\+\_\+pipebase\+\_\+vfptr} $\ast$ \hyperlink{structnn__pipebase_aeafca3d6f7ede1312294d1b768130adb}{vfptr}
+\item 
+uint8\+\_\+t \hyperlink{structnn__pipebase_ae266ebdd9c1dcd033e997be9049e5861}{state}
+\item 
+uint8\+\_\+t \hyperlink{structnn__pipebase_a52c7c1a0428f1cd9b89f30217442ec36}{instate}
+\item 
+uint8\+\_\+t \hyperlink{structnn__pipebase_a47e77991eaa37e441330fb93bc86a3da}{outstate}
+\item 
+struct \hyperlink{structnn__sock}{nn\+\_\+sock} $\ast$ \hyperlink{structnn__pipebase_a9dd997f470c0632dd53246da77092c0c}{sock}
+\item 
+void $\ast$ \hyperlink{structnn__pipebase_a5c7369489ad75feab924e951478d1e21}{data}
+\item 
+struct \hyperlink{structnn__fsm__event}{nn\+\_\+fsm\+\_\+event} \hyperlink{structnn__pipebase_ad1ca938a85f997895828e920920ab6c6}{in}
+\item 
+struct \hyperlink{structnn__fsm__event}{nn\+\_\+fsm\+\_\+event} \hyperlink{structnn__pipebase_a1c450f3f6188b25f28ce8639dece4c90}{out}
+\item 
+struct \hyperlink{structnn__ep__options}{nn\+\_\+ep\+\_\+options} \hyperlink{structnn__pipebase_a3da55d5d4fd95032107b0e66286cf62b}{options}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{nn\+\_\+pipebase@{nn\+\_\+pipebase}!data@{data}}
+\index{data@{data}!nn\+\_\+pipebase@{nn\+\_\+pipebase}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ nn\+\_\+pipebase\+::data}\hypertarget{structnn__pipebase_a5c7369489ad75feab924e951478d1e21}{}\label{structnn__pipebase_a5c7369489ad75feab924e951478d1e21}
+\index{nn\+\_\+pipebase@{nn\+\_\+pipebase}!fsm@{fsm}}
+\index{fsm@{fsm}!nn\+\_\+pipebase@{nn\+\_\+pipebase}}
+\subsubsection[{fsm}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm} nn\+\_\+pipebase\+::fsm}\hypertarget{structnn__pipebase_a2df83f45bfd06e19ef9519e95e8c459d}{}\label{structnn__pipebase_a2df83f45bfd06e19ef9519e95e8c459d}
+\index{nn\+\_\+pipebase@{nn\+\_\+pipebase}!in@{in}}
+\index{in@{in}!nn\+\_\+pipebase@{nn\+\_\+pipebase}}
+\subsubsection[{in}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+event} nn\+\_\+pipebase\+::in}\hypertarget{structnn__pipebase_ad1ca938a85f997895828e920920ab6c6}{}\label{structnn__pipebase_ad1ca938a85f997895828e920920ab6c6}
+\index{nn\+\_\+pipebase@{nn\+\_\+pipebase}!instate@{instate}}
+\index{instate@{instate}!nn\+\_\+pipebase@{nn\+\_\+pipebase}}
+\subsubsection[{instate}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t nn\+\_\+pipebase\+::instate}\hypertarget{structnn__pipebase_a52c7c1a0428f1cd9b89f30217442ec36}{}\label{structnn__pipebase_a52c7c1a0428f1cd9b89f30217442ec36}
+\index{nn\+\_\+pipebase@{nn\+\_\+pipebase}!options@{options}}
+\index{options@{options}!nn\+\_\+pipebase@{nn\+\_\+pipebase}}
+\subsubsection[{options}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+ep\+\_\+options} nn\+\_\+pipebase\+::options}\hypertarget{structnn__pipebase_a3da55d5d4fd95032107b0e66286cf62b}{}\label{structnn__pipebase_a3da55d5d4fd95032107b0e66286cf62b}
+\index{nn\+\_\+pipebase@{nn\+\_\+pipebase}!out@{out}}
+\index{out@{out}!nn\+\_\+pipebase@{nn\+\_\+pipebase}}
+\subsubsection[{out}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+fsm\+\_\+event} nn\+\_\+pipebase\+::out}\hypertarget{structnn__pipebase_a1c450f3f6188b25f28ce8639dece4c90}{}\label{structnn__pipebase_a1c450f3f6188b25f28ce8639dece4c90}
+\index{nn\+\_\+pipebase@{nn\+\_\+pipebase}!outstate@{outstate}}
+\index{outstate@{outstate}!nn\+\_\+pipebase@{nn\+\_\+pipebase}}
+\subsubsection[{outstate}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t nn\+\_\+pipebase\+::outstate}\hypertarget{structnn__pipebase_a47e77991eaa37e441330fb93bc86a3da}{}\label{structnn__pipebase_a47e77991eaa37e441330fb93bc86a3da}
+\index{nn\+\_\+pipebase@{nn\+\_\+pipebase}!sock@{sock}}
+\index{sock@{sock}!nn\+\_\+pipebase@{nn\+\_\+pipebase}}
+\subsubsection[{sock}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+sock}$\ast$ nn\+\_\+pipebase\+::sock}\hypertarget{structnn__pipebase_a9dd997f470c0632dd53246da77092c0c}{}\label{structnn__pipebase_a9dd997f470c0632dd53246da77092c0c}
+\index{nn\+\_\+pipebase@{nn\+\_\+pipebase}!state@{state}}
+\index{state@{state}!nn\+\_\+pipebase@{nn\+\_\+pipebase}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t nn\+\_\+pipebase\+::state}\hypertarget{structnn__pipebase_ae266ebdd9c1dcd033e997be9049e5861}{}\label{structnn__pipebase_ae266ebdd9c1dcd033e997be9049e5861}
+\index{nn\+\_\+pipebase@{nn\+\_\+pipebase}!vfptr@{vfptr}}
+\index{vfptr@{vfptr}!nn\+\_\+pipebase@{nn\+\_\+pipebase}}
+\subsubsection[{vfptr}]{\setlength{\rightskip}{0pt plus 5cm}const struct {\bf nn\+\_\+pipebase\+\_\+vfptr}$\ast$ nn\+\_\+pipebase\+::vfptr}\hypertarget{structnn__pipebase_aeafca3d6f7ede1312294d1b768130adb}{}\label{structnn__pipebase_aeafca3d6f7ede1312294d1b768130adb}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{transport_8h}{transport.\+h}\end{DoxyCompactItemize}

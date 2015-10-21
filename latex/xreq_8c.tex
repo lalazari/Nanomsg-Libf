@@ -1,0 +1,175 @@
+\hypertarget{xreq_8c}{}\section{src/protocols/reqrep/xreq.c File Reference}
+\label{xreq_8c}\index{src/protocols/reqrep/xreq.\+c@{src/protocols/reqrep/xreq.\+c}}
+{\ttfamily \#include \char`\"{}xreq.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../reqrep.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/attr.\+h\char`\"{}}\\*
+Include dependency graph for xreq.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{xreq_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__xreq__data}{nn\+\_\+xreq\+\_\+data}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{xreq_8c_a427073f9e4e4720c7d439d84788d591c}{nn\+\_\+xreq\+\_\+init} (struct \hyperlink{structnn__xreq}{nn\+\_\+xreq} $\ast$self, const struct \hyperlink{structnn__sockbase__vfptr}{nn\+\_\+sockbase\+\_\+vfptr} $\ast$vfptr, void $\ast$hint)
+\item 
+void \hyperlink{xreq_8c_a6fbbca59bef4b0272b177062146363ed}{nn\+\_\+xreq\+\_\+term} (struct \hyperlink{structnn__xreq}{nn\+\_\+xreq} $\ast$self)
+\item 
+int \hyperlink{xreq_8c_a12022fdaa3137ddeb34b2586954c1b49}{nn\+\_\+xreq\+\_\+add} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{xreq_8c_ad5dd79b889bb3682f35c8e931126c30d}{nn\+\_\+xreq\+\_\+rm} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{xreq_8c_ae6b94a8063a78546f40b482354bb7162}{nn\+\_\+xreq\+\_\+in} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+void \hyperlink{xreq_8c_aa35917b6df0182de6ac076149a4a33da}{nn\+\_\+xreq\+\_\+out} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct nn\+\_\+pipe $\ast$pipe)
+\item 
+int \hyperlink{xreq_8c_a53543afcabcd33f709c86cd7382ea13b}{nn\+\_\+xreq\+\_\+events} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self)
+\item 
+int \hyperlink{xreq_8c_a8c274e4536e3269b1d1d8fd3cdcfefd8}{nn\+\_\+xreq\+\_\+send} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg)
+\item 
+int \hyperlink{xreq_8c_a52d793e9332c16bc59e2697b45283a3a}{nn\+\_\+xreq\+\_\+send\+\_\+to} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg, struct nn\+\_\+pipe $\ast$$\ast$to)
+\item 
+int \hyperlink{xreq_8c_adefce63d37558a0c97b62c70d6e8d9a7}{nn\+\_\+xreq\+\_\+recv} (struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg)
+\item 
+int \hyperlink{xreq_8c_a323ffa240153aa44bb7264bc7f36ff4b}{nn\+\_\+xreq\+\_\+setopt} (\hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} int level, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} int option, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} const void $\ast$optval, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} size\+\_\+t optvallen)
+\item 
+int \hyperlink{xreq_8c_a631f9c6dfc3dd809833a84a3181c71ea}{nn\+\_\+xreq\+\_\+getopt} (\hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$self, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} int level, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} int option, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$optval, \hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} size\+\_\+t $\ast$optvallen)
+\item 
+int \hyperlink{xreq_8c_ae0838528f7a1418b6313b051e383dfaa}{nn\+\_\+xreq\+\_\+ispeer} (int socktype)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__socktype}{nn\+\_\+socktype} $\ast$ \hyperlink{xreq_8c_a9cbae33636f5e18299910aa7f4125bc3}{nn\+\_\+xreq\+\_\+socktype} = \&nn\+\_\+xreq\+\_\+socktype\+\_\+struct
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+add@{nn\+\_\+xreq\+\_\+add}}
+\index{nn\+\_\+xreq\+\_\+add@{nn\+\_\+xreq\+\_\+add}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+add(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xreq\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{xreq_8c_a12022fdaa3137ddeb34b2586954c1b49}{}\label{xreq_8c_a12022fdaa3137ddeb34b2586954c1b49}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+events@{nn\+\_\+xreq\+\_\+events}}
+\index{nn\+\_\+xreq\+\_\+events@{nn\+\_\+xreq\+\_\+events}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+events(struct nn\+\_\+sockbase $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xreq\+\_\+events (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{xreq_8c_a53543afcabcd33f709c86cd7382ea13b}{}\label{xreq_8c_a53543afcabcd33f709c86cd7382ea13b}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+getopt@{nn\+\_\+xreq\+\_\+getopt}}
+\index{nn\+\_\+xreq\+\_\+getopt@{nn\+\_\+xreq\+\_\+getopt}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+getopt(\+N\+N\+\_\+\+U\+N\+U\+S\+E\+D struct nn\+\_\+sockbase $\ast$self, N\+N\+\_\+\+U\+N\+U\+S\+E\+D int level, N\+N\+\_\+\+U\+N\+U\+S\+E\+D int option, N\+N\+\_\+\+U\+N\+U\+S\+E\+D void $\ast$optval, N\+N\+\_\+\+U\+N\+U\+S\+E\+D size\+\_\+t $\ast$optvallen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xreq\+\_\+getopt (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} int}]{level, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} int}]{option, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} void $\ast$}]{optval, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} size\+\_\+t $\ast$}]{optvallen}
+\end{DoxyParamCaption}
+)}\hypertarget{xreq_8c_a631f9c6dfc3dd809833a84a3181c71ea}{}\label{xreq_8c_a631f9c6dfc3dd809833a84a3181c71ea}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+in@{nn\+\_\+xreq\+\_\+in}}
+\index{nn\+\_\+xreq\+\_\+in@{nn\+\_\+xreq\+\_\+in}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+in(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xreq\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{xreq_8c_ae6b94a8063a78546f40b482354bb7162}{}\label{xreq_8c_ae6b94a8063a78546f40b482354bb7162}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+init@{nn\+\_\+xreq\+\_\+init}}
+\index{nn\+\_\+xreq\+\_\+init@{nn\+\_\+xreq\+\_\+init}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+init(struct nn\+\_\+xreq $\ast$self, const struct nn\+\_\+sockbase\+\_\+vfptr $\ast$vfptr, void $\ast$hint)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xreq\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+xreq} $\ast$}]{self, }
+\item[{const struct {\bf nn\+\_\+sockbase\+\_\+vfptr} $\ast$}]{vfptr, }
+\item[{void $\ast$}]{hint}
+\end{DoxyParamCaption}
+)}\hypertarget{xreq_8c_a427073f9e4e4720c7d439d84788d591c}{}\label{xreq_8c_a427073f9e4e4720c7d439d84788d591c}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+ispeer@{nn\+\_\+xreq\+\_\+ispeer}}
+\index{nn\+\_\+xreq\+\_\+ispeer@{nn\+\_\+xreq\+\_\+ispeer}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+ispeer(int socktype)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xreq\+\_\+ispeer (
+\begin{DoxyParamCaption}
+\item[{int}]{socktype}
+\end{DoxyParamCaption}
+)}\hypertarget{xreq_8c_ae0838528f7a1418b6313b051e383dfaa}{}\label{xreq_8c_ae0838528f7a1418b6313b051e383dfaa}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+out@{nn\+\_\+xreq\+\_\+out}}
+\index{nn\+\_\+xreq\+\_\+out@{nn\+\_\+xreq\+\_\+out}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+out(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xreq\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{xreq_8c_aa35917b6df0182de6ac076149a4a33da}{}\label{xreq_8c_aa35917b6df0182de6ac076149a4a33da}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+recv@{nn\+\_\+xreq\+\_\+recv}}
+\index{nn\+\_\+xreq\+\_\+recv@{nn\+\_\+xreq\+\_\+recv}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+recv(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xreq\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{xreq_8c_adefce63d37558a0c97b62c70d6e8d9a7}{}\label{xreq_8c_adefce63d37558a0c97b62c70d6e8d9a7}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+rm@{nn\+\_\+xreq\+\_\+rm}}
+\index{nn\+\_\+xreq\+\_\+rm@{nn\+\_\+xreq\+\_\+rm}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+rm(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+pipe $\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xreq\+\_\+rm (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{xreq_8c_ad5dd79b889bb3682f35c8e931126c30d}{}\label{xreq_8c_ad5dd79b889bb3682f35c8e931126c30d}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+send@{nn\+\_\+xreq\+\_\+send}}
+\index{nn\+\_\+xreq\+\_\+send@{nn\+\_\+xreq\+\_\+send}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+send(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xreq\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{xreq_8c_a8c274e4536e3269b1d1d8fd3cdcfefd8}{}\label{xreq_8c_a8c274e4536e3269b1d1d8fd3cdcfefd8}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+send\+\_\+to@{nn\+\_\+xreq\+\_\+send\+\_\+to}}
+\index{nn\+\_\+xreq\+\_\+send\+\_\+to@{nn\+\_\+xreq\+\_\+send\+\_\+to}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+send\+\_\+to(struct nn\+\_\+sockbase $\ast$self, struct nn\+\_\+msg $\ast$msg, struct nn\+\_\+pipe $\ast$$\ast$to)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xreq\+\_\+send\+\_\+to (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg, }
+\item[{struct nn\+\_\+pipe $\ast$$\ast$}]{to}
+\end{DoxyParamCaption}
+)}\hypertarget{xreq_8c_a52d793e9332c16bc59e2697b45283a3a}{}\label{xreq_8c_a52d793e9332c16bc59e2697b45283a3a}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+setopt@{nn\+\_\+xreq\+\_\+setopt}}
+\index{nn\+\_\+xreq\+\_\+setopt@{nn\+\_\+xreq\+\_\+setopt}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+setopt(\+N\+N\+\_\+\+U\+N\+U\+S\+E\+D struct nn\+\_\+sockbase $\ast$self, N\+N\+\_\+\+U\+N\+U\+S\+E\+D int level, N\+N\+\_\+\+U\+N\+U\+S\+E\+D int option, N\+N\+\_\+\+U\+N\+U\+S\+E\+D const void $\ast$optval, N\+N\+\_\+\+U\+N\+U\+S\+E\+D size\+\_\+t optvallen)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xreq\+\_\+setopt (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} struct {\bf nn\+\_\+sockbase} $\ast$}]{self, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} int}]{level, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} int}]{option, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} const void $\ast$}]{optval, }
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} size\+\_\+t}]{optvallen}
+\end{DoxyParamCaption}
+)}\hypertarget{xreq_8c_a323ffa240153aa44bb7264bc7f36ff4b}{}\label{xreq_8c_a323ffa240153aa44bb7264bc7f36ff4b}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+term@{nn\+\_\+xreq\+\_\+term}}
+\index{nn\+\_\+xreq\+\_\+term@{nn\+\_\+xreq\+\_\+term}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+term(struct nn\+\_\+xreq $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+xreq\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+xreq} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{xreq_8c_a6fbbca59bef4b0272b177062146363ed}{}\label{xreq_8c_a6fbbca59bef4b0272b177062146363ed}
+
+
+\subsection{Variable Documentation}
+\index{xreq.\+c@{xreq.\+c}!nn\+\_\+xreq\+\_\+socktype@{nn\+\_\+xreq\+\_\+socktype}}
+\index{nn\+\_\+xreq\+\_\+socktype@{nn\+\_\+xreq\+\_\+socktype}!xreq.\+c@{xreq.\+c}}
+\subsubsection[{nn\+\_\+xreq\+\_\+socktype}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+socktype}$\ast$ nn\+\_\+xreq\+\_\+socktype = \&nn\+\_\+xreq\+\_\+socktype\+\_\+struct}\hypertarget{xreq_8c_a9cbae33636f5e18299910aa7f4125bc3}{}\label{xreq_8c_a9cbae33636f5e18299910aa7f4125bc3}

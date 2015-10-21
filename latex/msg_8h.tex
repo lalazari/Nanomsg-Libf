@@ -1,0 +1,109 @@
+\hypertarget{msg_8h}{}\section{src/utils/msg.h File Reference}
+\label{msg_8h}\index{src/utils/msg.\+h@{src/utils/msg.\+h}}
+{\ttfamily \#include \char`\"{}chunkref.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for msg.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{msg_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{msg_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__msg}{nn\+\_\+msg}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{msg_8h_a504a4547784b985afb0d1b976b121b9f}{nn\+\_\+msg\+\_\+init} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$self, size\+\_\+t size)
+\item 
+void \hyperlink{msg_8h_a22b1d5d2e1a6f066670c1c891dc2ef97}{nn\+\_\+msg\+\_\+init\+\_\+chunk} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$self, void $\ast$chunk)
+\item 
+void \hyperlink{msg_8h_a37f072fcdbf5dd67cd0e7ce683484633}{nn\+\_\+msg\+\_\+term} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$self)
+\item 
+void \hyperlink{msg_8h_ad6c2254f368663c5556eeca84f1cd295}{nn\+\_\+msg\+\_\+mv} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$dst, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$src)
+\item 
+void \hyperlink{msg_8h_ac25ec960549cf6c0e0dca4f1dadc4805}{nn\+\_\+msg\+\_\+cp} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$dst, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$src)
+\item 
+void \hyperlink{msg_8h_ad8b4f3fa7d289051deb879126b61d771}{nn\+\_\+msg\+\_\+bulkcopy\+\_\+start} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$self, uint32\+\_\+t copies)
+\item 
+void \hyperlink{msg_8h_ac49fd26eff21fa28e05e42bf6df173c8}{nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$dst, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$src)
+\item 
+void \hyperlink{msg_8h_ac921e3539824f89e3a63c5070c71ec58}{nn\+\_\+msg\+\_\+replace\+\_\+body} (struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$self, struct \hyperlink{structnn__chunkref}{nn\+\_\+chunkref} new\+Body)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{msg.\+h@{msg.\+h}!nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp@{nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp}}
+\index{nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp@{nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp}!msg.\+h@{msg.\+h}}
+\subsubsection[{nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp(struct nn\+\_\+msg $\ast$dst, struct nn\+\_\+msg $\ast$src)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+bulkcopy\+\_\+cp (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{dst, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\hypertarget{msg_8h_ac49fd26eff21fa28e05e42bf6df173c8}{}\label{msg_8h_ac49fd26eff21fa28e05e42bf6df173c8}
+\index{msg.\+h@{msg.\+h}!nn\+\_\+msg\+\_\+bulkcopy\+\_\+start@{nn\+\_\+msg\+\_\+bulkcopy\+\_\+start}}
+\index{nn\+\_\+msg\+\_\+bulkcopy\+\_\+start@{nn\+\_\+msg\+\_\+bulkcopy\+\_\+start}!msg.\+h@{msg.\+h}}
+\subsubsection[{nn\+\_\+msg\+\_\+bulkcopy\+\_\+start(struct nn\+\_\+msg $\ast$self, uint32\+\_\+t copies)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+bulkcopy\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{self, }
+\item[{uint32\+\_\+t}]{copies}
+\end{DoxyParamCaption}
+)}\hypertarget{msg_8h_ad8b4f3fa7d289051deb879126b61d771}{}\label{msg_8h_ad8b4f3fa7d289051deb879126b61d771}
+\index{msg.\+h@{msg.\+h}!nn\+\_\+msg\+\_\+cp@{nn\+\_\+msg\+\_\+cp}}
+\index{nn\+\_\+msg\+\_\+cp@{nn\+\_\+msg\+\_\+cp}!msg.\+h@{msg.\+h}}
+\subsubsection[{nn\+\_\+msg\+\_\+cp(struct nn\+\_\+msg $\ast$dst, struct nn\+\_\+msg $\ast$src)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+cp (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{dst, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\hypertarget{msg_8h_ac25ec960549cf6c0e0dca4f1dadc4805}{}\label{msg_8h_ac25ec960549cf6c0e0dca4f1dadc4805}
+\index{msg.\+h@{msg.\+h}!nn\+\_\+msg\+\_\+init@{nn\+\_\+msg\+\_\+init}}
+\index{nn\+\_\+msg\+\_\+init@{nn\+\_\+msg\+\_\+init}!msg.\+h@{msg.\+h}}
+\subsubsection[{nn\+\_\+msg\+\_\+init(struct nn\+\_\+msg $\ast$self, size\+\_\+t size)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{self, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{msg_8h_a504a4547784b985afb0d1b976b121b9f}{}\label{msg_8h_a504a4547784b985afb0d1b976b121b9f}
+\index{msg.\+h@{msg.\+h}!nn\+\_\+msg\+\_\+init\+\_\+chunk@{nn\+\_\+msg\+\_\+init\+\_\+chunk}}
+\index{nn\+\_\+msg\+\_\+init\+\_\+chunk@{nn\+\_\+msg\+\_\+init\+\_\+chunk}!msg.\+h@{msg.\+h}}
+\subsubsection[{nn\+\_\+msg\+\_\+init\+\_\+chunk(struct nn\+\_\+msg $\ast$self, void $\ast$chunk)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+init\+\_\+chunk (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{self, }
+\item[{void $\ast$}]{chunk}
+\end{DoxyParamCaption}
+)}\hypertarget{msg_8h_a22b1d5d2e1a6f066670c1c891dc2ef97}{}\label{msg_8h_a22b1d5d2e1a6f066670c1c891dc2ef97}
+\index{msg.\+h@{msg.\+h}!nn\+\_\+msg\+\_\+mv@{nn\+\_\+msg\+\_\+mv}}
+\index{nn\+\_\+msg\+\_\+mv@{nn\+\_\+msg\+\_\+mv}!msg.\+h@{msg.\+h}}
+\subsubsection[{nn\+\_\+msg\+\_\+mv(struct nn\+\_\+msg $\ast$dst, struct nn\+\_\+msg $\ast$src)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+mv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{dst, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\hypertarget{msg_8h_ad6c2254f368663c5556eeca84f1cd295}{}\label{msg_8h_ad6c2254f368663c5556eeca84f1cd295}
+\index{msg.\+h@{msg.\+h}!nn\+\_\+msg\+\_\+replace\+\_\+body@{nn\+\_\+msg\+\_\+replace\+\_\+body}}
+\index{nn\+\_\+msg\+\_\+replace\+\_\+body@{nn\+\_\+msg\+\_\+replace\+\_\+body}!msg.\+h@{msg.\+h}}
+\subsubsection[{nn\+\_\+msg\+\_\+replace\+\_\+body(struct nn\+\_\+msg $\ast$self, struct nn\+\_\+chunkref new\+Body)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+replace\+\_\+body (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+chunkref}}]{new\+Body}
+\end{DoxyParamCaption}
+)}\hypertarget{msg_8h_ac921e3539824f89e3a63c5070c71ec58}{}\label{msg_8h_ac921e3539824f89e3a63c5070c71ec58}
+Replaces the message body with entirely new data. This allows protocols that substantially rewrite or preprocess the userland message to be written. \index{msg.\+h@{msg.\+h}!nn\+\_\+msg\+\_\+term@{nn\+\_\+msg\+\_\+term}}
+\index{nn\+\_\+msg\+\_\+term@{nn\+\_\+msg\+\_\+term}!msg.\+h@{msg.\+h}}
+\subsubsection[{nn\+\_\+msg\+\_\+term(struct nn\+\_\+msg $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+msg\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{msg_8h_a37f072fcdbf5dd67cd0e7ce683484633}{}\label{msg_8h_a37f072fcdbf5dd67cd0e7ce683484633}

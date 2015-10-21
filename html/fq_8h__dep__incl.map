@@ -1,0 +1,23 @@
+<map id="src/protocols/utils/fq.h" name="src/protocols/utils/fq.h">
+<area shape="rect" id="node2" href="$xrep_8h.html" title="src/protocols/reqrep\l/xrep.h" alt="" coords="218,81,355,122"/>
+<area shape="rect" id="node7" href="$xreq_8h.html" title="src/protocols/reqrep\l/xreq.h" alt="" coords="643,81,780,122"/>
+<area shape="rect" id="node11" href="$xrespondent_8h.html" title="src/protocols/survey\l/xrespondent.h" alt="" coords="990,81,1129,122"/>
+<area shape="rect" id="node14" href="$xsurveyor_8h.html" title="src/protocols/survey\l/xsurveyor.h" alt="" coords="1287,81,1427,122"/>
+<area shape="rect" id="node17" href="$xbus_8h.html" title="src/protocols/bus/xbus.h" alt="" coords="1452,88,1617,115"/>
+<area shape="rect" id="node20" href="$xpull_8c.html" title="src/protocols/pipeline\l/xpull.c" alt="" coords="1642,81,1787,122"/>
+<area shape="rect" id="node21" href="$xsub_8c.html" title="src/protocols/pubsub\l/xsub.c" alt="" coords="1811,81,1953,122"/>
+<area shape="rect" id="node22" href="$fq_8c.html" title="src/protocols/utils/fq.c" alt="" coords="1978,88,2128,115"/>
+<area shape="rect" id="node3" href="$rep_8h.html" title="src/protocols/reqrep\l/rep.h" alt="" coords="218,171,355,213"/>
+<area shape="rect" id="node4" href="$global_8c.html" title="src/core/global.c" alt="" coords="759,269,877,296"/>
+<area shape="rect" id="node5" href="$rep_8c.html" title="src/protocols/reqrep\l/rep.c" alt="" coords="178,262,315,303"/>
+<area shape="rect" id="node6" href="$xrep_8c.html" title="src/protocols/reqrep\l/xrep.c" alt="" coords="5,171,141,213"/>
+<area shape="rect" id="node8" href="$req_8h.html" title="src/protocols/reqrep\l/req.h" alt="" coords="482,171,619,213"/>
+<area shape="rect" id="node9" href="$req_8c.html" title="src/protocols/reqrep\l/req.c" alt="" coords="365,262,501,303"/>
+<area shape="rect" id="node10" href="$xreq_8c.html" title="src/protocols/reqrep\l/xreq.c" alt="" coords="643,171,780,213"/>
+<area shape="rect" id="node12" href="$respondent_8c.html" title="src/protocols/survey\l/respondent.c" alt="" coords="907,171,1047,213"/>
+<area shape="rect" id="node13" href="$xrespondent_8c.html" title="src/protocols/survey\l/xrespondent.c" alt="" coords="1071,171,1211,213"/>
+<area shape="rect" id="node15" href="$surveyor_8c.html" title="src/protocols/survey\l/surveyor.c" alt="" coords="1287,171,1427,213"/>
+<area shape="rect" id="node16" href="$xsurveyor_8c.html" title="src/protocols/survey\l/xsurveyor.c" alt="" coords="1451,171,1591,213"/>
+<area shape="rect" id="node18" href="$src_2protocols_2bus_2bus_8c.html" title="src/protocols/bus/bus.c" alt="" coords="1857,179,2015,205"/>
+<area shape="rect" id="node19" href="$xbus_8c.html" title="src/protocols/bus/xbus.c" alt="" coords="1667,179,1832,205"/>
+</map>

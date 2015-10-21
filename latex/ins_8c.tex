@@ -1,0 +1,103 @@
+\hypertarget{ins_8c}{}\section{src/transports/inproc/ins.c File Reference}
+\label{ins_8c}\index{src/transports/inproc/ins.\+c@{src/transports/inproc/ins.\+c}}
+{\ttfamily \#include \char`\"{}ins.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/mutex.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+Include dependency graph for ins.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ins_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__ins}{nn\+\_\+ins}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ins_8c_ad433d1b663956b5344b9273adf3a1d15}{nn\+\_\+ins\+\_\+item\+\_\+init} (struct \hyperlink{structnn__ins__item}{nn\+\_\+ins\+\_\+item} $\ast$self, const struct \hyperlink{structnn__epbase__vfptr}{nn\+\_\+epbase\+\_\+vfptr} $\ast$vfptr, void $\ast$hint)
+\item 
+void \hyperlink{ins_8c_a67f3d740c196c2cf4ba6af0c1316666f}{nn\+\_\+ins\+\_\+item\+\_\+term} (struct \hyperlink{structnn__ins__item}{nn\+\_\+ins\+\_\+item} $\ast$self)
+\item 
+void \hyperlink{ins_8c_a48963f723e52506e6dae611380c0fa60}{nn\+\_\+ins\+\_\+init} (void)
+\item 
+void \hyperlink{ins_8c_aecb714d71b71de9e58f39f6edd6b095a}{nn\+\_\+ins\+\_\+term} (void)
+\item 
+int \hyperlink{ins_8c_a0d90f4ef96af4a121e09a063ac82320b}{nn\+\_\+ins\+\_\+bind} (struct \hyperlink{structnn__ins__item}{nn\+\_\+ins\+\_\+item} $\ast$\hyperlink{structitem}{item}, \hyperlink{ins_8h_a7f1842a9a43667f9af538cd97067ff7d}{nn\+\_\+ins\+\_\+fn} fn)
+\item 
+void \hyperlink{ins_8c_a3fb589a1bfb1a97a3a81d45ff3c1303b}{nn\+\_\+ins\+\_\+connect} (struct \hyperlink{structnn__ins__item}{nn\+\_\+ins\+\_\+item} $\ast$\hyperlink{structitem}{item}, \hyperlink{ins_8h_a7f1842a9a43667f9af538cd97067ff7d}{nn\+\_\+ins\+\_\+fn} fn)
+\item 
+void \hyperlink{ins_8c_a2ba1637d157aa66cc539304245712406}{nn\+\_\+ins\+\_\+disconnect} (struct \hyperlink{structnn__ins__item}{nn\+\_\+ins\+\_\+item} $\ast$\hyperlink{structitem}{item})
+\item 
+void \hyperlink{ins_8c_a26a6891dccd187ada8b2194545adac26}{nn\+\_\+ins\+\_\+unbind} (struct \hyperlink{structnn__ins__item}{nn\+\_\+ins\+\_\+item} $\ast$\hyperlink{structitem}{item})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ins.\+c@{ins.\+c}!nn\+\_\+ins\+\_\+bind@{nn\+\_\+ins\+\_\+bind}}
+\index{nn\+\_\+ins\+\_\+bind@{nn\+\_\+ins\+\_\+bind}!ins.\+c@{ins.\+c}}
+\subsubsection[{nn\+\_\+ins\+\_\+bind(struct nn\+\_\+ins\+\_\+item $\ast$item, nn\+\_\+ins\+\_\+fn fn)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+ins\+\_\+bind (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ins\+\_\+item} $\ast$}]{item, }
+\item[{{\bf nn\+\_\+ins\+\_\+fn}}]{fn}
+\end{DoxyParamCaption}
+)}\hypertarget{ins_8c_a0d90f4ef96af4a121e09a063ac82320b}{}\label{ins_8c_a0d90f4ef96af4a121e09a063ac82320b}
+\index{ins.\+c@{ins.\+c}!nn\+\_\+ins\+\_\+connect@{nn\+\_\+ins\+\_\+connect}}
+\index{nn\+\_\+ins\+\_\+connect@{nn\+\_\+ins\+\_\+connect}!ins.\+c@{ins.\+c}}
+\subsubsection[{nn\+\_\+ins\+\_\+connect(struct nn\+\_\+ins\+\_\+item $\ast$item, nn\+\_\+ins\+\_\+fn fn)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ins\+\_\+connect (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ins\+\_\+item} $\ast$}]{item, }
+\item[{{\bf nn\+\_\+ins\+\_\+fn}}]{fn}
+\end{DoxyParamCaption}
+)}\hypertarget{ins_8c_a3fb589a1bfb1a97a3a81d45ff3c1303b}{}\label{ins_8c_a3fb589a1bfb1a97a3a81d45ff3c1303b}
+\index{ins.\+c@{ins.\+c}!nn\+\_\+ins\+\_\+disconnect@{nn\+\_\+ins\+\_\+disconnect}}
+\index{nn\+\_\+ins\+\_\+disconnect@{nn\+\_\+ins\+\_\+disconnect}!ins.\+c@{ins.\+c}}
+\subsubsection[{nn\+\_\+ins\+\_\+disconnect(struct nn\+\_\+ins\+\_\+item $\ast$item)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ins\+\_\+disconnect (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ins\+\_\+item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\hypertarget{ins_8c_a2ba1637d157aa66cc539304245712406}{}\label{ins_8c_a2ba1637d157aa66cc539304245712406}
+\index{ins.\+c@{ins.\+c}!nn\+\_\+ins\+\_\+init@{nn\+\_\+ins\+\_\+init}}
+\index{nn\+\_\+ins\+\_\+init@{nn\+\_\+ins\+\_\+init}!ins.\+c@{ins.\+c}}
+\subsubsection[{nn\+\_\+ins\+\_\+init(void)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ins\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{ins_8c_a48963f723e52506e6dae611380c0fa60}{}\label{ins_8c_a48963f723e52506e6dae611380c0fa60}
+\index{ins.\+c@{ins.\+c}!nn\+\_\+ins\+\_\+item\+\_\+init@{nn\+\_\+ins\+\_\+item\+\_\+init}}
+\index{nn\+\_\+ins\+\_\+item\+\_\+init@{nn\+\_\+ins\+\_\+item\+\_\+init}!ins.\+c@{ins.\+c}}
+\subsubsection[{nn\+\_\+ins\+\_\+item\+\_\+init(struct nn\+\_\+ins\+\_\+item $\ast$self, const struct nn\+\_\+epbase\+\_\+vfptr $\ast$vfptr, void $\ast$hint)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ins\+\_\+item\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ins\+\_\+item} $\ast$}]{self, }
+\item[{const struct {\bf nn\+\_\+epbase\+\_\+vfptr} $\ast$}]{vfptr, }
+\item[{void $\ast$}]{hint}
+\end{DoxyParamCaption}
+)}\hypertarget{ins_8c_ad433d1b663956b5344b9273adf3a1d15}{}\label{ins_8c_ad433d1b663956b5344b9273adf3a1d15}
+\index{ins.\+c@{ins.\+c}!nn\+\_\+ins\+\_\+item\+\_\+term@{nn\+\_\+ins\+\_\+item\+\_\+term}}
+\index{nn\+\_\+ins\+\_\+item\+\_\+term@{nn\+\_\+ins\+\_\+item\+\_\+term}!ins.\+c@{ins.\+c}}
+\subsubsection[{nn\+\_\+ins\+\_\+item\+\_\+term(struct nn\+\_\+ins\+\_\+item $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ins\+\_\+item\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ins\+\_\+item} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{ins_8c_a67f3d740c196c2cf4ba6af0c1316666f}{}\label{ins_8c_a67f3d740c196c2cf4ba6af0c1316666f}
+\index{ins.\+c@{ins.\+c}!nn\+\_\+ins\+\_\+term@{nn\+\_\+ins\+\_\+term}}
+\index{nn\+\_\+ins\+\_\+term@{nn\+\_\+ins\+\_\+term}!ins.\+c@{ins.\+c}}
+\subsubsection[{nn\+\_\+ins\+\_\+term(void)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ins\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{ins_8c_aecb714d71b71de9e58f39f6edd6b095a}{}\label{ins_8c_aecb714d71b71de9e58f39f6edd6b095a}
+\index{ins.\+c@{ins.\+c}!nn\+\_\+ins\+\_\+unbind@{nn\+\_\+ins\+\_\+unbind}}
+\index{nn\+\_\+ins\+\_\+unbind@{nn\+\_\+ins\+\_\+unbind}!ins.\+c@{ins.\+c}}
+\subsubsection[{nn\+\_\+ins\+\_\+unbind(struct nn\+\_\+ins\+\_\+item $\ast$item)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+ins\+\_\+unbind (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+ins\+\_\+item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\hypertarget{ins_8c_a26a6891dccd187ada8b2194545adac26}{}\label{ins_8c_a26a6891dccd187ada8b2194545adac26}

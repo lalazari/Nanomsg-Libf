@@ -1,0 +1,60 @@
+\hypertarget{xpair_8c}{}\section{src/protocols/pair/xpair.c File Reference}
+\label{xpair_8c}\index{src/protocols/pair/xpair.\+c@{src/protocols/pair/xpair.\+c}}
+{\ttfamily \#include \char`\"{}xpair.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../nn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../pair.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/excl.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/alloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/attr.\+h\char`\"{}}\\*
+Include dependency graph for xpair.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{xpair_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__xpair}{nn\+\_\+xpair}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{xpair_8c_ac3146f51eae582ae170bbedd7c451789}{nn\+\_\+xpair\+\_\+create} (void $\ast$hint, struct \hyperlink{structnn__sockbase}{nn\+\_\+sockbase} $\ast$$\ast$sockbase)
+\item 
+int \hyperlink{xpair_8c_a30d604cc076c3a8d6485936d9e088915}{nn\+\_\+xpair\+\_\+ispeer} (int socktype)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__socktype}{nn\+\_\+socktype} $\ast$ \hyperlink{xpair_8c_a00555eda6ab9b00af2eb7f848d6838d6}{nn\+\_\+xpair\+\_\+socktype} = \&nn\+\_\+xpair\+\_\+socktype\+\_\+struct
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{xpair.\+c@{xpair.\+c}!nn\+\_\+xpair\+\_\+create@{nn\+\_\+xpair\+\_\+create}}
+\index{nn\+\_\+xpair\+\_\+create@{nn\+\_\+xpair\+\_\+create}!xpair.\+c@{xpair.\+c}}
+\subsubsection[{nn\+\_\+xpair\+\_\+create(void $\ast$hint, struct nn\+\_\+sockbase $\ast$$\ast$sockbase)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xpair\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{hint, }
+\item[{struct {\bf nn\+\_\+sockbase} $\ast$$\ast$}]{sockbase}
+\end{DoxyParamCaption}
+)}\hypertarget{xpair_8c_ac3146f51eae582ae170bbedd7c451789}{}\label{xpair_8c_ac3146f51eae582ae170bbedd7c451789}
+\index{xpair.\+c@{xpair.\+c}!nn\+\_\+xpair\+\_\+ispeer@{nn\+\_\+xpair\+\_\+ispeer}}
+\index{nn\+\_\+xpair\+\_\+ispeer@{nn\+\_\+xpair\+\_\+ispeer}!xpair.\+c@{xpair.\+c}}
+\subsubsection[{nn\+\_\+xpair\+\_\+ispeer(int socktype)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+xpair\+\_\+ispeer (
+\begin{DoxyParamCaption}
+\item[{int}]{socktype}
+\end{DoxyParamCaption}
+)}\hypertarget{xpair_8c_a30d604cc076c3a8d6485936d9e088915}{}\label{xpair_8c_a30d604cc076c3a8d6485936d9e088915}
+
+
+\subsection{Variable Documentation}
+\index{xpair.\+c@{xpair.\+c}!nn\+\_\+xpair\+\_\+socktype@{nn\+\_\+xpair\+\_\+socktype}}
+\index{nn\+\_\+xpair\+\_\+socktype@{nn\+\_\+xpair\+\_\+socktype}!xpair.\+c@{xpair.\+c}}
+\subsubsection[{nn\+\_\+xpair\+\_\+socktype}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf nn\+\_\+socktype}$\ast$ nn\+\_\+xpair\+\_\+socktype = \&nn\+\_\+xpair\+\_\+socktype\+\_\+struct}\hypertarget{xpair_8c_a00555eda6ab9b00af2eb7f848d6838d6}{}\label{xpair_8c_a00555eda6ab9b00af2eb7f848d6838d6}

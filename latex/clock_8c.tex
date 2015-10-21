@@ -1,0 +1,67 @@
+\hypertarget{clock_8c}{}\section{src/utils/clock.c File Reference}
+\label{clock_8c}\index{src/utils/clock.\+c@{src/utils/clock.\+c}}
+{\ttfamily \#include $<$sys/time.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}clock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fast.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}attr.\+h\char`\"{}}\\*
+Include dependency graph for clock.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{clock_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{clock_8c_a4d6ef560b0e0dcd68622987a6f4d2ba9}{N\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON}~1000000
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{clock_8c_a479d45c744c897d8e60d7f290f976cbf}{nn\+\_\+clock\+\_\+init} (struct \hyperlink{structnn__clock}{nn\+\_\+clock} $\ast$self)
+\item 
+void \hyperlink{clock_8c_a255d978f00468e2880f5d19b7ebf0b64}{nn\+\_\+clock\+\_\+term} (\hyperlink{attr_8h_a2dd7fc61294c979b24b5a042c910736f}{N\+N\+\_\+\+U\+N\+U\+S\+ED} struct \hyperlink{structnn__clock}{nn\+\_\+clock} $\ast$self)
+\item 
+uint64\+\_\+t \hyperlink{clock_8c_ada72204b0546f558d56c5e95b9de2ee2}{nn\+\_\+clock\+\_\+now} (struct \hyperlink{structnn__clock}{nn\+\_\+clock} $\ast$self)
+\item 
+uint64\+\_\+t \hyperlink{clock_8c_af9d9d53bdc8ef1a96772fe6fdd77a434}{nn\+\_\+clock\+\_\+timestamp} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{clock.\+c@{clock.\+c}!N\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON@{N\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON}}
+\index{N\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON@{N\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON}!clock.\+c@{clock.\+c}}
+\subsubsection[{N\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON~1000000}\hypertarget{clock_8c_a4d6ef560b0e0dcd68622987a6f4d2ba9}{}\label{clock_8c_a4d6ef560b0e0dcd68622987a6f4d2ba9}
+
+
+\subsection{Function Documentation}
+\index{clock.\+c@{clock.\+c}!nn\+\_\+clock\+\_\+init@{nn\+\_\+clock\+\_\+init}}
+\index{nn\+\_\+clock\+\_\+init@{nn\+\_\+clock\+\_\+init}!clock.\+c@{clock.\+c}}
+\subsubsection[{nn\+\_\+clock\+\_\+init(struct nn\+\_\+clock $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+clock\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+clock} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{clock_8c_a479d45c744c897d8e60d7f290f976cbf}{}\label{clock_8c_a479d45c744c897d8e60d7f290f976cbf}
+\index{clock.\+c@{clock.\+c}!nn\+\_\+clock\+\_\+now@{nn\+\_\+clock\+\_\+now}}
+\index{nn\+\_\+clock\+\_\+now@{nn\+\_\+clock\+\_\+now}!clock.\+c@{clock.\+c}}
+\subsubsection[{nn\+\_\+clock\+\_\+now(struct nn\+\_\+clock $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t nn\+\_\+clock\+\_\+now (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+clock} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{clock_8c_ada72204b0546f558d56c5e95b9de2ee2}{}\label{clock_8c_ada72204b0546f558d56c5e95b9de2ee2}
+\index{clock.\+c@{clock.\+c}!nn\+\_\+clock\+\_\+term@{nn\+\_\+clock\+\_\+term}}
+\index{nn\+\_\+clock\+\_\+term@{nn\+\_\+clock\+\_\+term}!clock.\+c@{clock.\+c}}
+\subsubsection[{nn\+\_\+clock\+\_\+term(\+N\+N\+\_\+\+U\+N\+U\+S\+E\+D struct nn\+\_\+clock $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+clock\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+N\+\_\+\+U\+N\+U\+S\+ED} struct {\bf nn\+\_\+clock} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{clock_8c_a255d978f00468e2880f5d19b7ebf0b64}{}\label{clock_8c_a255d978f00468e2880f5d19b7ebf0b64}
+\index{clock.\+c@{clock.\+c}!nn\+\_\+clock\+\_\+timestamp@{nn\+\_\+clock\+\_\+timestamp}}
+\index{nn\+\_\+clock\+\_\+timestamp@{nn\+\_\+clock\+\_\+timestamp}!clock.\+c@{clock.\+c}}
+\subsubsection[{nn\+\_\+clock\+\_\+timestamp()}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t nn\+\_\+clock\+\_\+timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{clock_8c_af9d9d53bdc8ef1a96772fe6fdd77a434}{}\label{clock_8c_af9d9d53bdc8ef1a96772fe6fdd77a434}

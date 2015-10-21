@@ -1,0 +1,116 @@
+\hypertarget{timerset_8h}{}\section{src/aio/timerset.h File Reference}
+\label{timerset_8h}\index{src/aio/timerset.\+h@{src/aio/timerset.\+h}}
+{\ttfamily \#include \char`\"{}../utils/clock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/list.\+h\char`\"{}}\\*
+Include dependency graph for timerset.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{timerset_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timerset_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__timerset__hndl}{nn\+\_\+timerset\+\_\+hndl}
+\item 
+struct \hyperlink{structnn__timerset}{nn\+\_\+timerset}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{timerset_8h_a568321177dc6d75821d345ab4f59b179}{nn\+\_\+timerset\+\_\+init} (struct \hyperlink{structnn__timerset}{nn\+\_\+timerset} $\ast$self)
+\item 
+void \hyperlink{timerset_8h_ad928903013e86ae9be6c6d7c9c823d5b}{nn\+\_\+timerset\+\_\+term} (struct \hyperlink{structnn__timerset}{nn\+\_\+timerset} $\ast$self)
+\item 
+int \hyperlink{timerset_8h_abeefc3fe08c0c4a4670285a78217be22}{nn\+\_\+timerset\+\_\+add} (struct \hyperlink{structnn__timerset}{nn\+\_\+timerset} $\ast$self, int timeout, struct \hyperlink{structnn__timerset__hndl}{nn\+\_\+timerset\+\_\+hndl} $\ast$hndl)
+\item 
+int \hyperlink{timerset_8h_ab8a2bc36ae503f6dc798a6d50638674e}{nn\+\_\+timerset\+\_\+rm} (struct \hyperlink{structnn__timerset}{nn\+\_\+timerset} $\ast$self, struct \hyperlink{structnn__timerset__hndl}{nn\+\_\+timerset\+\_\+hndl} $\ast$hndl)
+\item 
+int \hyperlink{timerset_8h_a33a88456ac18e574373d3c9decb1e3d0}{nn\+\_\+timerset\+\_\+timeout} (struct \hyperlink{structnn__timerset}{nn\+\_\+timerset} $\ast$self)
+\item 
+int \hyperlink{timerset_8h_a4529b5eb8458bea368c0d581076f73cb}{nn\+\_\+timerset\+\_\+event} (struct \hyperlink{structnn__timerset}{nn\+\_\+timerset} $\ast$self, struct \hyperlink{structnn__timerset__hndl}{nn\+\_\+timerset\+\_\+hndl} $\ast$$\ast$hndl)
+\item 
+void \hyperlink{timerset_8h_af517fd1e075874640ab354ca1e23e84c}{nn\+\_\+timerset\+\_\+hndl\+\_\+init} (struct \hyperlink{structnn__timerset__hndl}{nn\+\_\+timerset\+\_\+hndl} $\ast$self)
+\item 
+void \hyperlink{timerset_8h_a754a14b82f7c14ee7c7a25bad2656fa4}{nn\+\_\+timerset\+\_\+hndl\+\_\+term} (struct \hyperlink{structnn__timerset__hndl}{nn\+\_\+timerset\+\_\+hndl} $\ast$self)
+\item 
+int \hyperlink{timerset_8h_a5175b2b3fd993e684017340d6c408e42}{nn\+\_\+timerset\+\_\+hndl\+\_\+isactive} (struct \hyperlink{structnn__timerset__hndl}{nn\+\_\+timerset\+\_\+hndl} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{timerset.\+h@{timerset.\+h}!nn\+\_\+timerset\+\_\+add@{nn\+\_\+timerset\+\_\+add}}
+\index{nn\+\_\+timerset\+\_\+add@{nn\+\_\+timerset\+\_\+add}!timerset.\+h@{timerset.\+h}}
+\subsubsection[{nn\+\_\+timerset\+\_\+add(struct nn\+\_\+timerset $\ast$self, int timeout, struct nn\+\_\+timerset\+\_\+hndl $\ast$hndl)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+timerset\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+timerset} $\ast$}]{self, }
+\item[{int}]{timeout, }
+\item[{struct {\bf nn\+\_\+timerset\+\_\+hndl} $\ast$}]{hndl}
+\end{DoxyParamCaption}
+)}\hypertarget{timerset_8h_abeefc3fe08c0c4a4670285a78217be22}{}\label{timerset_8h_abeefc3fe08c0c4a4670285a78217be22}
+\index{timerset.\+h@{timerset.\+h}!nn\+\_\+timerset\+\_\+event@{nn\+\_\+timerset\+\_\+event}}
+\index{nn\+\_\+timerset\+\_\+event@{nn\+\_\+timerset\+\_\+event}!timerset.\+h@{timerset.\+h}}
+\subsubsection[{nn\+\_\+timerset\+\_\+event(struct nn\+\_\+timerset $\ast$self, struct nn\+\_\+timerset\+\_\+hndl $\ast$$\ast$hndl)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+timerset\+\_\+event (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+timerset} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+timerset\+\_\+hndl} $\ast$$\ast$}]{hndl}
+\end{DoxyParamCaption}
+)}\hypertarget{timerset_8h_a4529b5eb8458bea368c0d581076f73cb}{}\label{timerset_8h_a4529b5eb8458bea368c0d581076f73cb}
+\index{timerset.\+h@{timerset.\+h}!nn\+\_\+timerset\+\_\+hndl\+\_\+init@{nn\+\_\+timerset\+\_\+hndl\+\_\+init}}
+\index{nn\+\_\+timerset\+\_\+hndl\+\_\+init@{nn\+\_\+timerset\+\_\+hndl\+\_\+init}!timerset.\+h@{timerset.\+h}}
+\subsubsection[{nn\+\_\+timerset\+\_\+hndl\+\_\+init(struct nn\+\_\+timerset\+\_\+hndl $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+timerset\+\_\+hndl\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+timerset\+\_\+hndl} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{timerset_8h_af517fd1e075874640ab354ca1e23e84c}{}\label{timerset_8h_af517fd1e075874640ab354ca1e23e84c}
+\index{timerset.\+h@{timerset.\+h}!nn\+\_\+timerset\+\_\+hndl\+\_\+isactive@{nn\+\_\+timerset\+\_\+hndl\+\_\+isactive}}
+\index{nn\+\_\+timerset\+\_\+hndl\+\_\+isactive@{nn\+\_\+timerset\+\_\+hndl\+\_\+isactive}!timerset.\+h@{timerset.\+h}}
+\subsubsection[{nn\+\_\+timerset\+\_\+hndl\+\_\+isactive(struct nn\+\_\+timerset\+\_\+hndl $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+timerset\+\_\+hndl\+\_\+isactive (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+timerset\+\_\+hndl} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{timerset_8h_a5175b2b3fd993e684017340d6c408e42}{}\label{timerset_8h_a5175b2b3fd993e684017340d6c408e42}
+\index{timerset.\+h@{timerset.\+h}!nn\+\_\+timerset\+\_\+hndl\+\_\+term@{nn\+\_\+timerset\+\_\+hndl\+\_\+term}}
+\index{nn\+\_\+timerset\+\_\+hndl\+\_\+term@{nn\+\_\+timerset\+\_\+hndl\+\_\+term}!timerset.\+h@{timerset.\+h}}
+\subsubsection[{nn\+\_\+timerset\+\_\+hndl\+\_\+term(struct nn\+\_\+timerset\+\_\+hndl $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+timerset\+\_\+hndl\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+timerset\+\_\+hndl} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{timerset_8h_a754a14b82f7c14ee7c7a25bad2656fa4}{}\label{timerset_8h_a754a14b82f7c14ee7c7a25bad2656fa4}
+\index{timerset.\+h@{timerset.\+h}!nn\+\_\+timerset\+\_\+init@{nn\+\_\+timerset\+\_\+init}}
+\index{nn\+\_\+timerset\+\_\+init@{nn\+\_\+timerset\+\_\+init}!timerset.\+h@{timerset.\+h}}
+\subsubsection[{nn\+\_\+timerset\+\_\+init(struct nn\+\_\+timerset $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+timerset\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+timerset} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{timerset_8h_a568321177dc6d75821d345ab4f59b179}{}\label{timerset_8h_a568321177dc6d75821d345ab4f59b179}
+\index{timerset.\+h@{timerset.\+h}!nn\+\_\+timerset\+\_\+rm@{nn\+\_\+timerset\+\_\+rm}}
+\index{nn\+\_\+timerset\+\_\+rm@{nn\+\_\+timerset\+\_\+rm}!timerset.\+h@{timerset.\+h}}
+\subsubsection[{nn\+\_\+timerset\+\_\+rm(struct nn\+\_\+timerset $\ast$self, struct nn\+\_\+timerset\+\_\+hndl $\ast$hndl)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+timerset\+\_\+rm (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+timerset} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+timerset\+\_\+hndl} $\ast$}]{hndl}
+\end{DoxyParamCaption}
+)}\hypertarget{timerset_8h_ab8a2bc36ae503f6dc798a6d50638674e}{}\label{timerset_8h_ab8a2bc36ae503f6dc798a6d50638674e}
+\index{timerset.\+h@{timerset.\+h}!nn\+\_\+timerset\+\_\+term@{nn\+\_\+timerset\+\_\+term}}
+\index{nn\+\_\+timerset\+\_\+term@{nn\+\_\+timerset\+\_\+term}!timerset.\+h@{timerset.\+h}}
+\subsubsection[{nn\+\_\+timerset\+\_\+term(struct nn\+\_\+timerset $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+timerset\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+timerset} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{timerset_8h_ad928903013e86ae9be6c6d7c9c823d5b}{}\label{timerset_8h_ad928903013e86ae9be6c6d7c9c823d5b}
+\index{timerset.\+h@{timerset.\+h}!nn\+\_\+timerset\+\_\+timeout@{nn\+\_\+timerset\+\_\+timeout}}
+\index{nn\+\_\+timerset\+\_\+timeout@{nn\+\_\+timerset\+\_\+timeout}!timerset.\+h@{timerset.\+h}}
+\subsubsection[{nn\+\_\+timerset\+\_\+timeout(struct nn\+\_\+timerset $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+timerset\+\_\+timeout (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+timerset} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{timerset_8h_a33a88456ac18e574373d3c9decb1e3d0}{}\label{timerset_8h_a33a88456ac18e574373d3c9decb1e3d0}

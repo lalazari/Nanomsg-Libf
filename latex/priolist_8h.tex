@@ -1,0 +1,132 @@
+\hypertarget{priolist_8h}{}\section{src/protocols/utils/priolist.h File Reference}
+\label{priolist_8h}\index{src/protocols/utils/priolist.\+h@{src/protocols/utils/priolist.\+h}}
+{\ttfamily \#include \char`\"{}../../protocol.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+Include dependency graph for priolist.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{priolist_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{priolist_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__priolist__data}{nn\+\_\+priolist\+\_\+data}
+\item 
+struct \hyperlink{structnn__priolist__slot}{nn\+\_\+priolist\+\_\+slot}
+\item 
+struct \hyperlink{structnn__priolist}{nn\+\_\+priolist}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{priolist_8h_a6394497883af24be47fd3ee4e9a0a598}{N\+N\+\_\+\+P\+R\+I\+O\+L\+I\+S\+T\+\_\+\+S\+L\+O\+TS}~16
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{priolist_8h_a1366518796289136df0cd325331f3b39}{nn\+\_\+priolist\+\_\+init} (struct \hyperlink{structnn__priolist}{nn\+\_\+priolist} $\ast$self)
+\item 
+void \hyperlink{priolist_8h_a3f3721a5fc89d900da35eb1acb909b86}{nn\+\_\+priolist\+\_\+term} (struct \hyperlink{structnn__priolist}{nn\+\_\+priolist} $\ast$self)
+\item 
+void \hyperlink{priolist_8h_af99764b5c22d077fc43c2880ac8d99ed}{nn\+\_\+priolist\+\_\+add} (struct \hyperlink{structnn__priolist}{nn\+\_\+priolist} $\ast$self, struct \hyperlink{structnn__priolist__data}{nn\+\_\+priolist\+\_\+data} $\ast$data, struct nn\+\_\+pipe $\ast$pipe, int priority)
+\item 
+void \hyperlink{priolist_8h_a0e06fe22bff9fcefa5d2ea37358ca0e0}{nn\+\_\+priolist\+\_\+rm} (struct \hyperlink{structnn__priolist}{nn\+\_\+priolist} $\ast$self, struct \hyperlink{structnn__priolist__data}{nn\+\_\+priolist\+\_\+data} $\ast$data)
+\item 
+void \hyperlink{priolist_8h_a6b8a6e245bf76dd26c59ffb131f7694b}{nn\+\_\+priolist\+\_\+activate} (struct \hyperlink{structnn__priolist}{nn\+\_\+priolist} $\ast$self, struct \hyperlink{structnn__priolist__data}{nn\+\_\+priolist\+\_\+data} $\ast$data)
+\item 
+int \hyperlink{priolist_8h_a1c926f6fd9e45fc30b3c2c7a1888cb77}{nn\+\_\+priolist\+\_\+is\+\_\+active} (struct \hyperlink{structnn__priolist}{nn\+\_\+priolist} $\ast$self)
+\item 
+struct nn\+\_\+pipe $\ast$ \hyperlink{priolist_8h_a4d9e87232c60c4cf5730cb678c57a7a6}{nn\+\_\+priolist\+\_\+getpipe} (struct \hyperlink{structnn__priolist}{nn\+\_\+priolist} $\ast$self)
+\item 
+void \hyperlink{priolist_8h_a27bf5d6b783c86bfcf99c68594e2b7e8}{nn\+\_\+priolist\+\_\+advance} (struct \hyperlink{structnn__priolist}{nn\+\_\+priolist} $\ast$self, int release)
+\item 
+int \hyperlink{priolist_8h_a21b3d9fdff9677dff483fde5c92142f6}{nn\+\_\+priolist\+\_\+get\+\_\+priority} (struct \hyperlink{structnn__priolist}{nn\+\_\+priolist} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{priolist.\+h@{priolist.\+h}!N\+N\+\_\+\+P\+R\+I\+O\+L\+I\+S\+T\+\_\+\+S\+L\+O\+TS@{N\+N\+\_\+\+P\+R\+I\+O\+L\+I\+S\+T\+\_\+\+S\+L\+O\+TS}}
+\index{N\+N\+\_\+\+P\+R\+I\+O\+L\+I\+S\+T\+\_\+\+S\+L\+O\+TS@{N\+N\+\_\+\+P\+R\+I\+O\+L\+I\+S\+T\+\_\+\+S\+L\+O\+TS}!priolist.\+h@{priolist.\+h}}
+\subsubsection[{N\+N\+\_\+\+P\+R\+I\+O\+L\+I\+S\+T\+\_\+\+S\+L\+O\+TS}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+P\+R\+I\+O\+L\+I\+S\+T\+\_\+\+S\+L\+O\+TS~16}\hypertarget{priolist_8h_a6394497883af24be47fd3ee4e9a0a598}{}\label{priolist_8h_a6394497883af24be47fd3ee4e9a0a598}
+
+
+\subsection{Function Documentation}
+\index{priolist.\+h@{priolist.\+h}!nn\+\_\+priolist\+\_\+activate@{nn\+\_\+priolist\+\_\+activate}}
+\index{nn\+\_\+priolist\+\_\+activate@{nn\+\_\+priolist\+\_\+activate}!priolist.\+h@{priolist.\+h}}
+\subsubsection[{nn\+\_\+priolist\+\_\+activate(struct nn\+\_\+priolist $\ast$self, struct nn\+\_\+priolist\+\_\+data $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+priolist\+\_\+activate (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+priolist} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+priolist\+\_\+data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{priolist_8h_a6b8a6e245bf76dd26c59ffb131f7694b}{}\label{priolist_8h_a6b8a6e245bf76dd26c59ffb131f7694b}
+\index{priolist.\+h@{priolist.\+h}!nn\+\_\+priolist\+\_\+add@{nn\+\_\+priolist\+\_\+add}}
+\index{nn\+\_\+priolist\+\_\+add@{nn\+\_\+priolist\+\_\+add}!priolist.\+h@{priolist.\+h}}
+\subsubsection[{nn\+\_\+priolist\+\_\+add(struct nn\+\_\+priolist $\ast$self, struct nn\+\_\+priolist\+\_\+data $\ast$data, struct nn\+\_\+pipe $\ast$pipe, int priority)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+priolist\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+priolist} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+priolist\+\_\+data} $\ast$}]{data, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe, }
+\item[{int}]{priority}
+\end{DoxyParamCaption}
+)}\hypertarget{priolist_8h_af99764b5c22d077fc43c2880ac8d99ed}{}\label{priolist_8h_af99764b5c22d077fc43c2880ac8d99ed}
+\index{priolist.\+h@{priolist.\+h}!nn\+\_\+priolist\+\_\+advance@{nn\+\_\+priolist\+\_\+advance}}
+\index{nn\+\_\+priolist\+\_\+advance@{nn\+\_\+priolist\+\_\+advance}!priolist.\+h@{priolist.\+h}}
+\subsubsection[{nn\+\_\+priolist\+\_\+advance(struct nn\+\_\+priolist $\ast$self, int release)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+priolist\+\_\+advance (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+priolist} $\ast$}]{self, }
+\item[{int}]{release}
+\end{DoxyParamCaption}
+)}\hypertarget{priolist_8h_a27bf5d6b783c86bfcf99c68594e2b7e8}{}\label{priolist_8h_a27bf5d6b783c86bfcf99c68594e2b7e8}
+\index{priolist.\+h@{priolist.\+h}!nn\+\_\+priolist\+\_\+get\+\_\+priority@{nn\+\_\+priolist\+\_\+get\+\_\+priority}}
+\index{nn\+\_\+priolist\+\_\+get\+\_\+priority@{nn\+\_\+priolist\+\_\+get\+\_\+priority}!priolist.\+h@{priolist.\+h}}
+\subsubsection[{nn\+\_\+priolist\+\_\+get\+\_\+priority(struct nn\+\_\+priolist $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+priolist\+\_\+get\+\_\+priority (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+priolist} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{priolist_8h_a21b3d9fdff9677dff483fde5c92142f6}{}\label{priolist_8h_a21b3d9fdff9677dff483fde5c92142f6}
+\index{priolist.\+h@{priolist.\+h}!nn\+\_\+priolist\+\_\+getpipe@{nn\+\_\+priolist\+\_\+getpipe}}
+\index{nn\+\_\+priolist\+\_\+getpipe@{nn\+\_\+priolist\+\_\+getpipe}!priolist.\+h@{priolist.\+h}}
+\subsubsection[{nn\+\_\+priolist\+\_\+getpipe(struct nn\+\_\+priolist $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}struct nn\+\_\+pipe$\ast$ nn\+\_\+priolist\+\_\+getpipe (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+priolist} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{priolist_8h_a4d9e87232c60c4cf5730cb678c57a7a6}{}\label{priolist_8h_a4d9e87232c60c4cf5730cb678c57a7a6}
+\index{priolist.\+h@{priolist.\+h}!nn\+\_\+priolist\+\_\+init@{nn\+\_\+priolist\+\_\+init}}
+\index{nn\+\_\+priolist\+\_\+init@{nn\+\_\+priolist\+\_\+init}!priolist.\+h@{priolist.\+h}}
+\subsubsection[{nn\+\_\+priolist\+\_\+init(struct nn\+\_\+priolist $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+priolist\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+priolist} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{priolist_8h_a1366518796289136df0cd325331f3b39}{}\label{priolist_8h_a1366518796289136df0cd325331f3b39}
+\index{priolist.\+h@{priolist.\+h}!nn\+\_\+priolist\+\_\+is\+\_\+active@{nn\+\_\+priolist\+\_\+is\+\_\+active}}
+\index{nn\+\_\+priolist\+\_\+is\+\_\+active@{nn\+\_\+priolist\+\_\+is\+\_\+active}!priolist.\+h@{priolist.\+h}}
+\subsubsection[{nn\+\_\+priolist\+\_\+is\+\_\+active(struct nn\+\_\+priolist $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+priolist\+\_\+is\+\_\+active (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+priolist} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{priolist_8h_a1c926f6fd9e45fc30b3c2c7a1888cb77}{}\label{priolist_8h_a1c926f6fd9e45fc30b3c2c7a1888cb77}
+\index{priolist.\+h@{priolist.\+h}!nn\+\_\+priolist\+\_\+rm@{nn\+\_\+priolist\+\_\+rm}}
+\index{nn\+\_\+priolist\+\_\+rm@{nn\+\_\+priolist\+\_\+rm}!priolist.\+h@{priolist.\+h}}
+\subsubsection[{nn\+\_\+priolist\+\_\+rm(struct nn\+\_\+priolist $\ast$self, struct nn\+\_\+priolist\+\_\+data $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+priolist\+\_\+rm (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+priolist} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+priolist\+\_\+data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{priolist_8h_a0e06fe22bff9fcefa5d2ea37358ca0e0}{}\label{priolist_8h_a0e06fe22bff9fcefa5d2ea37358ca0e0}
+\index{priolist.\+h@{priolist.\+h}!nn\+\_\+priolist\+\_\+term@{nn\+\_\+priolist\+\_\+term}}
+\index{nn\+\_\+priolist\+\_\+term@{nn\+\_\+priolist\+\_\+term}!priolist.\+h@{priolist.\+h}}
+\subsubsection[{nn\+\_\+priolist\+\_\+term(struct nn\+\_\+priolist $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+priolist\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+priolist} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{priolist_8h_a3f3721a5fc89d900da35eb1acb909b86}{}\label{priolist_8h_a3f3721a5fc89d900da35eb1acb909b86}

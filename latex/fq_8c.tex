@@ -1,0 +1,89 @@
+\hypertarget{fq_8c}{}\section{src/protocols/utils/fq.c File Reference}
+\label{fq_8c}\index{src/protocols/utils/fq.\+c@{src/protocols/utils/fq.\+c}}
+{\ttfamily \#include \char`\"{}fq.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/err.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/cont.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for fq.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fq_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{fq_8c_ab9b5ba35f1b77d0d079ab4a5688287df}{nn\+\_\+fq\+\_\+init} (struct \hyperlink{structnn__fq}{nn\+\_\+fq} $\ast$self)
+\item 
+void \hyperlink{fq_8c_af762c7bcd24f6a32b6bbf0cfaf92a38f}{nn\+\_\+fq\+\_\+term} (struct \hyperlink{structnn__fq}{nn\+\_\+fq} $\ast$self)
+\item 
+void \hyperlink{fq_8c_a4c0b34831ee72d06ac4e488bab0c23b1}{nn\+\_\+fq\+\_\+add} (struct \hyperlink{structnn__fq}{nn\+\_\+fq} $\ast$self, struct \hyperlink{structnn__fq__data}{nn\+\_\+fq\+\_\+data} $\ast$data, struct nn\+\_\+pipe $\ast$pipe, int priority)
+\item 
+void \hyperlink{fq_8c_a9bc1243d9bb832ddbce377a186733e4d}{nn\+\_\+fq\+\_\+rm} (struct \hyperlink{structnn__fq}{nn\+\_\+fq} $\ast$self, struct \hyperlink{structnn__fq__data}{nn\+\_\+fq\+\_\+data} $\ast$data)
+\item 
+void \hyperlink{fq_8c_a88af4d3998963c77ee7bc3f3cec07324}{nn\+\_\+fq\+\_\+in} (struct \hyperlink{structnn__fq}{nn\+\_\+fq} $\ast$self, struct \hyperlink{structnn__fq__data}{nn\+\_\+fq\+\_\+data} $\ast$data)
+\item 
+int \hyperlink{fq_8c_a9f742dfb33d4ffb20f5cd4c5300d470f}{nn\+\_\+fq\+\_\+can\+\_\+recv} (struct \hyperlink{structnn__fq}{nn\+\_\+fq} $\ast$self)
+\item 
+int \hyperlink{fq_8c_a4456de5a3f8b3d4d7821450b755986d1}{nn\+\_\+fq\+\_\+recv} (struct \hyperlink{structnn__fq}{nn\+\_\+fq} $\ast$self, struct \hyperlink{structnn__msg}{nn\+\_\+msg} $\ast$msg, struct nn\+\_\+pipe $\ast$$\ast$pipe)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{fq.\+c@{fq.\+c}!nn\+\_\+fq\+\_\+add@{nn\+\_\+fq\+\_\+add}}
+\index{nn\+\_\+fq\+\_\+add@{nn\+\_\+fq\+\_\+add}!fq.\+c@{fq.\+c}}
+\subsubsection[{nn\+\_\+fq\+\_\+add(struct nn\+\_\+fq $\ast$self, struct nn\+\_\+fq\+\_\+data $\ast$data, struct nn\+\_\+pipe $\ast$pipe, int priority)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+fq\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+fq} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+fq\+\_\+data} $\ast$}]{data, }
+\item[{struct nn\+\_\+pipe $\ast$}]{pipe, }
+\item[{int}]{priority}
+\end{DoxyParamCaption}
+)}\hypertarget{fq_8c_a4c0b34831ee72d06ac4e488bab0c23b1}{}\label{fq_8c_a4c0b34831ee72d06ac4e488bab0c23b1}
+\index{fq.\+c@{fq.\+c}!nn\+\_\+fq\+\_\+can\+\_\+recv@{nn\+\_\+fq\+\_\+can\+\_\+recv}}
+\index{nn\+\_\+fq\+\_\+can\+\_\+recv@{nn\+\_\+fq\+\_\+can\+\_\+recv}!fq.\+c@{fq.\+c}}
+\subsubsection[{nn\+\_\+fq\+\_\+can\+\_\+recv(struct nn\+\_\+fq $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+fq\+\_\+can\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+fq} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{fq_8c_a9f742dfb33d4ffb20f5cd4c5300d470f}{}\label{fq_8c_a9f742dfb33d4ffb20f5cd4c5300d470f}
+\index{fq.\+c@{fq.\+c}!nn\+\_\+fq\+\_\+in@{nn\+\_\+fq\+\_\+in}}
+\index{nn\+\_\+fq\+\_\+in@{nn\+\_\+fq\+\_\+in}!fq.\+c@{fq.\+c}}
+\subsubsection[{nn\+\_\+fq\+\_\+in(struct nn\+\_\+fq $\ast$self, struct nn\+\_\+fq\+\_\+data $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+fq\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+fq} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+fq\+\_\+data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{fq_8c_a88af4d3998963c77ee7bc3f3cec07324}{}\label{fq_8c_a88af4d3998963c77ee7bc3f3cec07324}
+\index{fq.\+c@{fq.\+c}!nn\+\_\+fq\+\_\+init@{nn\+\_\+fq\+\_\+init}}
+\index{nn\+\_\+fq\+\_\+init@{nn\+\_\+fq\+\_\+init}!fq.\+c@{fq.\+c}}
+\subsubsection[{nn\+\_\+fq\+\_\+init(struct nn\+\_\+fq $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+fq\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+fq} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{fq_8c_ab9b5ba35f1b77d0d079ab4a5688287df}{}\label{fq_8c_ab9b5ba35f1b77d0d079ab4a5688287df}
+\index{fq.\+c@{fq.\+c}!nn\+\_\+fq\+\_\+recv@{nn\+\_\+fq\+\_\+recv}}
+\index{nn\+\_\+fq\+\_\+recv@{nn\+\_\+fq\+\_\+recv}!fq.\+c@{fq.\+c}}
+\subsubsection[{nn\+\_\+fq\+\_\+recv(struct nn\+\_\+fq $\ast$self, struct nn\+\_\+msg $\ast$msg, struct nn\+\_\+pipe $\ast$$\ast$pipe)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+fq\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+fq} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+msg} $\ast$}]{msg, }
+\item[{struct nn\+\_\+pipe $\ast$$\ast$}]{pipe}
+\end{DoxyParamCaption}
+)}\hypertarget{fq_8c_a4456de5a3f8b3d4d7821450b755986d1}{}\label{fq_8c_a4456de5a3f8b3d4d7821450b755986d1}
+\index{fq.\+c@{fq.\+c}!nn\+\_\+fq\+\_\+rm@{nn\+\_\+fq\+\_\+rm}}
+\index{nn\+\_\+fq\+\_\+rm@{nn\+\_\+fq\+\_\+rm}!fq.\+c@{fq.\+c}}
+\subsubsection[{nn\+\_\+fq\+\_\+rm(struct nn\+\_\+fq $\ast$self, struct nn\+\_\+fq\+\_\+data $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+fq\+\_\+rm (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+fq} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+fq\+\_\+data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{fq_8c_a9bc1243d9bb832ddbce377a186733e4d}{}\label{fq_8c_a9bc1243d9bb832ddbce377a186733e4d}
+\index{fq.\+c@{fq.\+c}!nn\+\_\+fq\+\_\+term@{nn\+\_\+fq\+\_\+term}}
+\index{nn\+\_\+fq\+\_\+term@{nn\+\_\+fq\+\_\+term}!fq.\+c@{fq.\+c}}
+\subsubsection[{nn\+\_\+fq\+\_\+term(struct nn\+\_\+fq $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+fq\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+fq} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{fq_8c_af762c7bcd24f6a32b6bbf0cfaf92a38f}{}\label{fq_8c_af762c7bcd24f6a32b6bbf0cfaf92a38f}

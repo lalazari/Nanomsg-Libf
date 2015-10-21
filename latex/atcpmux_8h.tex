@@ -1,0 +1,102 @@
+\hypertarget{atcpmux_8h}{}\section{src/transports/tcpmux/atcpmux.h File Reference}
+\label{atcpmux_8h}\index{src/transports/tcpmux/atcpmux.\+h@{src/transports/tcpmux/atcpmux.\+h}}
+{\ttfamily \#include \char`\"{}stcpmux.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../transport.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/fsm.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../aio/usock.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../utils/list.\+h\char`\"{}}\\*
+Include dependency graph for atcpmux.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{atcpmux_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{atcpmux_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__atcpmux}{nn\+\_\+atcpmux}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{atcpmux_8h_a26451251f65cd9ccc5885e4b4b198004}{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+A\+C\+C\+E\+P\+T\+ED}~34231
+\item 
+\#define \hyperlink{atcpmux_8h_a71ae730cf9f8b81fbf95d71bb2341458}{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR}~34232
+\item 
+\#define \hyperlink{atcpmux_8h_a0bd9078e0257a35451b92fef64929012}{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED}~34233
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{atcpmux_8h_ab860c0b0c06567aa9fe61b4afa328c09}{nn\+\_\+atcpmux\+\_\+init} (struct \hyperlink{structnn__atcpmux}{nn\+\_\+atcpmux} $\ast$self, int src, struct \hyperlink{structnn__epbase}{nn\+\_\+epbase} $\ast$epbase, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{atcpmux_8h_a74a7965e52d5015191eac07972f63a87}{nn\+\_\+atcpmux\+\_\+term} (struct \hyperlink{structnn__atcpmux}{nn\+\_\+atcpmux} $\ast$self)
+\item 
+int \hyperlink{atcpmux_8h_a4af48fe874cdd48ec6fdb63076b53d1f}{nn\+\_\+atcpmux\+\_\+isidle} (struct \hyperlink{structnn__atcpmux}{nn\+\_\+atcpmux} $\ast$self)
+\item 
+void \hyperlink{atcpmux_8h_a71b91d9d9f4732653926b91c9c297039}{nn\+\_\+atcpmux\+\_\+start} (struct \hyperlink{structnn__atcpmux}{nn\+\_\+atcpmux} $\ast$self, int fd)
+\item 
+void \hyperlink{atcpmux_8h_a6c0e474ce62848b9c9c8b00a57a6fe62}{nn\+\_\+atcpmux\+\_\+stop} (struct \hyperlink{structnn__atcpmux}{nn\+\_\+atcpmux} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{atcpmux.\+h@{atcpmux.\+h}!N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+A\+C\+C\+E\+P\+T\+ED@{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+A\+C\+C\+E\+P\+T\+ED}}
+\index{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+A\+C\+C\+E\+P\+T\+ED@{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+A\+C\+C\+E\+P\+T\+ED}!atcpmux.\+h@{atcpmux.\+h}}
+\subsubsection[{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+A\+C\+C\+E\+P\+T\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+A\+C\+C\+E\+P\+T\+ED~34231}\hypertarget{atcpmux_8h_a26451251f65cd9ccc5885e4b4b198004}{}\label{atcpmux_8h_a26451251f65cd9ccc5885e4b4b198004}
+\index{atcpmux.\+h@{atcpmux.\+h}!N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR}}
+\index{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR@{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR}!atcpmux.\+h@{atcpmux.\+h}}
+\subsubsection[{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+E\+R\+R\+OR~34232}\hypertarget{atcpmux_8h_a71ae730cf9f8b81fbf95d71bb2341458}{}\label{atcpmux_8h_a71ae730cf9f8b81fbf95d71bb2341458}
+\index{atcpmux.\+h@{atcpmux.\+h}!N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED}}
+\index{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED@{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED}!atcpmux.\+h@{atcpmux.\+h}}
+\subsubsection[{N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+A\+T\+C\+P\+M\+U\+X\+\_\+\+S\+T\+O\+P\+P\+ED~34233}\hypertarget{atcpmux_8h_a0bd9078e0257a35451b92fef64929012}{}\label{atcpmux_8h_a0bd9078e0257a35451b92fef64929012}
+
+
+\subsection{Function Documentation}
+\index{atcpmux.\+h@{atcpmux.\+h}!nn\+\_\+atcpmux\+\_\+init@{nn\+\_\+atcpmux\+\_\+init}}
+\index{nn\+\_\+atcpmux\+\_\+init@{nn\+\_\+atcpmux\+\_\+init}!atcpmux.\+h@{atcpmux.\+h}}
+\subsubsection[{nn\+\_\+atcpmux\+\_\+init(struct nn\+\_\+atcpmux $\ast$self, int src, struct nn\+\_\+epbase $\ast$epbase, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+atcpmux\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+atcpmux} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+epbase} $\ast$}]{epbase, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{atcpmux_8h_ab860c0b0c06567aa9fe61b4afa328c09}{}\label{atcpmux_8h_ab860c0b0c06567aa9fe61b4afa328c09}
+\index{atcpmux.\+h@{atcpmux.\+h}!nn\+\_\+atcpmux\+\_\+isidle@{nn\+\_\+atcpmux\+\_\+isidle}}
+\index{nn\+\_\+atcpmux\+\_\+isidle@{nn\+\_\+atcpmux\+\_\+isidle}!atcpmux.\+h@{atcpmux.\+h}}
+\subsubsection[{nn\+\_\+atcpmux\+\_\+isidle(struct nn\+\_\+atcpmux $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+atcpmux\+\_\+isidle (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+atcpmux} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{atcpmux_8h_a4af48fe874cdd48ec6fdb63076b53d1f}{}\label{atcpmux_8h_a4af48fe874cdd48ec6fdb63076b53d1f}
+\index{atcpmux.\+h@{atcpmux.\+h}!nn\+\_\+atcpmux\+\_\+start@{nn\+\_\+atcpmux\+\_\+start}}
+\index{nn\+\_\+atcpmux\+\_\+start@{nn\+\_\+atcpmux\+\_\+start}!atcpmux.\+h@{atcpmux.\+h}}
+\subsubsection[{nn\+\_\+atcpmux\+\_\+start(struct nn\+\_\+atcpmux $\ast$self, int fd)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+atcpmux\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+atcpmux} $\ast$}]{self, }
+\item[{int}]{fd}
+\end{DoxyParamCaption}
+)}\hypertarget{atcpmux_8h_a71b91d9d9f4732653926b91c9c297039}{}\label{atcpmux_8h_a71b91d9d9f4732653926b91c9c297039}
+\index{atcpmux.\+h@{atcpmux.\+h}!nn\+\_\+atcpmux\+\_\+stop@{nn\+\_\+atcpmux\+\_\+stop}}
+\index{nn\+\_\+atcpmux\+\_\+stop@{nn\+\_\+atcpmux\+\_\+stop}!atcpmux.\+h@{atcpmux.\+h}}
+\subsubsection[{nn\+\_\+atcpmux\+\_\+stop(struct nn\+\_\+atcpmux $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+atcpmux\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+atcpmux} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{atcpmux_8h_a6c0e474ce62848b9c9c8b00a57a6fe62}{}\label{atcpmux_8h_a6c0e474ce62848b9c9c8b00a57a6fe62}
+\index{atcpmux.\+h@{atcpmux.\+h}!nn\+\_\+atcpmux\+\_\+term@{nn\+\_\+atcpmux\+\_\+term}}
+\index{nn\+\_\+atcpmux\+\_\+term@{nn\+\_\+atcpmux\+\_\+term}!atcpmux.\+h@{atcpmux.\+h}}
+\subsubsection[{nn\+\_\+atcpmux\+\_\+term(struct nn\+\_\+atcpmux $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+atcpmux\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+atcpmux} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{atcpmux_8h_a74a7965e52d5015191eac07972f63a87}{}\label{atcpmux_8h_a74a7965e52d5015191eac07972f63a87}

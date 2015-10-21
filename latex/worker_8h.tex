@@ -1,0 +1,153 @@
+\hypertarget{worker_8h}{}\section{src/aio/worker.h File Reference}
+\label{worker_8h}\index{src/aio/worker.\+h@{src/aio/worker.\+h}}
+{\ttfamily \#include \char`\"{}fsm.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}timerset.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}worker\+\_\+posix.\+h\char`\"{}}\\*
+Include dependency graph for worker.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{worker_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{worker_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnn__worker__timer}{nn\+\_\+worker\+\_\+timer}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{worker_8h_a26b55d3277a8b2f597794eca95adc881}{N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+I\+M\+E\+R\+\_\+\+T\+I\+M\+E\+O\+UT}~1
+\item 
+\#define \hyperlink{worker_8h_a2b96ba35d7cb50fbc0eee5b0e56ccb75}{N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+A\+S\+K\+\_\+\+E\+X\+E\+C\+U\+TE}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{worker_8h_a011b723fdf235aec4a431e0eeab7d137}{nn\+\_\+worker\+\_\+timer\+\_\+init} (struct \hyperlink{structnn__worker__timer}{nn\+\_\+worker\+\_\+timer} $\ast$self, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{worker_8h_abd6a0c11a6423ce9f41af8a51870ea17}{nn\+\_\+worker\+\_\+timer\+\_\+term} (struct \hyperlink{structnn__worker__timer}{nn\+\_\+worker\+\_\+timer} $\ast$self)
+\item 
+int \hyperlink{worker_8h_a92e989e0596af75aa5122466b1389b86}{nn\+\_\+worker\+\_\+timer\+\_\+isactive} (struct \hyperlink{structnn__worker__timer}{nn\+\_\+worker\+\_\+timer} $\ast$self)
+\item 
+void \hyperlink{worker_8h_a532c7e67b3d6ea6f1e3ebfe1d8a41dad}{nn\+\_\+worker\+\_\+task\+\_\+init} (struct \hyperlink{structnn__worker__task}{nn\+\_\+worker\+\_\+task} $\ast$self, int src, struct \hyperlink{structnn__fsm}{nn\+\_\+fsm} $\ast$owner)
+\item 
+void \hyperlink{worker_8h_ab1eee115fbc4c65080e088d1002eb4ba}{nn\+\_\+worker\+\_\+task\+\_\+term} (struct \hyperlink{structnn__worker__task}{nn\+\_\+worker\+\_\+task} $\ast$self)
+\item 
+int \hyperlink{worker_8h_aaedb773c90ae0d4de5c86c666dc9ec73}{nn\+\_\+worker\+\_\+init} (struct \hyperlink{structnn__worker}{nn\+\_\+worker} $\ast$self)
+\item 
+void \hyperlink{worker_8h_a37ce0895697e79549abe2b407c448ba7}{nn\+\_\+worker\+\_\+term} (struct \hyperlink{structnn__worker}{nn\+\_\+worker} $\ast$self)
+\item 
+void \hyperlink{worker_8h_a2c1a868faccaf268f3738314278b7ed4}{nn\+\_\+worker\+\_\+execute} (struct \hyperlink{structnn__worker}{nn\+\_\+worker} $\ast$self, struct \hyperlink{structnn__worker__task}{nn\+\_\+worker\+\_\+task} $\ast$task)
+\item 
+void \hyperlink{worker_8h_ad17c347afa9daa1c879be62fff0a7dcf}{nn\+\_\+worker\+\_\+cancel} (struct \hyperlink{structnn__worker}{nn\+\_\+worker} $\ast$self, struct \hyperlink{structnn__worker__task}{nn\+\_\+worker\+\_\+task} $\ast$task)
+\item 
+void \hyperlink{worker_8h_ada93c7220efac02d74c7469e951c40af}{nn\+\_\+worker\+\_\+add\+\_\+timer} (struct \hyperlink{structnn__worker}{nn\+\_\+worker} $\ast$self, int timeout, struct \hyperlink{structnn__worker__timer}{nn\+\_\+worker\+\_\+timer} $\ast$timer)
+\item 
+void \hyperlink{worker_8h_ab3de18a73e196991c1a3dc13f19eab58}{nn\+\_\+worker\+\_\+rm\+\_\+timer} (struct \hyperlink{structnn__worker}{nn\+\_\+worker} $\ast$self, struct \hyperlink{structnn__worker__timer}{nn\+\_\+worker\+\_\+timer} $\ast$timer)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{worker.\+h@{worker.\+h}!N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+A\+S\+K\+\_\+\+E\+X\+E\+C\+U\+TE@{N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+A\+S\+K\+\_\+\+E\+X\+E\+C\+U\+TE}}
+\index{N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+A\+S\+K\+\_\+\+E\+X\+E\+C\+U\+TE@{N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+A\+S\+K\+\_\+\+E\+X\+E\+C\+U\+TE}!worker.\+h@{worker.\+h}}
+\subsubsection[{N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+A\+S\+K\+\_\+\+E\+X\+E\+C\+U\+TE}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+A\+S\+K\+\_\+\+E\+X\+E\+C\+U\+TE~1}\hypertarget{worker_8h_a2b96ba35d7cb50fbc0eee5b0e56ccb75}{}\label{worker_8h_a2b96ba35d7cb50fbc0eee5b0e56ccb75}
+\index{worker.\+h@{worker.\+h}!N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+I\+M\+E\+R\+\_\+\+T\+I\+M\+E\+O\+UT@{N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+I\+M\+E\+R\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+I\+M\+E\+R\+\_\+\+T\+I\+M\+E\+O\+UT@{N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+I\+M\+E\+R\+\_\+\+T\+I\+M\+E\+O\+UT}!worker.\+h@{worker.\+h}}
+\subsubsection[{N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+I\+M\+E\+R\+\_\+\+T\+I\+M\+E\+O\+UT}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+N\+\_\+\+W\+O\+R\+K\+E\+R\+\_\+\+T\+I\+M\+E\+R\+\_\+\+T\+I\+M\+E\+O\+UT~1}\hypertarget{worker_8h_a26b55d3277a8b2f597794eca95adc881}{}\label{worker_8h_a26b55d3277a8b2f597794eca95adc881}
+
+
+\subsection{Function Documentation}
+\index{worker.\+h@{worker.\+h}!nn\+\_\+worker\+\_\+add\+\_\+timer@{nn\+\_\+worker\+\_\+add\+\_\+timer}}
+\index{nn\+\_\+worker\+\_\+add\+\_\+timer@{nn\+\_\+worker\+\_\+add\+\_\+timer}!worker.\+h@{worker.\+h}}
+\subsubsection[{nn\+\_\+worker\+\_\+add\+\_\+timer(struct nn\+\_\+worker $\ast$self, int timeout, struct nn\+\_\+worker\+\_\+timer $\ast$timer)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+worker\+\_\+add\+\_\+timer (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+worker} $\ast$}]{self, }
+\item[{int}]{timeout, }
+\item[{struct {\bf nn\+\_\+worker\+\_\+timer} $\ast$}]{timer}
+\end{DoxyParamCaption}
+)}\hypertarget{worker_8h_ada93c7220efac02d74c7469e951c40af}{}\label{worker_8h_ada93c7220efac02d74c7469e951c40af}
+\index{worker.\+h@{worker.\+h}!nn\+\_\+worker\+\_\+cancel@{nn\+\_\+worker\+\_\+cancel}}
+\index{nn\+\_\+worker\+\_\+cancel@{nn\+\_\+worker\+\_\+cancel}!worker.\+h@{worker.\+h}}
+\subsubsection[{nn\+\_\+worker\+\_\+cancel(struct nn\+\_\+worker $\ast$self, struct nn\+\_\+worker\+\_\+task $\ast$task)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+worker\+\_\+cancel (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+worker} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+worker\+\_\+task} $\ast$}]{task}
+\end{DoxyParamCaption}
+)}\hypertarget{worker_8h_ad17c347afa9daa1c879be62fff0a7dcf}{}\label{worker_8h_ad17c347afa9daa1c879be62fff0a7dcf}
+\index{worker.\+h@{worker.\+h}!nn\+\_\+worker\+\_\+execute@{nn\+\_\+worker\+\_\+execute}}
+\index{nn\+\_\+worker\+\_\+execute@{nn\+\_\+worker\+\_\+execute}!worker.\+h@{worker.\+h}}
+\subsubsection[{nn\+\_\+worker\+\_\+execute(struct nn\+\_\+worker $\ast$self, struct nn\+\_\+worker\+\_\+task $\ast$task)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+worker\+\_\+execute (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+worker} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+worker\+\_\+task} $\ast$}]{task}
+\end{DoxyParamCaption}
+)}\hypertarget{worker_8h_a2c1a868faccaf268f3738314278b7ed4}{}\label{worker_8h_a2c1a868faccaf268f3738314278b7ed4}
+\index{worker.\+h@{worker.\+h}!nn\+\_\+worker\+\_\+init@{nn\+\_\+worker\+\_\+init}}
+\index{nn\+\_\+worker\+\_\+init@{nn\+\_\+worker\+\_\+init}!worker.\+h@{worker.\+h}}
+\subsubsection[{nn\+\_\+worker\+\_\+init(struct nn\+\_\+worker $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+worker\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+worker} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{worker_8h_aaedb773c90ae0d4de5c86c666dc9ec73}{}\label{worker_8h_aaedb773c90ae0d4de5c86c666dc9ec73}
+\index{worker.\+h@{worker.\+h}!nn\+\_\+worker\+\_\+rm\+\_\+timer@{nn\+\_\+worker\+\_\+rm\+\_\+timer}}
+\index{nn\+\_\+worker\+\_\+rm\+\_\+timer@{nn\+\_\+worker\+\_\+rm\+\_\+timer}!worker.\+h@{worker.\+h}}
+\subsubsection[{nn\+\_\+worker\+\_\+rm\+\_\+timer(struct nn\+\_\+worker $\ast$self, struct nn\+\_\+worker\+\_\+timer $\ast$timer)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+worker\+\_\+rm\+\_\+timer (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+worker} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+worker\+\_\+timer} $\ast$}]{timer}
+\end{DoxyParamCaption}
+)}\hypertarget{worker_8h_ab3de18a73e196991c1a3dc13f19eab58}{}\label{worker_8h_ab3de18a73e196991c1a3dc13f19eab58}
+\index{worker.\+h@{worker.\+h}!nn\+\_\+worker\+\_\+task\+\_\+init@{nn\+\_\+worker\+\_\+task\+\_\+init}}
+\index{nn\+\_\+worker\+\_\+task\+\_\+init@{nn\+\_\+worker\+\_\+task\+\_\+init}!worker.\+h@{worker.\+h}}
+\subsubsection[{nn\+\_\+worker\+\_\+task\+\_\+init(struct nn\+\_\+worker\+\_\+task $\ast$self, int src, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+worker\+\_\+task\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+worker\+\_\+task} $\ast$}]{self, }
+\item[{int}]{src, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{worker_8h_a532c7e67b3d6ea6f1e3ebfe1d8a41dad}{}\label{worker_8h_a532c7e67b3d6ea6f1e3ebfe1d8a41dad}
+\index{worker.\+h@{worker.\+h}!nn\+\_\+worker\+\_\+task\+\_\+term@{nn\+\_\+worker\+\_\+task\+\_\+term}}
+\index{nn\+\_\+worker\+\_\+task\+\_\+term@{nn\+\_\+worker\+\_\+task\+\_\+term}!worker.\+h@{worker.\+h}}
+\subsubsection[{nn\+\_\+worker\+\_\+task\+\_\+term(struct nn\+\_\+worker\+\_\+task $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+worker\+\_\+task\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+worker\+\_\+task} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{worker_8h_ab1eee115fbc4c65080e088d1002eb4ba}{}\label{worker_8h_ab1eee115fbc4c65080e088d1002eb4ba}
+\index{worker.\+h@{worker.\+h}!nn\+\_\+worker\+\_\+term@{nn\+\_\+worker\+\_\+term}}
+\index{nn\+\_\+worker\+\_\+term@{nn\+\_\+worker\+\_\+term}!worker.\+h@{worker.\+h}}
+\subsubsection[{nn\+\_\+worker\+\_\+term(struct nn\+\_\+worker $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+worker\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+worker} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{worker_8h_a37ce0895697e79549abe2b407c448ba7}{}\label{worker_8h_a37ce0895697e79549abe2b407c448ba7}
+\index{worker.\+h@{worker.\+h}!nn\+\_\+worker\+\_\+timer\+\_\+init@{nn\+\_\+worker\+\_\+timer\+\_\+init}}
+\index{nn\+\_\+worker\+\_\+timer\+\_\+init@{nn\+\_\+worker\+\_\+timer\+\_\+init}!worker.\+h@{worker.\+h}}
+\subsubsection[{nn\+\_\+worker\+\_\+timer\+\_\+init(struct nn\+\_\+worker\+\_\+timer $\ast$self, struct nn\+\_\+fsm $\ast$owner)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+worker\+\_\+timer\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+worker\+\_\+timer} $\ast$}]{self, }
+\item[{struct {\bf nn\+\_\+fsm} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)}\hypertarget{worker_8h_a011b723fdf235aec4a431e0eeab7d137}{}\label{worker_8h_a011b723fdf235aec4a431e0eeab7d137}
+\index{worker.\+h@{worker.\+h}!nn\+\_\+worker\+\_\+timer\+\_\+isactive@{nn\+\_\+worker\+\_\+timer\+\_\+isactive}}
+\index{nn\+\_\+worker\+\_\+timer\+\_\+isactive@{nn\+\_\+worker\+\_\+timer\+\_\+isactive}!worker.\+h@{worker.\+h}}
+\subsubsection[{nn\+\_\+worker\+\_\+timer\+\_\+isactive(struct nn\+\_\+worker\+\_\+timer $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}int nn\+\_\+worker\+\_\+timer\+\_\+isactive (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+worker\+\_\+timer} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{worker_8h_a92e989e0596af75aa5122466b1389b86}{}\label{worker_8h_a92e989e0596af75aa5122466b1389b86}
+\index{worker.\+h@{worker.\+h}!nn\+\_\+worker\+\_\+timer\+\_\+term@{nn\+\_\+worker\+\_\+timer\+\_\+term}}
+\index{nn\+\_\+worker\+\_\+timer\+\_\+term@{nn\+\_\+worker\+\_\+timer\+\_\+term}!worker.\+h@{worker.\+h}}
+\subsubsection[{nn\+\_\+worker\+\_\+timer\+\_\+term(struct nn\+\_\+worker\+\_\+timer $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+worker\+\_\+timer\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+worker\+\_\+timer} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{worker_8h_abd6a0c11a6423ce9f41af8a51870ea17}{}\label{worker_8h_abd6a0c11a6423ce9f41af8a51870ea17}

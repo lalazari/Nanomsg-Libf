@@ -1,0 +1,55 @@
+\hypertarget{thread_8h}{}\section{src/utils/thread.h File Reference}
+\label{thread_8h}\index{src/utils/thread.\+h@{src/utils/thread.\+h}}
+{\ttfamily \#include \char`\"{}thread\+\_\+posix.\+h\char`\"{}}\\*
+Include dependency graph for thread.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{thread_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{thread_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void( \hyperlink{thread_8h_a44adfd05c0058506630e9e671222c543}{nn\+\_\+thread\+\_\+routine}) (void $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{thread_8h_ad0880e5175f169cbf2b34291a619cb7a}{nn\+\_\+thread\+\_\+init} (struct \hyperlink{structnn__thread}{nn\+\_\+thread} $\ast$self, \hyperlink{thread_8h_a44adfd05c0058506630e9e671222c543}{nn\+\_\+thread\+\_\+routine} $\ast$routine, void $\ast$arg)
+\item 
+void \hyperlink{thread_8h_ab20b783623e42f650802c89c98824c45}{nn\+\_\+thread\+\_\+term} (struct \hyperlink{structnn__thread}{nn\+\_\+thread} $\ast$self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{thread.\+h@{thread.\+h}!nn\+\_\+thread\+\_\+routine@{nn\+\_\+thread\+\_\+routine}}
+\index{nn\+\_\+thread\+\_\+routine@{nn\+\_\+thread\+\_\+routine}!thread.\+h@{thread.\+h}}
+\subsubsection[{nn\+\_\+thread\+\_\+routine}]{\setlength{\rightskip}{0pt plus 5cm}typedef void( nn\+\_\+thread\+\_\+routine) (void $\ast$)}\hypertarget{thread_8h_a44adfd05c0058506630e9e671222c543}{}\label{thread_8h_a44adfd05c0058506630e9e671222c543}
+
+
+\subsection{Function Documentation}
+\index{thread.\+h@{thread.\+h}!nn\+\_\+thread\+\_\+init@{nn\+\_\+thread\+\_\+init}}
+\index{nn\+\_\+thread\+\_\+init@{nn\+\_\+thread\+\_\+init}!thread.\+h@{thread.\+h}}
+\subsubsection[{nn\+\_\+thread\+\_\+init(struct nn\+\_\+thread $\ast$self, nn\+\_\+thread\+\_\+routine $\ast$routine, void $\ast$arg)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+thread\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+thread} $\ast$}]{self, }
+\item[{{\bf nn\+\_\+thread\+\_\+routine} $\ast$}]{routine, }
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\hypertarget{thread_8h_ad0880e5175f169cbf2b34291a619cb7a}{}\label{thread_8h_ad0880e5175f169cbf2b34291a619cb7a}
+\index{thread.\+h@{thread.\+h}!nn\+\_\+thread\+\_\+term@{nn\+\_\+thread\+\_\+term}}
+\index{nn\+\_\+thread\+\_\+term@{nn\+\_\+thread\+\_\+term}!thread.\+h@{thread.\+h}}
+\subsubsection[{nn\+\_\+thread\+\_\+term(struct nn\+\_\+thread $\ast$self)}]{\setlength{\rightskip}{0pt plus 5cm}void nn\+\_\+thread\+\_\+term (
+\begin{DoxyParamCaption}
+\item[{struct {\bf nn\+\_\+thread} $\ast$}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{thread_8h_ab20b783623e42f650802c89c98824c45}{}\label{thread_8h_ab20b783623e42f650802c89c98824c45}

@@ -1,0 +1,7 @@
+<map id="nn_fq" name="nn_fq">
+<area shape="rect" id="node2" href="$structnn__priolist.html" title="{nn_priolist\n|+ current\l|}" alt="" coords="41,459,121,536"/>
+<area shape="rect" id="node3" href="$structnn__priolist__slot.html" title="{nn_priolist_slot\n||}" alt="" coords="27,317,136,395"/>
+<area shape="rect" id="node4" href="$structnn__list.html" title="{nn_list\n||}" alt="" coords="5,168,64,245"/>
+<area shape="rect" id="node5" href="$structnn__list__item.html" title="{nn_list_item\n||}" alt="" coords="49,5,140,83"/>
+<area shape="rect" id="node6" href="$structnn__priolist__data.html" title="{nn_priolist_data\n|+ pipe\l+ priority\l|}" alt="" coords="89,161,201,253"/>
+</map>
